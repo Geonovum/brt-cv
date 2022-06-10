@@ -33,7 +33,6 @@ Onderstaande classificaties worden toegevoegd aan BRT.Next
 |                        |                       | een vaste dienstregeling                                                                                                                                                                       |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |                        | **voetveer**          | BRT: Vastgelegde route over water om voertuigen en personen over te zetten al dan niet op basis van                                                                                            |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |                        |                       | een vaste dienstregeling                                                                                                                                                                       |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|                        | **spoorbaan**         | Gebaand gedeelte voor het verkeer over rails.                                                                                                                                                  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | ligging                | **op overweg**        |                                                                                                                                                                                                |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |                        |                       |                                                                                                                                                                                                |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 |                        |                       |                                                                                                                                                                                                |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
@@ -58,7 +57,7 @@ wordt niet aangepast.
 
 | TOP10NL:attribuutnaam | TOP10NL:definitie                                   | BRT.Next:attribuutnaam | BRT.Next:definitie                                  |
 |-----------------------|-----------------------------------------------------|------------------------|-----------------------------------------------------|
-| ligging               | Aanduiding voor de relatieve hoogte van het object. |                        | Aanduiding voor de relatieve hoogte van het object. |
+| hoogteniveau          | Aanduiding voor de relatieve hoogte van het object. | fysiekVoorkomen        | Aanduiding voor de relatieve hoogte van het object. |
 
 *Toelichting:*
 
@@ -74,12 +73,12 @@ Wijzigen classificaties
 
 Van onderstaande classificaties in TOP10NL wijzigt de naam (waarde) in BRT.Next.
 
-| TOP10NL:waarde         | BRT.Next:waarde          |
-|------------------------|--------------------------|
-| straat                 | **rijbaan** straat       |
-| overig                 | **rijbaan** overig       |
-| parkeer\~\~plaats\~\~  | parkeer**vak**           |
-| veer\~\~verbinding\~\~ | veer**dienst, pontveer** |
+| TOP10NL:waarde | BRT.Next:waarde          |
+|----------------|--------------------------|
+| straat         | **rijbaan** straat       |
+| overig         | **rijbaan** overig       |
+| parkeerplaats  | parkeer**vak**           |
+| veerverbinding | veer**dienst, pontveer** |
 
 **Parkeerplaats**
 
@@ -93,19 +92,22 @@ in BRT.Next.
 | TOP10NL:waarde   | TOP10NL:definitie                                                                                                                                                                                                                                                                                                 | BRT.Next:waarde           | BRT.Next:definitie                                                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | autosnelweg      | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer \~\~en met gescheiden rijbanen en ongelijkvloerse kruisingen\~\~, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                   | **rijbaan** autosnelweg   | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.         |
-| \~\~hoofdweg\~\~ | \~\~Verharde weg die is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die \~\~onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. | **rijbaan autoweg**       | **Wegdeel dat** onderdeel is van een weg **uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord**. |
+| hoofdweg         | \~\~Verharde weg die is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die \~\~onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. | **rijbaan autoweg**       | **Wegdeel dat** onderdeel is van een weg **uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord**. |
 | regionale weg    | \~\~Verharde\~\~ weg die een verbinding vormt tussen bewoonde oorden of \~\~grote stads\~\~wijken \~\~en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer\~\~.                                                                                                          | **rijbaan** regionale weg | **Wegdeel dat onderdeel is van een** weg die een verbinding vormt tussen bewoonde oorden of tussen wijken **binnen een dorp of stad.** |
 |                  |                                                                                                                                                                                                                                                                                                                   |                           |                                                                                                                                        |
 | lokale weg       | Weg van lokaal belang \~\~tussen bewegwijzerde routes\~\~.                                                                                                                                                                                                                                                        | **rijbaan** lokale weg    | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                            |
+| spoorbaanlichaam | Geheel van rails, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.                                                                                                                                                                                                                                   | spoorbaan                 | Gebaand gedeelte voor het verkeer over rails.                                                                                          |
 |                  |                                                                                                                                                                                                                                                                                                                   |                           |                                                                                                                                        |
-|                  |                                                                                                                                                                                                                                                                                                                   |                           |                                                                                                                                        |
+
+*N.B. spoorbaanlichaam is onderdeel van de waardenverzameling typeLandgebruik.*
 
 **Attribuut TOP10NL:status / BRT.Next:status**
 
-| TOP10NL:waarde        | TOP10NL:definitie                        | BRT.Next:waarde | BRT.Next:definitie                                                                                                             |
-|-----------------------|------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------|
-| \~\~in uitvoering\~\~ | De staat waarin het object zich bevindt. | **bestaand**    | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord. |
-| \~\~in gebruik\~\~    |                                          | **bestaand**    | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord. |
+| TOP10NL:waarde | TOP10NL:definitie                        | BRT.Next:waarde | BRT.Next:definitie                                                                                                             |
+|----------------|------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------|
+| in uitvoering  | De staat waarin het object zich bevindt. | **bestaand**    | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord. |
+| in gebruik     |                                          | **bestaand**    | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord. |
+|                |                                          |                 |                                                                                                                                |
 
 Vervallen attributen
 --------------------
