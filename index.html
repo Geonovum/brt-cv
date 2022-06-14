@@ -13,7 +13,7 @@
 		<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
         <script class="remove" src="./config.js"></script>
         <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
-		
+			
     </head>
    
     <body>
@@ -38,5 +38,113 @@
        <!--section data-format="markdown" data-include="wegdeel.md"></section-->      
       <!-- genereer hier een afbeeldingen lijst- - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <!--<section id="tof"><h2>Lijst van afbeeldingen</h2></section> -->
+		<div>
+		<label class="switch" onclick="toggleTrackChanges();">
+			  <input id="toggleTrackChanges" type="checkbox" checked="checked">
+			  <span class="slider round"></span>
+			</label>
+			<span class="textTrackChanges">WIJZIGINGEN AAN</span> 
+		</div>
+			<style>
+
+			.textTrackChanges {
+			margin-left: 10px;
+			color: #fcb900;
+			height: 24px;
+			vertical-align: middle;
+			}
+
+			mark { background-color: yellow }
+			
+			
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  width: 50px;
+			  height: 24px;
+			}
+
+			.switch input {
+			  opacity: 0;
+			  width: 0;
+			  height: 0;
+			}
+
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 18px;
+			  width: 18px;
+			  left: 3px;
+			  bottom: 3px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: #fcb900;
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #fcb900;
+			}
+
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(26px);
+			  -ms-transform: translateX(26px);
+			  transform: translateX(26px);
+			}
+
+			.slider.round {
+			  border-radius: 34px;
+			}
+
+			.slider.round:before {
+			  border-radius: 50%;
+			}
+			</style>
+			<script>
+			var toggleTrackChanges = function() {
+
+			let marks = document.getElementsByTagName("td strong");
+			let strikes = document.getElementsByTagName("del");
+				
+				if (document.getElementById('toggleTrackChanges').checked == false) {
+					
+					for (var i=1; i<marks.length; i++) {
+						marks[i].style.backgroundColor = "white";
+					}		
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.display = "none";
+					}		
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#cccccc";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN UIT";
+
+				}
+				else {
+					for (var i=1; i<marks.length; i++) {
+						marks[i].style.backgroundColor = "yellow";
+					}
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.display = "inline";
+					}
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#fcb900";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN AAN";
+				}
+			}
+			</script>
     </body>
 </html>
