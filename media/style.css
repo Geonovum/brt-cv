@@ -100,14 +100,19 @@ div#remark
 
 /* trackChanges */
 
-.trackChanges {
-	border: solid 1px black;
+.trackChanges {	
 	position: fixed !important;
 	right: 0 !important;
 	bottom: 10% !important;
 	width: 300px !important;
+	margin-right: 10px;
 	margin-top: -2.5em !important;
 	text-align: right;
+	background: #fff;
+    height: 2.5em;
+    color: rgb(120, 120, 120);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 8px 0 rgb(100 100 100 / 50%);
 }
 
 .textTrackChanges {
