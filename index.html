@@ -38,7 +38,7 @@
        <!--section data-format="markdown" data-include="wegdeel.md"></section-->      
       <!-- genereer hier een afbeeldingen lijst- - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <!--<section id="tof"><h2>Lijst van afbeeldingen</h2></section> -->
-		<div>
+		<div class="trackChanges">
 		<label class="switch" onclick="toggleTrackChanges();">
 			  <input id="toggleTrackChanges" type="checkbox" checked="checked">
 			  <span class="slider round"></span>
@@ -46,16 +46,25 @@
 			<span class="textTrackChanges">WIJZIGINGEN AAN</span> 
 		</div>
 			<style>
+			
+			.trackChanges {		
+			
+				position: fixed;
+				right: 0;
+				top: 50%;
+				width: 8em;
+				margin-top: -2.5em;
+			}
+			
 
 			.textTrackChanges {
 			margin-left: 10px;
-			color: #fcb900;
+			color: blue;
 			height: 24px;
 			vertical-align: middle;
 			}
 
-			mark { background-color: yellow }
-			
+			tbody td strong { color: green }
 			
 			.switch {
 			  position: relative;
