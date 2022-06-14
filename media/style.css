@@ -100,10 +100,11 @@ div#remark
 
 /* trackChanges */
 
-.trackChanges {					
+.trackChanges {
+	border: solid 1px black;
 	position: fixed !important;
 	right: 0 !important;
-	top: 75% !important;
+	bottom: 10% !important;
 	width: 200px !important;
 	margin-top: -2.5em !important;
 }
@@ -157,11 +158,11 @@ tbody td strong { color: green }
 }
 
 input:checked + .slider {
-  background-color: #fcb900;
+  background-color: #blue;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #fcb900;
+  box-shadow: 0 0 1px #blue;
 }
 
 input:checked + .slider:before {
