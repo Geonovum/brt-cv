@@ -58,40 +58,40 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/geonovum/<naam van de repository>",
+  github: "https://github.com/geonovum/brt-cv",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/geonovum/<naam van de repository>/issues",
+  issueBase: "https://github.com/geonovum/brt-cv/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/<naam van de repository>",
+  edDraftURI: "https://github/geonovum/brt-cv",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
  [
     {
-      name:       "Naam Editor-1",
+      name:       "Geonovum",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
-    {
+/*     {
       name:       "Naam Editor-n",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
+    }, */ 
   ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
   authors: 
   [
     {
-      name:       "Naam Auteur-1",
+      name:       "Geonovum",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
+    }/* , 
     {
       name:       "Naam Auteur-2",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
+    },  */
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "brt-cv",  	              // Wordt gebruikt in de document URL
@@ -119,7 +119,7 @@ var respecConfig =
   //-- NB: kijk eesrt naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
-    "PUB-1":
+    /* "PUB-1":
       {
         title:      "Titel van Publicatie-1",
         href:       "https://www.geonovum.nl",
@@ -150,7 +150,7 @@ var respecConfig =
         status:     "V1.0.1",
         publisher:  "Publisher-4",
         company:    "Companynaam",
-    },
+    }, */
   },
   postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
