@@ -24,40 +24,34 @@
 			</label>
 			<span class="textTrackChanges">WIJZIGINGEN AAN</span> 
 		</div>			
-		<script>
-		
-		window.onload = function() {			
-		 console.log('page Loaded!');
-		 document.getElementById('trackChanges').style.display = 'none';
-		};
-		
+		<script>			
 		var toggleTrackChanges = function() {
 
-		let marks = document.getElementsByTagName("td strong");
-		let strikes = document.getElementsByTagName("del");
-			
-			if (document.getElementById('toggleTrackChanges').checked == false) {
+			let marks = document.getElementsByTagName("td strong");
+			let strikes = document.getElementsByTagName("del");
 				
-				for (var i=1; i<marks.length; i++) {
-					marks[i].style.backgroundColor = "white";
-				}		
-				for (var i=1; i<strikes.length; i++) {
-					strikes[i].style.display = "none";
-				}		
-				document.getElementsByClassName("textTrackChanges")[0].style.color = "#cccccc";
-				document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN UIT";
+				if (document.getElementById('toggleTrackChanges').checked == false) {
+					
+					for (var i=1; i<marks.length; i++) {
+						marks[i].style.backgroundColor = "white";
+					}		
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.display = "none";
+					}		
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#cccccc";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN UIT";
 
-			}
-			else {
-				for (var i=1; i<marks.length; i++) {
-					marks[i].style.backgroundColor = "yellow";
 				}
-				for (var i=1; i<strikes.length; i++) {
-					strikes[i].style.display = "inline";
+				else {
+					for (var i=1; i<marks.length; i++) {
+						marks[i].style.backgroundColor = "yellow";
+					}
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.display = "inline";
+					}
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#fcb900";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN AAN";
 				}
-				document.getElementsByClassName("textTrackChanges")[0].style.color = "#fcb900";
-				document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN AAN";
-			}
 		}
 		</script>
 	
