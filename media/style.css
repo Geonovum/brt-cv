@@ -105,8 +105,9 @@ div#remark
 	position: fixed !important;
 	right: 0 !important;
 	bottom: 10% !important;
-	width: 200px !important;
+	width: 300px !important;
 	margin-top: -2.5em !important;
+	text-align: right;
 }
 
 .textTrackChanges {
@@ -158,11 +159,11 @@ tbody td strong { color: green }
 }
 
 input:checked + .slider {
-  background-color: #blue;
+  background-color: blue;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #blue;
+  box-shadow: 0 0 1px blue;
 }
 
 input:checked + .slider:before {
