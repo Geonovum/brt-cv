@@ -58,9 +58,9 @@ wordt niet aangepast.
 
 | *TOP10NL/BRT.Next:waarde* | *TOP10NL:definitie*                                                                 | *BRT.Next:definitie*                                                                                                             |
 |---------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| waterloop                 | \~\~Langgerekt waterdeel in de vorm van een sloot,\~\~ rivier, kanaal, \~\~enz.\~\~ | **Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals** rivier, kanaal, **beek, sloot, gracht).** |
-| greppel, droge sloot      | \~\~Een in het algemeen niet watervoerende sloot.\~\~                               | **Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is.**                                    |
-| zee                       | Uitgestrekt oppervlak zout water \~\~dat het grootste deel van de aarde bedekt.\~\~ | Uitgestrekt oppervlak zout water.                                                                                                |
+| waterloop                 | ~~Langgerekt waterdeel in de vorm van een sloot,~~ rivier, kanaal, ~~enz.~~ | **Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals** rivier, kanaal, **beek, sloot, gracht).** |
+| greppel, droge sloot      | ~~Een in het algemeen niet watervoerende sloot.~~                               | **Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is.**                                    |
+| zee                       | Uitgestrekt oppervlak zout water ~~dat het grootste deel van de aarde bedekt.~~ | Uitgestrekt oppervlak zout water.                                                                                                |
 
 Vervallen attributen
 --------------------
