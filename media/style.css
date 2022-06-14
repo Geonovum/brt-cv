@@ -103,8 +103,8 @@ div#remark
 .trackChanges {					
 	position: fixed !important;
 	right: 0 !important;
-	top: 50% !important;
-	width: 8em !important;
+	top: 75% !important;
+	width: 200px !important;
 	margin-top: -2.5em !important;
 }
 
