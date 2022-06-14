@@ -17,7 +17,7 @@
     </head>
    
     <body>
-		<div class="trackChanges">
+		<div id="trackChanges">
 		<label class="switch" onclick="toggleTrackChanges();">
 			  <input id="toggleTrackChanges" type="checkbox" checked="checked">
 			  <span class="slider round"></span>
@@ -107,6 +107,7 @@
 			
 			window.onload = function() {			
 			 console.log('page Loaded!');
+			 document.getElementById('trackChanges').style.display = 'none';
 			};
 			
 			var toggleTrackChanges = function() {
