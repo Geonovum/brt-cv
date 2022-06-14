@@ -124,7 +124,7 @@ div#remark
 	vertical-align: middle;
 }
 
-tbody td strong { color: green }
+tbody td strong, #leeswijzer p strong { color: green }
 
 
 
