@@ -46,21 +46,28 @@
 			  <input id="toggleTrackChanges" type="checkbox" checked="checked">
 			  <span class="slider round"></span>
 			</label>
-			<span class="textTrackChanges">WIJZIGINGEN AAN</span> 
+			<span class="textTrackChanges">WIJZIGINGEN AAN</span><br />
+			<span style="color: red;
+    text-decoration: line-through;">WAS</span> = vervallen tekst<br />
+			<span style="color: green; font-weight: bold">WORDT</span> = nieuwe tekst
+			</span>
 		</div>			
 		<script>			
 		var toggleTrackChanges = function() {
 
-			let marks = document.getElementsByTagName("td strong");
+			let marks = document.getElementsByTagName("strong");
 			let strikes = document.getElementsByTagName("del");
 				
 				if (document.getElementById('toggleTrackChanges').checked == false) {
 					
 					for (var i=1; i<marks.length; i++) {
-						marks[i].style.backgroundColor = "white";
+						console.log(marks[i]);
+						marks[i].style.fontWeight = "normal";
+						marks[i].style.color = "black";
 					}		
 					for (var i=1; i<strikes.length; i++) {
-						strikes[i].style.display = "none";
+						strikes[i].style.color = "black";
+						strikes[i].style.textDecoration = "none";
 					}		
 					document.getElementsByClassName("textTrackChanges")[0].style.color = "#cccccc";
 					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN UIT";
@@ -68,12 +75,14 @@
 				}
 				else {
 					for (var i=1; i<marks.length; i++) {
-						marks[i].style.backgroundColor = "yellow";
+						marks[i].style.color = "green";
+						marks[i].style.fontWeight = "bold";						
 					}
 					for (var i=1; i<strikes.length; i++) {
-						strikes[i].style.display = "inline";
+						strikes[i].style.color = "red";
+						strikes[i].style.textDecoration = "line-through";
 					}
-					document.getElementsByClassName("textTrackChanges")[0].style.color = "#fcb900";
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "blue";
 					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN AAN";
 				}
 		}
