@@ -4,55 +4,39 @@ Inleiding
 Waarom een nieuwe BRT.Next?
 ---------------------------
 
+Aanleiding, doel, resultaat.
+
 Wat is een wijzigingsvoorstel?
 ------------------------------
 
 In het wijzigingsvoorstel worden alle wijzigingen beschreven van de huidige
-TOP10NL (WAS) naar de nieuwe BRT.Next (WORDT). Dit wijzigingsvoorstel wordt
-geconsulteerd onder het werkveld.
-
-Definities:
-
-Classificatie = waarde van een attribuut conform een waardenlijst (domein),
-ookwel domeinwaarde
-
-Attribuut = eigenschap c.q. kenmerk van een object, oofwel attribuutsoort
+TOP10NL (WAS) naar de nieuwe BRT.Next (WORDT). Alle wijzigingen zijn
+voorstellen, en worden met dit wijzigingsvoorstel geconsulteerd onder het
+werkveld.
 
 Leeswijzer
 ----------
 
-Begrippen
+De wijzigingen in het document zijn gemarkeerd: \~\~tekst met deze opmaak\~\~
+komt te vervallen, **tekst met deze** opmaak wordt toegevoegd. De schakelknop in
+het venster rechtsonderin zet wijzigingen aan (zichtbaar) of uit (verborgen).
 
-Attribuut = kenmerk of eigenschap van een object, bijvoorbeeld attribuut ‘type’
-is een eigenschap van het object ‘Wegdeel’
+De wijzigingen worden in een vaste structuur gepresenteerd: per objecttype wordt
+beschreven welke attributen en classificaties wijzigen, vervallen of worden
+toegevoegd.
 
-Attribuutnaam = naam van een attribuut
+We hanteren in dit document de term ‘attribuut’ voor een kenmerk of eigenschap
+van een object; de term ‘classificatie’ voor een waarde van een attribuut
+volgens een vaste waardenlijst, de term ‘datatype’ voor een type dat een
+attribuut kan aannemen, bijvoorbeeld een geheel getal tussen 0 en 5, of
+puntgeometrie.
 
-Classificatie = waarde van een attribuut uit een waardelijst.
+Een attribuut of classificatie kan op 3 manieren wijzigen:
 
-Domein =
+1.  de naam van het attribuut of classificatie wijzigt; de definitie wijzigt
+    niet.
 
-In het consultatiedocument zijn de wijzigingen per objecttype samengevat. We
-onderkennen daarbij
+2.  de definitie van het attribuut of classificatie wijzigt; de naam wijzigt
+    niet.
 
--   Toevoegen van gegevens:
-
-    -   Toevoegen attributen
-
-    -   Toevoegen classificaties
-
--   Hernoemen:
-
--   Hernoemen attributen
-
--   Hernoemen classificaties
-
--   Wijzigen populatie
-
--   Wijzigingen definities
-
--   Wijzigen afbakeningsregels
-
--   Vervallen attributen
-
--   Vervallen classificaties
+3.  de naam en definitie van het attribuut of de classificatie wijzigen.
