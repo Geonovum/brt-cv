@@ -7,8 +7,8 @@ opzichte van de huidige versie TOP10NL.
 Wijzigen attributen
 -------------------
 
-De attributen in deze paragraaf wijzigen van naam, of wijzigen van naam en
-definitie in BRT.Next.
+De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
+wijzigen van naam en definitie in BRT.Next.
 
 ### Naam
 
@@ -19,6 +19,10 @@ aangepast.
 |-------------------------|--------------------------|
 | type~~Weg~~         | **type**                 |
 | **fysiekVoorkomen**     | **ligging**              |
+
+### Definitie
+
+*n.v.t.*
 
 ### Naam+definitie
 
@@ -36,8 +40,8 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 Wijzigen classificaties
 -----------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), of van naam
-(waarde) en definitie in BRT.Next
+De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
@@ -50,6 +54,10 @@ wordt niet aangepast.
 | overig                 | **rijbaan** overig       |
 | parkeer~~plaats~~  | parkeer**vak**           |
 | veer~~verbinding~~ | veer**dienst, pontveer** |
+
+### Definitie
+
+*n.v.t.*
 
 ### Naam+definitie
 

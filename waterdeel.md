@@ -7,8 +7,8 @@ ten opzichte van de huidige versie TOP10NL.
 Wijzigen attributen
 -------------------
 
-De volgende attributen wijzigen van naam, of wijzigen van naam en definitie in
-BRT.Next.
+De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
+wijzigen van naam en definitie in BRT.Next.
 
 ### Naam
 
@@ -17,16 +17,20 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| typeWater               | type                     |
-| fysiekVoorkomen         | ligging                  |
+| type~~Water~~       | **type**                 |
+| ~~fysiekVoorkomen~~ | **ligging**              |
+
+### Definitie
+
+*n.v.t.*
 
 ### Naam+definitie
 
 Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                 | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                                |
-|-------------------------|-----------------------------------------------------|--------------------------|-----------------------------------------------------|
-| hoogteniveau            | Aanduiding voor de relatieve hoogte van het object. | fysiekVoorkomen          | Aanduiding voor de relatieve hoogte van het object. |
+| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                      | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                                    |
+|-------------------------|------------------------------------------|--------------------------|---------------------------------------------------------|
+| ~~hoogteniveau~~    | ~~Het hoogteniveau van het object.~~ | **fysiekVoorkomen**      | **Aanduiding voor de relatieve hoogte van het object.** |
 
 *Overige opmerking:*
 
@@ -38,7 +42,11 @@ Wijzigen classificaties
 
 ### Naam
 
-n.v.t
+*n.v.t*
+
+### Definitie
+
+*n.v.t.*
 
 ### Naam+definitie
 

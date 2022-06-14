@@ -7,8 +7,8 @@ opzichte van de huidige versie TOP10NL.
 Wijzigen attributen
 -------------------
 
-De volgende attributen wijzigen van naam, of wijzigen van naam en definitie in
-BRT.Next.
+De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
+wijzigen van naam en definitie in BRT.Next.
 
 ### Naam
 
@@ -20,13 +20,17 @@ BRT.Next.
 | typeSpoorbaan           | type                     |
 | fysiekVoorkomen         | ligging                  |
 
+### Definitie
+
+*n.v.t.*
+
 ### Naam+definitie
 
 Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                                                                                                                                  | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------------------------------------------|
-| hoogteniveau            | ~~Met het hoogteniveau wordt~~ de relatieve hoogte van het ~~geo-~~object weergegeven. Zo kan worden bepaald op welke wijze geo-objecten elkaar kruisen.~~ | **relatieveHoogteLigging** | **Aanduiding voor** de relatieve hoogte van het object. |
+| hoogteniveau            | \~\~Met het hoogteniveau wordt\~\~ de relatieve hoogte van het \~\~geo-\~\~object weergegeven. Zo kan worden bepaald op welke wijze geo-objecten elkaar kruisen.\~\~ | **relatieveHoogteLigging** | **Aanduiding voor** de relatieve hoogte van het object. |
 
 *Toelichting:*
 
@@ -35,6 +39,9 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 Wijzigen classificaties
 -----------------------
+
+De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
@@ -47,6 +54,10 @@ wordt niet aangepast.
 |----------------|-----------------|
 | enkel          | enkel**voudig** |
 
+### Definitie
+
+n.v.t.
+
 ### Naam+definitie
 
 Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
@@ -55,8 +66,8 @@ Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
 
 | *TOP10NL:waarde*      | *TOP10NL:definitie*                                      | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                              |
 |-----------------------|----------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------|
-| ~~in uitvoering~~ | ~~De staat~~ waarin het object ~~zich bevindt.~~ | **bestaand**      | **Situatie** waarin het object **wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd.** |
-| ~~in gebruik~~    |                                                          | **bestaand**      | *idem*                                                                                                            |
+| \~\~in uitvoering\~\~ | \~\~De staat\~\~ waarin het object \~\~zich bevindt.\~\~ | **bestaand**      | **Situatie** waarin het object **wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd.** |
+| \~\~in gebruik\~\~    |                                                          | **bestaand**      | *idem*                                                                                                            |
 |                       |                                                          |                   |                                                                                                                   |
 
 Vervallen attributen
@@ -67,11 +78,11 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:classificaties of «datatype»*                                                     |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~; ~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
-| ~~baanvaknaam~~        | «tekst»                                                                                    |
+| \~\~typeInfrastructuur\~\~ | \~\~verbinding\~\~;\~\~ kruising\~\~                                                       |
+| \~\~elektrificatie\~\~     | \~\~ja\~\~; \~\~nee\~\~                                                                    |
+| \~\~spoorbreedte\~\~       | \~\~normaalspoor\~\~; \~\~smalspoor\~\~                                                    |
+| \~\~vervoerfunctie\~\~     | \~\~gemengd gebruik\~\~; \~\~personenvervoer\~\~; \~\~ goederenvervoer\~\~; \~\~museumlijn |
+| \~\~baanvaknaam\~\~        | «tekst»                                                                                    |
 
 Vervallen classificaties
 ------------------------
@@ -81,11 +92,11 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
 |-----------------------------------|----------------------------------------|
-| geometrie                         | ~~«punt»~~                         |
-| typeSpoorbaan \| type             | ~~metro~~                          |
-| fysiekVoorkomen \| ligging        | ~~overkluisd~~                     |
-| aantalSporen                      | ~~dubbel~~                         |
-| status                            | ~~buiten gebruik~~                 |
+| geometrie                         | \~\~«punt»\~\~                         |
+| typeSpoorbaan \| type             | \~\~metro\~\~                          |
+| fysiekVoorkomen \| ligging        | \~\~overkluisd\~\~                     |
+| aantalSporen                      | \~\~dubbel\~\~                         |
+| status                            | \~\~buiten gebruik\~\~                 |
 
 Toevoegen attributen
 --------------------
