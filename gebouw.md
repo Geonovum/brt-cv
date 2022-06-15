@@ -76,8 +76,8 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»*                                                                                                                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| hoogteklasse            | ~~laagbouw~~; ~~hoogbouw~~                                                                                                                                                                                                                                         |
-| gebruiksdoel            | ~~bijeenkomstfunctie~~;~~celfunctie~~;~~gezondheidszorgfunctie~~;~~industriefunctie~~;~~kantoorfunctie~~;~~logiesfunctie~~;~~onderwijsfunctie~~;~~sportfunctie~~;~~winkelfunctie~~;~~woonfunctie~~;~~overige gebruiksfunctie~~ |
+| ~~hoogteklasse~~    | ~~laagbouw~~; ~~hoogbouw~~                                                                                                                                                                                                                                         |
+| ~~gebruiksdoel~~    | ~~bijeenkomstfunctie~~;~~celfunctie~~;~~gezondheidszorgfunctie~~;~~industriefunctie~~;~~kantoorfunctie~~;~~logiesfunctie~~;~~onderwijsfunctie~~;~~sportfunctie~~;~~winkelfunctie~~;~~woonfunctie~~;~~overige gebruiksfunctie~~ |
 
 Vervallen classificaties
 ------------------------
