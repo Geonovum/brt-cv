@@ -55,9 +55,7 @@ wordt niet aangepast.
 
 ### Definitie
 
-*n.v.t.*
-
-*Attribuut TOP10NL:typeWeg / BRT.Next:type*
+*Attribuut TOP10NL:typeLandgebruik / BRT.Next:type*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                            | *BRT.Next:definitie*                                                                                                              |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -92,13 +90,6 @@ BRT.Next:type
 
 [^3]: ‘dras, moerassig’ van TOP10NL:voorkomen wordt opgenomen als ‘moeras’ van
 BRT.Next:type
-
-*Attribuut TOP10NL:status / BRT.Next:status*
-
-| *TOP10NL:waarde* | *TOP10NL:definitie*                      | *BRT.Next:waarde* | *BRT.Next:definitie* |
-|------------------|------------------------------------------|-------------------|----------------------|
-| in uitvoering    | De staat waarin het object zich bevindt. | **bestaand**      |                      |
-| in gebruik       |                                          | **bestaand**      |                      |
 
 Vervallen attributen
 --------------------
