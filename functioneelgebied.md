@@ -35,9 +35,9 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 | Attribuutnaam | Waarde of \<type\>              | Geometrietype   | Kardinaliteit |
 |---------------|---------------------------------|-----------------|---------------|
-| geometrie     | \<vlak\>                        |                 | 1-1           |
-|               | \<multivlak\>                   |                 |               |
-|               | \<punt\>                        |                 |               |
+| geometrie     | «vlak»                          |                 | 1-1           |
+|               | «multivlak»                     |                 |               |
+|               | «punt»                          |                 |               |
 | type          | attractiepark                   | vlak, multivlak | 1-1           |
 |               | bedrijventerrein                | vlak, multivlak |               |
 |               | begraafplaats                   | vlak, multivlak |               |
@@ -94,8 +94,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |               | psychiatrisch ziekenhuiscomplex | vlak, multivlak |               |
 |               | tankstation                     | vlak, multivlak |               |
 |               | waterzuivering                  | vlak, multivlak |               |
-| naam          | \<tekst\>                       |                 | 0..n          |
-| soortnaam     | \<tekst\>                       |                 | 0..n          |
+| naam          | «tekst»                         |                 | 0..n          |
+| soortnaam     | «tekst»                         |                 | 0..n          |
 
 Wijzigen attributen
 -------------------
@@ -178,10 +178,11 @@ Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:type*
 
-| *BRT.Next:waarde*                        | *BRT.Next:definitie* |
-|------------------------------------------|----------------------|
-| **gaswinning. oliewinning**              |                      |
-| **grindwinning. zandwinning gevangenis** |                      |
-| **psychiatrisch ziekenhuiscomplex**      |                      |
-| **tankstation**                          |                      |
-| **waterzuivering**                       |                      |
+| *BRT.Next:waarde*                   | *BRT.Next:definitie* |
+|-------------------------------------|----------------------|
+| **gaswinning. oliewinning**         |                      |
+| **grindwinning. zandwinning**       |                      |
+| **gevangenis**                      |                      |
+| **psychiatrisch ziekenhuiscomplex** |                      |
+| **tankstation**                     |                      |
+| **waterzuivering**                  |                      |
