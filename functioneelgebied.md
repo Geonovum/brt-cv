@@ -150,7 +150,7 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
 |-------------------------|----------------------------------------|
-| ~~naamFries~~1      | ~~«tekst»~~                        |
+| ~~naamFries~~       | ~~«tekst»~~                        |
 
 Vervallen classificaties
 ------------------------
