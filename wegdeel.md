@@ -80,22 +80,22 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | half verhard                |               |               |
 |                        | onverhard                   |               |               |
 |                        | onbekend                    |               |               |
-| relatieveHoogteLigging | \<geheel getal\>            |               | 1-1           |
+| relatieveHoogteLigging | «geheel getal»              |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
-| naam                   | “tekst»                     |               | 0..n          |
+| naam                   | «tekst»                     |               | 0..n          |
 | naam: herkomst         | BAG                         |               | 0..n          |
 |                        | BGT                         |               |               |
 |                        | BRK                         |               |               |
 |                        | overig                      |               |               |
-| A-wegnummer            | “tekst»                     |               | 0..n          |
-| N-wegnummer            | “tekst»                     |               | 0..n          |
-| E-wegnummer            | “tekst»                     |               | 0..n          |
-| S-wegnummer            | “tekst»                     |               | 0..n          |
-| afritnummer            | “tekst»                     |               | 0..1          |
-| afritnaam              | “tekst»                     |               | 0..1          |
-| knooppuntnaam          | “tekst»                     |               | 0..1          |
-| brugnaam               | “tekst»                     |               | 0..1          |
-| tunnelnaam             | “tekst»                     |               | 0..1          |
+| A-wegnummer            | «tekst»                     |               | 0..n          |
+| N-wegnummer            | «tekst»                     |               | 0..n          |
+| E-wegnummer            | «tekst»                     |               | 0..n          |
+| S-wegnummer            | «tekst»                     |               | 0..n          |
+| afritnummer            | «tekst»                     |               | 0..1          |
+| afritnaam              | «tekst»                     |               | 0..1          |
+| knooppuntnaam          | «tekst»                     |               | 0..1          |
+| brugnaam               | «tekst»                     |               | 0..1          |
+| tunnelnaam             | «tekst»                     |               | 0..1          |
 
 Wijzigen attributen
 -------------------
