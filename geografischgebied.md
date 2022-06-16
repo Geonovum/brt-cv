@@ -22,10 +22,10 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 *Overzicht attributen en waarden/type van object Geografisch gebied in BRT.Next*
 
-| Attribuutnaam     | Waarde of \<type\>    | Geometrietype   | Kardinaliteit |
+| Attribuutnaam     | Waarde of “type”      | Geometrietype   | Kardinaliteit |
 |-------------------|-----------------------|-----------------|---------------|
-| geometrie         | \<vlak\>              |                 | 1 à 1         |
-|                   | \<multivlak\>         |                 |               |
+| geometrie         | “vlak”                |                 | 1 à 1         |
+|                   | “multivlak”           |                 |               |
 | type              | bank, ondiepte, plaat | vlak, multivlak | 1 à 1         |
 |                   | bosgebied             | vlak, multivlak |               |
 |                   | duingebied            | vlak, multivlak |               |
@@ -41,8 +41,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                   | watergebied           | vlak, multivlak |               |
 |                   | zee                   | vlak, multivlak |               |
 |                   | zeegat, zeearm        | vlak, multivlak |               |
-| naam              | \<tekst\>             |                 | 0 à N         |
-| naamKartografisch | \<tekst\>             |                 | 0 à 1         |
+| naam              | “tekst”               |                 | 0 à N         |
+| naamKartografisch | “tekst”               |                 | 0 à 1         |
 
 Wijzigen attributen
 -------------------
