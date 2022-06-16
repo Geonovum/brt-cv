@@ -110,8 +110,8 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type\~\~Weg\~\~         | type                     |
-| \~\~fysiekVoorkomen\~\~ | **ligging**              |
+| type~~Weg~~         | type                     |
+| ~~fysiekVoorkomen~~ | **ligging**              |
 
 ### Definitie
 
@@ -123,7 +123,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| \~\~hoogteniveau\~\~    | \~\~Het \~\~hoogte\~\~niveau\~\~van het object. | **relatieveHoogteLigging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteLigging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
 
 [^1]: Het domein van hoogteniveau/relatieveHoogteligging wijzigt van geheel
 getal Kleiner of gelijk aan 0 naar geheel getal tussen -9 en 9.
@@ -145,8 +145,8 @@ wordt niet aangepast.
 |------------------------|--------------------------|
 | straat                 | **rijbaan** straat       |
 | overig                 | **rijbaan** overig       |
-| parkeer\~\~plaats\~\~  | parkeer**vak**           |
-| veer\~\~verbinding\~\~ | veer**dienst, pontveer** |
+| parkeer~~plaats~~  | parkeer**vak**           |
+| veer~~verbinding~~ | veer**dienst, pontveer** |
 
 ### Definitie
 
@@ -160,11 +160,11 @@ Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
 
 | *TOP10NL:waarde*             | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                                       | *BRT.Next:waarde*         | *BRT.Next:definitie*                                                                                                                   |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| autosnelweg                  | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer \~\~en met gescheiden rijbanen en ongelijkvloerse kruisingen\~\~, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                           | **rijbaan** autosnelweg   | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.         |
-| \~\~hoofdweg\~\~             | \~\~Verharde weg die is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die \~\~onderdeel is van \~\~een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren.\~\~ | **rijbaan autoweg**       | **Wegdeel dat** onderdeel is van **een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.** |
-| regionale weg                | \~\~Verharde\~\~ weg die een verbinding vormt tussen bewoonde oorden of \~\~grote stads\~\~wijken \~\~en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer\~\~.                                                                                                                  | **rijbaan** regionale weg | **Wegdeel dat onderdeel is van een** weg die een verbinding vormt tussen bewoonde oorden of tussen wijken **binnen een dorp of stad**. |
-| lokale weg                   | Weg van lokaal belang \~\~tussen bewegwijzerde routes\~\~.                                                                                                                                                                                                                                                                | **rijbaan** lokale weg    | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                            |
-| spoorbaan\~\~lichaam\~\~[^2] | \~\~Geheel van\~\~ rails\~\~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.\~\~                                                                                                                                                                                                                           | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                      |
+| autosnelweg                  | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer ~~en met gescheiden rijbanen en ongelijkvloerse kruisingen~~, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                           | **rijbaan** autosnelweg   | Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.         |
+| ~~hoofdweg~~             | ~~Verharde weg die is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die ~~onderdeel is van ~~een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren.~~ | **rijbaan autoweg**       | **Wegdeel dat** onderdeel is van **een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.** |
+| regionale weg                | ~~Verharde~~ weg die een verbinding vormt tussen bewoonde oorden of ~~grote stads~~wijken ~~en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer~~.                                                                                                                  | **rijbaan** regionale weg | **Wegdeel dat onderdeel is van een** weg die een verbinding vormt tussen bewoonde oorden of tussen wijken **binnen een dorp of stad**. |
+| lokale weg                   | Weg van lokaal belang ~~tussen bewegwijzerde routes~~.                                                                                                                                                                                                                                                                | **rijbaan** lokale weg    | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                            |
+| spoorbaan~~lichaam~~[^2] | ~~Geheel van~~ rails~~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.~~                                                                                                                                                                                                                           | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                      |
 
 [^2]: spoorbaanlichaam is onderdeel van de waardenverzameling typeLandgebruik.
 
@@ -172,8 +172,8 @@ Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
 
 | *TOP10NL:waarde*      | *TOP10NL:definitie*                      | *BRT.Next:waarde* | *BRT.Next:definitie* |
 |-----------------------|------------------------------------------|-------------------|----------------------|
-| \~\~in uitvoering\~\~ | De staat waarin het object zich bevindt. | **bestaand**      |                      |
-| \~\~in gebruik\~\~    |                                          | **bestaand**      |                      |
+| ~~in uitvoering~~ | De staat waarin het object zich bevindt. | **bestaand**      |                      |
+| ~~in gebruik~~    |                                          | **bestaand**      |                      |
 
 Vervallen attributen
 --------------------
@@ -183,12 +183,12 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam*           | *TOP10NL:waarde of «type»*                                                                                                                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \~\~type\~\~                      | \~\~verbinding\~\~; \~\~kruising\~\~; \~\~overig parkeergebied\~\~                                                                                                                   |
-| \~\~hoofdverkeersgebruik\~\~      | \~\~vliegverkeer\~\~; \~\~snelverkeer\~\~; \~\~gemengd verkeer\~\~; \~\~busverkeer\~\~; \~\~fietsers\~\~, \~\~bromfietsers\~\~; \~\~voetgangers\~\~; \~\~ruiters\~\~; \~\~overig\~\~ |
-| \~\~verhardingsbreedte-klasse\~\~ | \~\~\> 7 meter\~\~; \~\~4 – 7 meter\~\~; \~\~2 – 4 meter\~\~; \~\~\< 2 meter\~\~;                                                                                                    |
-| \~\~gescheidenRijbaan\~\~         | \~\~ja\~\~; \~\~nee\~\~                                                                                                                                                              |
-| \~\~aantalRijstroken\~\~          | \~\~«geheel getal»\~\~                                                                                                                                                               |
-| \~\~isBAGnaam\~\~                 | \~\~ja\~\~; \~\~nee\~\~                                                                                                                                                              |
+| ~~type~~                      | ~~verbinding~~; ~~kruising~~; ~~overig parkeergebied~~                                                                                                                   |
+| ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~; ~~snelverkeer~~; ~~gemengd verkeer~~; ~~busverkeer~~; ~~fietsers~~, ~~bromfietsers~~; ~~voetgangers~~; ~~ruiters~~; ~~overig~~ |
+| ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~; ~~4 – 7 meter~~; ~~2 – 4 meter~~; ~~\< 2 meter~~;                                                                                                    |
+| ~~gescheidenRijbaan~~         | ~~ja~~; ~~nee~~                                                                                                                                                              |
+| ~~aantalRijstroken~~          | ~~«geheel getal»~~                                                                                                                                                               |
+| ~~isBAGnaam~~                 | ~~ja~~; ~~nee~~                                                                                                                                                              |
 
 Vervallen classificaties
 ------------------------
@@ -198,10 +198,10 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:waarde of «type»*                                 |
 |-----------------------------------|------------------------------------------------------------|
-| geometrie                         | \~\~«punt»\~\~                                             |
-| typeWeg \| type                   | \~\~parkeerplaats: carpool\~\~; \~\~parkeerplaats: P+R\~\~ |
-| fysiekVoorkomen \| ligging        | \~\~overkluisd\~\~                                         |
-| status                            | \~\~buiten gebruik\~\~                                     |
+| geometrie                         | ~~«punt»~~                                             |
+| typeWeg \| type                   | ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~ |
+| fysiekVoorkomen \| ligging        | ~~overkluisd~~                                         |
+| status                            | ~~buiten gebruik~~                                     |
 
 Toevoegen attributen
 --------------------
