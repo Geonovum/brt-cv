@@ -35,10 +35,10 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 | Attribuutnaam | Waarde of \<type\>              | Geometrietype   | Kardinaliteit |
 |---------------|---------------------------------|-----------------|---------------|
-| geometrie     | \<vlak\>                        |                 | 1 à 1         |
+| geometrie     | \<vlak\>                        |                 | 1-1           |
 |               | \<multivlak\>                   |                 |               |
 |               | \<punt\>                        |                 |               |
-| type          | attractiepark                   | vlak, multivlak | 1 à 1         |
+| type          | attractiepark                   | vlak, multivlak | 1-1           |
 |               | bedrijventerrein                | vlak, multivlak |               |
 |               | begraafplaats                   | vlak, multivlak |               |
 |               | boswachterij                    | vlak, multivlak |               |
@@ -94,8 +94,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |               | psychiatrisch ziekenhuiscomplex | vlak, multivlak |               |
 |               | tankstation                     | vlak, multivlak |               |
 |               | waterzuivering                  | vlak, multivlak |               |
-| naam          | \<tekst\>                       |                 | 0 à N         |
-| soortnaam     | \<tekst\>                       |                 | 0 à N         |
+| naam          | \<tekst\>                       |                 | 0..n          |
+| soortnaam     | \<tekst\>                       |                 | 0..n          |
 
 Wijzigen attributen
 -------------------
@@ -122,7 +122,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                     | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                |
 |-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
-| naamNL                  | De ~~Nederlandse~~ naam van het functionele gebied. | naam                     | De naam van het functionele gebied. |
+| naam~~NL~~          | De ~~Nederlandse~~ naam van het functionele gebied. | naam                     | De naam van het functionele gebied. |
 
 Wijzigen classificaties
 -----------------------
