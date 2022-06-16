@@ -25,7 +25,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   typen ‘OV-baan’, ‘fietspad’, ‘voetpad’, ‘voetgangersgebied’, ‘ruiterpad’,
     ‘fietsveer’, en ‘voetveer’ worden toegevoegd.
 
--   typen ‘parkeerplaats: carpoo’ en ‘parkeerplaats: P+R’ vervallen
+-   typen ‘parkeerplaats: carpool’ en ‘parkeerplaats: P+R’ vervallen
 
 -   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging; ‘op overweg’
     wordt toegevoegd aan attribuut ligging
