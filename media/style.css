@@ -26,6 +26,11 @@ img#Geonovum
   height: 67px;
 }
 
+a.logo {
+	float: right;
+	display: block;
+}
+
 .logo img {
 	/*height: 67px !important;*/
 	/*float: right;*/
