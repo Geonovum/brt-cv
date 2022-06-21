@@ -241,7 +241,7 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 Toevoegen attribuutwaarden
 --------------------------
 
-Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:type*
 
@@ -265,7 +265,7 @@ Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:status* | *BRT.Next:definitie*                                            |
 |-------------------|-----------------------------------------------------------------|
-| **bestaand**      | **De status gekoppeld aan de levenscyclus van een geo-object.** |
+| **bestaand**      | **Situatie waarin het object wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd.** |
 
 *Attribuut BRT.Next:naam:herkomst*
 
