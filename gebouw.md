@@ -145,7 +145,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 verschijningsvorm) en ‘functie’”(gebruik). De attribuutwaarden die verplaatsen
 van typeGebouw naar functie worden als vervallen bij typeGebouw opgenomen, en
 als toegevoegde attribuutwaarden bij het nieuwe attribuut ‘functie’.
-
+</details>
 <details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
