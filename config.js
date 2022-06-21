@@ -86,11 +86,11 @@ var respecConfig =
       name:       "Geonovum",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }/* , 
+    }, 
     {
-      name:       "Naam Auteur-2",
-      company:    "Geonovum",
-      companyURL: "https://www.geonovum.nl"
+      name:       "Kadaster",
+      company:    "Kadaster",
+      companyURL: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt"
     },  */
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
@@ -171,5 +171,13 @@ var respecConfig =
     height: 122,
     width: 146,
     url: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt"
+  },
+  {
+    src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+    alt: "Geonovum",
+    id: "gnmlogo",
+    height: 67,
+    width: 132,
+    url: "https://www.geonovum.nl"
   }],
 };
