@@ -9,33 +9,34 @@ Samenvatting
 
 Samengevat worden de volgende wijzigingen voorgesteld:
 
--   attribuut ‘typeSpoorbaan’ wordt hernoemd naar ‘type’; ‘fysiekVoorkomen’ naar
-    ‘ligging’;
+-   attribuut ‘typeSpoorbaan’ wordt hernoemd naar ‘type’, en ‘fysiekVoorkomen’
+    naar ‘ligging’
 
--   attribuut ‘hoogteniveau’ wordt hernoemd naar / vervangen door BGT-attribuut
-    ‘relatieveHoogteLigging’; BGT definitie wordt overgenomen alsook
-    BGT-type/bereik van -9 tot en met 9.
+-   definitie van attributen ‘aantalSporen’ en ‘status’ wijzigen.
+
+-   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
+    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
 
 -   waarde ‘enkel’ van attribuut ‘aantalSporen’ wordt hernoemd naar
     ‘enkelvoudig’,
 
 -   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
-    met BGT-definitie; status ‘buiten gebruik’ vervalt
+    met BGT-definitie, status ‘buiten gebruik’ vervalt.
 
 -   attributen ‘typeInfrastructuur’, ‘elektrificatie’, ‘spoorbreedte’,
-    ‘vervoerfunctie’, en ‘baanvaknaam’ vervallen
+    ‘vervoerfunctie’, en ‘baanvaknaam’ vervallen.
 
--   ‘dubbel’ vervalt als waarde bij aantalSporen
+-   ‘dubbel’ vervalt als waarde bij aantalSporen.
 
--   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging; 
+-   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging. 
 
--   type ‘metro’ vervalt
+-   type ‘metro’ vervalt.
 
--   puntgeometrie vervalt
+-   puntgeometrie vervalt.
 
 *Overzicht attributen en waarden/type van object Spoor in BRT.Next*
 
-| Attribuutnaam          | Waarde of “type\>           | Geometrietype | Kardinaliteit |
+| Attribuutnaam          | Waarde of «type»           | Geometrietype | Kardinaliteit |
 |------------------------|-----------------------------|---------------|---------------|
 | geometrie              | «lijn»                      |               | 1-1           |
 | type                   | trein                       | lijn          | 1-1           |
@@ -47,7 +48,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | ligging                | op vast deel van brug       |               | 0..n          |
 |                        | op beweegbaar deel van brug |               |               |
 |                        | in tunnel                   |               |               |
-| relatieveHoogteLigging | “geheel getal\>             |               | 1-1           |
+| relatieveHoogteligging | «geheel getal»              |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | brugnaam               | «tekst»                     |               | 0..1          |
 | tunnelnaam             | «tekst»                     |               | 0..1          |
@@ -70,29 +71,33 @@ BRT.Next.
 
 ### Definitie
 
-*n.v.t.*
+Onderstaande attributen wijzigen van definitie in BRT.Next. De naam wordt niet
+aangepast.
+
+| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                  |
+|-------------------------------------|----------------------------------------------------------|-----------------------------------------------------------------------|
+| aantalSporen                        | ~~Het aantal sporen van~~ het spoorbaandeel.         | **Aanduiding of** het spoorbaandeel **enkelvoudig of meervoudig is.** |
+| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.**   |
 
 ### Naam+definitie
 
-Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
+| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
+|-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
+| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                                                                                                                                  | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| hoogteniveau            | ~~Met het hoogteniveau wordt~~ de relatieve hoogte van het ~~geo-~~object weergegeven. Zo kan worden bepaald op welke wijze geo-objecten elkaar kruisen.~~ | **relatieveHoogteLigging**[^1] | **Aanduiding voor** de relatieve hoogte van het object. |
+<detail class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.</details>
 
-[^1]: Het domein van hoogteniveau/relatieveHoogteligging wijzigt van geheel
-getal kleiner of gelijk aan 0 naar geheel getal tussen -9 en 9.
+Wijzigen attribuutwaarden
+-------------------------
 
-Wijzigen classificaties
------------------------
-
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-Onderstaande classificaties wijzigen van naam (waarde) in BRT.Next. De definitie
-wordt niet aangepast.
+Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
+definitie wordt niet aangepast.
 
 *Attribuut TOP10NL:aantalSporen \| BRT.Next:aantalSporen*
 
@@ -106,50 +111,53 @@ n.v.t.
 
 ### Naam+definitie
 
-Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
+n.v.t. 
 
-*Attribuut TOP10NL:status \| BRT.Next:status*
-
-| *TOP10NL:waarde*      | *TOP10NL:definitie*                                      | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                              |
-|-----------------------|----------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------|
-| ~~in uitvoering~~ | ~~De staat~~ waarin het object ~~zich bevindt.~~ | **bestaand**      | **Situatie** waarin het object **wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd.** |
-| ~~in gebruik~~    |                                                          | **bestaand**      | *idem*                                                                                                            |
-|                       |                                                          |                   |                                                                                                                   |
 
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
-BRT.Next.
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
+in BRT.Next.
 
-| *TOP10NL:attribuutnaam*    | *TOP10NL:classificaties of «datatype”*                                                     |
+| *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~; ~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
-| ~~baanvaknaam~~        | «tekst”                                                                                    |
+| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~ kruising~~                                                       |
+| ~~elektrificatie~~     | ~~ja~~<br /> ~~nee~~                                                                    |
+| ~~spoorbreedte~~       | ~~normaalspoor~~<br /> ~~smalspoor~~                                                    |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br /> ~~personenvervoer~~<br /> ~~ goederenvervoer~~<br /> ~~museumlijn |
+| ~~baanvaknaam~~        | «tekst»                                                                                    |
 
-Vervallen classificaties
-------------------------
+Vervallen attribuutwaarden
+--------------------------
 
-Onderstaande classificaties of datatypen vervallen bij een attribuut in
+Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype”* |
-|-----------------------------------|----------------------------------------|
-| geometrie                         | ~~«punt”~~                         |
-| typeSpoorbaan \| type             | ~~metro~~                          |
-| fysiekVoorkomen \| ligging        | ~~overkluisd~~                     |
-| aantalSporen                      | ~~dubbel~~                         |
-| status                            | ~~buiten gebruik~~                 |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                              |
+|-----------------------------------|-----------------------------------------------------------------------|
+| geometrie                         | ~~«punt»~~                                                        |
+| typeSpoorbaan \| type             | ~~metro~~                                                         |
+| fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
+| aantalSporen                      | ~~dubbel~~                                                        |
+| status                            | ~~in uitvoering~~<br /> ~~in gebruik~~<br /> ~~buiten gebruik~~ |
+
+<details class="note">status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
+‘bestaand’.
+</details>
 
 Toevoegen attributen
 --------------------
 
 n.v.t.
 
-Toevoegen classificaties
-------------------------
+Toevoegen attribuutwaarden
+--------------------------
 
-n.v.t
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
+
+*Attribuut BRT.Next:status*
+
+| *BRT.Next:status* | *BRT.Next:definitie*                                                                                          |
+|-------------------|---------------------------------------------------------------------------------------------------------------|
+| **bestaand**      | **Situatie waarin het object wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd.** |
