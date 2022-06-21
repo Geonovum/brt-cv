@@ -102,7 +102,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | windturbine            | vlak          |               |
 |                        | botenhuis              | vlak          |               |
 | hoogte                 | «decimaal getal»       |               | 0..1          |
-| relatieveHoogteligging | «geheel getal [-9<br />9]» |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]» |               | 1-1           |
 | status                 | bestaand               |               | 1-1           |
 | naam                   | «tekst»                |               | 0..1          |
 | soortnaam              | «tekst»                |               | 0..1          |
