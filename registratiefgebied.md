@@ -136,8 +136,8 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:Attribuutnaam* | *Definitie*                                    | *Verplicht/optioneel* | *Domein*                      |
 |--------------------------|------------------------------------------------|-----------------------|-------------------------------|
-| **naam: taal**           | **De taal van de naam van het waterdeel.**     | **Verplicht, 1**      | **Nederlands, Fries, overig** |
-| **naam: herkomst**       | **De herkomst van de naam van het waterdeel.** | **Verplicht, 1**      | **BAG, BGT, BRK, overig**     |
+| **naam: taal**           | **De taal van de naam van het registratief gebied.**     | **Verplicht, 1**      | **Nederlands, Fries, overig** |
+| **naam: herkomst**       | **De herkomst van de naam van het registratief gebied.** | **Verplicht, 1**      | **BAG, BGT, BRK, overig**     |
 
 Toevoegen attribuutwaarden
 --------------------------
