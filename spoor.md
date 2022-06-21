@@ -48,7 +48,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | ligging                | op vast deel van brug       |               | 0..n          |
 |                        | op beweegbaar deel van brug |               |               |
 |                        | in tunnel                   |               |               |
-| relatieveHoogteligging | «geheel getal»              |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]»              |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | brugnaam               | «tekst»                     |               | 0..1          |
 | tunnelnaam             | «tekst»                     |               | 0..1          |
