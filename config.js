@@ -91,7 +91,7 @@ var respecConfig =
       name:       "Kadaster",
       company:    "Kadaster",
       companyURL: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt"
-    },  */
+    },  
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "brt-cv",  	              // Wordt gebruikt in de document URL
