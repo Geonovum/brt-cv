@@ -200,7 +200,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*           | *TOP10NL:waarde of «type»*                                                                                                                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~hartGeometrie                 | ~~«punt»~~, ~~«lijn»~~                                                                                                                                                       |
+| ~~hartG~~eometrie                 | ~~«punt»~~, ~~«lijn»~~                                                                                                                                                       |
 | ~~typeInfrastructuur~~        | ~~verbinding~~<br /> ~~kruising~~<br /> ~~overig parkeergebied~~                                                                                                                   |
 | ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~<br /> ~~snelverkeer~~<br /> ~~gemengd verkeer~~<br /> ~~busverkeer~~<br /> ~~fietsers~~, ~~bromfietsers~~<br /> ~~voetgangers~~<br /> ~~ruiters~~<br /> ~~overig~~ |
 | ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~<br /> ~~4 – 7 meter~~<br /> ~~2 – 4 meter~~<br /> ~~\< 2 meter~~<br />                                                                                                    |
