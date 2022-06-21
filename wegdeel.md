@@ -11,6 +11,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   attribuut ‘typeWeg’ wordt hernoemd naar ‘type’, ‘fysiekVoorkomen naar
     ‘ligging’, en ‘hoofdGeometrie’ naar ‘geometrie’.
+	
+- de definitie van attribuut ‘status’ wordt aangepast naar BGT.
 
 -   typen, ‘overig’, en ‘veerverbinding’ worden hernoemd naar respectievelijk
     ‘rijbaan overig’ en ‘veerdienst, pontveer’.
@@ -117,13 +119,12 @@ aangepast.
 
 ### Definitie
 
-Onderstaande attributen wijzigen van definitie in BRT.Next. De naam wordt niet
-aangepast.
+Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
+niet aangepast.
 
-| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                                                                                        | *BRT.Next:definitie*                                                                                                              |
-|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| startbaan, landingsbaan             | ~~Strook grond waar~~ vlieg~~tuigen kunnen~~ opstijgen en/of landen.                                               | **Wegdeel uitsluitend bedoeld voor** vlieg**verkeer ten behoeve van het** opstijgen en/of landen.                                 |
-| rolbaan, platform                   | ~~Afgebakende taxibaan op een vliegveld (rolbaan). / Terrein voor geparkeerd staande~~ vliegtuigen ~~(platform)~~. | **Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën van vliegtuigen of het parkeren van** vliegtuigen**.** |
+| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
+|-------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
+| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.** |
 
 ### Naam+definitie
 
@@ -157,12 +158,15 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
-niet aangepast.
+Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt niet
+aangepast.
 
-| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
-|-------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
-| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.** |
+| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                                                                                        | *BRT.Next:definitie*                                                                                                              |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| startbaan, landingsbaan             | ~~Strook grond waar~~ vlieg~~tuigen kunnen~~ opstijgen en/of landen.                                               | **Wegdeel uitsluitend bedoeld voor** vlieg**verkeer ten behoeve van het** opstijgen en/of landen.                                 |
+| rolbaan, platform                   | ~~Afgebakende taxibaan op een vliegveld (rolbaan). / Terrein voor geparkeerd staande~~ vliegtuigen ~~(platform)~~. | **Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën van vliegtuigen of het parkeren van** vliegtuigen**.** |
+
+
 
 ### Naam+definitie
 
