@@ -9,24 +9,25 @@ Samenvatting
 
 Samengevat worden de volgende wijzigingen voorgesteld:
 
--   attribuut ‘typeGeografischGebied’ wordt hernoemd naar ‘type’;
-    attribuutwaarde ‘overig’ vervalt.
+-   attribuut ‘typeGeografischGebied’ wordt hernoemd naar ‘type’.
+
+-   type ‘overig’ vervalt.
 
 -   attribuut ‘naamNL’ wordt hernoemd naar ‘naam’ met iets aangepaste definitie.
 
--   attribuut ‘naamFries’ vervalt
+-   attribuut ‘naamFries’ vervalt.
 
--   attribuut ‘naamKartografisch’ wordt toegevoegd met datatype «tekst»
+-   attribuut ‘naamKartografisch’ wordt toegevoegd met datatype «tekst».
 
--   puntgeometrie vervalt bij attribuut geometrie
+-   puntgeometrie vervalt.
 
 *Overzicht attributen en waarden/type van object Geografisch gebied in BRT.Next*
 
-| Attribuutnaam     | Waarde of “type”      | Geometrietype   | Kardinaliteit |
+| Attribuutnaam     | Waarde of «type»      | Geometrietype   | Kardinaliteit |
 |-------------------|-----------------------|-----------------|---------------|
-| geometrie         | “vlak”                |                 | 1 à 1         |
-|                   | “multivlak”           |                 |               |
-| type              | bank, ondiepte, plaat | vlak, multivlak | 1 à 1         |
+| geometrie         | «vlak»                |                 | 1-1           |
+|                   | «multivlak»           |                 |               |
+| type              | bank, ondiepte, plaat | vlak, multivlak | 1-1           |
 |                   | bosgebied             | vlak, multivlak |               |
 |                   | duingebied            | vlak, multivlak |               |
 |                   | eiland                | vlak, multivlak |               |
@@ -41,8 +42,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                   | watergebied           | vlak, multivlak |               |
 |                   | zee                   | vlak, multivlak |               |
 |                   | zeegat, zeearm        | vlak, multivlak |               |
-| naam              | “tekst”               |                 | 0 à N         |
-| naamKartografisch | “tekst”               |                 | 0 à 1         |
+| naam              | “tekst”               |                 | 0..n          |
+| naamKartografisch | “tekst”               |                 | 0..1          |
 
 Wijzigen attributen
 -------------------
@@ -67,9 +68,9 @@ aangepast.
 
 Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam* | *BRT.Next:definitie* |
-|-------------------------|-------------------------------------------------|--------------------------|----------------------|
-| naam~~NL~~          | De Nederlandse naam van het geografisch gebied. | naam                     |                      |
+| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                     | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                |
+|-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
+| naam~~NL~~          | De ~~Nederlandse~~ naam van het geografisch gebied. | naam                     | De naam van het geografisch gebied. |
 
 Wijzigen classificaties
 -----------------------
@@ -97,7 +98,7 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
 |-------------------------|----------------------------------------|
-| ~~naamFries~~1      | ~~«tekst»~~                        |
+| ~~naamFries~~       | ~~«tekst»~~                        |
 
 Vervallen classificaties
 ------------------------
@@ -115,9 +116,9 @@ Toevoegen attributen
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie* | *Verplicht/optioneel* | *Domein*    |
-|--------------------------|-------------|-----------------------|-------------|
-| **naamKartografisch**    |             | **Optioneel, 0 of 1** | **«tekst»** |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                                                      | *Verplicht/optioneel* | *Domein*    |
+|--------------------------|----------------------------------------------------------------------------------|-----------------------|-------------|
+| **naamKartografisch**    | **De naam van het geografisch gebied die gegeven is op de topografische kaart.** | **Optioneel, 0 of 1** | **«tekst»** |
 
 Toevoegen classificaties
 ------------------------
