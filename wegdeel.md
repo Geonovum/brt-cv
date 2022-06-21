@@ -43,7 +43,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     ‘verhardingsbreedte-klasse’, ‘gescheidenRijbaan’, ‘aantalRijstroken’
     ‘isBAGnaam’ vervallen.
 
--   attribuut ‘herkomst’ met waarden ‘BAG’, ‘BGT’, ‘BRK’ of ‘overig’ wordt
+-   attribuut ‘naam:herkomst’ met waarden ‘BAG’, ‘BGT’, ‘BRK’ of ‘overig’ wordt
     toegevoegd.
 
 -   puntgeometrie vervalt.
@@ -204,13 +204,13 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*           | *TOP10NL:waarde of «type»*                                                                                                                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~hartG~~eometrie                 | ~~«punt»~~, ~~«lijn»~~                                                                                                                                                       |
-| ~~typeInfrastructuur~~        | ~~verbinding~~<br /> ~~kruising~~<br /> ~~overig parkeergebied~~                                                                                                                   |
-| ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~<br /> ~~snelverkeer~~<br /> ~~gemengd verkeer~~<br /> ~~busverkeer~~<br /> ~~fietsers~~, ~~bromfietsers~~<br /> ~~voetgangers~~<br /> ~~ruiters~~<br /> ~~overig~~ |
-| ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~<br /> ~~4 – 7 meter~~<br /> ~~2 – 4 meter~~<br /> ~~\< 2 meter~~<br />                                                                                                    |
-| ~~gescheidenRijbaan~~         | ~~ja~~<br /> ~~nee~~                                                                                                                                                              |
+| ~~hartG~~eometrie                 | ~~«punt»~~<br />~~«lijn»~~                                                                                                                                                       |
+| ~~typeInfrastructuur~~        | ~~verbinding~~<br />~~kruising~~<br />~~overig parkeergebied~~                                                                                                                   |
+| ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~<br />~~snelverkeer~~<br />~~gemengd verkeer~~<br />~~busverkeer~~<br />~~fietsers~~, ~~bromfietsers~~<br />~~voetgangers~~<br />~~ruiters~~<br />~~overig~~ |
+| ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~<br />~~4 – 7 meter~~<br />~~2 – 4 meter~~<br />~~\< 2 meter~~<br />                                                                                                    |
+| ~~gescheidenRijbaan~~         | ~~ja~~<br />~~nee~~                                                                                                                                                              |
 | ~~aantalRijstroken~~          | ~~«geheel getal»~~                                                                                                                                                               |
-| ~~isBAGnaam~~                 | ~~ja~~<br /> ~~nee~~                                                                                                                                                              |
+| ~~isBAGnaam~~                 | ~~ja~~<br />~~nee~~                                                                                                                                                              |
 
 Vervallen attribuutwaarden
 --------------------------
@@ -271,7 +271,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                      |
 |-------------------|-------------------------------------------------------------------------------------------|
-| **BAG**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).**     |
-| **BGT**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT).** |
-| **BRK**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Kadaster (BRK).   **              |
-| **overig**        | **Naam van het wegdeel is afkomstig uit een andere bron.**                                    |
+| **BAG**           | **Naam is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).**     |
+| **BGT**           | **Naam is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT).** |
+| **BRK**           | **Naam is afkomstig uit de Basisregistratie Kadaster (BRK).   **              |
+| **overig**        | **Naam is afkomstig uit een bron, niet zijnde BAG, BGT of BRK.**               |
