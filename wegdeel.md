@@ -214,9 +214,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:waarde of «type»*                                            |
 |-----------------------------------|-----------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                        |
-| typeWeg \| type                   | ~~parkeerplaats: carpool~~<br/> ~~parkeerplaats: P+R~~            |
+| typeWeg \| type                   | ~~parkeerplaats: carpool~~<br/>~~parkeerplaats: P+R~~            |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
-| status                            | ~~in uitvoering~~<br/> ~~in gebruik~~<br/> ~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br/>~~in gebruik~~<br/>~~buiten gebruik~~ |
 
 <details class="note">status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
