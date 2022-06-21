@@ -164,20 +164,19 @@ var respecConfig =
   //subtitle: "iets",                         // Subtitel van het document
   maxTocLevel: 2,                           // Aantal niveau's ToC, default is 0
   //-- LOGO: Hier kan je een ander logo opgeven indien nodig
-  logos: [{
+  logos: [ 
+    src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
+    href: "https://www.geonovum.nl/",
+    alt: "Geonovum",
+    width: 132,
+    height: 67,
+    id: 'logo_geonovum',
+  },  {
     src: "https://github.com/kadaster/imbrt/blob/master/docs/images/logo.jpeg?raw=true",
     alt: "Kadaster",
-    id: "kadasterlogo",
+    id: "logo_kadaster",
     height: 122,
     width: 146,
     url: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt"
-  },
-  {
-    src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
-    alt: "Geonovum",
-    id: "geonovumlogo",
-    height: 67,
-    width: 132,
-    url: "https://www.geonovum.nl"
   }],
 };
