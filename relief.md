@@ -67,10 +67,10 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
-Wijzigen classificaties
+Wijzigen attribuutwaarden
 -----------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
@@ -88,14 +88,14 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen in
 BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
+| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|----------------------------------------|
 | ~~functie~~         | ~~geluid weren~~                   |
 
-Vervallen classificaties
+Vervallen attribuutwaarden
 ------------------------
 
 *n.v.t.*
@@ -105,10 +105,10 @@ Toevoegen attributen
 
 *n.v.t.*
 
-Toevoegen classificaties
+Toevoegen attribuutwaarden
 ------------------------
 
-Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:geometrie*
 
