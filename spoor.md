@@ -123,9 +123,9 @@ in BRT.Next.
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
 | ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~ kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~<br /> ~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~<br /> ~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br /> ~~personenvervoer~~<br /> ~~ goederenvervoer~~<br /> ~~museumlijn |
+| ~~elektrificatie~~     | ~~ja~~<br />~~nee~~                                                                    |
+| ~~spoorbreedte~~       | ~~normaalspoor~~<br />~~smalspoor~~                                                    |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~ goederenvervoer~~<br />~~museumlijn |
 | ~~baanvaknaam~~        | «tekst»                                                                                    |
 
 Vervallen attribuutwaarden
@@ -140,7 +140,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | typeSpoorbaan \| type             | ~~metro~~                                                         |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
 | aantalSporen                      | ~~dubbel~~                                                        |
-| status                            | ~~in uitvoering~~<br /> ~~in gebruik~~<br /> ~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br />~~in gebruik~~<br />~~buiten gebruik~~ |
 
 <details class="note">status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
