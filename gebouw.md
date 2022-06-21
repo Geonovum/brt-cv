@@ -49,6 +49,69 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   attributen ‘hoogteklasse’ en ‘gebruiksdoel’ vervallen.
 
+*Overzicht attributen en waarden/type van object Gebouw in BRT.Next*
+
+| Attribuutnaam          | Waarde of «type»                      | Geometrietype | Kardinaliteit |
+|------------------------|---------------------------------------|---------------|---------------|
+| geometrie              | «Vlak»                                |               | 1-1           |
+|                        | «Punt»                                |               |               |
+| type                   |                                       |               | 1..n          |
+|                        | boortoren                             | vlak, punt    |               |
+|                        | bunker                                | vlak          |               |
+|                        | kapel                                 | vlak, punt    |               |
+|                        | kas                                   | vlak          |               |
+|                        | kasteel                               | vlak          |               |
+|                        | kerk                                  | vlak          |               |
+|                        | kernreactor                           | vlak          |               |
+|                        | klokkentoren                          | vlak, punt    |               |
+|                        | klooster, abdij                       | vlak          |               |
+|                        | koeltoren                             | vlak          |               |
+|                        | koepel                                | vlak          |               |
+|                        | moskee                                | vlak          |               |
+|                        | overig religieus gebouw               | vlak          |               |
+|                        | parkeerdak, parkeerdek, parkeergarage | vlak          |               |
+|                        | radiotoren, televisietoren            | vlak          |               |
+|                        | ruïne                                 | vlak          |               |
+|                        | schoorsteen                           | vlak, punt    |               |
+|                        | silo                                  | vlak          |               |
+|                        | stadion                               | vlak          |               |
+|                        | telecommunicatietoren                 | vlak          |               |
+|                        | toren                                 | vlak, punt    |               |
+|                        | uitzichttoren                         | vlak, punt    |               |
+|                        | verkeerstoren                         | vlak          |               |
+|                        | vuurtoren                             | vlak          |               |
+|                        | waterradmolen                         | vlak          |               |
+|                        | watertoren                            | vlak          |               |
+|                        | waterwoning                           | vlak          |               |
+|                        | windmolen                             | vlak          |               |
+|                        | overig                                | vlak          |               |
+| functie                |                                       |               | 0..n          |
+|                        | brandweerkazerne                      |               |               |
+|                        | crematorium                           |               |               |
+|                        | elektriciteitscentrale                |               |               |
+|                        | gemaal                                |               |               |
+|                        | gemeentehuis                          |               |               |
+|                        | kunstijsbaan                          |               |               |
+|                        | observatorium                         |               |               |
+|                        | paleis                                |               |               |
+|                        | parkeerdak, parkeerdek, parkeergarage |               |               |
+|                        | politiebureau                         |               |               |
+|                        | radarpost                             |               |               |
+|                        | religie                               |               |               |
+|                        | schaapskooi                           |               |               |
+|                        | school                                |               |               |
+|                        | sporthal                              |               |               |
+|                        | stadskantoor, hulpsecretarie          |               |               |
+|                        | universiteit                          |               |               |
+|                        | zwembad                               |               |               |
+| fysiekVoorkomen        | ondergronds                           |               | 0..1          |
+| hoogte                 | «decimaal getal»                      |               | 0..1          |
+| relatieveHoogteligging | «geheel getal [-9; 9]»                |               | 1-1           |
+| status                 | bestaand                              |               | 1-1           |
+|                        |                                       |               |               |
+| soortnaam              | «tekst»                               |               | 0..n          |
+| naam                   | «tekst»                               |               | 0..n          |
+
 Wijzigen attributen
 -------------------
 
