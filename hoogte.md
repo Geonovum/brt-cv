@@ -55,10 +55,10 @@ aangepast.
 
 *n.v.t.*
 
-Wijzigen classificaties
+Wijzigen attribuutwaarden
 -----------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
@@ -78,13 +78,13 @@ Vervallen attributen
 
 n.v.t.
 
-Vervallen classificaties
+Vervallen attribuutwaarden
 ------------------------
 
-Onderstaande classificaties of datatypen vervallen bij een attribuut in
+Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»*    |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*    |
 |-----------------------------------|-------------------------------------------|
 | typeHoogte\|type                  | ~~peil~~<br/>~~peil:~~<br/>~~peil:~~ |
 | referentievlak                    | ~~OLW~~                               |
@@ -94,7 +94,7 @@ Toevoegen attributen
 
 *n.v.t.*
 
-Toevoegen classificaties
+Toevoegen attribuutwaarden
 ------------------------
 
 *n.v.t.*
