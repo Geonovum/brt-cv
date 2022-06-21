@@ -9,23 +9,26 @@ Samenvatting
 
 Samengevat worden de volgende wijzigingen voorgesteld:
 
--   attribuut ‘typeGeografischGebied’ wordt hernoemd naar ‘type’;
+-   attribuut ‘typeFunctioneelGebied’ wordt hernoemd naar ‘type’.
+
+-   typen ‘helikopterlandingsterrein’, ‘militair oefengebied, schietterrein’ en
+    ‘kazerne, legerplaats’ worden hernoemd naar respectievelijk
+    ‘helikopterlandingsplaats’, ‘militair oefengebied’, en ‘militair terrein’
+    met aangepaste definities.
 
 -   typen 'campus', 'caravanpark', 'kartingbaan', 'gebied met hoge objecten',
     'gebouwencomplex', 'heemtuin', 'infiltratiegebied', 'landgoed',
     'milieustraat', 'mosselbank', 'openluchttheater', 'plantsoen',
     'productie-installatie', 'slipschool', 'tennispark', 'tuincentrum',
     'viskwekerij', 'visvijvercomplex', 'werf', 'windturbinepark', 'zenderpark',
-    'zoutwinning' vervallen
+    'zoutwinning' vervallen.
 
 -   typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
-    oliewinning’; ‘grindwinning’ en ‘zandwining’ tot ‘grindwinning, zandwinning’
+    oliewinning’, ‘grindwinning’ en ‘zandwining’ tot ‘grindwinning,
+    zandwinning’.
 
 -   typen ‘gevangenis’, ‘psychiatrisch ziekenhuiscomplex’, en ‘tankstation’ van
-    object Gebouw verplaatsen naar typen van FunctioneelGebied
-
--   functie ‘waterzuivering’ van Waterdeel verplaatst naar type van Functioneel
-    gebied.
+    object Gebouw verplaatsen naar typen van FunctioneelGebied.
 
 -   attribuut ‘naamNL’ wordt hernoemd naar ‘naam’ met iets aangepaste definitie.
 
@@ -33,7 +36,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 *Overzicht attributen en waarden/type van object Functioneel gebied in BRT.Next*
 
-| Attribuutnaam | Waarde of \<type\>              | Geometrietype   | Kardinaliteit |
+| Attribuutnaam | Waarde of «type»                | Geometrietype   | Kardinaliteit |
 |---------------|---------------------------------|-----------------|---------------|
 | geometrie     | «vlak»                          |                 | 1-1           |
 |               | «multivlak»                     |                 |               |
@@ -93,7 +96,6 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |               | gevangenis                      | vlak, multivlak |               |
 |               | psychiatrisch ziekenhuiscomplex | vlak, multivlak |               |
 |               | tankstation                     | vlak, multivlak |               |
-|               | waterzuivering                  | vlak, multivlak |               |
 | naam          | «tekst»                         |                 | 0..n          |
 | soortnaam     | «tekst»                         |                 | 0..n          |
 
@@ -140,7 +142,16 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam+definitie
 
-n.v.t.
+Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
+BRT.Next
+
+*Attribuut TOP10NL:typeFunctioneelGebied \| BRT.Next:type*
+
+| *TOP10NL:waarde*                    | *TOP10NL:definitie*                                                                                                                                                                                                                       | *BRT.Next:waarde*            | *BRT.Next:definitie*                                                  |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------------------------------------------------------------------|
+| helikopterlandingsterrein           | ~~Terrein~~ dat als landings- en vertrekplaats dient voor helikopters.                                                                                                                                                                | **helikopterlandingsplaats** | **Gebied** dat dient als landings- en vertrekplaats voor helikopters. |
+| militair oefengebied, schietterrein | ~~Militair kamp voor het houden van schietoefeningen met zware vuurwapens (artillerie schietkamp). / Terrein ingericht voor het schieten op doelen (schietkamp). /~~ Terrein waar militairen oefenen ~~(militair oefenterrein).~~ | **militair oefengebied**     | Gebied waar militairen oefenen.                                       |
+| kazerne, legerplaats                | Gebouw~~(-encomplex) bestemd tot huisvesting van soldaten.~~                                                                                                                                                                          | **militair terrein**         | **Terrein met militaire** gebouw**en**.                               |
 
 Vervallen attributen
 --------------------
@@ -160,11 +171,12 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeFunctioneelGebied\|type       | ~~gaswinning~~;~~oliewinning~~; ~~grindwinning~~; ~~zandwinning~~[^1]                                                                                                                                                                                                                                                                                                                                                                                           |
-| typeFunctioneelGebied\|type       | ~~campus~~;~~caravanpark~~;~~kartingbaan~~;~~gebied met hoge objecten~~;~~gebouwencomplex~~;~~heemtuin~~;~~infiltratiegebied~~;~~landgoed~~;~~milieustraat~~;~~mosselbank~~;~~openluchttheater~~;~~plantsoen~~;~~productie-installatie~~;~~slipschool~~;~~tennispark~~;~~tuincentrum~~;~~viskwekerij~~;~~visvijvercomplex~~;~~werf~~;~~windturbinepark~~;~~zenderpark~~;~~zoutwinning~~ |
+| typeFunctioneelGebied\|type       | ~~gaswinning~~<br />~~oliewinning~~<br />~~grindwinning~~<br />~~zandwinning~~[^1]                                                                                                                                                                                                                                                                                                                                                                                           |
+| typeFunctioneelGebied\|type       | ~~campus~~<br />~~caravanpark~~<br />~~kartingbaan~~<br />~~gebied met hoge objecten~~<br />~~gebouwencomplex~~<br />~~heemtuin~~<br />~~infiltratiegebied~~<br />~~landgoed~~<br />~~milieustraat~~<br />~~mosselbank~~<br />~~openluchttheater~~<br />~~plantsoen~~<br />~~productie-installatie~~<br />~~slipschool~~<br />~~tennispark~~<br />~~tuincentrum~~<br />~~viskwekerij~~<br />~~visvijvercomplex~~<br />~~werf~~<br />~~windturbinepark~~<br />~~zenderpark~~<br />~~zoutwinning~~ |
 
-[^1]: typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
-oliewinning’; ‘grindwinning’ en ‘zandwinning’ tot ‘grindwinning, zandwinning’.
+<details class="note"> typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
+oliewinning’, ‘grindwinning’ en ‘zandwinning’ tot ‘grindwinning, zandwinning’.
+</details>
 
 Toevoegen attributen
 --------------------
@@ -178,11 +190,10 @@ Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:type*
 
-| *BRT.Next:waarde*                   | *BRT.Next:definitie* |
-|-------------------------------------|----------------------|
-| **gaswinning. oliewinning**         |                      |
-| **grindwinning. zandwinning**       |                      |
-| **gevangenis**                      |                      |
-| **psychiatrisch ziekenhuiscomplex** |                      |
-| **tankstation**                     |                      |
-| **waterzuivering**                  |                      |
+| *BRT.Next:waarde*                   | *BRT.Next:definitie*                                                                                 |
+|-------------------------------------|------------------------------------------------------------------------------------------------------|
+| **gaswinning. oliewinning**         | **Gebied met installatie(s) t.b.v. de winning of transport van aardgas en / of aardolie.**               |
+| **grindwinning. zandwinning**       | **Gebied waar winning van grind en/ of zand plaatsvind (in dagbouw of d.m.v. zuigen).**                  |
+| **gevangenis**                      | **Een terrein met voorzieningen waar personen in verzekerde bewaring worden gesteld.**                   |
+| **psychiatrisch ziekenhuiscomplex** | **Het geheel van gebouwen die tezamen een psychiatrisch ziekenhuis vormen.**                             |
+| **tankstation**                     | **Een terrein met voorzieningen waar motorbrandstof, olie, lucht en koelwater kunnen worden verkregen.** |
