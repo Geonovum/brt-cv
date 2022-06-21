@@ -175,7 +175,7 @@ var respecConfig =
   {
     src: "https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg",
     alt: "Geonovum",
-    id: "gnmlogo",
+    id: "Geonovum",
     height: 67,
     width: 132,
     url: "https://www.geonovum.nl"
