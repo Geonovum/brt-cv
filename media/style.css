@@ -26,12 +26,23 @@ img#Geonovum
   height: 67px;
 }
 
-
-a.logo {
-	
-	text-decoration: none;
-	
+.logo img {
+	/*height: 67px !important;*/
+	/*float: right;*/
+	/*margin-left: 10px;*/
+	width: 132px !important;
+	position: absolute;
+	top: 20px;
+	display: block;
 }
+
+img#logo_kadaster {
+	float: right;	
+	width: 132px !important;
+	top: 100px
+}
+
+
 /*-- Definite van BlockQuotes (uitgelichte tekstblokken) ----------------------------*/
 blockquote 
 {
