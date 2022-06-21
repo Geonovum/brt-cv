@@ -106,7 +106,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | zwembad                               |               |               |
 | fysiekVoorkomen        | ondergronds                           |               | 0..1          |
 | hoogte                 | «decimaal getal»                      |               | 0..1          |
-| relatieveHoogteligging | «geheel getal [-9<br />9]»                |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]»                |               | 1-1           |
 | status                 | bestaand                              |               | 1-1           |
 |                        |                                       |               |               |
 | soortnaam              | «tekst»                               |               | 0..n          |
@@ -202,10 +202,10 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*  |
 |-----------------------------------|-------------------------------------------|
-| typeGebouw \| type                | ~~brandweerkazerne~~<br />~~crematorium~~<br />~~elektriciteitscentrale~~<br />~~gemaal~~<br />~~gemeentehuis~~<br />~~kerncentrale, kernreactor~~<br />~~kunstijsbaan~~<br />~~observatorium~~<br />~~paleis~~<br />~~parkeerdak, parkeerdek, parkeergarage~~<br />~~politiebureau~~<br />~~radarpost~~<br />~~religie~~<br />~~schaapskooi~~<br />~~school~~<br />~~sporthal~~<br />~~stadskantoor, hulpsecretarie~~<br />~~universiteit~~<br />~~zwembad~~[^3] |
-| typeGebouw \| type                | ~~bezoekerscentrum~~<br />~~brandtoren~~<br />~~dok~~<br />~~fabriek~~<br />~~fort~~<br />~~gevangenis~~<br />~~hotel~~<br />~~huizenblok~~<br />~~kliniek, inrichting, sanatorium~~<br />~~lichttoren~~<br />~~luchtwachttoren~~<br />~~markant gebouw~~<br />~~manege~~<br />~~militair gebouw~~<br />~~museum~~<br />~~peilmeetstation~~<br />~~pompstation~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~postkantoor~~<br />~~radartoren~~<br />~~recreatiecentrum~~<br />~~reddingboothuisje~~<br />~~remise~~<br />~~stationsgebouw~~<br />~~synagoge~~<br />~~tank~~<br />~~tanstation~~<br />~~tol~~<br />~~transformatorstation~~<br />~~veiling~~<br />~~wegrestaurant~~<br />~~werf~~<br />~~windmolen: korenmolen~~<br />~~windmolen: watermolen~~<br />~~windturbine~~<br />~~zendtoren~~<br />~~ziekenhuis~~[^4] |
+| typeGebouw \| type                | ~~brandweerkazerne~~<br />~~crematorium~~<br />~~elektriciteitscentrale~~<br />~~gemaal~~<br />~~gemeentehuis~~<br />~~kerncentrale, kernreactor~~<br />~~kunstijsbaan~~<br />~~observatorium~~<br />~~paleis~~<br />~~parkeerdak, parkeerdek, parkeergarage~~<br />~~politiebureau~~<br />~~radarpost~~<br />~~religie~~<br />~~schaapskooi~~<br />~~school~~<br />~~sporthal~~<br />~~stadskantoor, hulpsecretarie~~<br />~~universiteit~~<br />~~zwembad~~ |
+| typeGebouw \| type                | ~~bezoekerscentrum~~<br />~~brandtoren~~<br />~~dok~~<br />~~fabriek~~<br />~~fort~~<br />~~gevangenis~~<br />~~hotel~~<br />~~huizenblok~~<br />~~kliniek, inrichting, sanatorium~~<br />~~lichttoren~~<br />~~luchtwachttoren~~<br />~~markant gebouw~~<br />~~manege~~<br />~~militair gebouw~~<br />~~museum~~<br />~~peilmeetstation~~<br />~~pompstation~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~postkantoor~~<br />~~radartoren~~<br />~~recreatiecentrum~~<br />~~reddingboothuisje~~<br />~~remise~~<br />~~stationsgebouw~~<br />~~synagoge~~<br />~~tank~~<br />~~tanstation~~<br />~~tol~~<br />~~transformatorstation~~<br />~~veiling~~<br />~~wegrestaurant~~<br />~~werf~~<br />~~windmolen: korenmolen~~<br />~~windmolen: watermolen~~<br />~~windturbine~~<br />~~zendtoren~~<br />~~ziekenhuis~~ |
 | fysiekVoorkomen                   | ~~overkluisd~~ |
-| status                            | ~~in gebruik~~<br />~~buiten gebruik~~[^5]<br />~~in uitvoering~~ |
+| status                            | ~~in gebruik~~<br />~~buiten gebruik~~<br />~~in uitvoering~~ |
 
 <details class="note"> De attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …, ‘zwembad’
 verplaatsen van attribuut typeGebouw\|type naar attribuut functie.
