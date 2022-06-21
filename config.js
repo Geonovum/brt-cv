@@ -164,12 +164,12 @@ var respecConfig =
   //subtitle: "iets",                         // Subtitel van het document
   maxTocLevel: 2,                           // Aantal niveau's ToC, default is 0
   //-- LOGO: Hier kan je een ander logo opgeven indien nodig
-  //logos: [{
-  //  src: "https://tools.geostandaarden.nl/respec/style/logos/OmgevingswetLogo.svg",
-  //  alt: "Standaarden Omgevingswet",
-  //  id: "TopLogo",
-  //  height: 67,
-  //  width: 300,
-  //  url: "https://www.geonovum.nl/geo-standaarden/omgevingswet/STOPTPOD"
-  // }],
+  logos: [{
+    src: "https://github.com/kadaster/imbrt/blob/master/docs/images/logo.jpeg?raw=true",
+    alt: "Kadaster",
+    id: "kadasterlogo",
+    height: 122,
+    width: 146,
+    url: "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt"
+  }],
 };
