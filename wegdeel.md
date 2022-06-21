@@ -267,7 +267,7 @@ Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                      |
 |-------------------|-------------------------------------------------------------------------------------------|
-| **BAG**           | Naam van het wegdeel is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).     |
-| **BGT**           | Naam van het wegdeel is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT). |
-| **BRK**           | Naam van het wegdeel is afkomstig uit de Basisregistratie Kadaster (BRK).                 |
-| **overig**        | Naam van het wegdeel is afkomstig uit een andere bron.                                    |
+| **BAG**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).**     |
+| **BGT**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT).** |
+| **BRK**           | **Naam van het wegdeel is afkomstig uit de Basisregistratie Kadaster (BRK).   **              |
+| **overig**        | **Naam van het wegdeel is afkomstig uit een andere bron.**                                    |
