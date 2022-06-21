@@ -4,6 +4,35 @@ Relief
 Dit hoofdstuk beschrijft de wijzigingen voor het object Relief in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
+Samengevat worden de volgende wijzigingen voorgesteld:
+
+-   attribuut ‘typeRelief’ wordt hernoemd naar ‘type’.
+
+-   type ‘dijk’ wordt toegevoegd.
+
+-   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
+    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+
+-   attribuut ‘functie’ vervalt.
+
+-   vlakgeometrie wordt toegevoegd.
+
+*Overzicht attributen en waarden/type van object Relief in BRT.Next*
+
+| Attribuutnaam          | Waarde of «type»       | Geometrietype      | Kardinaliteit |
+|------------------------|------------------------|--------------------|---------------|
+| geometrie              | «vlak»                 |                    | 1..1          |
+|                        | «lijn»                 |                    |               |
+|                        | «hoge en lage zijde»   |                    |               |
+| type                   | dijk                   | vlak, lijn         | 1..1          |
+|                        | wal                    | lijn               |               |
+|                        | steile rand, aardrand  | hoge en lage zijde |               |
+|                        | talud, hoogteverschil  | hoge en lage zijde |               |
+| hoogteklasse           | \< 1 meter             |                    | 1..1          |
+|                        | 1 – 2,5 meter          |                    |               |
+|                        | \> 2,5 meter           |                    |               |
+| relatieveHoogteligging | «geheel getal [-9; 9]» |                    | 1..1          |
+
 Wijzigen attributen
 -------------------
 
@@ -29,10 +58,11 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteLigging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
 
-[^1]: Het domein van hoogteniveau/relatieveHoogteligging wijzigt van geheel
-getal Kleiner of gelijk aan 0 naar geheel getal tussen -9 en 9.
+<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
+</details>
 
 Wijzigen classificaties
 -----------------------
@@ -81,10 +111,10 @@ Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde* | *BRT.Next:definitie* |
 |-------------------|----------------------|
-| **«vlak»**        | Vlakgeometrie        |
+| **«vlak»**        | **Vlakgeometrie**    |
 
 *Attribuut BRT.Next:type*
 
-| *BRT.Next:waarde* | *BRT.Next:definitie* |
-|-------------------|----------------------|
-| **dijk**          |                      |
+| *BRT.Next:waarde* | *BRT.Next:definitie*                                                     |
+|-------------------|--------------------------------------------------------------------------|
+| **dijk**          | **Langgerekte ophoging in het terrein met een hoogte vanaf 1,00 meter.** |
