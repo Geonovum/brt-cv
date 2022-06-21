@@ -12,8 +12,6 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   attribuut ‘typeWeg’ wordt hernoemd naar ‘type’, ‘fysiekVoorkomen naar
     ‘ligging’, en ‘hoofdGeometrie’ naar ‘geometrie’.
 	
-- de definitie van attribuut ‘status’ wordt aangepast naar BGT.
-
 -   typen, ‘overig’, en ‘veerverbinding’ worden hernoemd naar respectievelijk
     ‘rijbaan overig’ en ‘veerdienst, pontveer’.
 
@@ -35,6 +33,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
     definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+	
+-   de definitie van attribuut ‘status’ wordt aangepast naar BGT.
 
 -   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
     met BGT-definitie, en status ‘buiten gebruik’ vervalt.
@@ -188,13 +188,6 @@ BRT.Next
 <details class="note">
 typeLandgebruik 'spoorbaanlichaam' wordt verplaatst van object Terrein naar type 'spoorbaan' van Wegdeel.
 </details>
-
-*Attribuut TOP10NL:status \| BRT.Next:status*
-
-| *TOP10NL:waarde*      | *TOP10NL:definitie*                      | *BRT.Next:waarde* | *BRT.Next:definitie* |
-|-----------------------|------------------------------------------|-------------------|----------------------|
-| ~~in uitvoering~~ | De staat waarin het object zich bevindt. | **bestaand**      |                      |
-| ~~in gebruik~~    |                                          | **bestaand**      |                      |
 
 Vervallen attributen
 --------------------
