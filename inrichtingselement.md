@@ -139,15 +139,15 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
-Wijzigen classificaties
+Wijzigen attribuutwaarden
 -----------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-Onderstaande classificaties wijzigen van naam (waarde) in BRT.Next. De definitie
+Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De definitie
 wordt niet aangepast.
 
 *Attribuut TOP10NL:typeInrichtingselement / BRT.Next:type*
@@ -169,7 +169,7 @@ TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BR
 
 ### Naam+definitie
 
-Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
+Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Next
 
 *Attribuut TOP10NL:typeWeg / BRT.Next:type*
 
@@ -184,20 +184,20 @@ Onderstaande classificaties wijzigen van naam (waarde) en definitie in BRT.Next
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen in
 BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
+| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|----------------------------------------|
 | ~~breedte~~         | ~~«decimaal getal»~~               |
 
-Vervallen classificaties
+Vervallen attribuutwaarden
 ------------------------
 
-Onderstaande classificaties of datatypen vervallen bij een attribuut in
+Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                            |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | typeInrichtingselement \| type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
 
@@ -210,28 +210,28 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 |--------------------------|-----------------------------------------------------------------|-----------------------|-------------------|
 | **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **verplicht, 1**      | **bestaand**      |
 
-Toevoegen classificaties
+Toevoegen attribuutwaarden
 ------------------------
 
-Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:geometrie*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie* |
 |-------------------|----------------------|
-| **«vlak»**        | Vlakgeometrie        |
+| **«vlak»**        | **Vlakgeometrie        |
 
 *Attribuut BRT.Next:type*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                  |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| **open loods**    | Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden. |
-| **overkapping**   | Een afzonderlijk staande overdekking rustend op kolommen.                                                                             |
+| **open loods**    | **Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden.** |
+| **overkapping**   | **Een afzonderlijk staande overdekking rustend op kolommen.**                                                                             |
 | **bassin**        | **Waterbak zoals een zwembad of een dok.**                                                                                            |
 | **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.**                       |
-| **opslagtank**    | Opslagfaciliteit voor vloeistoffen, gassen of energie.                                                                                |
-| **windturbine**   | Turbine waarin winddruk omgezet wordt in mechanische energie.                                                                         |
-| **botenhuis**     | Gebouw boven water voor de opslag van boten.                                                                                          |
+| **opslagtank**    | **Opslagfaciliteit voor vloeistoffen, gassen of energie.**                                                                                |
+| **windturbine**   | **Turbine waarin winddruk omgezet wordt in mechanische energie.**                                                                       |
+| **botenhuis**     | **Gebouw boven water voor de opslag van boten.**                                                                                          |
 
 *Attribuut BRT.Next:status*
 
