@@ -31,7 +31,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   puntgeometrie vervalt.
 
-*Overzicht attributen en waarden/type van object Relief in BRT.Next*
+*Overzicht attributen en waarden/type van object Registratief gebied in BRT.Next*
 
 | Attribuutnaam  | Waarde of «type» | Geometrietype   | Kardinaliteit |
 |----------------|------------------|-----------------|---------------|
