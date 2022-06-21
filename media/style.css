@@ -80,6 +80,7 @@ tr:nth-child(even)
 /*-- Definite van de tabel-cel (data) ----------------------------------------------*/
 td 
 {
+  vertical-align: top;
   min-width: 100px;     /* lege kolommen hebben deze minimale breedte */
 }
 
