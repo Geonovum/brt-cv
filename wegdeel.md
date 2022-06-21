@@ -16,15 +16,17 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     ‘rijbaan overig’ en ‘veerdienst, pontveer’.
 
 -   typen ‘autosnelweg’, ‘hoofdweg’, ‘regionale weg’, ‘lokale weg’, ‘straat’,
-    ‘parkeerplaats’en ‘spoorbaanlichaam’ worden hernoemd naar respectievelijk
+    en ‘parkeerplaats’ worden hernoemd naar respectievelijk
     BGT-functies ‘rijbaan autosnelweg’, ‘rijbaan autoweg’, ‘rijbaan regionale
-    weg’, ‘rijbaan lokale weg’, ‘rijbaan straat’, ‘parkeervak’ en ‘spoorbaan’,
+    weg’, ‘rijbaan lokale weg’, ‘rijbaan straat’ en ‘parkeervak’,
     en de definities worden aangepast o.m. naar de BGT-definities.
+	
+-   typeLandgebruik 'spoorbaanlichaam' wordt verplaatst van object Terrein naar type 'spoorbaan' van Wegdeel, met aangepaste definitie naar BGT.
 
 -   typen ‘OV-baan’, ‘fietspad’, ‘voetpad’, ‘voetgangersgebied’, ‘ruiterpad’,
     ‘fietsveer’, en ‘voetveer’ worden toegevoegd.
 
--   typen ‘parkeerplaats: carpool’ en ‘parkeerplaats: P+R’ vervallen
+-   typen ‘parkeerplaats: carpool’ en ‘parkeerplaats: P+R’ vervallen.
 
 -   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging, en ‘op overweg’
     wordt toegevoegd aan attribuut ligging.
@@ -131,8 +133,9 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
 
-[^1]: Het domein van hoogteniveau/relatieveHoogteligging wijzigt van geheel
-getal Kleiner of gelijk aan 0 naar geheel getal tussen -9 en 9.
+<details class='note'>Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
+</details>
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -176,9 +179,11 @@ BRT.Next
 | lokale weg                   | Weg van lokaal belang ~~tussen bewegwijzerde routes~~.                                                                                                                                                                                                                                                                | **rijbaan** lokale weg    | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                            |
 | straat                       | Weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                                                                                                                                                                                                                                           | **rijbaan** straat        | **Wegdeel dat onderdeel is van een** weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                   |
 | parkeer~~plaats~~        | ~~Parkeergelegenheid voor meerdere~~ voertuigen ~~in de openlucht.~~                                                                                                                                                                                                                                              | parkeer**vak**            | **Wegdeel bestemd voor het parkeren van motor**voertuigen.                                                                             |
-| spoorbaan~~lichaam~~[^2] | ~~Geheel van~~ rails~~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.~~                                                                                                                                                                                                                           | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                      |
+| spoorbaan~~lichaam~~ | ~~Geheel van~~ rails~~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.~~                                                                                                                                                                                                                           | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                      |
 
-[^2]: spoorbaanlichaam is onderdeel van de waardenverzameling typeLandgebruik.
+<details class="note">
+typeLandgebruik 'spoorbaanlichaam' wordt verplaatst van object Terrein naar type 'spoorbaan' van Wegdeel.
+</details>
 
 *Attribuut TOP10NL:status \| BRT.Next:status*
 
@@ -214,10 +219,11 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | geometrie                         | ~~«punt»~~                                                        |
 | typeWeg \| type                   | ~~parkeerplaats: carpool~~<br/> ~~parkeerplaats: P+R~~            |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
-| status                            | ~~in uitvoering~~<br/> ~~in gebruik~~[^3]<br/> ~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br/> ~~in gebruik~~<br/> ~~buiten gebruik~~ |
 
-[^3]: status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
+<details class="note">status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
+</details>
 
 Toevoegen attributen
 --------------------
