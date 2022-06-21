@@ -78,7 +78,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | moeras                       | vlak          |               |
 | ligging                | in tunnel                    |               | 0..1          |
 |                        | op brug                      |               |               |
-| relatieveHoogteligging | «geheel getal [-9; 9]»     |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]»     |               | 1-1           |
 
 Wijzigen attributen
 -------------------
@@ -169,9 +169,9 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
 |-------------------------|----------------------------------------------|
-| ~~voorkomen~~       | ~~met riet~~;~~dras, moerassig~~ |
+| ~~voorkomen~~       | ~~met riet~~<br />~~dras, moerassig~~ |
 | ~~naam~~            | ~~«tekst»~~                              |
-| ~~bebouwd gebied~~  | ~~ja~~; ~~nee~~                      |
+| ~~bebouwd gebied~~  | ~~ja~~<br />~~nee~~                      |
 
 <details class="note">voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
 respectievelijk typen ‘rietland’ en ‘moeras’.
@@ -185,7 +185,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                       |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik \| type          | ~~aanlegsteiger~~[^3]; ~~dodenakker~~; ~~dodenakker met bos~~; ~~boomgaard~~; ~~populieren~~; ~~spoorbaanlichaam~~[^4] |
+| typeLandgebruik \| type          | ~~aanlegsteiger~~[^3]<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~[^4] |
 
 [^3]: type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
 object Inrichtingselement
