@@ -15,7 +15,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   referentievlak ‘OLW’ vervalt.
 
-*Overzicht attributen en waarden/type van object Relief in BRT.Next*
+*Overzicht attributen en waarden/type van object Hoogte in BRT.Next*
 
 | Attribuutnaam  | Waarde of «type» | Definitie                                                                                                                         | Geometrietype | Kardinaliteit |
 |----------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------|---------------|
