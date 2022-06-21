@@ -4,6 +4,9 @@ Relief
 Dit hoofdstuk beschrijft de wijzigingen voor het object Relief in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
+Samenvatting
+------------
+
 Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   attribuut ‘typeRelief’ wordt hernoemd naar ‘type’.
