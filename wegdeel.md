@@ -83,7 +83,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | half verhard                |               |               |
 |                        | onverhard                   |               |               |
 |                        | onbekend                    |               |               |
-| relatieveHoogteligging | «geheel getal [-9<br />9]»       |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]»       |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | naam                   | «tekst»                     |               | 0..n          |
 | naam: herkomst         | BAG                         |               | 0..n          |

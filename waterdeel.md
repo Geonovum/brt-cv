@@ -63,9 +63,9 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | ligging                | in sluis                 | lijn, vlak    | 0..n          |
 |                        | op brug                  | lijn, vlak    |               |
 |                        | in duiker                | lijn          |               |
-| relatieveHoogteligging | \<geheel getal [-9<br />9]\> |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]» |               | 1-1           |
 | status                 | bestaand                 |               | 1-1           |
-| naam                   | \<tekst\>                |               | 0..n          |
+| naam                   | «tekst»               |               | 0..n          |
 | naam: taal             | Nederlands               |               | 0..n          |
 |                        | Fries                    |               |               |
 |                        | overig                   |               |               |
@@ -73,8 +73,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | BGT                      |               |               |
 |                        | BRK                      |               |               |
 |                        | overig                   |               |               |
-| sluisnaam              | \<tekst\>                |               | 0..1          |
-| brugnaam               | \<tekst\>                |               | 0..1          |
+| sluisnaam              | «tekst»                |               | 0..1          |
+| brugnaam               | «tekst»               |               | 0..1          |
 
 Wijzigen attributen
 -------------------

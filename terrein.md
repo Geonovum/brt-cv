@@ -78,7 +78,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | moeras                       | vlak          |               |
 | ligging                | in tunnel                    |               | 0..1          |
 |                        | op brug                      |               |               |
-| relatieveHoogteligging | «geheel getal [-9<br />9]»       |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9;9]»       |               | 1-1           |
 
 Wijzigen attributen
 -------------------

@@ -34,7 +34,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | hoogteklasse           | \< 1 meter             |                    | 1..1          |
 |                        | 1 – 2,5 meter          |                    |               |
 |                        | \> 2,5 meter           |                    |               |
-| relatieveHoogteligging | «geheel getal [-9<br />9]» |                    | 1..1          |
+| relatieveHoogteligging | «geheel getal [-9;9]» |                    | 1..1          |
 
 Wijzigen attributen
 -------------------
