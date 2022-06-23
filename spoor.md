@@ -21,7 +21,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     ‘enkelvoudig’,
 
 -   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
-    met BGT-definitie; status ‘buiten gebruik’ vervalt.
+    met BGT-definitie<br />status ‘buiten gebruik’ vervalt.
 
 -   attributen ‘typeInfrastructuur’, ‘elektrificatie’, ‘spoorbreedte’,
     ‘vervoerfunctie’, en ‘baanvaknaam’ vervallen.
@@ -125,10 +125,10 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~; ~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
+| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~ kruising~~                                                       |
+| ~~elektrificatie~~     | ~~ja~~<br />~~nee~~                                                                    |
+| ~~spoorbreedte~~       | ~~normaalspoor~~<br />~~smalspoor~~                                                    |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~ goederenvervoer~~<br />~~museumlijn |
 | ~~baanvaknaam~~        | ~~«tekst»~~                                                                            |
 
 Vervallen attribuutwaarden
@@ -143,7 +143,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | typeSpoorbaan \| type             | ~~metro~~                                                         |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
 | aantalSporen                      | ~~dubbel~~                                                        |
-| status                            | ~~in uitvoering~~; ~~in gebruik~~[^2]; ~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br />~~in gebruik~~[^2]<br />~~buiten gebruik~~ |
 
 <details class="note">
 status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
