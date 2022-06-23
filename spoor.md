@@ -113,8 +113,7 @@ n.v.t.
 
 ### Naam+definitie
 
-| n.v.t. |   |   |   |
-|--------|---|---|---|
+n.v.t. 
 
 
 Vervallen attributen
