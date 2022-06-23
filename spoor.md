@@ -83,7 +83,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note">
  Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
@@ -125,10 +125,10 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~ kruising~~                                                       |
+| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~kruising~~                                                       |
 | ~~elektrificatie~~     | ~~ja~~<br />~~nee~~                                                                    |
 | ~~spoorbreedte~~       | ~~normaalspoor~~<br />~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~ goederenvervoer~~<br />~~museumlijn |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~goederenvervoer~~<br />~~museumlijn~~ |
 | ~~baanvaknaam~~        | ~~«tekst»~~                                                                            |
 
 Vervallen attribuutwaarden
