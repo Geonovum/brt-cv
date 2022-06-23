@@ -29,10 +29,10 @@ wijzigen van naam en definitie in BRT.Next.
 
 *n.v.t.*
 
-Wijzigen classificaties
+Wijzigen attribuutwaarden
 -----------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
@@ -50,7 +50,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen in
 BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:waarde of «type»*                                  |
@@ -59,7 +59,7 @@ BRT.Next.
 | ~~naam~~            | ~~«tekst»~~                                             |
 | ~~geometrie~~       | ~~«punt»~~<br />~~«lijn»~~<br />~~«vlak»~~          |
 
-Vervallen classificaties
+Vervallen attribuutwaarden
 ------------------------
 
 n.v.t.
@@ -69,7 +69,7 @@ Toevoegen attributen
 
 n.v.t.
 
-Toevoegen classificaties
+Toevoegen attribuutwaarden
 ------------------------
 
 n.v.t.
