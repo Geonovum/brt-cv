@@ -19,7 +19,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   attribuut ‘naamKartografisch’ wordt toegevoegd met datatype «tekst».
 
--   puntgeometrie vervalt.
+-   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
 
 *Overzicht attributen en waarden/type van object Geografisch gebied in BRT.Next*
 
@@ -42,8 +42,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                   | watergebied           | vlak, multivlak |               |
 |                   | zee                   | vlak, multivlak |               |
 |                   | zeegat, zeearm        | vlak, multivlak |               |
-| naam              | “tekst”               |                 | 0..n          |
-| naamKartografisch | “tekst”               |                 | 0..1          |
+| naam              | «tekst»               |                 | 0..n          |
+| naamKartografisch | «tekst»               |                 | 0..1          |
 
 Wijzigen attributen
 -------------------
@@ -72,10 +72,10 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
 | naam~~NL~~          | De ~~Nederlandse~~ naam van het geografisch gebied. | naam                     | De naam van het geografisch gebied. |
 
-Wijzigen classificaties
------------------------
+Wijzigen attribuutwaarden
+-------------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
@@ -93,34 +93,34 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
-BRT.Next.
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
+in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
-|-------------------------|----------------------------------------|
-| ~~naamFries~~       | ~~«tekst»~~                        |
+| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
+|-------------------------|------------------------------------------|
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
-Vervallen classificaties
-------------------------
+Vervallen attribuutwaarden
+--------------------------
 
-Onderstaande classificaties of datatypen vervallen bij een attribuut in
+Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
-|-----------------------------------|----------------------------------------|
-| geometrie                         | ~~«punt»~~                         |
-| typeGeografischGebied\|type       | ~~overig~~                         |
+| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
+|-----------------------------------|------------------------------------------|
+| geometrie                         | ~~«punt»~~                           |
+| typeGeografischGebied|type       | ~~overig~~                           |
 
 Toevoegen attributen
 --------------------
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                                                      | *Verplicht/optioneel* | *Domein*    |
-|--------------------------|----------------------------------------------------------------------------------|-----------------------|-------------|
-| **naamKartografisch**    | **De naam van het geografisch gebied die gegeven is op de topografische kaart.** | **Optioneel, 0 of 1** | **«tekst»** |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                                                      | *Verplicht/optioneel* | *Attribuutwaarde* |
+|--------------------------|----------------------------------------------------------------------------------|-----------------------|-------------------|
+| **naamKartografisch**    | **De naam van het geografisch gebied die gegeven is op de topografische kaart.** | **Optioneel, 0 of 1** | **«tekst»**       |
 
-Toevoegen classificaties
-------------------------
+Toevoegen attribuutwaarden
+--------------------------
 
 *n.v.t.*
