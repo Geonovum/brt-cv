@@ -22,7 +22,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 *Overzicht attributen en waarden/type van object Relief in BRT.Next*
 
-| Attribuutnaam          | Waarde of \<type\>     | Geometrietype      | Kardinaliteit |
+| Attribuutnaam          | Waarde of «type»     | Geometrietype      | Kardinaliteit |
 |------------------------|------------------------|--------------------|---------------|
 | geometrie              | «vlak»                 |                    | 1..1          |
 |                        | «lijn»                 |                    |               |
@@ -34,7 +34,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | hoogteklasse           | \< 1 meter             |                    | 1..1          |
 |                        | 1 – 2,5 meter          |                    |               |
 |                        | \> 2,5 meter           |                    |               |
-| relatieveHoogteligging | «geheel getal [-9;9]» |                    | 1..1          |
+| relatieveHoogteligging | «geheel getal [-9;9]»  |                    | 1..1          |
 
 Wijzigen attributen
 -------------------
