@@ -15,13 +15,13 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   definitie van attributen ‘aantalSporen’ en ‘status’ wijzigen.
 
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+    definitie en attribuutwaarden worden aangepast op BGT.
 
 -   waarde ‘enkel’ van attribuut ‘aantalSporen’ wordt hernoemd naar
     ‘enkelvoudig’,
 
 -   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
-    met BGT-definitie, status ‘buiten gebruik’ vervalt.
+    met BGT-definitie; status ‘buiten gebruik’ vervalt.
 
 -   attributen ‘typeInfrastructuur’, ‘elektrificatie’, ‘spoorbreedte’,
     ‘vervoerfunctie’, en ‘baanvaknaam’ vervallen.
@@ -32,11 +32,11 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 
 -   type ‘metro’ vervalt.
 
--   puntgeometrie vervalt.
+-   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
 
 *Overzicht attributen en waarden/type van object Spoor in BRT.Next*
 
-| Attribuutnaam          | Waarde of «type»           | Geometrietype | Kardinaliteit |
+| Attribuutnaam          | Waarde of «type»            | Geometrietype | Kardinaliteit |
 |------------------------|-----------------------------|---------------|---------------|
 | geometrie              | «lijn»                      |               | 1-1           |
 | type                   | trein                       | lijn          | 1-1           |
@@ -48,7 +48,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 | ligging                | op vast deel van brug       |               | 0..n          |
 |                        | op beweegbaar deel van brug |               |               |
 |                        | in tunnel                   |               |               |
-| relatieveHoogteligging | «geheel getal [-9;9]»              |               | 1-1           |
+| relatieveHoogteligging | «geheel getal»              |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | brugnaam               | «tekst»                     |               | 0..1          |
 | tunnelnaam             | «tekst»                     |               | 0..1          |
@@ -83,10 +83,12 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<detail class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.</details>
+<details class="note">
+ Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
+</details>
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -99,7 +101,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:aantalSporen \| BRT.Next:aantalSporen*
+*Attribuut TOP10NL:aantalSporen | BRT.Next:aantalSporen*
 
 | TOP10NL:waarde | BRT.Next:waarde |
 |----------------|-----------------|
@@ -111,7 +113,8 @@ n.v.t.
 
 ### Naam+definitie
 
-n.v.t. 
+| n.v.t. |   |   |   |
+|--------|---|---|---|
 
 
 Vervallen attributen
@@ -122,11 +125,11 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~<br />~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~<br />~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~goederenvervoer~~<br />~~museumlijn~~ |
-| ~~baanvaknaam~~        | «tekst»                                                                                    |
+| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
+| ~~elektrificatie~~     | ~~ja~~; ~~nee~~                                                                    |
+| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
+| ~~baanvaknaam~~        | ~~«tekst»~~                                                                            |
 
 Vervallen attribuutwaarden
 --------------------------
@@ -140,9 +143,10 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | typeSpoorbaan \| type             | ~~metro~~                                                         |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
 | aantalSporen                      | ~~dubbel~~                                                        |
-| status                            | ~~in uitvoering~~<br />~~in gebruik~~<br />~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~; ~~in gebruik~~[^2]; ~~buiten gebruik~~ |
 
-<details class="note">status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
+<details class="note">
+status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
 </details>
 
