@@ -177,11 +177,11 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                      |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                      |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                                                                |
 | typeWater                         | ~~bron~~<br />~~overig~~                                                                                  |
-| fysiekVoorkomen | ligging        | ~~in afsluitbare duiker~~<br />~~in grondduiker~~<br />~~in afsluitbare grondduiker~~<br />~~overkluisd~~ |
+| fysiekVoorkomen \| ligging        | ~~in afsluitbare duiker~~<br />~~in grondduiker~~<br />~~in afsluitbare grondduiker~~<br />~~overkluisd~~ |
 | ~~breedteklasse~~             | ~~6 - 12 meter~~<br />~~12 - 50 meter~~<br />~~50 - 125 meter~~<br />~~\> 125 meter~~                     |
 
 Toevoegen attributen
