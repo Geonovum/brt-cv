@@ -35,7 +35,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
     definitie en attribuutwaarden worden aangepast op BGT.
 
--   de definitie van attribuut ‘status’ wordt aangepast naar BGT;
+-   de definitie van attribuut ‘status’ wordt aangepast naar BGT<br />
 
 -   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
     met BGT-definitie, en status ‘buiten gebruik’ vervalt.
@@ -83,7 +83,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | half verhard                |               |               |
 |                        | onverhard                   |               |               |
 |                        | onbekend                    |               |               |
-| relatieveHoogteligging | «geheel getal [-9;9]»       |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9<br />9]»       |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | naam                   | «tekst»                     |               | 0..n          |
 | naam: herkomst         | BAG                         |               | 0..n          |
@@ -197,13 +197,13 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*           | *TOP10NL:waarde of «type»*                                                                                                                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~hartGeometrie~~             | ~~«punt»~~;~~«lijn»~~                                                                                                                                                        |
-| ~~typeInfrastructuur~~        | ~~verbinding~~; ~~kruising~~; ~~overig parkeergebied~~                                                                                                                   |
-| ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~; ~~snelverkeer~~; ~~gemengd verkeer~~; ~~busverkeer~~; ~~fietsers~~, ~~bromfietsers~~; ~~voetgangers~~; ~~ruiters~~; ~~overig~~ |
-| ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~; ~~4 – 7 meter~~; ~~2 – 4 meter~~; ~~\< 2 meter~~;                                                                                                    |
-| ~~gescheidenRijbaan~~         | ~~ja~~; ~~nee~~                                                                                                                                                              |
+| ~~hartGeometrie~~             | ~~«punt»~~<br />~~«lijn»~~                                                                                                                                                        |
+| ~~typeInfrastructuur~~        | ~~verbinding~~<br />~~kruising~~<br />~~overig parkeergebied~~                                                                                                                   |
+| ~~hoofdverkeersgebruik~~      | ~~vliegverkeer~~<br />~~snelverkeer~~<br />~~gemengd verkeer~~<br />~~busverkeer~~<br />~~fietsers~~, ~~bromfietsers~~<br />~~voetgangers~~<br />~~ruiters~~<br />~~overig~~ |
+| ~~verhardingsbreedte-klasse~~ | ~~\> 7 meter~~<br />~~4 – 7 meter~~<br />~~2 – 4 meter~~<br />~~\< 2 meter~~<br />                                                                                                   |
+| ~~gescheidenRijbaan~~         | ~~ja~~<br />~~nee~~                                                                                                                                                              |
 | ~~aantalRijstroken~~          | ~~«geheel getal»~~                                                                                                                                                               |
-| ~~isBAGnaam~~                 | ~~ja~~; ~~nee~~                                                                                                                                                              |
+| ~~isBAGnaam~~                 | ~~ja~~<br />~~nee~~                                                                                                                                                              |
 
 Vervallen attribuutwaarden
 --------------------------
@@ -214,9 +214,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:waarde of «type»*                                            |
 |-----------------------------------|-----------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                        |
-| typeWeg \| type                   | ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~            |
+| typeWeg \| type                   | ~~parkeerplaats: carpool~~<br />~~parkeerplaats: P+R~~            |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
-| status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br />~~in gebruik~~<br />~~buiten gebruik~~ |
 
 <details class="note">
 status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
