@@ -24,7 +24,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     'zoutwinning' vervallen.
 
 -   typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
-    oliewinning’, ‘grindwinning’ en ‘zandwining’ tot ‘grindwinning,
+    oliewinning’<br />‘grindwinning’ en ‘zandwining’ tot ‘grindwinning,
     zandwinning’.
 
 -   typen ‘gevangenis’, ‘psychiatrisch ziekenhuiscomplex’, en ‘tankstation’ van
@@ -126,10 +126,10 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
 | naam~~NL~~          | De ~~Nederlandse~~ naam van het functionele gebied. | naam                     | De naam van het functionele gebied. |
 
-Wijzigen classificaties
------------------------
+Wijzigen attribuutwaarden
+-------------------------
 
-De classificaties in deze paragraaf wijzigen van naam (waarde), wijzigen van
+De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
@@ -145,7 +145,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeFunctioneelGebied \| BRT.Next:type*
+*Attribuut TOP10NL:typeFunctioneelGebied | BRT.Next:type*
 
 | *TOP10NL:waarde*                    | *TOP10NL:definitie*                                                                                                                                                                                                                       | *BRT.Next:waarde*            | *BRT.Next:definitie*                                                  |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------------------------------------------------------------------|
@@ -156,26 +156,27 @@ BRT.Next
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
-BRT.Next.
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
+in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:classificaties of «datatype»* |
-|-------------------------|----------------------------------------|
-| ~~naamFries~~       | ~~«tekst»~~                        |
+| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
+|-------------------------|------------------------------------------|
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
-Vervallen classificaties
-------------------------
+Vervallen attribuutwaarden
+--------------------------
 
-Onderstaande classificaties of datatypen vervallen bij een attribuut in
+Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:classificaties of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeFunctioneelGebied\|type       | ~~gaswinning~~<br />~~oliewinning~~<br />~~grindwinning~~<br />~~zandwinning~~[^1]                                                                                                                                                                                                                                                                                                                                                                                           |
-| typeFunctioneelGebied\|type       | ~~campus~~<br />~~caravanpark~~<br />~~kartingbaan~~<br />~~gebied met hoge objecten~~<br />~~gebouwencomplex~~<br />~~heemtuin~~<br />~~infiltratiegebied~~<br />~~landgoed~~<br />~~milieustraat~~<br />~~mosselbank~~<br />~~openluchttheater~~<br />~~plantsoen~~<br />~~productie-installatie~~<br />~~slipschool~~<br />~~tennispark~~<br />~~tuincentrum~~<br />~~viskwekerij~~<br />~~visvijvercomplex~~<br />~~werf~~<br />~~windturbinepark~~<br />~~zenderpark~~<br />~~zoutwinning~~ |
+| typeFunctioneelGebied|type       | ~~gaswinning~~<br />~~oliewinning~~<br />~~grindwinning~~<br />~~zandwinning~~                                                                                                                                                                                                                                                                                                                                                                                           |
+| typeFunctioneelGebied|type       | ~~campus~~<br />~~caravanpark~~<br />~~kartingbaan~~<br />~~gebied met hoge objecten~~<br />~~gebouwencomplex~~<br />~~heemtuin~~<br />~~infiltratiegebied~~<br />~~landgoed~~<br />~~milieustraat~~<br />~~mosselbank~~<br />~~openluchttheater~~<br />~~plantsoen~~<br />~~productie-installatie~~<br />~~slipschool~~<br />~~tennispark~~<br />~~tuincentrum~~<br />~~viskwekerij~~<br />~~visvijvercomplex~~<br />~~werf~~<br />~~windturbinepark~~<br />~~zenderpark~~<br />~~zoutwinning~~ |
 
-<details class="note"> typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
-oliewinning’, ‘grindwinning’ en ‘zandwinning’ tot ‘grindwinning, zandwinning’.
+<details class="note">
+typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
+oliewinning’<br />‘grindwinning’ en ‘zandwinning’ tot ‘grindwinning, zandwinning’.
 </details>
 
 Toevoegen attributen
@@ -183,17 +184,17 @@ Toevoegen attributen
 
 n.v.t.
 
-Toevoegen classificaties
-------------------------
+Toevoegen attribuutwaarden
+--------------------------
 
-Onderstaande classificaties (waarden) worden toegevoegd aan BRT.Next.
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:type*
 
 | *BRT.Next:waarde*                   | *BRT.Next:definitie*                                                                                 |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| **gaswinning. oliewinning**         | **Gebied met installatie(s) t.b.v. de winning of transport van aardgas en / of aardolie.**               |
-| **grindwinning. zandwinning**       | **Gebied waar winning van grind en/ of zand plaatsvind (in dagbouw of d.m.v. zuigen).**                  |
-| **gevangenis**                      | **Een terrein met voorzieningen waar personen in verzekerde bewaring worden gesteld.**                   |
-| **psychiatrisch ziekenhuiscomplex** | **Het geheel van gebouwen die tezamen een psychiatrisch ziekenhuis vormen.**                             |
-| **tankstation**                     | **Een terrein met voorzieningen waar motorbrandstof, olie, lucht en koelwater kunnen worden verkregen.** |
+| **gaswinning, oliewinning**         | Gebied met installatie(s) t.b.v. de winning of transport van aardgas en / of aardolie.               |
+| **grindwinning, zandwinning**       | Gebied waar winning van grind en/ of zand plaatsvind (in dagbouw of d.m.v. zuigen).                  |
+| **gevangenis**                      | Een terrein met voorzieningen waar personen in verzekerde bewaring worden gesteld.                   |
+| **psychiatrisch ziekenhuiscomplex** | Het geheel van gebouwen die tezamen een psychiatrisch ziekenhuis vormen.                             |
+| **tankstation**                     | Een terrein met voorzieningen waar motorbrandstof, olie, lucht en koelwater kunnen worden verkregen. |
