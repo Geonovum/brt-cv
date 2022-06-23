@@ -114,10 +114,10 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
 |-----------------------------------|----------------------------------------------|
 | geometrie                         | ~~«punt»~~                               |
-| typeGebied|type                  | ~~stadsdeel~~<br />~~wijk~~<br />~~buurt~~ |
+| typeGebied\|type                  | ~~stadsdeel~~<br />~~wijk~~<br />~~buurt~~ |
 
 Toevoegen attributen
 --------------------
