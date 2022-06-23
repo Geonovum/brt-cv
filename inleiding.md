@@ -17,7 +17,7 @@ werkveld.
 Leeswijzer
 ----------
 
-De wijzigingen in het document zijn gemarkeerd: ~~tekst met deze opmaak\~~
+De wijzigingen in het document zijn gemarkeerd: ~~tekst met deze opmaak~~
 komt te vervallen, **tekst met deze** opmaak wordt toegevoegd. De schakelknop in
 het venster rechtsonderin zet wijzigingen aan (zichtbaar) of uit (verborgen).
 
