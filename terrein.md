@@ -181,16 +181,18 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik | type          | ~~aanlegsteiger~~[^3]<br />~~bebouwd gebied~~<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~[^4] |
-| fysiekVoorkomen | ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                                |
+| typeLandgebruik \| type          | ~~aanlegsteiger~~<br />~~bebouwd gebied~~<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~ |
+| fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                                |
 
-[^3]: type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
-object Inrichtingselement
+<details class="note">  type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
+object Inrichtingselement.
+</details>
 
-[^4]: type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
+<details class="note"> type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
 object Wegdeel.
+</details>
 
 Toevoegen attributen
 --------------------
