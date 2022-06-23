@@ -17,9 +17,9 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     'metrostation', 'oliepompinstallatie', 'radiobaken', 'RD punt',
     'schietbaan', 'seinmast', 'tol', 'verkeersgeleider', 'zichtbaar wrak'.
 
--   typen ‘geluidswering’, ‘GPS kernnetpunt’, ‘hekwerk’ en ‘strekdam, krib,
+-   typen ‘geluidswering’, ‘GNSS kernnetpunt’, ‘hekwerk’ en ‘strekdam, krib,
     golfbreker’ worden hernoemd naar respectievelijk ‘geluidsscherm’, ‘GPS
-    kernnetpunt’, ‘hek’ en ‘strekdam met aangepaste definities.
+    kernnetpunt’, ‘hek’ en ‘strekdam’ met aangepaste definities.
 
 -   typeLandgebruik ‘aanlegsteiger’ verplaatst van object Terrein naar type
     ‘steiger’ van object Inrichtingselement.
@@ -30,13 +30,13 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging.
 
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+    definitie en attribuutwaarden worden aangepast op BGT.
 
 -   attribuut ‘status’ met waarde ‘bestaand’ wordt toegevoegd.
 
--   attributen ‘breedte’ vervalt.
+-   attribuut ‘breedte’ vervalt.
 
--   vlakgeometrie wordt toegevoegd.
+-   vlakgeometrie als attribuutwaarde toegevoegd aan geometrie.
 
 *Overzicht attributen en waarden/type van object Inrichtingselement in BRT.Next*
 
@@ -102,7 +102,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | windturbine            | vlak          |               |
 |                        | botenhuis              | vlak          |               |
 | hoogte                 | «decimaal getal»       |               | 0..1          |
-| relatieveHoogteligging | «geheel getal [-9;9]» |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9<br />9]» |               | 1-1           |
 | status                 | bestaand               |               | 1-1           |
 | naam                   | «tekst»                |               | 0..1          |
 | soortnaam              | «tekst»                |               | 0..1          |
@@ -135,33 +135,34 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
-</details>
+<details class="note">
+Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
+<details>
 
 Wijzigen attribuutwaarden
------------------------
+-------------------------
 
 De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De definitie
-wordt niet aangepast.
+Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
+definitie wordt niet aangepast.
 
 *Attribuut TOP10NL:typeInrichtingselement / BRT.Next:type*
 
 | *TOP10NL:waarde*        | *BRT.Next:waarde*     |
 |-------------------------|-----------------------|
 | ~~baak~~        | **baken**             |
-| ~~kaap~~         | **baken**             |
+| ~~kaap~~           | **baken**             |
 | ~~GPS~~ kernnetpunt | **GNSS** kernnetpunt  |
 | kilometerpaal           | kilometerpaal **weg** |
 
 <details class="note">
 TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next
-</details>
+<details>
 
 ### Definitie
 
@@ -169,7 +170,8 @@ TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BR
 
 ### Naam+definitie
 
-Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Next
+Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
+BRT.Next
 
 *Attribuut TOP10NL:typeWeg / BRT.Next:type*
 
@@ -178,28 +180,28 @@ Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Nex
 | geluids~~wering~~              | ~~Constructie ten behoeve van het terugdringen van geluidsoverlast.~~                                                                                                                                                                                                                                                                                                                      | geluids**scherm**    | **Een scheiding bedoeld om geluidshinder in de buitenlucht te verminderen.**                                                                              |
 | ~~GPS~~ kernnetpunt            | Punt geschikt voor ~~GPS~~ metingen. (Kan een steen of bout zijn).                                                                                                                                                                                                                                                                                                                         | **GNSS** kernnetpunt | Punt geschikt voor **GNSS** metingen. (Kan een steen of bout zijn).                                                                                       |
 | hek~~werk~~                    | ~~Begrenzing van een terrein in de vorm van een afrastering.~~                                                                                                                                                                                                                                                                                                                             | hek                  | **Een hekwerk of schutting, typisch ten behoeve van erfafscheiding.**                                                                                     |
-| ~~aanleg~~steiger              | ~~In het water uitstekende brug of pier, breder dan 2 meter, gebruikt om personen en goederen aan~~ wal ~~te brengen.~~                                                                                                                                                                                                                                                                | steiger              | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.** |
+| ~~aanleg~~steiger              | ~~In het water uitstekende brug of pier, smaller dan 2 meter, gebruikt om personen en goederen aan~~ wal ~~te brengen.~~                                                                                                                                                                                                                                                               | steiger              | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.** |
 | strekdam~~, krib, golfbreker~~ | ~~Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de~~ oever~~s of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam). Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib). Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).~~ | strekdam             | **Constructie in het water ter verdediging van de kust/**oever.                                                                                           |
 
 Vervallen attributen
 --------------------
 
-Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen in
-BRT.Next.
+Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
+in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
-|-------------------------|----------------------------------------|
-| ~~breedte~~         | ~~«decimaal getal»~~               |
+|-------------------------|------------------------------------------|
+| ~~breedte~~         | ~~«decimaal getal»~~                 |
 
 Vervallen attribuutwaarden
-------------------------
+--------------------------
 
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                            |
+| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeInrichtingselement \| type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
+| typeInrichtingselement | type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
 
 Toevoegen attributen
 --------------------
@@ -211,7 +213,7 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 | **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **verplicht, 1**      | **bestaand**      |
 
 Toevoegen attribuutwaarden
-------------------------
+--------------------------
 
 Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
@@ -219,18 +221,18 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde* | *BRT.Next:definitie* |
 |-------------------|----------------------|
-| **«vlak»**        | **Vlakgeometrie        |
+| **«vlak»**        | **Vlakgeometrie**    |
 
 *Attribuut BRT.Next:type*
 
-| *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                  |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                      |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | **open loods**    | **Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden.** |
 | **overkapping**   | **Een afzonderlijk staande overdekking rustend op kolommen.**                                                                             |
-| **bassin**        | **Waterbak zoals een zwembad of een dok.**                                                                                            |
-| **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.**                       |
+| **bassin**        | **Waterbak zoals een zwembad of een dok.**                                                                                                |
+| **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.**                           |
 | **opslagtank**    | **Opslagfaciliteit voor vloeistoffen, gassen of energie.**                                                                                |
-| **windturbine**   | **Turbine waarin winddruk omgezet wordt in mechanische energie.**                                                                       |
+| **windturbine**   | **Turbine waarin winddruk omgezet wordt in mechanische energie.**                                                                         |
 | **botenhuis**     | **Gebouw boven water voor de opslag van boten.**                                                                                          |
 
 *Attribuut BRT.Next:status*
