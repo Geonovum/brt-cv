@@ -53,7 +53,7 @@ Vervallen attributen
 Onderstaande attributen en bijbehorende classificaties of datatypen vervallen in
 BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:waarde of \<type\>*                                  |
+| *TOP10NL:attribuutnaam* | *TOP10NL:waarde of «type»*                                  |
 |-------------------------|---------------------------------------------------------------|
 | ~~typeObject~~      | ~~spoorbaan~~<br />~~water~~<br />~~weg~~<br />~~overig~~ |
 | ~~naam~~            | ~~«tekst»~~                                             |
