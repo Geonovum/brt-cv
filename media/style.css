@@ -121,6 +121,25 @@ div#remark
   color: darkblue;
 }
 
+/* addComment */
+
+.buttonComment {	
+	position: fixed;
+	right: 50%;
+	top: 20px;
+	z-index: 9000;
+	width: auto;
+	height: auto;
+	
+	text-align: right;
+	background: #fff;    
+    color: rgb(120, 120, 120);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 8px 0 rgb(100 100 100 / 50%);
+	padding: 6px 6px;
+	font-size: 0.9em;
+}
+
 /* trackChanges */
 
 .trackChanges {	
