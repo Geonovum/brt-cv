@@ -138,7 +138,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 <details class="note">
 Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
-<details>
+</details>
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -162,7 +162,7 @@ definitie wordt niet aangepast.
 
 <details class="note">
 TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next
-<details>
+</details>
 
 ### Definitie
 
@@ -199,9 +199,9 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                          |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeInrichtingselement | type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
+| typeInrichtingselement \| type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
 
 Toevoegen attributen
 --------------------
