@@ -127,7 +127,7 @@ n.v.t.
 Onderstaande attributen wijzigen van definitie in BRT.Next. De naam wordt niet
 aangepast.
 
-| *TOP10NL | BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
 |-------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
 | status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.** |
 
