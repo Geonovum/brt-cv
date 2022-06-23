@@ -16,8 +16,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     'brandweerkazerne', 'crematorium', 'elektriciteitscentrale', 'gemaal',
     'gemeentehuis', 'kerncentrale, kernreactor', 'kunstijsbaan',
     'observatorium', 'paleis', 'parkeerdak, parkeerdek, parkeergarage',
-    'politiebureau', 'radarpost', 'religie', 'schaapskooi', 'school',
-    'sporthal', 'stadskantoor, hulpsecretarie', 'universiteit', 'zwembad'
+    'politiebureau', 'radarpost', 'schaapskooi', 'school', 'sporthal',
+    'stadskantoor, hulpsecretarie', 'universiteit', 'zwembad'
 
 -   typen ‘gevangenis’, ‘psychiatrisch ziekenhuiscomplex’, en ‘tankstation’ van
     object Gebouw verplaatsen naar typen van object FunctioneelGebied.
@@ -41,9 +41,9 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging.
 
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+    definitie en attribuutwaarden worden aangepast op BGT.
 
--   de definitie van attribuut ‘status’ wordt aangepast naar BGT.
+-   de definitie van attribuut ‘status’ wordt aangepast naar BGT<br />
 
 -   statussen ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot
     ‘bestaand’ met BGT-definitie, en status ‘in uitvoering’ vervalt.
@@ -107,9 +107,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | zwembad                               |               |               |
 | fysiekVoorkomen        | ondergronds                           |               | 0..1          |
 | hoogte                 | «decimaal getal»                      |               | 0..1          |
-| relatieveHoogteligging | «geheel getal [-9;9]»                |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9<br />9]»                |               | 1-1           |
 | status                 | bestaand                              |               | 1-1           |
-|                        |                                       |               |               |
 | soortnaam              | «tekst»                               |               | 0..n          |
 | naam                   | «tekst»                               |               | 0..n          |
 
@@ -128,7 +127,7 @@ n.v.t.
 Onderstaande attributen wijzigen van definitie in BRT.Next. De naam wordt niet
 aangepast.
 
-| *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
+| *TOP10NL | BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
 |-------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
 | status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.** |
 
@@ -141,12 +140,15 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 | type~~Gebouw~~      | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                   | Het type gebouw **gebaseerd op de uiterlijke kenmerken van het gebouw.** |
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object.                                              | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object.                  |
 
-<details class="note"> typeGebouw wordt gesplitst in twee attributen: ‘type’ (uiterlijke
-verschijningsvorm) en ‘functie’”(gebruik). De attribuutwaarden die verplaatsen
+<details class="note">
+typeGebouw wordt gesplitst in twee attributen: ‘type’ (uiterlijke
+verschijningsvorm) en ‘functie’(gebruik). De attribuutwaarden die verplaatsen
 van typeGebouw naar functie worden als vervallen bij typeGebouw opgenomen, en
 als toegevoegde attribuutwaarden bij het nieuwe attribuut ‘functie’.
 </details>
-<details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+
+<details class="note">
+Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
@@ -161,7 +163,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:typeGebouw \| BRT.Next:type*
+*Attribuut TOP10NL:typeGebouw | BRT.Next:type*
 
 | *TOP10NL:waarde*       | *BRT.Next:waarde* |
 |------------------------|-------------------|
@@ -176,7 +178,7 @@ definitie wordt niet aangepast.
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:status \| BRT.Next:status*
+*Attribuut TOP10NL:status | BRT.Next:status*
 
 | *TOP10NL:waarde*                  | *TOP10NL:definitie*                                                                                                                                                      | *BRT.Next:waarde* | *BRT.Next:definitie*                                      |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------|
@@ -199,33 +201,39 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeGebouw \| type                | ~~brandweerkazerne~~<br />~~crematorium~~<br />~~elektriciteitscentrale~~<br />~~gemaal~~<br />~~gemeentehuis~~<br />~~kerncentrale, kernreactor~~<br />~~kunstijsbaan~~<br />~~observatorium~~<br />~~paleis~~<br />~~parkeerdak, parkeerdek, parkeergarage~~<br />~~politiebureau~~<br />~~radarpost~~<br />~~religie~~<br />~~schaapskooi~~<br />~~school~~<br />~~sporthal~~<br />~~stadskantoor, hulpsecretarie~~<br />~~universiteit~~<br />~~zwembad~~                                                                                                                                                                                                                                                                                                                                                                |
-| typeGebouw \| type                | ~~gevangenis~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~tansktation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| typeGebouw \| type                | ~~bezoekerscentrum~~<br />~~brandtoren~~<br />~~dok~~<br />~~fabriek~~<br />~~fort~~<br />~~gevangenis~~<br />~~hotel~~<br />~~huizenblok~~<br />~~kliniek, inrichting, sanatorium~~<br />~~lichttoren~~<br />~~luchtwachttoren~~<br />~~markant gebouw~~<br />~~manege~~<br />~~militair gebouw~~<br />~~museum~~<br />~~peilmeetstation~~<br />~~pompstation~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~postkantoor~~<br />~~radartoren~~<br />~~recreatiecentrum~~<br />~~reddingboothuisje~~<br />~~remise~~<br />~~stationsgebouw~~<br />~~synagoge~~<br />~~tank~~<br />~~tanstation~~<br />~~tol~~<br />~~transformatorstation~~<br />~~veiling~~<br />~~wegrestaurant~~<br />~~werf~~<br />~~windmolen: korenmolen~~<br />~~windmolen: watermolen~~<br />~~windturbine~~<br />~~zendtoren~~<br />~~ziekenhuis~~ |
+| typeGebouw | type                | ~~brandweerkazerne~~<br />~~crematorium~~<br />~~elektriciteitscentrale~~<br />~~gemaal~~<br />~~gemeentehuis~~<br />~~kerncentrale, kernreactor~~<br />~~kunstijsbaan~~<br />~~observatorium~~<br />~~paleis~~<br />~~parkeerdak, parkeerdek, parkeergarage~~<br />~~politiebureau~~<br />~~radarpost~~<br />~~schaapskooi~~<br />~~school~~<br />~~sporthal~~<br />~~stadskantoor, hulpsecretarie~~<br />~~universiteit~~<br />~~zwembad~~                                                                                                                                                                                                                                                                                                                                                                                |
+| typeGebouw | type                | ~~gevangenis~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~ tanstation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| typeGebouw | type                | ~~bezoekerscentrum~~<br />~~brandtoren~~<br />~~dok~~<br />~~fabriek~~<br />~~fort~~<br />~~gevangenis~~<br />~~hotel~~<br />~~huizenblok~~<br />~~kliniek, inrichting, sanatorium~~<br />~~lichttoren~~<br />~~luchtwachttoren~~<br />~~markant gebouw~~<br />~~manege~~<br />~~militair gebouw~~<br />~~museum~~<br />~~peilmeetstation~~<br />~~pompstation~~<br />~~psychiatrisch ziekenhuis, psychiatrisch centrum~~<br />~~postkantoor~~<br />~~radartoren~~<br />~~recreatiecentrum~~<br />~~reddingboothuisje~~<br />~~remise~~<br />~~stationsgebouw~~<br />~~synagoge~~<br />~~tank~~<br />~~tanstation~~<br />~~tol~~<br />~~transformatorstation~~<br />~~veiling~~<br />~~wegrestaurant~~<br />~~werf~~<br />~~windmolen: korenmolen~~<br />~~windmolen: watermolen~~<br />~~windturbine~~<br />~~zendtoren~~<br />~~ziekenhuis~~ |
 | fysiekVoorkomen                   | ~~overkluisd~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | status                            | ~~in gebruik~~<br />~~buiten gebruik~~<br />~~in uitvoering~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-<details class="note"> de attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …, ‘zwembad’
-verplaatsen van attribuut typeGebouw\|type naar attribuut functie.
+<details class="note"> 
+de attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …, ‘zwembad’
+verplaatsen van attribuut typeGebouw|type naar attribuut functie.
 </details>
-<details class="note"> typen ‘gevangenis’, ‘psychiatrisch ziekenhuiscomplex, psychiatrisch
+
+<details class="note">
+typen ‘gevangenis’, ‘psychiatrisch ziekenhuiscomplex, psychiatrisch
 centrum’ en ‘tankstation’ van object Gebouw verplaatsen naar typen van object
 FunctioneelGebied.
 </details>
-<details class="note"> typeGebouw ‘tank’, ‘windturbine’, ‘dok’ verplaatsen naar type van object
+<details class="note">
+typeGebouw ‘tank’, ‘windturbine’, ‘dok’ verplaatsen naar type van object
 Inrichtingselement.
 </details>
-<details class="note"> status ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot status
+<details class="note">
+status ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot status
 ‘bestaand’.
 </details>
+
 Toevoegen attributen
 --------------------
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                                                   | *Verplicht/optioneel*    | *Domein*                                                             |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                                                   | *Verplicht/optioneel*    | *Attribuutwaarde*                                                    |
 |--------------------------|-------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------------------|
 | **functie**              | **De functie van het gebouw, de functie waarvoor het gebouw gebruikt wordt.** | **optioneel, 0 of meer** | *zie tabel attribuut BRT.Next:functie in Toevoegen attribuutwaarden* |
 
@@ -235,7 +243,6 @@ Toevoegen attribuutwaarden
 Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:functie*
-
 
 
 | *BRT.Next:waarde*                         | *BRT.Next:definitie*                            |
@@ -261,10 +268,11 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 | **waterwoning**                           | *definitie TOP10NL 1.2*                         |
 | **zwembad**                               | *definitie TOP10NL 1.2*                         |
 
-<details class="note"> attribuutwaarden van BRT.Next:functie zijn overgenomen van
+<details class="note">attribuutwaarden van BRT.Next:functie zijn overgenomen van
 TOP10NL:typeGebouw<br />m.u.v. waarde ‘religie’: deze classificatie is nieuw
-toegevoegd aan BRT.Next
+toegevoegd aan BRT.Next.
 </details>
+
 *Attribuut BRT.Next:status*
 
 | *BRT.Next:status* | *BRT.Next:definitie*                                                                                          |
