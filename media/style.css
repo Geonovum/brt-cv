@@ -123,7 +123,7 @@ div#remark
 
 /* addComment */
 
-.buttonComment {	
+.submitComment {	
 	position: fixed;
 	right: 50%;
 	top: 20px;
