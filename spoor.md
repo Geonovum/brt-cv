@@ -142,7 +142,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | typeSpoorbaan \| type             | ~~metro~~                                                         |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
 | aantalSporen                      | ~~dubbel~~                                                        |
-| status                            | ~~in uitvoering~~<br />~~in gebruik~~[^2]<br />~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~<br />~~in gebruik~~<br />~~buiten gebruik~~ |
 
 <details class="note">
 status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
