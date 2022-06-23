@@ -13,7 +13,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
     naar ‘ligging’.
 
 -   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie wordt en bereik -9 tot 9 wordt aangepast op BGT.
+    definitie en attribuutwaarden worden aangepast op BGT.
 
 -   typen ‘akkerland’, ‘boomkwekerij’, ‘fruitkwekerij’, ‘bos: gemengd bos’,
     ‘bos: griend’, ‘bos: loofbos’ en ‘bos: naaldbos’, worden hernoemd naar
@@ -34,7 +34,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   fysiekVoorkomen ‘op vast deel van brug’ wordt hernoemd naar ligging ‘op
     brug’.
 
--   attributen ‘voorkomen’, ‘naam’ en ‘bebouwd gebied’ vervallen.
+-   attributen ‘voorkomen’ en ‘naam’ vervallen.
 
 -   type ‘spoorbaanlichaam’ verplaatst van object Terrein naar type ‘spoorbaan’
     van object Wegdeel.
@@ -48,13 +48,13 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 -   fysiekVoorkomen ‘overkluisd’ en ‘op beweegbaar deel van brug’ vervallen bij
     ligging.
 
--   puntgeometrie vervalt.
+-   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
 
 *Overzicht attributen en waarden/type van object Terrein in BRT.Next*
 
-| Attribuutnaam          | Waarde of «type»           | Geometrietype | Kardinaliteit |
+| Attribuutnaam          | Waarde of «type»             | Geometrietype | Kardinaliteit |
 |------------------------|------------------------------|---------------|---------------|
-| geometrie              | «vlak»                     |               | 1-1           |
+| geometrie              | «vlak»                       |               | 1-1           |
 | type                   | basaltblokken, steenglooiing | vlak          | 1-1           |
 |                        | bouwland                     | vlak          |               |
 |                        | boomteelt                    | vlak          |               |
@@ -78,7 +78,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | moeras                       | vlak          |               |
 | ligging                | in tunnel                    |               | 0..1          |
 |                        | op brug                      |               |               |
-| relatieveHoogteligging | «geheel getal [-9;9]»     |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9<br />9]»       |               | 1-1           |
 
 Wijzigen attributen
 -------------------
@@ -109,8 +109,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|--------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note">
-Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+<details class="note"> Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
@@ -125,7 +124,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:fysiekVoorkomen \| BRT.Next:ligging*
+*Attribuut TOP10NL:fysiekVoorkomen | BRT.Next:ligging*
 
 | *TOP10NL:waarde*              | *BRT.Next:waarde* |
 |-------------------------------|-------------------|
@@ -133,7 +132,7 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-*Attribuut TOP10NL:typeLandgebruik \| BRT.Next:type*
+*Attribuut TOP10NL:typeLandgebruik | BRT.Next:type*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                            | *BRT.Next:definitie*                                                                                                              |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -147,7 +146,7 @@ definitie wordt niet aangepast.
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWeg \| BRT.Next:type*
+*Attribuut TOP10NL:typeWeg | BRT.Next:type*
 
 | *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                                                                                              | *BRT.Next:waarde*      | *BRT.Next:definitie*                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -157,9 +156,8 @@ BRT.Next
 | ~~bos:~~ gemengd bos | ~~Oppervlak~~ begroeid met een dusdanige aantal naald- en loofbomen dat ~~de kruinen~~ een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.            | gemengd bos            | **Terreindeel** begroeid met een dusdanige aantal naald- en loofbomen dat **deze** een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                         |
 | grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                                      | grasland **agrarisch** | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, zijnde cultuurgrasland dat in gebruik is voor de veeteelt, bijvoorbeeld als weiland of als hooiland.** |
 | grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                                      | grasland **overig**    | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden.**                                                   |
-| ~~bos:~~ griend      | ~~In of aan het water gelegen~~ terrein~~,~~ begroei~~d met laagafgeknot wilgenhout t.b.v. de productie van rijshout.~~                                                              | griend **en hakhout**  | Terrein**deel met opgaande** begroei**ing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet.**                                                                                                             |
+| ~~bos:~~ griend      | ~~In of aan het water gelegen~~ terrein~~, ~~begroei~~d met laagafgeknot wilgenhout t.b.v. de productie van rijshout.~~                                                              | griend **en hakhout**  | Terrein**deel met opgaande** begroei**ing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet.**                                                                                                             |
 | ~~bos:~~ loofbos     | ~~Oppervlak~~ begroeid met een dusdanige aantal loofbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                              | loofbos                | **Terreindeel** begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                                       |
-| ~~aanleg~~steiger    | ~~In het water uitstekende brug of pier, breder dan 2 meter, gebruikt om personen en goederen aan~~ wal ~~te brengen.~~                                                                  | steiger                | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.**                                                                         |
 
 Vervallen attributen
 --------------------
@@ -171,9 +169,9 @@ in BRT.Next.
 |-------------------------|----------------------------------------------|
 | ~~voorkomen~~       | ~~met riet~~<br />~~dras, moerassig~~ |
 | ~~naam~~            | ~~«tekst»~~                              |
-| ~~bebouwd gebied~~  | ~~ja~~<br />~~nee~~                      |
 
-<details class="note">voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
+<details class="note"> 
+voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
 respectievelijk typen ‘rietland’ en ‘moeras’.
 </details>
 
@@ -183,9 +181,10 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                       |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik \| type          | ~~aanlegsteiger~~[^3]<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~[^4] |
+| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| typeLandgebruik | type          | ~~aanlegsteiger~~[^3]<br />~~bebouwd gebied~~<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~[^4] |
+| fysiekVoorkomen | ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                                |
 
 [^3]: type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
 object Inrichtingselement
