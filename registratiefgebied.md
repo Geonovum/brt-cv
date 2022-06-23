@@ -4,34 +4,30 @@ Registratief gebied
 Dit hoofdstuk beschrijft de wijzigingen voor het object Registratief gebied in
 BRT.Next ten opzichte van de huidige versie TOP10NL.
 
-Wijzigen attributen
--------------------
-
-De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
-wijzigen van naam en definitie in BRT.Next.
-
 Samenvatting
 ------------
 
 Samengevat worden de volgende wijzigingen voorgesteld:
 
--   attribuut ‘typeRegistratieGebied’ wordt hernoemd naar ‘type’,
-    ‘naamOfficieel’ naar ‘naam’.
+-   attribuut ‘typeRegistratieGebied’ wordt hernoemd naar ‘type’
 
 -   type ‘land’ wordt hernoemd naar ‘rijk’, type ‘terriotoriale zee’ wordt
     hernoemd naar ‘maritieme zone’ met aangepaste definitie.
 
 -   type ‘waterschap’ vervalt.
 
--   attributen ‘naamNL’ en ‘naamFries’ worden samengevoegd tot attribuut
-    ‘naam:taal’ met waarden ‘Nederlands’, ‘Fries’, of ‘overig’.
+-   attribuut ‘naamOfficieel’ vervalt<br />attribuut ‘naam’ wordt nieuw toegevoegd.
+
+-   attributen ‘naamNL’ en ‘naamFries’ vervallen<br />attribuut ‘naam:taal’ wordt
+    toegevoegd met waarden ‘Nederlands’, ‘Fries’, of ‘overig’.
 
 -   attribuut ‘naam:herkomst’ met waarden ‘BAG’, ‘BGT’, ‘BRK’, of ‘overig’ wordt
     toegevoegd.
 
--   puntgeometrie vervalt.
+-   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
 
-*Overzicht attributen en waarden/type van object Registratief gebied in BRT.Next*
+*Overzicht attributen en waarden/type van object Registratief gebied in
+BRT.Next*
 
 | Attribuutnaam  | Waarde of «type» | Geometrietype   | Kardinaliteit |
 |----------------|------------------|-----------------|---------------|
@@ -51,6 +47,12 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                | overig           |                 |               |
 | nummer         | «tekst»          |                 | 0..1          |
 
+Wijzigen attributen
+-------------------
+
+De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
+wijzigen van naam en definitie in BRT.Next.
+
 ### Naam
 
 Onderstaande attributen wijzigen van naam in BRT.Next. De definitie wordt niet
@@ -66,11 +68,7 @@ aangepast.
 
 ### Naam+definitie
 
-Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
-
-| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                    | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                 |
-|-------------------------|--------------------------------------------------------|--------------------------|--------------------------------------|
-| naam~~Officieel~~   | De ~~officiële~~ naam van het registratief gebied. | naam                     | De naam van het registratief gebied. |
+*n.v.t.*
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -96,11 +94,11 @@ definitie wordt niet aangepast.
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeRegistratiefGebied \| BRT.Next:type*
+*Attribuut TOP10NL:typeRegistratiefGebied | BRT.Next:type*
 
-| *TOP10NL:waarde*         | *TOP10NL:definitie* | *BRT.Next:waarde*  | *BRT.Next:definitie* |
-|--------------------------|---------------------|--------------------|----------------------|
-| ~~territoriale zee~~ |                     | **maritieme zone** |                      |
+| *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                               | *BRT.Next:waarde*  | *BRT.Next:definitie*                                                                                              |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------|
+| ~~territoriale zee~~ | ~~Een~~ zee~~strook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt.~~ | **maritieme zone** | **Een bestuurlijk gebied op** zee**, vastgesteld oor de Dienst der Hydrografie van het Ministerie van Defensie.** |
 
 Vervallen attributen
 --------------------
@@ -110,13 +108,9 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~naamNL~~     | ~~«tekst»~~                          |
+| ~~naamOfficieel~~   | ~~«tekst»~~                          |
+| ~~naamNL~~          | ~~«tekst»~~                          |
 | ~~naamFries~~       | ~~«tekst»~~                          |
-
-<details class="note"> TOP10NL-attributen naamNL en naamFries met datatype «tekst» worden
-vervangen door attribuut naam:taal met attribuutwaarden ‘Nederlands’<br /> ‘Fries’<br />
-‘overig’ in BRT.Next.
-</details>
 
 Vervallen attribuutwaarden
 --------------------------
@@ -124,18 +118,19 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
+| *TOP10NL|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-----------------------------------|------------------------------------------|
 | geometrie                         | ~~«punt»~~                           |
-| typeRegistratiefGebied\|type      | ~~waterschap~~                       |
+| typeRegistratiefGebied|type      | ~~waterschap~~                       |
 
 Toevoegen attributen
 --------------------
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                    | *Verplicht/optioneel* | *Domein*                      |
-|--------------------------|------------------------------------------------|-----------------------|-------------------------------|
+| *BRT.Next:Attribuutnaam* | *Definitie*                                              | *Verplicht/optioneel* | *Attribuutwaarde*             |
+|--------------------------|----------------------------------------------------------|-----------------------|-------------------------------|
+| **naam**                 | **De naam van het registratief gebied**                  | **Verplicht, 1**      | **«tekst»**                   |
 | **naam: taal**           | **De taal van de naam van het registratief gebied.**     | **Verplicht, 1**      | **Nederlands, Fries, overig** |
 | **naam: herkomst**       | **De herkomst van de naam van het registratief gebied.** | **Verplicht, 1**      | **BAG, BGT, BRK, overig**     |
 
