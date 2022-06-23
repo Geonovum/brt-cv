@@ -55,9 +55,9 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:waarde of \<type\>*                                  |
 |-------------------------|---------------------------------------------------------------|
-| ~~typeObject~~      | ~~spoorbaan~~; ~~water~~; ~~weg~~; ~~overig~~ |
+| ~~typeObject~~      | ~~spoorbaan~~<br />~~water~~<br />~~weg~~<br />~~overig~~ |
 | ~~naam~~            | ~~\<tekst\>~~                                             |
-| ~~geometrie~~       | ~~\<punt\>~~; ~~\<lijn\>~~; ~~\<vlak\>~~          |
+| ~~geometrie~~       | ~~\<punt\>~~<br />~~\<lijn\>~~<br />~~\<vlak\>~~          |
 
 Vervallen classificaties
 ------------------------
