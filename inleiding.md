@@ -58,19 +58,20 @@ voorstellen, en worden met dit wijzigingsvoorstel geconsulteerd onder het
 werkveld.
 
 U kunt uw reacties op dit wijzigingsvoorstel indienen via het reactieformulier:
-[https://fd10.formdesk.com/geonovum/brtnext](https://fd10.formdesk.com/geonovum/brtnext). U vindt een link naar het
+<https://fd10.formdesk.com/geonovum/brtnext>. U vindt een link naar het
 reactieformulier midden onderaan deze pagina (knop “Reactie indienen”).
 
-Al uw vragen of opmerkingen over de consultatie van BRT.Next stelt u aan de
-online helpdesk van het Kadaster via
-[https://formulieren.kadaster.nl/contact_kadaster](https://formulieren.kadaster.nl/contact_kadaster) of telefonisch via 088-183 38
-00.
+Geef bij uw reactie uw feedback en verbetersuggestie inclusief motivatie op: Wat gebeurt er als het Kadaster dit voorstel doorvoert? Wat is het voordeel van uw verbetervoorstel?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Al uw vragen of opmerkingen over de consultatie van BRT.Next stelt u per email aan <brt@kadaster.nl>.
+-----------------------------------------------------------------------------------------------------
 
 Leeswijzer
 ----------
 
 De voorgestelde wijzigingen in de BRT.Next t.o.v. TOP10NL zijn in dit document
-gemarkeerd: ~~tekst met deze opmaak~~ komt te vervallen, **tekst met deze**
+gemarkeerd: \~\~tekst met deze opmaak\~\~ komt te vervallen, **tekst met deze**
 opmaak wordt toegevoegd.
 
 In de desktopversie van het wijzigingsvoorstel wordt een schakelknop in het
