@@ -40,7 +40,7 @@ var respecConfig =
 {
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   //specStatus: "GN-BASIS",             // Basis Document
-  specStatus: "GN-WV",              // Werk Versie
+  specStatus: "GN-CV",              // Werk Versie
   //specStatus: "GN-CV",              // Consultatie Versie
   //specStatus: "GN-VV",              // Vaststellings Versie
   //specStatus: "GN-DEF",             // Definitieve Versie
@@ -58,11 +58,11 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/geonovum/brt-cv",
+  github: "https://github.com/geonovum/brt-next-cv",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   issueBase: "https://github.com/geonovum/brt-cv/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/brt-cv",
+  edDraftURI: "https://github/geonovum/brt-next-cv",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -94,9 +94,9 @@ var respecConfig =
     },  
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "brt-cv",  	              // Wordt gebruikt in de document URL
+  shortName: "brtnext",  	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
-  pubDomain: "brt-cv", 	              // Energie transitie
+  pubDomain: "brtnext", 	              // Energie transitie
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
   //pubDomain: "bor", 	            // Beheer Openbare Ruimte
   //pubDomain: "bro", 	            // Basisregistratie Ondergrond
