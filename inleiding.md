@@ -58,12 +58,12 @@ voorstellen, en worden met dit wijzigingsvoorstel geconsulteerd onder het
 werkveld.
 
 U kunt uw reacties op dit wijzigingsvoorstel indienen via het reactieformulier:
-(https://fd10.formdesk.com/geonovum/brtnext)[https://fd10.formdesk.com/geonovum/brtnext]. U vindt een link naar het
+[https://fd10.formdesk.com/geonovum/brtnext](https://fd10.formdesk.com/geonovum/brtnext). U vindt een link naar het
 reactieformulier midden onderaan deze pagina (knop “Reactie indienen”).
 
 Al uw vragen of opmerkingen over de consultatie van BRT.Next stelt u aan de
 online helpdesk van het Kadaster via
-(https://formulieren.kadaster.nl/contact_kadaster)[https://formulieren.kadaster.nl/contact_kadaster] of telefonisch via 088-183 38
+[https://formulieren.kadaster.nl/contact_kadaster](https://formulieren.kadaster.nl/contact_kadaster) of telefonisch via 088-183 38
 00.
 
 Leeswijzer
