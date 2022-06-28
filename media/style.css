@@ -131,9 +131,11 @@ div#remark
 	bottom: 20px;
 	z-index: 9000;	
 	height: auto;	
+	
+}
+.submitComment a {
 	cursor: pointer;
 }
-
 
 	
 
