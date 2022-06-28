@@ -126,21 +126,24 @@ div#remark
 .submitComment {	
 	position: fixed;
 	right: 50%;
-	top: 20px;
-	z-index: 9000;
-	width: auto;
-	height: auto;
-	
-	text-align: right;
-	background: #fff;    
-    color: rgb(120, 120, 120);
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 8px 0 rgb(100 100 100 / 50%);
-	padding: 6px 6px;
-	font-size: 0.9em;
+	width: 150px;
+	margin-left: -75px;
+	bottom: 20px;
+	z-index: 9000;	
+	height: auto;	
+	cursor: pointer;
 }
 
+
+	
+
 /* trackChanges */
+
+@media screen and (max-width : 906px){
+	.trackChanges {
+		display: none;
+	}		
+}
 
 .trackChanges {	
 	position: fixed;
