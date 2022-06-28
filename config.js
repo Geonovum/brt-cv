@@ -46,8 +46,8 @@ var respecConfig =
   //specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                   // Norm
-  specType: "ST",                   // Standaard
-  //specType: "IM",                   // Informatie Model
+  //specType: "ST",                   // Standaard
+  specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijkrichtlijn
   //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
