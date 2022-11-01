@@ -75,10 +75,11 @@ aangepast.
 |-------------------------|--------------------------|
 | type~~Weg~~         | type                     |
 | ~~fysiekVoorkomen~~ | **ligging**              |
-| ~~hoofdG~~eometrie  | **g**eometrie[^1]        |
+| ~~hoofdG~~eometrie  | **g**eometrie        |
 
-[^1]: Aan geometrie wordt de volgende regel toegevoegd: *“Een smalle berm (\<
-6m) is geen onderdeel van het wegvlak."*
+<details class="note"> Aan geometrie wordt de volgende regel toegevoegd: *“Een smalle berm (\<
+6m) is geen onderdeel van het wegvlak."* 
+</details>
 
 ### Definitie
 
@@ -95,10 +96,11 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^2] | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-[^2]: Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
+<details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
+</details>
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -143,7 +145,7 @@ BRT.Next
 | lokale weg                   | Weg van lokaal belang ~~tussen bewegwijzerde routes~~.                                                                                                                                                                                                                                                        | **rijbaan** lokale weg    | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                                                                                                                                                                                          |
 | straat                       | Weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                                                                                                                                                                                                                                   | **rijbaan** straat        | **Wegdeel dat onderdeel is van een** weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                                                                                                                                                                                 |
 | parkeer~~plaats~~        | ~~Parkeergelegenheid voor meerdere~~ voertuigen ~~in de openlucht.~~                                                                                                                                                                                                                                      | parkeer**vak**            | **Wegdeel bestemd voor het parkeren van motor**voertuigen.                                                                                                                                                                                                                                           |
-| spoorbaan~~lichaam~~[^3] | ~~Geheel van~~ rails~~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.~~                                                                                                                                                                                                                   | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                                                                                                                                                                                    |
+| spoorbaan~~lichaam~~ | ~~Geheel van~~ rails~~, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt.~~                                                                                                                                                                                                                   | spoorbaan                 | **Gebaand gedeelte voor het verkeer over** rails.                                                                                                                                                                                                                                                    |
 
 [^3]: typeLandgebruik 'spoorbaanlichaam' wordt verplaatst van object Terrein
 naar type 'spoorbaan' van Wegdeel.
