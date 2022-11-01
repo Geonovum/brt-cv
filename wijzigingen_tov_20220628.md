@@ -49,3 +49,22 @@ Waterdeel
 
 -   Regel toegevoegd dat naam: herkomst, naam:officieel en naam:taal verplicht
     attributen zijn als naam gevuld is.
+
+Terrein
+-------
+
+-   Hernoemen van type ‘akkerland’ naar ‘bouwland’ (definitie wel aangepast naar
+    BGT), type ‘boomkwekerij’ naar ‘boomteelt’, type ‘fruitkwekerij’ naar
+    ‘fruitteelt’ (definitie wel minimaal aangepast) is teruggedraaid.
+
+-   Schrappen type boomgaard is teruggedraaid, wel definitie minimaal aangepast.
+
+-   geometrie ‘vlak’ van type ‘struiken’ is gespecificeerd.
+
+-   Schrappen zinsnede ‘dat niet nader wordt ingewonnen’ in definitie van type
+    ‘erf’.
+
+-   Optioneel attribuut ‘brugnaam’ is toegevoegd.
+
+-   Spoorbaanlichaam verplaatst niet van objecttype Terrein naar objecttype
+    Wegdeel, maar van objecttype Terrein naar objecttype Spoor.
