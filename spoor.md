@@ -4,54 +4,36 @@ Spoor
 Dit hoofdstuk beschrijft de wijzigingen voor het object Spoor in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeSpoorbaan’ wordt hernoemd naar ‘type’, en ‘fysiekVoorkomen’
-    naar ‘ligging’
-
--   definitie van attributen ‘aantalSporen’ en ‘status’ wijzigen.
-
--   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie en attribuutwaarden worden aangepast op BGT.
-
--   waarde ‘enkel’ van attribuut ‘aantalSporen’ wordt hernoemd naar
-    ‘enkelvoudig’,
-
--   statussen ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot ‘bestaand’
-    met BGT-definitie<br />status ‘buiten gebruik’ vervalt.
-
--   attributen ‘typeInfrastructuur’, ‘elektrificatie’, ‘spoorbreedte’,
-    ‘vervoerfunctie’, en ‘baanvaknaam’ vervallen.
-
--   ‘dubbel’ vervalt als waarde bij aantalSporen.
-
--   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging. 
-
--   type ‘metro’ vervalt.
-
--   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Spoor in BRT.Next*
 
 | Attribuutnaam          | Waarde of «type»            | Geometrietype | Kardinaliteit |
 |------------------------|-----------------------------|---------------|---------------|
-| geometrie              | «lijn»                      |               | 1-1           |
+| geometrie              | «lijn» of «vlak»            |               | 1-1           |
 | type                   | trein                       | lijn          | 1-1           |
 |                        | tram                        | lijn          |               |
 |                        | sneltram                    | lijn          |               |
+|                        | metro                       | lijn          |               |
 |                        | gemengd                     | lijn          |               |
-| aantalSporen           | enkelvoudig                 |               | 1-1           |
+|                        | spoorbaan                   | vlak          |               |
+| aantalSporen           | enkelvoudig                 |               | 1-1       |
 |                        | meervoudig                  |               |               |
+| elektrificatie         | ja                          |               | 1-1           |
+|                        | nee                         |               |               |
 | ligging                | op vast deel van brug       |               | 0..n          |
 |                        | op beweegbaar deel van brug |               |               |
 |                        | in tunnel                   |               |               |
-| relatieveHoogteligging | «geheel getal [-9;9]»              |               | 1-1           |
+| relatieveHoogteligging | «geheel getal»              |               | 1-1           |
 | status                 | bestaand                    |               | 1-1           |
 | brugnaam               | «tekst»                     |               | 0..1          |
 | tunnelnaam             | «tekst»                     |               | 0..1          |
+
+<details class="note">
+attribuut aantalSporen is alleen verplicht voor objecten Spoor met
+lijngeometrie.
+</details>
 
 Wijzigen attributen
 -------------------
@@ -83,10 +65,10 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note">
- Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
@@ -101,7 +83,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:aantalSporen | BRT.Next:aantalSporen*
+*Attribuut TOP10NL:aantalSporen \| BRT.Next:aantalSporen*
 
 | TOP10NL:waarde | BRT.Next:waarde |
 |----------------|-----------------|
@@ -113,7 +95,8 @@ n.v.t.
 
 ### Naam+definitie
 
-n.v.t. 
+| n.v.t. |   |   |   |
+|--------|---|---|---|
 
 
 Vervallen attributen
@@ -124,10 +107,9 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
 |----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~<br />~~kruising~~                                                       |
-| ~~elektrificatie~~     | ~~ja~~<br />~~nee~~                                                                    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~<br />~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~<br />~~personenvervoer~~<br />~~goederenvervoer~~<br />~~museumlijn~~ |
+| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
+| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
 | ~~baanvaknaam~~        | ~~«tekst»~~                                                                            |
 
 Vervallen attribuutwaarden
@@ -139,16 +121,14 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                              |
 |-----------------------------------|-----------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                        |
-| typeSpoorbaan \| type             | ~~metro~~                                                         |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                    |
 | aantalSporen                      | ~~dubbel~~                                                        |
-| status                            | ~~in uitvoering~~<br />~~in gebruik~~<br />~~buiten gebruik~~ |
+| status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~ |
 
 <details class="note">
 status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
 </details>
-
 Toevoegen attributen
 --------------------
 
@@ -158,6 +138,26 @@ Toevoegen attribuutwaarden
 --------------------------
 
 Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
+
+*Attribuut BRT.Next:geometrie*
+
+| *BRT.Next:status* | *BRT.Next:definitie*                                   |
+|-------------------|--------------------------------------------------------|
+| **vlak**          | **De vlakgeometrie van een spoorbaandeel object.** |
+
+<details class="note">
+regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’.
+</details>
+
+*Attribuut BRT.Next:type*
+
+| *BRT.Next:status*            | *BRT.Next:definitie*                                  |
+|------------------------------|-------------------------------------------------------|
+| **spoorbaan**~~lichaam~~ | **Gebaand gedeelte voor het verkeer over rails.** |
+
+<details class="note">
+type ‘spoorbaan’ verplaatst van objecttype Terrein naar objecttype Spoor.
+</details>
 
 *Attribuut BRT.Next:status*
 
