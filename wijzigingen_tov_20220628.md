@@ -66,5 +66,5 @@ Terrein
 
 -   Optioneel attribuut ‘brugnaam’ is toegevoegd.
 
--   Spoorbaanlichaam verplaatst niet van objecttype Terrein naar objecttype
-    Wegdeel, maar van objecttype Terrein naar objecttype Spoor.
+-   Voetnoot aangepast: Spoorbaanlichaam verplaatst niet van objecttype Terrein
+    naar objecttype Wegdeel, maar van objecttype Terrein naar objecttype Spoor.
