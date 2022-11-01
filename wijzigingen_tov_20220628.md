@@ -26,3 +26,26 @@ Spoor
     lijngeometrie.
 
 -   Schrappen van attribuut elektrificatie is teruggedraaid.
+
+Waterdeel
+---------
+
+-   Schrappen van «punt» bij geometrie is teruggedraaid.
+
+-   Schrappen type ‘bron, wel’ is teruggedraaid, wel hernoemd naar ‘bron’.
+
+-   geometrie ‘vlak’ van type ‘water’ gespecificeerd.
+
+-   Schrappen van breedteklasse ‘6 - 12 meter’, ‘12 - 50 meter’, ‘50 - 125
+    meter’, ‘\> 125 meter’ is teruggedraaid.
+
+-   Ligging ‘in duiker’ is geschrapt.
+
+-   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
+    naar vrij tekstveld.
+
+-   naam:taal ‘overig’ hernoemd naar ‘onbekend/ VoidReason’ met aangepaste
+    definitie.
+
+-   Regel toegevoegd dat naam: herkomst, naam:officieel en naam:taal verplicht
+    attributen zijn als naam gevuld is.
