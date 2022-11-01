@@ -4,77 +4,43 @@ Waterdeel
 Dit hoofdstuk beschrijft de wijzigingen voor het object Waterdeel in BRT.Next
 ten opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeWater’ wordt hernoemd naar ‘type’, ‘fysiekVoorkomen’ naar
-    ‘ligging’.
-
--   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie en attribuutwaarden worden aangepast op BGT.
-
--   type ‘meer, plas’ wordt hernoemd naar ‘watervlakte’, en definitie wordt
-    aangepast naar BGT.
-
--   de definities van typen ‘waterloop’, ‘greppel, droge sloot’, ‘zee’ worden
-    aangepast naar de BGT.
-
--   attribuut ‘status’ met waarde ‘bestaand’ wordt toegevoegd.
-
--   attribuut ‘naam’ met type «tekst» wordt toegevoegd.
-
--   attribuut ‘naam:taal’ met waarden ‘Nederlands’, ‘Fries’ of ‘overig’ wordt
-    toegevoegd.
-
--   attribuut ‘naam:herkomst’ met waarden ‘BAG’, ‘BGT’, ‘BRK’ of ‘overig’ wordt
-    toegevoegd.
-
--   attribuut ‘voorkomen’ vervalt<br />type ‘water met riet’ wordt toegevoegd.
-
--   attributen ‘voorkomen’, ‘functie’, ‘getijdeInvloed’, ‘vaarwegklasse’,
-    ‘naamOfficieel’, ‘naamNL’, ‘naamFries’, ‘isBAGnaam’, en ‘hoofdafwatering’
-    vervallen.
-
--   typen ‘bron’ en ‘overig’ en ligging ‘in afsluitbare duiker’, ‘in
-    grondduiker’, ‘in afsluitbare grondduiker’ en ‘overkluisd’ vervallen.
-
--   breedteklassen vanaf 6 meter, dus ‘6-12 meter’ en opvolgende klassen
-    vervallen
-
--   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Waterdeel in BRT.Next*
 
-| Attribuutnaam          | Waarde of \<type\>       | Geometrietype | Kardinaliteit |
-|------------------------|--------------------------|---------------|---------------|
-| geometrie              | «vlak»                   |               | 1-1           |
-|                        | «lijn»                   |               |               |
-| type                   | waterloop                | lijn, vlak    | 1-1           |
-|                        | watervlakte              | vlak          |               |
-|                        | greppel, droge sloot     | lijn          |               |
-|                        | zee                      | vlak          |               |
-|                        | droogvallend             | vlak          |               |
-|                        | droogvallend (LAT)       | vlak          |               |
-|                        | water met riet           |               |               |
-| breedteklasse          | 0,5 - 3 meter            | lijn          | 0..1          |
-|                        | 3 - 6 meter              | lijn          |               |
-| ligging                | in sluis                 | lijn, vlak    | 0..n          |
-|                        | op brug                  | lijn, vlak    |               |
-|                        | in duiker                | lijn          |               |
-| relatieveHoogteligging | «geheel getal [-9;9]» |               | 1-1           |
-| status                 | bestaand                 |               | 1-1           |
-| naam                   | «tekst»               |               | 0..n          |
-| naam: taal             | Nederlands               |               | 0..n          |
-|                        | Fries                    |               |               |
-|                        | overig                   |               |               |
-| naam: herkomst         | BAG                      |               | 0..n          |
-|                        | BGT                      |               |               |
-|                        | BRK                      |               |               |
-|                        | overig                   |               |               |
+| Attribuutnaam          | Waarde of \<type\>     | Geometrietype | Kardinaliteit |
+|------------------------|------------------------|---------------|---------------|
+| geometrie              | «vlak»                 |               | 1-1           |
+|                        | «lijn»                 |               |               |
+|                        | «punt»                 |               |               |
+| type                   | waterloop              | lijn, vlak    | 1-1           |
+|                        | watervlakte            | vlak          |               |
+|                        | greppel, droge sloot   | lijn          |               |
+|                        | zee                    | vlak          |               |
+|                        | droogvallend           | vlak          |               |
+|                        | droogvallend (LAT)     | vlak          |               |
+|                        | bron                   | punt          |               |
+|                        | water met riet         | vlak          |               |
+| breedteklasse          | 0,5 - 3 meter          | lijn          | 0..1          |
+|                        | 3 - 6 meter            | lijn          |               |
+|                        | 6 - 12 meter           | vlak          |               |
+|                        | 12 - 50 meter          | vlak          |               |
+|                        | 50 - 125 meter         | vlak          |               |
+|                        | \> 125 meter           | vlak          |               |
+| ligging                | in sluis               | lijn, vlak    | 0..n          |
+|                        | op brug                | lijn, vlak    |               |
+| relatieveHoogteligging | «geheel getal [-9; 9]» |               | 1-1           |
+| status                 | bestaand               |               | 1-1           |
+| naam                   | «tekst»                |               | 0..n          |
+| naam: herkomst         | «tekst»                |               | 0..n          |
+| naam:officieel         | ja                     |               | 0..n          |
+|                        | nee                    |               |               |
+| naam: taal             | Nederlands             |               | 0..n          |
+|                        | Fries                  |               |               |
+|                        | onbekend / VoidReason  |               |               |
 | sluisnaam              | «tekst»                |               | 0..1          |
-| brugnaam               | «tekst»               |               | 0..1          |
+| brugnaam               | «tekst»                |               | 0..1          |
 
 Wijzigen attributen
 -------------------
@@ -91,6 +57,11 @@ aangepast.
 |-------------------------|--------------------------|
 | type~~Water~~       | **type**                 |
 | ~~fysiekVoorkomen~~ | **ligging**              |
+| naam~~O~~fficeel        | naam**:o**fficieel   |
+
+<details class="note">
+regel: naam:officieel is een verplicht attribuut als naam is gevuld.
+</details>
 
 ### Definitie
 
@@ -102,10 +73,10 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                   | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte ~~niveau~~ van het object.~~ | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
 
 <details class="note">
-Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
@@ -114,14 +85,18 @@ Wijzigen attribuutwaarden
 
 ### Naam
 
-*n.v.t*
+*Attribuut TOP10NL:typeWater \| BRT.Next:type*
+
+| TOP10NL:waarde    | BRT.Next:waarde |
+|-------------------|-----------------|
+| bron~~, wel~~ | bron            |
 
 ### Definitie
 
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam
 (waarde) wordt niet aangepast.
 
-*Attribuut TOP10NL:typeWater | BRT.Next:type*
+*Attribuut TOP10NL:typeWater \| BRT.Next:type*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                 | *BRT.Next:definitie*                                                                                                             |
 |----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -131,18 +106,12 @@ Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam
 |                            |                                                                                     |                                                                                                                                  |
 |                            |                                                                                     |                                                                                                                                  |
 
-*Attribuut TOP10NL:typeWater | BRT.Next:type*
-
-| TOP10NL\|BRT.Next:waarde | TOP10NL:definitie                                                                                                                                                                                                           | BRT.Next:definitie                                                                                                                                                         |
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| in duiker                | Gelegen in een ~~niet afsluitbare~~ koker die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen ~~, niet zijnde een grondduiker~~. | **Waterdeel** gelegen in een koker die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen. |
-
 ### Naam+definitie
 
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWater | BRT.Next:type*
+*Attribuut TOP10NL:typeWater / BRT.Next:type*
 
 | *TOP10NL:waarde*  | *TOP10NL:definitie*                                    | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                      |
 |-------------------|--------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------|
@@ -157,14 +126,13 @@ in BRT.Next.
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                       |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ~~voorkomen~~       | ~~met riet~~                                                                                                                                                                           |
-| ~~functie~~         | ~~drinkwaterbekken~~<br />~~haven~~<br />~~natuurbad~~<br />~~viskwekerij~~<br />~~vistrap~~<br />~~vloeiveld~~<br />~~waterval~~<br />~~waterzuivering~~<br />~~zwembad~~<br />~~overig~~ |
-| ~~getijdeInvloed~~  | ~~ja<br />nee~~                                                                                                                                                                                |
-| ~~vaarwegklasse~~   | ~~I~~<br />~~II~~<br />~~III~~<br />~~IV~~<br />~~Va~~<br />~~Vb~~<br />~~VIa~~<br />~~VIb~~<br />~~VIc~~<br />~~VII~~                                                                     |
-| ~~naamOfficieel~~   | ~~«tekst»~~                                                                                                                                                                                |
+| ~~functie~~         | ~~drinkwaterbekken~~; ~~haven~~; ~~natuurbad~~; ~~viskwekerij~~; ~~vistrap~~; ~~vloeiveld~~; ~~waterval~~; ~~waterzuivering~~; ~~zwembad~~; ~~overig~~ |
+| ~~getijdeInvloed~~  | ~~ja; nee~~                                                                                                                                                                                |
+| ~~vaarwegklasse~~   | ~~I~~; ~~II~~; ~~III~~; ~~IV~~; ~~Va~~; ~~Vb~~; ~~VIa~~; ~~VIb~~; ~~VIc~~; ~~VII~~                                                                     |
 | ~~naamNL~~          | ~~«tekst»~~                                                                                                                                                                                |
 | ~~naamFries~~       | ~~«tekst»~~                                                                                                                                                                                |
-| ~~isBAGnaam~~       | ~~ja~~<br />~~nee~~                                                                                                                                                                        |
-| ~~hoofdafwatering~~ | ~~ja~~<br />~~nee~~                                                                                                                                                                        |
+| ~~isBAGnaam~~       | ~~ja~~; ~~nee~~                                                                                                                                                                        |
+| ~~hoofdafwatering~~ | ~~ja~~; ~~nee~~                                                                                                                                                                        |
 
 <details class="note">
 voorkomen ‘met riet’ wordt opgenomen als type ‘water met riet’ in
@@ -177,24 +145,26 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                      |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------|
-| geometrie                         | ~~«punt»~~                                                                                                |
-| typeWater                         | ~~bron~~<br />~~overig~~                                                                                  |
-| fysiekVoorkomen \| ligging        | ~~in afsluitbare duiker~~<br />~~in grondduiker~~<br />~~in afsluitbare grondduiker~~<br />~~overkluisd~~ |
-| ~~breedteklasse~~             | ~~6 - 12 meter~~<br />~~12 - 50 meter~~<br />~~50 - 125 meter~~<br />~~\> 125 meter~~                     |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                         |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| typeWater                         | ~~overig~~                                                                                                                   |
+| fysiekVoorkomen \| ligging        | ~~in duiker~~, ~~in afsluitbare duiker~~; ~~in grondduiker~~; ~~in afsluitbare grondduiker~~; ~~overkluisd~~ |
 
 Toevoegen attributen
 --------------------
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                                     | *Verplicht/optioneel*     | *Attribuutwaarde*             |
-|--------------------------|-----------------------------------------------------------------|---------------------------|-------------------------------|
-| **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **Verplicht, 1**          | **bestaand**                  |
-| **naam**                 | **De naam van het waterdeel**                                   | **Optioneel, 0 of meer.** | **«tekst»**                   |
-| **naam: taal**           | **De taal van de naam van het waterdeel.**                      | **Optioneel, 0 of meer.** | **Nederlands<br />Fries<br />overig** |
-| **naam: herkomst**       | **De herkomst van de naam van het waterdeel.**                  | **Optioneel, 0 of meer.** | **BAG<br />BGT<br />BRK<br />overig**     |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                                     | *Verplicht/optioneel*        | *Attribuutwaarde*                           |
+|--------------------------|-----------------------------------------------------------------|------------------------------|---------------------------------------------|
+| **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **Verplicht, 1**             | **bestaand**                                |
+| **naam**                 | **De naam van het waterdeel**                                   | **Optioneel, 0 of meer**     | **«tekst»**                                 |
+| **naam: taal**           | **De taal van de naam van het waterdeel.**                      | **Optioneel, 0 of meer** | **Nederlands; Fries; onbekend/ VoidReason** |
+| **naam: herkomst**       | **De herkomst van de naam van het waterdeel.**                  | **Optioneel, 0 of meer**     | **«tekst»**                                 |
+
+<details class="note">
+regel: naam:herkomst en naam:taal zijn verplicht als naam is gevuld.
+</details>
 
 Toevoegen attribuutwaarden
 --------------------------
@@ -215,17 +185,8 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:naam:taal*
 
-| *BRT.Next:waarde* | *BRT.Next:definitie*                       |
-|-------------------|--------------------------------------------|
-| **Nederlands**    | **Nederlandse taal.**                      |
-| **Fries**         | **Friese taal.**                           |
-| **overig**        | **Taal, niet zijnde Nederlands of Fries.** |
-
-*Attribuut BRT.Next:naam:herkomst*
-
-| *BRT.Next:waarde* | *BRT.Next:definitie*                                                          |
-|-------------------|-------------------------------------------------------------------------------|
-| **BAG**           | **Naam is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).**     |
-| **BGT**           | **Naam is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT).** |
-| **BRK**           | **Naam is afkomstig uit de Basisregistratie Kadaster (BRK).**                 |
-| **overig**        | **Naam is afkomstig uit een bron, niet zijnde BAG, BGT of BRK.**              |
+| *BRT.Next:waarde*        | *BRT.Next:definitie*  |
+|--------------------------|-----------------------|
+| **Nederlands**           | **Nederlandse taal.** |
+| **Fries**                | **Friese taal.**      |
+| **onbekend/ VoidReason** | **Taal is onbekend.** |
