@@ -4,60 +4,18 @@ Terrein
 Dit hoofdstuk beschrijft de wijzigingen voor het object Terrein in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeLandgebruik’ wordt hernoemd naar ‘type’, ‘fysiekVoorkomen’
-    naar ‘ligging’.
-
--   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie en attribuutwaarden worden aangepast op BGT.
-
--   typen ‘akkerland’, ‘boomkwekerij’, ‘fruitkwekerij’, ‘bos: gemengd bos’,
-    ‘bos: griend’, ‘bos: loofbos’ en ‘bos: naaldbos’, worden hernoemd naar
-    respectievelijk ‘bouwland’, ‘boomteelt’, ‘fruitteelt’, ‘gemengd bos’,
-    ‘griend en hakhout’, ‘loofbos’ en ‘naaldbos’.
-
--   voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
-    respectievelijk typen ‘rietland’ en ‘moeras’.
-
--   type ‘grasland’ wordt opgesplitst in typen ‘grasland agrarisch’ en ‘grasland
-    overig’.
-
--   de definities van typen ‘braakliggend’, ‘duin’, ‘heide’ en ‘zand’ zijn
-    aangepast naar de BGT.
-
--   typen ’ houtwal’, ‘kwelder’, ‘struiken’ en ‘erf’ worden toegevoegd.
-
--   fysiekVoorkomen ‘op vast deel van brug’ wordt hernoemd naar ligging ‘op
-    brug’.
-
--   attributen ‘voorkomen’ en ‘naam’ vervallen.
-
--   type ‘spoorbaanlichaam’ verplaatst van object Terrein naar type ‘spoorbaan’
-    van object Wegdeel.
-
--   type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
-    object Inrichtingselement.
-
--   typen ‘dodenakker’, ‘dodenakker met bos’, ‘boomgaard’, ‘populieren’ en
-    ‘bebouwd gebied’ vervallen.
-
--   fysiekVoorkomen ‘overkluisd’ en ‘op beweegbaar deel van brug’ vervallen bij
-    ligging.
-
--   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Terrein in BRT.Next*
 
 | Attribuutnaam          | Waarde of «type»             | Geometrietype | Kardinaliteit |
 |------------------------|------------------------------|---------------|---------------|
 | geometrie              | «vlak»                       |               | 1-1           |
-| type                   | basaltblokken, steenglooiing | vlak          | 1-1           |
-|                        | bouwland                     | vlak          |               |
-|                        | boomteelt                    | vlak          |               |
+| type                   | akkerland                    | vlak          | 1-1           |
+|                        | basaltblokken, steenglooiing | vlak          |               |
+|                        | boomgaard                    | vlak          |               |
+|                        | boomkwekerij                 | vlak          |               |
 |                        | braakliggend                 | vlak          |               |
 |                        | duin                         | vlak          |               |
 |                        | fruitteelt                   | vlak          |               |
@@ -70,7 +28,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | kwelder                      | vlak          |               |
 |                        | loofbos                      | vlak          |               |
 |                        | naaldbos                     | vlak          |               |
-|                        | struiken                     |               |               |
+|                        | struiken                     | vlak          |               |
 |                        | zand                         | vlak          |               |
 |                        | overig                       | vlak          |               |
 |                        | erf                          | vlak          |               |
@@ -78,7 +36,8 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | moeras                       | vlak          |               |
 | ligging                | in tunnel                    |               | 0..1          |
 |                        | op brug                      |               |               |
-| relatieveHoogteligging | «geheel getal [-9;9]»       |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9; 9]»       |               | 1-1           |
+| brugnaam               | «tekst»                      |               | 0..1          |
 
 Wijzigen attributen
 -------------------
@@ -109,7 +68,8 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|--------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note"> Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
+<details class="note">
+Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
@@ -124,7 +84,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:fysiekVoorkomen | BRT.Next:ligging*
+*Attribuut TOP10NL:fysiekVoorkomen \| BRT.Next:ligging*
 
 | *TOP10NL:waarde*              | *BRT.Next:waarde* |
 |-------------------------------|-------------------|
@@ -132,32 +92,32 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-*Attribuut TOP10NL:typeLandgebruik | BRT.Next:type*
+*Attribuut TOP10NL:typeLandgebruik \| BRT.Next:type*
 
-| *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                            | *BRT.Next:definitie*                                                                                                              |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| braakliggend               | ~~Een stuk grond dat geen functie vervult of niet wordt onderhouden, met uitzondering van landbouwgrond.~~                                 | **Terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is, niet zijnde zand. Braakliggend valt hier wel onder.** |
-| duin                       | ~~Terrein met grondsoort~~ zand ~~, langs de kust als natuurlijke kustverdediging, eventueel begroeid met helmgras of lage struiken.~~ | **Verhoging of heuvel van** zand **of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water.**    |
-| heide                      | Terrein, overwegend begroeid met heidevegetatie ~~en wilde grassoorten.~~                                                                  | Terrein**deel** overwegend begroeid met heide **en heideachtige** vegetatie**s**.                                                 |
-| zand                       | Terrein, ~~grondsoort~~ zand, ~~van nature zonder enige begroeiing.~~                                                                  | Terrein**deel dat grotendeels bedekt is met** zand.                                                                               |
+| *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                                                          | *BRT.Next:definitie*                                                                                                                                |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| akkerland                  | Terrein ~~waar landbouwproducten worden verbouwd.~~                                                                                                                      | Terrein**deel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen.** |
+| boomgaard                  | Terrein met hoogstam~~mige ~~fruitbomen.                                                                                                                                 | Terrein **begroeid** met hoogstamfruitbomen.                                                                                                        |
+| braakliggend               | ~~Een stuk grond dat geen functie vervult of niet wordt onderhouden, met uitzondering van landbouwgrond.~~                                                               | **Terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is, niet zijnde zand. Braakliggend valt hier wel onder.**                   |
+| duin                       | ~~Terrein met grondsoort~~ zand ~~, langs de kust als natuurlijke kustverdediging, eventueel begroeid met helmgras of lage struiken.~~                               | **Verhoging of heuvel van** zand **of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water.**                      |
+| fruitkwekerij              | Terrein met laagstam~~mige ~~fruitbomen ~~en struiken waarvan de vruchten worden geoogst (zoals: rozenbottels,~~ bessen~~,~~ frambozen ~~, druiven, etc.)~~. | Terrein **begroeid** met laagstamfruitbomen, **druivenstokken of begroeid met heesters voor zachtfruit zoals** bessen **of** frambozen.             |
+| heide                      | Terrein, overwegend begroeid met heidevegetatie ~~en wilde grassoorten.~~                                                                                                | Terrein**deel** overwegend begroeid met heide **en heideachtige** vegetatie**s**.                                                                   |
+| zand                       | Terrein, ~~grondsoort~~ zand, ~~van nature zonder enige begroeiing.~~                                                                                                | Terrein**deel dat grotendeels bedekt is met** zand.                                                                                                 |
 
 ### Naam+definitie
 
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWeg | BRT.Next:type*
+*Attribuut TOP10NL:typeWeg \| BRT.Next:type*
 
-| *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                                                                                              | *BRT.Next:waarde*      | *BRT.Next:definitie*                                                                                                                                                                                                              |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~akker~~land        | Terrein ~~waar landbouwproducten worden verbouwd.~~                                                                                                                                          | **bouw**land           | Terrein**deel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen.**                                                                               |
-| boom~~kwekerij~~     | ~~Terrein, overwegend~~ in gebruik ~~t.b.v.~~ het ~~op~~kweken van bomen ~~(inclusief coniferen en sparren) en struiken, waarbij de hoogte van de aanplant niet van belang is.~~ | boom**teelt**          | **Grond** in gebruik **voor** het kweken van **jonge siergewassen,** bomen **enz. ten behoeve van een later gebruik elders.**                                                                                                     |
-| fruit~~kwekerij~~    | Terrein met ~~laagstammige~~ fruitbomen ~~en struiken waarvan de vruchten worden geoogst (zoals: rozenbottels, bessen, frambozen, druiven, etc.).~~                                      | fruit**teelt**         | Terrein**deel begroeid** met fruitbomen **in de vorm van hoogstam en laagstamboomgaard, druiven of kleinfruit.**                                                                                                                  |
-| ~~bos:~~ gemengd bos | ~~Oppervlak~~ begroeid met een dusdanige aantal naald- en loofbomen dat ~~de kruinen~~ een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.            | gemengd bos            | **Terreindeel** begroeid met een dusdanige aantal naald- en loofbomen dat **deze** een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                         |
-| grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                                      | grasland **agrarisch** | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, zijnde cultuurgrasland dat in gebruik is voor de veeteelt, bijvoorbeeld als weiland of als hooiland.** |
-| grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                                      | grasland **overig**    | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden.**                                                   |
-| ~~bos:~~ griend      | ~~In of aan het water gelegen~~ terrein~~,~~ begroei~~d met laagafgeknot wilgenhout t.b.v. de productie van rijshout.~~                                                              | griend **en hakhout**  | Terrein**deel met opgaande** begroei**ing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet.**                                                                                                             |
-| ~~bos:~~ loofbos     | ~~Oppervlak~~ begroeid met een dusdanige aantal loofbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                              | loofbos                | **Terreindeel** begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                                       |
+| *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                                                                                   | *BRT.Next:waarde*      | *BRT.Next:definitie*                                                                                                                                                                                                              |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ~~bos:~~ gemengd bos | ~~Oppervlak~~ begroeid met een dusdanige aantal naald- en loofbomen dat ~~de kruinen~~ een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen. | gemengd bos            | **Terreindeel** begroeid met een dusdanige aantal naald- en loofbomen dat **deze** een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                         |
+| grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                           | grasland **agrarisch** | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, zijnde cultuurgrasland dat in gebruik is voor de veeteelt, bijvoorbeeld als weiland of als hooiland.** |
+| grasland                 | Terrein, ~~overwegend begroeid~~ met een ~~grasachtige~~ vegetatie.                                                                                                           | grasland **overig**    | Terrein**deel** met een vegetatie **bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden.**                                                   |
+| ~~bos:~~ griend      | ~~In of aan het water gelegen~~ terrein~~, ~~begroei~~d met laagafgeknot wilgenhout t.b.v. de productie van rijshout.~~                                                   | griend **en hakhout**  | Terrein**deel met opgaande** begroei**ing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet.**                                                                                                             |
+| ~~bos:~~ loofbos     | ~~Oppervlak~~ begroeid met een dusdanige aantal loofbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                   | loofbos                | **Terreindeel** begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.                                                                       |
 
 Vervallen attributen
 --------------------
@@ -167,11 +127,10 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
 |-------------------------|----------------------------------------------|
-| ~~voorkomen~~       | ~~met riet~~<br />~~dras, moerassig~~ |
+| ~~voorkomen~~       | ~~met riet~~;~~dras, moerassig~~ |
 | ~~naam~~            | ~~«tekst»~~                              |
 
-<details class="note"> 
-voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
+<details class="note">voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
 respectievelijk typen ‘rietland’ en ‘moeras’.
 </details>
 
@@ -181,23 +140,29 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
+| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik \| type          | ~~aanlegsteiger~~<br />~~bebouwd gebied~~<br />~~dodenakker~~<br />~~dodenakker met bos~~<br />~~boomgaard~~<br />~~populieren~~<br />~~spoorbaanlichaam~~ |
+| typeLandgebruik \| type          | ~~aanlegsteiger~~; ~~bebouwd gebied~~; ~~dodenakker~~; ~~dodenakker met bos~~; ~~boomgaard~~; ~~populieren~~; ~~spoorbaanlichaam~~ |
 | fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                                |
 
-<details class="note">  type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
-object Inrichtingselement.
+<details class="note">
+type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
+object Inrichtingselement
 </details>
 
-<details class="note"> type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
-object Wegdeel.
+<details class="note">
+type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
+object Spoor.
 </details>
 
 Toevoegen attributen
 --------------------
 
-n.v.t.
+Onderstaande attributen worden toegevoegd aan BRT.Next.
+
+| *BRT.Next:Attribuutnaam* | *Definitie*              | *Verplicht/optioneel* | *Attribuutwaarde* |
+|--------------------------|--------------------------|-----------------------|-------------------|
+| **brugnaam**             | **De naam van de brug.** | **Optioneel, 0..1**   | **«tekst»**       |
 
 Toevoegen attribuutwaarden
 --------------------------
@@ -211,7 +176,7 @@ Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
 | **houtwal**       | **Terreindeel zijnde een afscheiding met beperkte breedte en beplant met bomen of struiken.**                                                                                                               |
 | **kwelder**       | **Buitendijks gelegen aangeslibd land van een wad, dat bij gewone vloed niet meer onder loopt.**                                                                                                            |
 | **struiken**      | **Terreindeel bedekt met niet-gecultiveerde (natuurlijke), lage, houtachtige, overblijvende planten gekenmerkt door verschillende vertakkingen dicht bij de wortel en afwezigheid van opvallende stammen.** |
-| **erf**           | **Terreindeel dat bij een pand of overig bouwwerk hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water.**                                         |
+| **erf**           | **Terreindeel dat bij een pand of overig bouwwerk hoort, en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water.**                                                                         |
 | **rietland**      | **Terreindeel overwegend begroeid met rietvegetatie.**                                                                                                                                                      |
 | **moeras**        | **Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing.**                                                                                              |
 |                   |                                                                                                                                                                                                             |
