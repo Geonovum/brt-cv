@@ -207,7 +207,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 | **fietsveer**         | **Vastgelegde route over water om fietsers en voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                      |
 | **voetveer**          | **Vastgelegde route over water om voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                                  |
 
-**Attribuut BRT.Next:ligging**
+*Attribuut BRT.Next:ligging*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                         |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
