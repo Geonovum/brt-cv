@@ -4,16 +4,8 @@ Hoogte
 Dit hoofdstuk beschrijft de wijzigingen voor het object Hoogte in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeHoogte’ wordt hernoemd naar ‘type’.
-
--   typen ‘peil’, ‘peil: zomerpeil’ en ‘peil: winterpeil’ vervallen.
-
--   referentievlak ‘OLW’ vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Hoogte in BRT.Next*
 
@@ -86,7 +78,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                      |
 |-----------------------------------|---------------------------------------------------------------|
-| typeHoogte\|type                  | ~~peil~~<br />~~peil: zomerpeil~~<br />~~peil winterpeil:~~ |
+| typeHoogte\|type                  | ~~peil~~;~~peil: zomerpeil~~;~~peil winterpeil:~~ |
 | referentievlak                    | ~~OLW~~                                                   |
 
 Toevoegen attributen
