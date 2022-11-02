@@ -4,11 +4,11 @@ Bijlage: Wijzigingen t.o.v. consultatieversie 28 juni 2022
 Wegdeel
 -------
 
--   Schrappen van type hoofdweg is teruggedraaid en nu opgenomen als rijbaan
-    hoofdweg met iets aangepaste definitie. Type rijbaan autoweg geldt nu als
+-   Schrappen van type ‘hoofdweg’ is teruggedraaid, opgenomen als type ‘rijbaan
+    hoofdweg’, definitie is aangepast. Type ‘rijbaan autoweg’ geldt nu als
     toevoeging met een eigen definitie gebaseerd op BGT.
 
--   Schrappen van attribuut verhardingsbreedteklasse is teruggedraaid.
+-   Schrappen van attribuut ‘verhardingsbreedteklasse’ is teruggedraaid.
 
 -   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
     naar vrij tekstveld.
@@ -18,34 +18,34 @@ Spoor
 
 -   Schrappen van type metro is teruggedraaid.
 
--   Type spoorbaan(lichaam) is verplaatst van objecttype Terrein naar Spoor.
+-   Type ‘spoorbaan(lichaam)’ is verplaatst van objecttype Terrein naar Spoor.
 
--   Geometrietype vlak toegevoegd t.b.v. spoorbaan(lichaam)
+-   Geometrietype ‘vlak’ is toegevoegd voor type ‘spoorbaan’
 
--   Regel toegevoegd dat attribuut aantalSporen alleen voorkomt bij
+-   Regel is toegevoegd dat attribuut aantalSporen alleen voorkomt bij
     lijngeometrie.
 
--   Schrappen van attribuut elektrificatie is teruggedraaid.
+-   Schrappen van attribuut ‘elektrificatie’ is teruggedraaid.
 
 Waterdeel
 ---------
 
--   Schrappen van «punt» bij geometrie is teruggedraaid.
+-   Schrappen van geometrietype «punt» is teruggedraaid.
 
--   Schrappen type ‘bron, wel’ is teruggedraaid, wel hernoemd naar ‘bron’.
+-   Schrappen van type ‘bron, wel’ is teruggedraaid, hernoemd naar ‘bron’.
 
--   geometrie ‘vlak’ van type ‘water’ gespecificeerd.
+-   geometrietype ‘vlak’ van type ‘water’ is gespecificeerd.
 
 -   Schrappen van breedteklasse ‘6 - 12 meter’, ‘12 - 50 meter’, ‘50 - 125
     meter’, ‘\> 125 meter’ is teruggedraaid.
 
--   Ligging ‘in duiker’ is geschrapt.
+-   ligging ‘in duiker’ is geschrapt.
 
 -   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
     naar vrij tekstveld.
 
--   naam:taal ‘overig’ hernoemd naar ‘onbekend/ VoidReason’ met aangepaste
-    definitie.
+-   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is
+    aangepast.
 
 -   Regel toegevoegd dat naam: herkomst, naam:officieel en naam:taal verplicht
     attributen zijn als naam gevuld is.
@@ -57,44 +57,57 @@ Terrein
     BGT), type ‘boomkwekerij’ naar ‘boomteelt’, type ‘fruitkwekerij’ naar
     ‘fruitteelt’ (definitie wel minimaal aangepast) is teruggedraaid.
 
--   Schrappen type boomgaard is teruggedraaid, wel definitie minimaal aangepast.
+-   Schrappen van type ‘boomgaard’ is teruggedraaid, definitie is minimaal
+    aangepast.
 
 -   geometrie ‘vlak’ van type ‘struiken’ is gespecificeerd.
 
--   Schrappen zinsnede ‘dat niet nader wordt ingewonnen’ in definitie van type
-    ‘erf’.
+-   zinsnede ‘dat niet nader wordt ingewonnen’ in definitie van type ‘erf’ is
+    geschrapt.
 
 -   Optioneel attribuut ‘brugnaam’ is toegevoegd.
 
--   Voetnoot aangepast: Spoorbaanlichaam verplaatst niet van objecttype Terrein
-    naar objecttype Wegdeel, maar van objecttype Terrein naar objecttype Spoor.
+-   Voetnoot is aangepast: Spoorbaanlichaam verplaatst niet van objecttype
+    Terrein naar objecttype Wegdeel, maar van objecttype Terrein naar objecttype
+    Spoor.
 
 Gebouw
 ------
 
--   type ‘boortoren’ geschrapt (komt niet voor).
+-   type ‘boortoren’ is geschrapt (komt niet voor).
 
--   toevoegen puntgeometrie aan type ‘bunker’
+-   geometrietype ‘punt’ is toegevoegd aan type ‘bunker’
 
--   schrappen type ‘tank’ teruggedraaid, hernoemd naar opslagtank met BGT
-    definitie.
+-   schrappen van type ‘tank’ is teruggedraaid, hernoemd naar ‘opslagtank’ met
+    BGT definitie.
 
--   schrappen type ‘parkeerdak, parkeerdek, parkeergarage’ hernoemd naar
-    ‘parkeergarage’, aanpassen definitie, en toevoegen puntgeometrie voor dit
-    type.
+-   schrappen type ‘parkeerdak, parkeerdek, parkeergarage’ is teruggedraaid,
+    type is hernoemd naar ‘parkeergarage’, definitie is aangepast, en
+    geometrietype ‘punt’ is toegevoegd voor dit type.
 
--   schrappen type ‘synagoge’ teruggedraaid
+-   schrappen type ‘synagoge’ is teruggedraaid
 
--   Wijzigen definitie windmolen
+-   definitie van type ‘windmolen’ is gewijzigd
 
--   Schrappen type ‘windturbine’ teruggedraaid, definitie aangepast aan BGT.
+-   schrappen van type ‘windturbine’ is teruggedraaid, definitie is aangepast
+    aan BGT.
 
--   type ‘botenhuis’, ‘open loods’ en ‘overkapping’ toegevoegd.
+-   typen ‘botenhuis’, ‘open loods’ en ‘overkapping’ zijn toegevoegd.
 
--   schrappen type ‘gevangenis’, ‘psychiatrisch ziekenhuis, psychiatrisch
-    centrum’, en ‘ziekenhuis’ teruggedraaid, opgenomen bij attribuut ‘functie’
+-   schrappen van typen ‘gevangenis’, ‘psychiatrisch ziekenhuis, psychiatrisch
+    centrum’, en ‘ziekenhuis’ is teruggedraaid, typen zijn opgenomen bij
+    attribuut ‘functie’
 
--   functie ‘parkeerdak, parkeerdek, parkeergarage’ hernoemd naar ‘parkeren’,
-    ‘radarpost’ hernoemd naar ‘radarstation’.
+-   functie ‘parkeerdak, parkeerdek, parkeergarage’ is hernoemd naar ‘parkeren’,
+    ‘radarpost’ is hernoemd naar ‘radarstation’.
 
--   attribuut ‘fysiekVoorkomen’ hernoemd naar ‘ligging’
+-   attribuut ‘fysiekVoorkomen’ is hernoemd naar ‘ligging’
+
+Inrichtingselement
+------------------
+
+-   schrappen van type ‘metrostation’ is teruggedraaid.
+
+-   type ‘bassin’ is vervangen door type ‘dok’ en type ‘zwembad’
+
+-   typen ‘opslagtank’, ‘windturbine’ en ‘botenhuis’ zijn verplaatst naar Gebouw
