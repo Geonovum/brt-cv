@@ -111,3 +111,13 @@ Inrichtingselement
 -   type ‘bassin’ is vervangen door type ‘dok’ en type ‘zwembad’
 
 -   typen ‘opslagtank’, ‘windturbine’ en ‘botenhuis’ zijn verplaatst naar Gebouw
+
+Relief
+------
+
+-   definitie van nieuw type ‘dijk’ is aangepast.
+
+Hoogte
+------
+
+Geen
