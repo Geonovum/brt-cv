@@ -68,3 +68,33 @@ Terrein
 
 -   Voetnoot aangepast: Spoorbaanlichaam verplaatst niet van objecttype Terrein
     naar objecttype Wegdeel, maar van objecttype Terrein naar objecttype Spoor.
+
+Gebouw
+------
+
+-   type ‘boortoren’ geschrapt (komt niet voor).
+
+-   toevoegen puntgeometrie aan type ‘bunker’
+
+-   schrappen type ‘tank’ teruggedraaid, hernoemd naar opslagtank met BGT
+    definitie.
+
+-   schrappen type ‘parkeerdak, parkeerdek, parkeergarage’ hernoemd naar
+    ‘parkeergarage’, aanpassen definitie, en toevoegen puntgeometrie voor dit
+    type.
+
+-   schrappen type ‘synagoge’ teruggedraaid
+
+-   Wijzigen definitie windmolen
+
+-   Schrappen type ‘windturbine’ teruggedraaid, definitie aangepast aan BGT.
+
+-   type ‘botenhuis’, ‘open loods’ en ‘overkapping’ toegevoegd.
+
+-   schrappen type ‘gevangenis’, ‘psychiatrisch ziekenhuis, psychiatrisch
+    centrum’, en ‘ziekenhuis’ teruggedraaid, opgenomen bij attribuut ‘functie’
+
+-   functie ‘parkeerdak, parkeerdek, parkeergarage’ hernoemd naar ‘parkeren’,
+    ‘radarpost’ hernoemd naar ‘radarstation’.
+
+-   attribuut ‘fysiekVoorkomen’ hernoemd naar ‘ligging’
