@@ -92,6 +92,8 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
+Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt niet aangepast.
+
 *Attribuut TOP10NL:typeLandgebruik \| BRT.Next:type*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                                                          | *BRT.Next:definitie*                                                                                                                                |
