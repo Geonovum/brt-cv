@@ -4,39 +4,8 @@ Inrichtingselement
 Dit hoofdstuk beschrijft de wijzigingen voor het object Inrichtingselement in
 BRT.Next ten opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeInrichtingselement’ wordt hernoemd naar ‘type’.
-
--   de volgen typen vervallen: 'dukdalf', 'gaswinning', 'golfmeetpaal',
-    'havenhoofd', 'helikopterlandingsplatform', 'kilometerraaibord',
-    'kilometerraaipaal', 'koedam', 'kogelvanger schietbaan', 'kraan', 'leiding',
-    'metrostation', 'oliepompinstallatie', 'radiobaken', 'RD punt',
-    'schietbaan', 'seinmast', 'tol', 'verkeersgeleider', 'zichtbaar wrak'.
-
--   typen ‘geluidswering’, ‘GNSS kernnetpunt’, ‘hekwerk’ en ‘strekdam, krib,
-    golfbreker’ worden hernoemd naar respectievelijk ‘geluidsscherm’, ‘GPS
-    kernnetpunt’, ‘hek’ en ‘strekdam’ met aangepaste definities.
-
--   typeLandgebruik ‘aanlegsteiger’ verplaatst van object Terrein naar type
-    ‘steiger’ van object Inrichtingselement.
-
--   de volgende typen worden toegevoegd: 'open loods', 'overkapping', 'bassin',
-    'bezinkbak', 'opslagtank', 'windturbine', 'botenhuis'
-
--   fysiekVoorkomen ‘overkluisd’ vervalt bij attribuut ligging.
-
--   attribuut ‘hoogteniveau’ wordt hernoemd naar ‘relatieveHoogteligging’,
-    definitie en attribuutwaarden worden aangepast op BGT.
-
--   attribuut ‘status’ met waarde ‘bestaand’ wordt toegevoegd.
-
--   attribuut ‘breedte’ vervalt.
-
--   vlakgeometrie als attribuutwaarde toegevoegd aan geometrie.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Inrichtingselement in BRT.Next*
 
@@ -46,7 +15,6 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | «lijn»                 |               |               |
 |                        | «vlak»                 |               |               |
 |  type                  | baken                  | punt          | 1-1           |
-|                        |                        |               |               |
 |                        | bomenrij               | lijn          |               |
 |                        | boom                   | punt          |               |
 |                        | botenhelling           | punt          |               |
@@ -70,6 +38,7 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | kruis                  | punt          |               |
 |                        | luchtvaartlicht        | punt          |               |
 |                        | markant object         | punt          |               |
+|                        | metrostation           | vlak          |               |
 |                        | muur                   | lijn          |               |
 |                        | open loods             | vlak          |               |
 |                        | overkapping            | vlak          |               |
@@ -96,13 +65,11 @@ Samengevat worden de volgende wijzigingen voorgesteld:
 |                        | windmolentje           | punt          |               |
 |                        | zendmast               | punt          |               |
 |                        | overig                 | lijn, punt    |               |
-|                        | bassin                 | vlak          |               |
+|                        | dok                    | vlak          |               |
+|                        | zwembad                | vlak          |               |
 |                        | bezinkbak              | vlak          |               |
-|                        | opslagtank             | vlak          |               |
-|                        | windturbine            | vlak          |               |
-|                        | botenhuis              | vlak          |               |
 | hoogte                 | «decimaal getal»       |               | 0..1          |
-| relatieveHoogteligging | «geheel getal [-9;9]» |               | 1-1           |
+| relatieveHoogteligging | «geheel getal [-9; 9]» |               | 1-1           |
 | status                 | bestaand               |               | 1-1           |
 | naam                   | «tekst»                |               | 0..1          |
 | soortnaam              | «tekst»                |               | 0..1          |
@@ -133,11 +100,11 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note">
-Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
+Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
 Wijzigen attribuutwaarden
@@ -161,7 +128,7 @@ definitie wordt niet aangepast.
 | kilometerpaal           | kilometerpaal **weg** |
 
 <details class="note">
-TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next
+TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next.
 </details>
 
 ### Definitie
@@ -199,9 +166,17 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                          |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeInrichtingselement \| type    | ~~dukdalf~~<br />~~gaswinning~~<br />~~golfmeetpaal~~<br />~~havenhoofd~~<br />~~helikopterlandingsplatform~~<br />~~kilometerraaibord~~<br />~~kilometerraaipaal~~<br />~~koedam~~<br />~~kogelvanger schietbaan~~<br />~~kraan~~<br />~~leiding~~<br />~~metrostation~~<br />~~oliepompinstallatie~~<br />~~radiobaken~~<br />~~RD punt~~<br />~~schietbaan~~<br />~~seinmast~~<br />~~tol~~<br />~~verkeersgeleider~~<br />~~zichtbaar wrak~~ |
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| typeInrichtingselement \| type    | ~~bassin~~; ~~dukdalf~~;~~gaswinning~~;~~golfmeetpaal~~;~~havenhoofd~~;~~helikopterlandingsplatform~~;~~kilometerraaibord~~;~~kilometerraaipaal~~;~~koedam~~;~~kogelvanger schietbaan~~;~~kraan~~;~~leiding~~;~~oliepompinstallatie~~;~~radiobaken~~;~~RD punt~~;~~schietbaan~~;~~seinmast~~;~~tol~~;~~verkeersgeleider~~; ~~vliedberg~~; ~~zichtbaar wrak~~ |
+
+<details class="note">
+type ‘bassin’ vervalt, en typen ‘dok’ en ‘zwembad’ worden toegevoegd.
+</details>
+
+<details class="note">
+type ‘vliedberg’ verplaatst naar objecttype Functioneel gebied.
+</details>
 
 Toevoegen attributen
 --------------------
@@ -229,11 +204,9 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | **open loods**    | **Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden.** |
 | **overkapping**   | **Een afzonderlijk staande overdekking rustend op kolommen.**                                                                             |
-| **bassin**        | **Waterbak zoals een zwembad of een dok.**                                                                                                |
+| **dok**           | **Constructie bedoeld om schepen uit het water te halen en vervolgens weer in het water te laten.**                                       |
+| **zwembad**       | **Constructie in de vorm van een bassin bedoeld om in te zwemmen**                                                                        |
 | **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.**                           |
-| **opslagtank**    | **Opslagfaciliteit voor vloeistoffen, gassen of energie.**                                                                                |
-| **windturbine**   | **Turbine waarin winddruk omgezet wordt in mechanische energie.**                                                                         |
-| **botenhuis**     | **Gebouw boven water voor de opslag van boten.**                                                                                          |
 
 *Attribuut BRT.Next:status*
 
