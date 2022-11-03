@@ -178,4 +178,4 @@ Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
 | **erf**           | **Terreindeel dat bij een pand of overig bouwwerk hoort, en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water.**                                                                         |
 | **rietland**      | **Terreindeel overwegend begroeid met rietvegetatie.**                                                                                                                                                      |
 | **moeras**        | **Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing.**                                                                                              |
-|                   |                                                                                                                                                                                                             |
+
