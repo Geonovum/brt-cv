@@ -4,46 +4,34 @@ Geografisch gebied
 Dit hoofdstuk beschrijft de wijzigingen voor het object Geografisch gebied in
 BRT.Next ten opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeGeografischGebied’ wordt hernoemd naar ‘type’.
-
--   type ‘overig’ vervalt.
-
--   attribuut ‘naamNL’ wordt hernoemd naar ‘naam’ met iets aangepaste definitie.
-
--   attribuut ‘naamFries’ vervalt.
-
--   attribuut ‘naamKartografisch’ wordt toegevoegd met datatype «tekst».
-
--   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Geografisch gebied in BRT.Next*
 
-| Attribuutnaam     | Waarde of «type»      | Geometrietype   | Kardinaliteit |
-|-------------------|-----------------------|-----------------|---------------|
-| geometrie         | «vlak»                |                 | 1-1           |
-|                   | «multivlak»           |                 |               |
-| type              | bank, ondiepte, plaat | vlak, multivlak | 1-1           |
-|                   | bosgebied             | vlak, multivlak |               |
-|                   | duingebied            | vlak, multivlak |               |
-|                   | eiland                | vlak, multivlak |               |
-|                   | geul, vaargeul        | vlak, multivlak |               |
-|                   | heidegebied           | vlak, multivlak |               |
-|                   | heuvel, berg          | vlak, multivlak |               |
-|                   | kaap, hoek            | vlak, multivlak |               |
-|                   | polder                | vlak, multivlak |               |
-|                   | streek, veld          | vlak, multivlak |               |
-|                   | terp, wierde          | vlak, multivlak |               |
-|                   | wad                   | vlak, multivlak |               |
-|                   | watergebied           | vlak, multivlak |               |
-|                   | zee                   | vlak, multivlak |               |
-|                   | zeegat, zeearm        | vlak, multivlak |               |
-| naam              | «tekst»               |                 | 0..n          |
-| naamKartografisch | «tekst»               |                 | 0..1          |
+| Attribuutnaam | Waarde of «type»      | Geometrietype   | Kardinaliteit |
+|---------------|-----------------------|-----------------|---------------|
+| geometrie     | «vlak»                |                 | 1-1           |
+|               | «multivlak»           |                 |               |
+| type          | bank, ondiepte, plaat | vlak, multivlak | 1-1           |
+|               | bosgebied             | vlak, multivlak |               |
+|               | duingebied            | vlak, multivlak |               |
+|               | eiland                | vlak, multivlak |               |
+|               | geul, vaargeul        | vlak, multivlak |               |
+|               | heidegebied           | vlak, multivlak |               |
+|               | heuvel, berg          | vlak, multivlak |               |
+|               | kaap, hoek            | vlak, multivlak |               |
+|               | polder                | vlak, multivlak |               |
+|               | streek, veld          | vlak, multivlak |               |
+|               | terp, wierde          | vlak, multivlak |               |
+|               | wad                   | vlak, multivlak |               |
+|               | watergebied           | vlak, multivlak |               |
+|               | zee                   | vlak, multivlak |               |
+|               | zeegat, zeearm        | vlak, multivlak |               |
+| naam          | «tekst»               |                 | 0..n          |
+| naam: taal    | Nederlands            |                 | 0..n          |
+|               | Fries                 |                 |               |
+|               | onbekend / VoidReason |                 |               |
 
 Wijzigen attributen
 -------------------
@@ -116,11 +104,19 @@ Toevoegen attributen
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                                                      | *Verplicht/optioneel* | *Attribuutwaarde* |
-|--------------------------|----------------------------------------------------------------------------------|-----------------------|-------------------|
-| **naamKartografisch**    | **De naam van het geografisch gebied die gegeven is op de topografische kaart.** | **Optioneel, 0 of 1** | **«tekst»**       |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                         | *Verplicht/optioneel*     | *Attribuutwaarde*                            |
+|--------------------------|-----------------------------------------------------|---------------------------|----------------------------------------------|
+| **naam: taal**           | **De taal van de naam van het geografisch gebied.** | **Verplicht, 1..\* of 1** | **Nederlands; Fries; onbekend / VoidReason** |
 
 Toevoegen attribuutwaarden
 --------------------------
 
-*n.v.t.*
+Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
+
+*Attribuut BRT.Next:naam:taal*
+
+| *BRT.Next:waarde*      | *BRT.Next:definitie*  |
+|------------------------|-----------------------|
+| **Nederlands**         | **Nederlandse taal.** |
+| **Fries**              | **Friese taal.**      |
+| **overig, VoidReason** | **Taal is onbekend.** |
