@@ -4,49 +4,31 @@ Plaats
 Dit hoofdstuk beschrijft de wijzigingen voor het object Plaats in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
-Samenvatting
-------------
-
-Samengevat worden de volgende wijzigingen voorgesteld:
-
--   attribuut ‘typeGebied’ wordt hernoemd naar ‘type’.
-
--   type ’deelkern’ wordt hernoemd naar ‘woonkern historisch’.
-
--   typen ‘stadsdeel’, ‘wijk’, ‘buurt’, ‘waterschap’ vervallen.
-
--   attribuut ‘naamOfficieel’ vervalt<br />attribuut ‘naam’ wordt nieuw toegevoegd.
-
--   attributen ‘naamNL’ en ‘naamFries’ vervallen<br />attribuut ‘naam:taal’ wordt
-    toegevoegd met waarden ‘Nederlands’, ‘Fries’, of ‘overig’.
-
--   attribuut ‘naam:herkomst’ met waarden ‘BAG’, ‘BGT’, ‘BRK’, of ‘overig’ wordt
-    toegevoegd.
-
--   attributen ‘bebouwdeKom’, ‘isBAGwoonplaats’ en ‘aantalInwoners’ vervallen.
-
--   puntgeometrie als attribuutwaarde van attribuut geometrie vervalt.
+Overzicht
+---------
 
 *Overzicht attributen en waarden/type van object Plaats in BRT.Next*
 
-| Attribuutnaam  | Waarde of «type»    | Geometrietype   | Kardinaliteit |
-|----------------|---------------------|-----------------|---------------|
-| geometrie      | «vlak»              |                 | 1-1           |
-|                | «multivlak»         |                 |               |
-| type           | woonkern            | vlak, multivlak | 1-1           |
-|                | industriekern       | vlak, multivlak |               |
-|                | recreatiekern       | vlak, multivlak |               |
-|                | gehucht             | vlak, multivlak |               |
-|                | buurtschap          | vlak, multivlak |               |
-|                | woonkern historisch | vlak, multivlak |               |
-| naam           | «tekst»             |                 | 1-1           |
-| naam: taal     | Nederlands          |                 | 1-1           |
-|                | Fries               |                 |               |
-|                | overig              |                 |               |
-| naam: herkomst | BAG                 |                 | 1-1           |
-|                | BGT                 |                 |               |
-|                | BRK                 |                 |               |
-|                | overig              |                 |               |
+| Attribuutnaam   | Waarde of «type»           | Geometrietype   | Kardinaliteit |
+|-----------------|----------------------------|-----------------|---------------|
+| geometrie       | «vlak»                     |                 | 1-1           |
+|                 | «multivlak»                |                 |               |
+| type            | woonkern                   | vlak, multivlak | 1-1           |
+|                 | industriekern              | vlak, multivlak |               |
+|                 | recreatiekern              | vlak, multivlak |               |
+|                 | gehucht                    | vlak, multivlak |               |
+|                 | buurtschap                 | vlak, multivlak |               |
+|                 | historische bebouwingskern | vlak, multivlak |               |
+| bebouwdeKom     | ja                         |                 | 1-1           |
+|                 | nee                        |                 |               |
+| aantalIwoners   | «geheel getal»             |                 | 1-1           |
+| naam            | «tekst»                    |                 | 1..\*         |
+| naam: herkomst  | «taal»                     |                 | 1..\*         |
+| naam: officieel | ja                         |                 | 1..\*         |
+|                 | nee                        |                 |               |
+| naam: taal      | Nederlands                 |                 | 1..\*         |
+|                 | Fries                      |                 |               |
+|                 | onbekend / VoidReason      |                 |               |
 
 Wijzigen attributen
 -------------------
@@ -82,9 +64,9 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-| *TOP10NL:waarde* | *BRT.Next:waarde*           |
-|------------------|-----------------------------|
-| ~~deel~~kern | **woon**kern **historisch** |
+| *TOP10NL:waarde* | *BRT.Next:waarde*              |
+|------------------|--------------------------------|
+| ~~deel~~kern | **historische bebouwings**kern |
 
 ### Definitie
 
@@ -102,11 +84,14 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~bebouwdeKom~~     | ~~ja~~<br />~~nee~~                  |
-| ~~isBAGwoonplaats~~ | ~~ja~~<br />~~nee~~                  |
+| ~~isBAGwoonplaats~~ | ~~ja~~; ~~nee~~                  |
 | ~~naamNL~~      | ~~«tekst»~~                          |
-| ~~naamFries~~      | ~~«tekst»~~                          |
+| ~~naamFries~~1      | ~~«tekst»~~                          |
 
+<details class="note"> TOP10NL-attributen naamNL en naamFries met datatype «tekst» worden
+vervangen door attribuut naam:taal met attribuutwaarden ‘Nederlands’; ‘Fries’;
+‘onbekend / VoidReason’ in BRT.Next.
+</details>
 
 Vervallen attribuutwaarden
 --------------------------
@@ -117,18 +102,19 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
 |-----------------------------------|----------------------------------------------|
 | geometrie                         | ~~«punt»~~                               |
-| typeGebied\|type                  | ~~stadsdeel~~<br />~~wijk~~<br />~~buurt~~ |
+| typeGebied\|type                  | ~~stadsdeel~~;~~wijk~~;~~buurt~~ |
 
 Toevoegen attributen
 --------------------
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                | *Verplicht/optioneel* | *Attribuutwaarde*             |
-|--------------------------|--------------------------------------------|-----------------------|-------------------------------|
-| **naam**                 | **De naam van de plaats.**                 | **Verplicht, 1**      | **«tekst»**                   |
-| **naam: taal**           | **De taal van de naam van de plaats.**     | **Verplicht, 1**      | **Nederlands<br />Fries<br />overig** |
-| **naam: herkomst**       | **De herkomst van de naam van de plaats.** | **Verplicht, 1**      | **BAG<br />BGT<br />BRK<br />overig**     |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                           | *Verplicht/optioneel*    | *Attribuutwaarde*                            |
+|--------------------------|-------------------------------------------------------|--------------------------|----------------------------------------------|
+| **naam**                 | **De naam van de plaats.**                            | **Verplicht, 1 of meer** | **«tekst»**                                  |
+| **naam: herkomst**       | **De herkomst van de naam van de plaats.**            | **Verplicht, 1 of meer** | **«tekst»**                                  |
+| **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.** | **Verplicht, 1 of meer** | **ja/nee**                                   |
+| **naam: taal**           | **De taal van de naam van de plaats.**                | **Verplicht, 1 of meer** | **Nederlands; Fries; onbekend / VoidReason** |
 
 Toevoegen attribuutwaarden
 --------------------------
@@ -137,17 +123,8 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:naam:taal*
 
-| *BRT.Next:waarde* | *BRT.Next:definitie*                       |
-|-------------------|--------------------------------------------|
-| **Nederlands**    | **Nederlandse taal.**                      |
-| **Fries**         | **Friese taal.**                           |
-| **overig**        | **Taal, niet zijnde Nederlands of Fries.** |
-
-*Attribuut BRT.Next:naam:herkomst*
-
-| *BRT.Next:waarde* | *BRT.Next:definitie*                                                          |
-|-------------------|-------------------------------------------------------------------------------|
-| **BAG**           | **Naam is afkomstig uit de Basisregistratie Adressen en Gebouwen (BAG).**     |
-| **BGT**           | **Naam is afkomstig uit de Basisregistratie Grootschalige Topografie (BGT).** |
-| **BRK**           | **Naam is afkomstig uit de Basisregistratie Kadaster (BRK).**                 |
-| **overig**        | **Naam is afkomstig uit een bron, niet zijnde BAG, BGT of BRK.**              |
+| *BRT.Next:waarde*         | *BRT.Next:definitie*  |
+|---------------------------|-----------------------|
+| **Nederlands**            | **Nederlandse taal.** |
+| **Fries**                 | **Friese taal.**      |
+| **onbekend / VoidReason** | **Taal is onbekend.** |
