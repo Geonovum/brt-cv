@@ -125,11 +125,12 @@ Geen
 Registratief gebied
 -------------------
 
--   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ gewijzigd naar 1
-    of meer (1..\*)
+-   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
+    naar ‘1 of meer’ (1..\*)
 
--   Schrappen van attibuut ‘naamOfficieel’ teruggedraaid, hernoemd naar ‘naam:
-    Officieel’, type aangepast naar waardenlijst ja/nee.
+-   Schrappen van attibuut ‘naamOfficieel’ is teruggedraaid, hernoemd naar
+    ‘naam: officieel’ met kardinaliteit ‘1 of meer’ (1..\*), type aangepast naar
+    waardenlijst ja/nee.
 
 -   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
     aangepast.
@@ -143,3 +144,26 @@ Geografisch gebied
 -   Toevoegen attribuut ‘naamKartografisch’ is teruggedraaid.
 
 -   Attribuut ‘naam: taal’ is toegevoegd
+
+Plaats
+------
+
+-   type ‘woonkern historisch’ is gewijzigd naar ‘historische bebouwingskern’.
+
+-   schrappen van attribuut ‘bebouwdeKom’ en ‘aantalInwoners’ is teruggedraaid.
+
+-   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
+    naar ‘1 of meer’ (1..\*)
+
+-   Schrappen van attibuut ‘naamOfficieel’ is teruggedraaid, hernoemd naar
+    ‘naam: officieel’ met kardinaliteit ‘1 of meer’ (1..\*), type aangepast naar
+    waardenlijst ja/nee.
+
+-   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
+    aangepast.
+
+-   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
+    naar vrij tekstveld.
+
+Functioneel gebied
+------------------
