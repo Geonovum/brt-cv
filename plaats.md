@@ -82,13 +82,18 @@ Vervallen attributen
 Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
 in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
-|-------------------------|------------------------------------------|
-| ~~isBAGwoonplaats~~ | ~~ja~~; ~~nee~~                  |
-| ~~naamNL~~      | ~~«tekst»~~                          |
-| ~~naamFries~~1      | ~~«tekst»~~                          |
+| *TOP10NL:attribuutnaam*   | *TOP10NL:attribuutwaarden of «datatype»* |
+|---------------------------|------------------------------------------|
+| ~~isBAGwoonplaats~~   | ~~ja~~; ~~nee~~                  |
+| ~~naamOfficieel~~ | ~~«tekst»~~                          |
+| ~~naamNL~~       | ~~«tekst»~~                          |
+| ~~naamFries~~         | ~~«tekst»~~                          |
 
-<details class="note"> TOP10NL-attributen naamNL en naamFries met datatype «tekst» worden
+<details class="note>naamOfficieel vervalt, een nieuw attribuut ‘naam: officieel’ met waarden
+ja/nee wordt toegevoegd.
+</details>
+
+<details class="note>TOP10NL-attributen naamNL en naamFries met datatype «tekst» worden
 vervangen door attribuut naam:taal met attribuutwaarden ‘Nederlands’; ‘Fries’;
 ‘onbekend / VoidReason’ in BRT.Next.
 </details>
@@ -109,12 +114,16 @@ Toevoegen attributen
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                           | *Verplicht/optioneel*    | *Attribuutwaarde*                            |
-|--------------------------|-------------------------------------------------------|--------------------------|----------------------------------------------|
-| **naam**                 | **De naam van de plaats.**                            | **Verplicht, 1 of meer** | **«tekst»**                                  |
-| **naam: herkomst**       | **De herkomst van de naam van de plaats.**            | **Verplicht, 1 of meer** | **«tekst»**                                  |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                           | *Verplicht/optioneel*        | *Attribuutwaarde*                            |
+|--------------------------|-------------------------------------------------------|------------------------------|----------------------------------------------|
+| **naam**                 | **De naam van de plaats.**                            | **Verplicht, 1 of meer**     | **«tekst»**                                  |
+| **naam: herkomst**       | **De herkomst van de naam van de plaats.**            | **Verplicht, 1 of meer**     | **«tekst»**                                  |
 | **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.** | **Verplicht, 1 of meer** | **ja/nee**                                   |
-| **naam: taal**           | **De taal van de naam van de plaats.**                | **Verplicht, 1 of meer** | **Nederlands; Fries; onbekend / VoidReason** |
+| **naam: taal**           | **De taal van de naam van de plaats.**                | **Verplicht, 1 of meer**     | **Nederlands; Fries; onbekend / VoidReason** |
+
+<details class="note>regel: ‘naam: herkomst’, ‘naam: officieel’ en ‘naam:taal’ zijn verplicht
+als naam is gevuld.
+</details>
 
 Toevoegen attribuutwaarden
 --------------------------

@@ -41,12 +41,6 @@ aangepast.
 | *TOP10NL:attribuutnaam*        | *BRT.Next:attribuutnaam* |
 |--------------------------------|--------------------------|
 | type~~RegistratiefGebied~~ | type                     |
-| naam\~O\~fficieel              | naam**: o**fficieel  |
-
-<details class="note">
-type van ‘naam: officieel’ wijzigt van «tekst» naar een waardenlijst
-ja/nee, zie toevoegen attributen.
-</details>
 
 ### Definitie
 
@@ -92,10 +86,16 @@ Vervallen attributen
 Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
 in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
-|-------------------------|------------------------------------------|
-| ~~naamNL~~          | ~~«tekst»~~                          |
-| ~~naamFries~~       | ~~«tekst»~~                          |
+| *TOP10NL:attribuutnaam*   | *TOP10NL:attribuutwaarden of «datatype»* |
+|---------------------------|------------------------------------------|
+| ~~naamOfficieel~~ | ~~«tekst»~~                          |
+| ~~naamNL~~            | ~~«tekst»~~                          |
+| ~~naamFries~~         | ~~«tekst»~~                          |
+
+<details class="note>
+naamOfficieel vervalt, een nieuw attribuut ‘naam: officieel’ met waarden
+ja/nee wordt toegevoegd.
+</details>
 
 Vervallen attribuutwaarden
 --------------------------
@@ -117,8 +117,12 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 |--------------------------|-------------------------------------------------------|----------------------------------------------------------|----------------------------------------------|
 | **naam**                 | **De naam van het registratief gebied**               | **Verplicht, 1..\***                                     | **«tekst»**                                  |
 | **naam: herkomst**       | **De taal van de naam van het registratief gebied.**  | **De herkomst van de naam van het registratief gebied.** | **«tekst»**                                  |
-| **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.** | **Verplicht, 1..\***                                     | **ja/nee**                                   |
-| **naam: taal**           | **De taal van de naam van het registratief gebied.**  | **Verplicht, 1..\***                                     | **Nederlands, Fries, onbekend / VoidReason** |
+| **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.** | **Verplicht, 1 of meer**                             | **ja/nee**                                   |
+| **naam: taal**           | **De taal van de naam van het registratief gebied.**  | **Verplicht, 1 of meer**                                 | **Nederlands; Fries; onbekend / VoidReason** |
+
+<details class="note>regel: ‘naam: herkomst’, ‘naam: officieel’ en ‘naam:taal’ zijn verplicht
+als naam is gevuld.
+</details>
 
 Toevoegen attribuutwaarden
 --------------------------
@@ -127,8 +131,8 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:naam:taal*
 
-| *BRT.Next:waarde*      | *BRT.Next:definitie*  |
-|------------------------|-----------------------|
-| **Nederlands**         | **Nederlandse taal.** |
-| **Fries**              | **Friese taal.**      |
-| **overig, VoidReason** | **Taal is onbekend.** |
+| *BRT.Next:waarde*         | *BRT.Next:definitie*  |
+|---------------------------|-----------------------|
+| **Nederlands**            | **Nederlandse taal.** |
+| **Fries**                 | **Friese taal.**      |
+| **onbekend / VoidReason** | **Taal is onbekend.** |
