@@ -11,7 +11,8 @@ Overzicht
 
 | Attribuutnaam          | Waarde of «type»            | Geometrietype | Kardinaliteit |
 |------------------------|-----------------------------|---------------|---------------|
-| geometrie              | «lijn» of «vlak»            |               | 1-1           |
+| geometrie              | «lijn»                      |               | 1-1           |
+|                        | «vlak»                      |               |               |
 | type                   | trein                       | lijn          | 1-1           |
 |                        | tram                        | lijn          |               |
 |                        | sneltram                    | lijn          |               |
@@ -31,8 +32,8 @@ Overzicht
 | tunnelnaam             | «tekst»                     |               | 0..1          |
 
 <details class="note">
-attribuut aantalSporen is alleen verplicht voor objecten Spoor met
-lijngeometrie.
+attribuut ‘aantalSporen’ en ‘elektrificatie’ is alleen verplicht voor
+objecten Spoor met lijngeometrie.
 </details>
 
 Wijzigen attributen
@@ -66,6 +67,7 @@ aangepast.
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+
 
 <details class="note">
 Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
@@ -105,12 +107,12 @@ Vervallen attributen
 Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
 in BRT.Next.
 
-| *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                   |
-|----------------------------|--------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                       |
-| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                    |
-| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn |
-| ~~baanvaknaam~~        | ~~«tekst»~~                                                                            |
+| *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                       |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                           |
+| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                        |
+| ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn~~ |
+| ~~baanvaknaam~~        | ~~«tekst»~~                                                                                |
 
 Vervallen attribuutwaarden
 --------------------------
@@ -129,6 +131,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 ‘bestaand’.
 </details>
+
 Toevoegen attributen
 --------------------
 
@@ -145,8 +148,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 |-------------------|--------------------------------------------------------|
 | **vlak**          | **De vlakgeometrie van een spoorbaandeel object.** |
 
-<details class="note">
-regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’.
+<details class="note">regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’
 </details>
 
 *Attribuut BRT.Next:type*
@@ -155,10 +157,8 @@ regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’.
 |------------------------------|-------------------------------------------------------|
 | **spoorbaan**~~lichaam~~ | **Gebaand gedeelte voor het verkeer over rails.** |
 
-<details class="note">
-type ‘spoorbaan’ verplaatst van objecttype Terrein naar objecttype Spoor.
+<details class="note">type ‘spoorbaan’ verplaatst van objecttype Terrein naar objecttype Spoor.
 </details>
-
 *Attribuut BRT.Next:status*
 
 | *BRT.Next:status* | *BRT.Next:definitie*                                                                                          |

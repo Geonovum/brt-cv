@@ -8,10 +8,18 @@ Wegdeel
     hoofdweg’, definitie is aangepast. Type ‘rijbaan autoweg’ geldt nu als
     toevoeging met een eigen definitie gebaseerd op BGT.
 
+-   Type ‘spoorbaanlichaam’ is verplaatst naar type ‘spoorbaan’ van objecttype
+    Spoor
+
+-   Definitie van ligging ‘op overweg’ is gewijzigd.
+
 -   Schrappen van attribuut ‘verhardingsbreedteklasse’ is teruggedraaid.
 
 -   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
     naar vrij tekstveld.
+
+-   Onjuiste vervallen attribuutwaarde ‘overig parkeergebied’ is gecorrigeerd
+    naar ‘overig verkeersgebied’
 
 Spoor
 -----

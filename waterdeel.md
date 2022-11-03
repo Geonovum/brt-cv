@@ -57,11 +57,6 @@ aangepast.
 |-------------------------|--------------------------|
 | type~~Water~~       | **type**                 |
 | ~~fysiekVoorkomen~~ | **ligging**              |
-| naam~~O~~fficeel        | naam**:o**fficieel   |
-
-<details class="note">
-regel: naam:officieel is een verplicht attribuut als naam is gevuld.
-</details>
 
 ### Definitie
 
@@ -75,11 +70,9 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|-------------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het~~ hoogte ~~niveau~~ van het object.~~ | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
 
-<details class="note">
-Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
-
 Wijzigen attribuutwaarden
 -------------------------
 
@@ -123,20 +116,24 @@ Vervallen attributen
 Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
 in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                       |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~voorkomen~~       | ~~met riet~~                                                                                                                                                                           |
-| ~~functie~~         | ~~drinkwaterbekken~~; ~~haven~~; ~~natuurbad~~; ~~viskwekerij~~; ~~vistrap~~; ~~vloeiveld~~; ~~waterval~~; ~~waterzuivering~~; ~~zwembad~~; ~~overig~~ |
-| ~~getijdeInvloed~~  | ~~ja; nee~~                                                                                                                                                                                |
-| ~~vaarwegklasse~~   | ~~I~~; ~~II~~; ~~III~~; ~~IV~~; ~~Va~~; ~~Vb~~; ~~VIa~~; ~~VIb~~; ~~VIc~~; ~~VII~~                                                                     |
-| ~~naamNL~~          | ~~«tekst»~~                                                                                                                                                                                |
-| ~~naamFries~~       | ~~«tekst»~~                                                                                                                                                                                |
-| ~~isBAGnaam~~       | ~~ja~~; ~~nee~~                                                                                                                                                                        |
-| ~~hoofdafwatering~~ | ~~ja~~; ~~nee~~                                                                                                                                                                        |
+| *TOP10NL:attribuutnaam*   | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                       |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ~~voorkomen~~         | ~~met riet~~                                                                                                                                                                           |
+| ~~functie~~           | ~~drinkwaterbekken~~; ~~haven~~; ~~natuurbad~~; ~~viskwekerij~~; ~~vistrap~~; ~~vloeiveld~~; ~~waterval~~; ~~waterzuivering~~; ~~zwembad~~; ~~overig~~ |
+| ~~getijdeInvloed~~    | ~~ja; nee~~                                                                                                                                                                                |
+| ~~vaarwegklasse~~     | ~~I~~; ~~II~~; ~~III~~; ~~IV~~; ~~Va~~; ~~Vb~~; ~~VIa~~; ~~VIb~~; ~~VIc~~; ~~VII~~                                                                     |
+| ~~naamOfficieel~~ | ~~«tekst»~~                                                                                                                                                                                |
+| ~~naamNL~~            | ~~«tekst»~~                                                                                                                                                                                |
+| ~~naamFries~~         | ~~«tekst»~~                                                                                                                                                                                |
+| ~~isBAGnaam~~         | ~~ja~~; ~~nee~~                                                                                                                                                                        |
+| ~~hoofdafwatering~~   | ~~ja~~; ~~nee~~                                                                                                                                                                        |
 
-<details class="note">
-voorkomen ‘met riet’ wordt opgenomen als type ‘water met riet’ in
+<details class="note">voorkomen ‘met riet’ wordt opgenomen als type ‘water met riet’ in
 BRT.Next.
+</details>
+
+<details class="note">naamOfficieel vervalt, een nieuw attribuut ‘naam: officieel’ met waarden
+ja/nee wordt toegevoegd.
 </details>
 
 Vervallen attribuutwaarden
@@ -160,10 +157,12 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 | **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **Verplicht, 1**             | **bestaand**                                |
 | **naam**                 | **De naam van het waterdeel**                                   | **Optioneel, 0 of meer**     | **«tekst»**                                 |
 | **naam: taal**           | **De taal van de naam van het waterdeel.**                      | **Optioneel, 0 of meer** | **Nederlands; Fries; onbekend/ VoidReason** |
+| **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.**           | **Optioneel, 0 of meer**     | **ja / nee**                                |
 | **naam: herkomst**       | **De herkomst van de naam van het waterdeel.**                  | **Optioneel, 0 of meer**     | **«tekst»**                                 |
+|                          |                                                                 |                              |                                             |
 
-<details class="note">
-regel: naam:herkomst en naam:taal zijn verplicht als naam is gevuld.
+<details class="note">regel: ‘naam: herkomst’, ‘naam: officieel’ en ‘naam:taal’ zijn verplicht
+als naam is gevuld.
 </details>
 
 Toevoegen attribuutwaarden
@@ -185,8 +184,8 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:naam:taal*
 
-| *BRT.Next:waarde*        | *BRT.Next:definitie*  |
-|--------------------------|-----------------------|
-| **Nederlands**           | **Nederlandse taal.** |
-| **Fries**                | **Friese taal.**      |
-| **onbekend/ VoidReason** | **Taal is onbekend.** |
+| *BRT.Next:waarde*    | *BRT.Next:definitie*  |
+|----------------------|-----------------------|
+| Nederlands           | **Nederlandse taal.** |
+| Fries                | **Friese taal.**      |
+| onbekend/ VoidReason | **Taal is onbekend.** |

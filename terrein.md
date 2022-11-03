@@ -68,11 +68,9 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|--------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note">
-Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
-
 Wijzigen attribuutwaarden
 -------------------------
 
@@ -92,7 +90,8 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt niet aangepast.
+Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
+niet aangepast.
 
 *Attribuut TOP10NL:typeLandgebruik \| BRT.Next:type*
 
@@ -142,18 +141,16 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                               |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik \| type          | ~~aanlegsteiger~~; ~~bebouwd gebied~~; ~~dodenakker~~; ~~dodenakker met bos~~; ~~boomgaard~~; ~~populieren~~; ~~spoorbaanlichaam~~ |
-| fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                                |
+| *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                            |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| typeLandgebruik \| type          | ~~aanlegsteiger~~; ~~bebouwd gebied~~; ~~dodenakker~~; ~~dodenakker met bos~~; ~~populieren~~; ~~spoorbaanlichaam~~ |
+| fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                             |
 
-<details class="note">
-type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
-object Inrichtingselement
+<details class="note">type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
+object Inrichtingselement.
 </details>
 
-<details class="note">
-type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
+<details class="note">type ‘spoorbaanlichaam’ verplaatst van Terrein naar type ‘spoorbaan’ van
 object Spoor.
 </details>
 
