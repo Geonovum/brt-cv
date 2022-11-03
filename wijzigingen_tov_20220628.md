@@ -167,3 +167,24 @@ Plaats
 
 Functioneel gebied
 ------------------
+
+-   Definitie van type ‘helikopterlandingsplaats’ is gewijzigd.
+
+-   Wijzigen naam van type ‘militair oefengebied, schietterrein’ is
+    teruggedraaid, definitie is aangepast.
+
+-   Hernoemen van type ‘kazerne, legerplaats’ naar ‘militair terrein’ is
+    teruggedraaid, ‘kazerne, legerplaats’ is hernoemd naar ‘kazerne,
+    legerplaats, vliegbasis’ met aangepast definitie.
+
+-   type ‘gevangenis’ is hernoemd naar ‘gevangeniscomplex’.
+
+-   Definitie van ‘psychiatrisch ziekenhuiscomplex’ en ‘tankstation’ is
+    aangepast.
+
+-   Type ‘vliedberg’ is toegevoegd.
+
+Plantopografie
+--------------
+
+>   Geen
