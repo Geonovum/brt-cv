@@ -16,9 +16,9 @@ Wegdeel
 Spoor
 -----
 
--   Schrappen van type metro is teruggedraaid.
+-   Schrappen van type ‘metro’ is teruggedraaid.
 
--   Type ‘spoorbaan(lichaam)’ is verplaatst van objecttype Terrein naar Spoor.
+-   Type ‘spoorbaan’(lichaam) is verplaatst van objecttype Terrein naar Spoor.
 
 -   Geometrietype ‘vlak’ is toegevoegd voor type ‘spoorbaan’
 
@@ -121,3 +121,25 @@ Hoogte
 ------
 
 Geen
+
+Registratief gebied
+-------------------
+
+-   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ gewijzigd naar 1
+    of meer (1..\*)
+
+-   Schrappen van attibuut ‘naamOfficieel’ teruggedraaid, hernoemd naar ‘naam:
+    Officieel’, type aangepast naar waardenlijst ja/nee.
+
+-   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
+    aangepast.
+
+-   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
+    naar vrij tekstveld.
+
+Geografisch gebied
+------------------
+
+-   Toevoegen attribuut ‘naamKartografisch’ is teruggedraaid.
+
+-   Attribuut ‘naam: taal’ is toegevoegd
