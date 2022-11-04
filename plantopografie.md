@@ -21,9 +21,3 @@ in BRT.Next.
 | ~~typeObject~~      | ~~spoorbaan~~; ~~water~~; ~~weg~~; ~~overig~~ |
 | ~~naam~~            | ~~«tekst»~~                                               |
 | ~~geometrie~~       | ~~«punt»~~; ~~«lijn»~~; ~~«vlak»~~                |
-
-
-
-
-
-
