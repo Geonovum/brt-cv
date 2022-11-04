@@ -37,15 +37,15 @@ aangepast.
 
 | TOP10NL:attribuutnaam | BRT.Next:attribuutnaam |
 |-----------------------|------------------------|
-| type\~\~Hoogte\~\~    | type                   |
+| type~~Hoogte~~    | type                   |
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -55,20 +55,20 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-*n.v.t.*
+*Geen.*
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Vervallen attributen
 --------------------
 
-n.v.t.
+Geen.
 
 Vervallen attribuutwaarden
 --------------------------
@@ -78,15 +78,15 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                      |
 |-----------------------------------|---------------------------------------------------------------|
-| typeHoogte\|type                  | \~\~peil\~\~;\~\~peil: zomerpeil\~\~;\~\~peil winterpeil:\~\~ |
-| referentievlak                    | \~\~OLW\~\~                                                   |
+| typeHoogte\|type                  | ~~peil~~;~~peil: zomerpeil~~;~~peil winterpeil:~~ |
+| referentievlak                    | ~~OLW~~                                                   |
 
 Toevoegen attributen
 --------------------
 
-*n.v.t.*
+*Geen.*
 
 Toevoegen attribuutwaarden
 --------------------------
 
-*n.v.t.*
+*Geen.*
