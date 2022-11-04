@@ -31,7 +31,7 @@ Overzicht
 |                        | ruïne                                           | vlak          |               |
 |                        | schoorsteen                                     | vlak, punt    |               |
 |                        | silo                                            | vlak          |               |
-|                        | synagogue                                       | vlak          |               |
+|                        | synagoge                                       | vlak          |               |
 |                        | stadion                                         | vlak          |               |
 |                        | telecommunicatietoren                           | vlak          |               |
 |                        | toren                                           | vlak, punt    |               |
@@ -72,7 +72,6 @@ Overzicht
 | hoogte                 | «decimaal getal»                                |               | 0..1          |
 | relatieveHoogteligging | «geheel getal [-9; 9]»                          |               | 1-1           |
 | status                 | bestaand                                        |               | 1-1           |
-|                        |                                                 |               |               |
 | soortnaam              | «tekst»                                         |               | 0..n          |
 | naam                   | «tekst»                                         |               | 0..n          |
 
@@ -91,7 +90,7 @@ aangepast.
 |-------------------------|--------------------------|
 | ~~fysiekVoorkomen~~ | **ligging**              |
 
-
+.
 
 ### Definitie
 
@@ -109,7 +108,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                                                          | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------|--------------------------------|--------------------------------------------------------------------------|
 | type~~Gebouw~~      | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                   | Het type gebouw **gebaseerd op de uiterlijke kenmerken van het gebouw.** |
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object.                                              | **relatieveHoogteligging**[^2] | **Aanduiding voor de relatieve** hoogte van het object.                  |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object.                                              | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object.                  |
 
 <details class="note">
 typeGebouw wordt gesplitst in twee attributen: ‘type’ (uiterlijke
@@ -118,8 +117,7 @@ van typeGebouw naar functie worden als vervallen bij typeGebouw opgenomen, en
 als toegevoegde attribuutwaarden bij het nieuwe attribuut ‘functie’.
 </details>
 
-<details class="note">
-Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
+<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
 </details>
 
@@ -192,15 +190,18 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 <details class="note">
 de attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …, ‘zwembad’
-verplaatsen van attribuut typeGebouw\|type naar attribuut functie.</details>
+verplaatsen van attribuut typeGebouw\|type naar attribuut functie.
+</details>
 
 <details class="note">
 type ‘tankstation’ verplaatst naar objecttype FunctioneelGebied; type
-‘dok’ verplaatst naar objecttype Inrichtingselement.</details>
+‘dok’ verplaatst naar objecttype Inrichtingselement
+</details>
 
 <details class="note">
 status ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot status
-‘bestaand’.</details>
+‘bestaand’.
+</details>
 
 Toevoegen attributen
 --------------------
@@ -226,6 +227,10 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:functie*
 
+</details>attribuutwaarden van BRT.Next:functie zijn overgenomen van
+TOP10NL:typeGebouw; m.u.v. waarde ‘religie’: deze classificatie is nieuw
+toegevoegd aan BRT.Next
+</details>
 
 | *BRT.Next:waarde*                                   | *BRT.Next:definitie*                           |
 |-----------------------------------------------------|------------------------------------------------|
@@ -252,11 +257,6 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 | **waterwoning**                                     | *definitie TOP10NL 1.2*                        |
 | **ziekenhuis**                                      | *definitie TOP10NL 1.2*                        |
 | **zwembad**                                         | *definitie TOP10NL 1.2*                        |
-
-<details class="note"> attribuutwaarden van BRT.Next:functie zijn overgenomen van
-TOP10NL:typeGebouw; m.u.v. waarde ‘religie’: deze classificatie is nieuw
-toegevoegd aan BRT.Next.
-</details>
 
 *Attribuut BRT.Next:status*
 
