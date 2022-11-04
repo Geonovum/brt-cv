@@ -38,10 +38,8 @@ Overzicht
 |                        | kruis                  | punt          |               |
 |                        | luchtvaartlicht        | punt          |               |
 |                        | markant object         | punt          |               |
-|                        | metrostation           | vlak          |               |
+|                        | metrostation           | punt          |               |
 |                        | muur                   | lijn          |               |
-|                        | open loods             | vlak          |               |
-|                        | overkapping            | vlak          |               |
 |                        | paal                   | punt          |               |
 |                        | paalwerk               | lijn          |               |
 |                        | peilschaal             | punt          |               |
@@ -88,11 +86,11 @@ aangepast.
 
 | *TOP10NL:attribuutnaam*        | *BRT.Next:attribuutnaam* |
 |--------------------------------|--------------------------|
-| type~~Inrichtingselement~~ | **type**                 |
+| type~~Inrichtingselement~~     | **type**                 |
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
@@ -100,12 +98,13 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note">
 Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
+getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
 </details>
+
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -118,29 +117,28 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:typeInrichtingselement / BRT.Next:type*
+*Attribuut TOP10NL:typeInrichtingselement | BRT.Next:type*
 
-| *TOP10NL:waarde*        | *BRT.Next:waarde*     |
-|-------------------------|-----------------------|
-| ~~baak~~        | **baken**             |
-| ~~kaap~~           | **baken**             |
-| ~~GPS~~ kernnetpunt | **GNSS** kernnetpunt  |
-| kilometerpaal           | kilometerpaal **weg** |
+| *TOP10NL:waarde* | *BRT.Next:waarde*     |
+|------------------|-----------------------|
+| ~~baak~~ | **baken**             |
+| ~~kaap~~     | **baken**             |
+| kilometerpaal    | kilometerpaal **weg** |
 
 <details class="note">
-TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next.
+TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in BRT.Next
 </details>
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWeg / BRT.Next:type*
+*Attribuut TOP10NL:typeWeg | BRT.Next:type*
 
 | *TOP10NL:waarde*                   | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                                                                                                            | *BRT.Next:waarde*    | *BRT.Next:definitie*                                                                                                                                      |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,13 +164,9 @@ Vervallen attribuutwaarden
 Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
 BRT.Next. Het attribuut blijft wel bestaan.
 
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeInrichtingselement \| type    | ~~bassin~~; ~~dukdalf~~;~~gaswinning~~;~~golfmeetpaal~~;~~havenhoofd~~;~~helikopterlandingsplatform~~;~~kilometerraaibord~~;~~kilometerraaipaal~~;~~koedam~~;~~kogelvanger schietbaan~~;~~kraan~~;~~leiding~~;~~oliepompinstallatie~~;~~radiobaken~~;~~RD punt~~;~~schietbaan~~;~~seinmast~~;~~tol~~;~~verkeersgeleider~~; ~~vliedberg~~; ~~zichtbaar wrak~~ |
-
-<details class="note">
-type ‘bassin’ vervalt, en typen ‘dok’ en ‘zwembad’ worden toegevoegd.
-</details>
+| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| typeInrichtingselement \| type    | ~~dukdalf~~;~~gaswinning~~;~~golfmeetpaal~~;~~havenhoofd~~;~~helikopterlandingsplatform~~;~~kilometerraaibord~~;~~kilometerraaipaal~~;~~koedam~~;~~kogelvanger schietbaan~~;~~kraan~~;~~leiding~~;~~oliepompinstallatie~~;~~radiobaken~~;~~RD punt~~;~~schietbaan~~;~~seinmast~~;~~tol~~;~~verkeersgeleider~~; ~~vliedberg~~; ~~zichtbaar wrak~~ |
 
 <details class="note">
 type ‘vliedberg’ verplaatst naar objecttype Functioneel gebied.
@@ -200,13 +194,11 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:type*
 
-| *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                      |
-|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **open loods**    | **Niet verplaatsbaar licht gebouw met een open gevel, bestemd als berg- of werkplaats of als tijdelijk onderdak voor andere doeleinden.** |
-| **overkapping**   | **Een afzonderlijk staande overdekking rustend op kolommen.**                                                                             |
-| **dok**           | **Constructie bedoeld om schepen uit het water te halen en vervolgens weer in het water te laten.**                                       |
-| **zwembad**       | **Constructie in de vorm van een bassin bedoeld om in te zwemmen**                                                                        |
-| **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.**                           |
+| *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                            |
+|-------------------|-----------------------------------------------------------------------------------------------------------------|
+| **dok**           | **Constructie bedoeld om schepen uit het water te halen en vervolgens weer in het water te laten.**             |
+| **zwembad**       | **Constructie in de vorm van een bassin bedoeld om in te zwemmen**                                              |
+| **bezinkbak**     | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.** |
 
 *Attribuut BRT.Next:status*
 
