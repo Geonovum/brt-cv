@@ -28,7 +28,7 @@ Overzicht
 |               | watergebied           | vlak, multivlak |               |
 |               | zee                   | vlak, multivlak |               |
 |               | zeegat, zeearm        | vlak, multivlak |               |
-| naam          | «tekst»               |                 | 0..n          |
+| naam          | “tekst”               |                 | 0..n          |
 | naam: taal    | Nederlands            |                 | 0..n          |
 |               | Fries                 |                 |               |
 |               | onbekend / VoidReason |                 |               |
@@ -50,7 +50,7 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
@@ -68,15 +68,15 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-*n.v.t.*
+*Geen.*
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Vervallen attributen
 --------------------
@@ -104,9 +104,9 @@ Toevoegen attributen
 
 Onderstaande attributen worden toegevoegd aan BRT.Next.
 
-| *BRT.Next:Attribuutnaam* | *Definitie*                                         | *Verplicht/optioneel*     | *Attribuutwaarde*                            |
-|--------------------------|-----------------------------------------------------|---------------------------|----------------------------------------------|
-| **naam: taal**           | **De taal van de naam van het geografisch gebied.** | **Verplicht, 1..\* of 1** | **Nederlands; Fries; onbekend / VoidReason** |
+| *BRT.Next:Attribuutnaam* | *Definitie*                                         | *Verplicht/optioneel*    | *Attribuutwaarde*                            |
+|--------------------------|-----------------------------------------------------|--------------------------|----------------------------------------------|
+| **naam: taal**           | **De taal van de naam van het geografisch gebied.** | **Verplicht, 0 of meer** | **Nederlands; Fries; onbekend / VoidReason** |
 
 Toevoegen attribuutwaarden
 --------------------------
@@ -115,8 +115,8 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:naam:taal*
 
-| *BRT.Next:waarde*      | *BRT.Next:definitie*  |
-|------------------------|-----------------------|
-| **Nederlands**         | **Nederlandse taal.** |
-| **Fries**              | **Friese taal.**      |
-| **overig, VoidReason** | **Taal is onbekend.** |
+| *BRT.Next:waarde*         | *BRT.Next:definitie*  |
+|---------------------------|-----------------------|
+| **Nederlands**            | **Nederlandse taal.** |
+| **Fries**                 | **Friese taal.**      |
+| **onbekend / VoidReason** | **Taal is onbekend.** |

@@ -9,41 +9,6 @@ Overzicht
 
 Geen, object Plantopografie vervalt in zijn geheel.
 
-Wijzigen attributen
--------------------
-
-De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
-wijzigen van naam en definitie in BRT.Next.
-
-### Naam
-
-*n.v.t.*
-
-### Definitie
-
-*n.v.t.*
-
-### Naam+definitie
-
-*n.v.t.*
-
-Wijzigen attribuutwaarden
--------------------------
-
-De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
-definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
-
-### Naam
-
-*n.v.t.*
-
-### Definitie
-
-*n.v.t.*
-
-### Naam+definitie
-
-*n.v.t.*
 
 Vervallen attributen
 --------------------
@@ -57,17 +22,8 @@ in BRT.Next.
 | ~~naam~~            | ~~«tekst»~~                                               |
 | ~~geometrie~~       | ~~«punt»~~; ~~«lijn»~~; ~~«vlak»~~                |
 
-Vervallen attribuutwaarden
---------------------------
 
-n.v.t.
 
-Toevoegen attributen
---------------------
 
-n.v.t.
 
-Toevoegen attribuutwaarden
---------------------------
 
-n.v.t.

@@ -19,11 +19,11 @@ BRT.Next*
 |                 | gemeente              | vlak, multivlak |               |
 |                 | maritieme zone        | vlak, multivlak |               |
 | naam            | «tekst»               |                 | 1-1           |
-| naam: taal      | Nederlands            |                 | 1..\*         |
+| naam: taal      | Nederlands            |                 | 1..n         |
 |                 | Fries                 |                 |               |
 |                 | onbekend / VoidReason |                 |               |
-| naam: herkomst  | «tekst»               |                 | 1..\*         |
-| naam: officieel | ja                    |                 | 1..\*         |
+| naam: herkomst  | «tekst»               |                 | 1..n         |
+| naam: officieel | ja                    |                 | 1..n         |
 |                 | nee                   |                 |               |
 | nummer          | «tekst»               |                 | 0..1          |
 
@@ -44,11 +44,11 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -67,7 +67,7 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
@@ -115,7 +115,7 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:Attribuutnaam* | *Definitie*                                           | *Verplicht/optioneel*                                    | *Attribuutwaarde*                            |
 |--------------------------|-------------------------------------------------------|----------------------------------------------------------|----------------------------------------------|
-| **naam**                 | **De naam van het registratief gebied**               | **Verplicht, 1..\***                                     | **«tekst»**                                  |
+| **naam**                 | **De naam van het registratief gebied**               | **Verplicht, 1 of meer**                                     | **«tekst»**                                  |
 | **naam: herkomst**       | **De taal van de naam van het registratief gebied.**  | **De herkomst van de naam van het registratief gebied.** | **«tekst»**                                  |
 | **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.** | **Verplicht, 1 of meer**                             | **ja/nee**                                   |
 | **naam: taal**           | **De taal van de naam van het registratief gebied.**  | **Verplicht, 1 of meer**                                 | **Nederlands; Fries; onbekend / VoidReason** |

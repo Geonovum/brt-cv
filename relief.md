@@ -40,7 +40,7 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
@@ -48,7 +48,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging**[^1] | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note">
 Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
@@ -63,15 +63,15 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-*n.v.t.*
+*Geen.*
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Vervallen attributen
 --------------------
@@ -86,12 +86,12 @@ in BRT.Next.
 Vervallen attribuutwaarden
 --------------------------
 
-*n.v.t.*
+*Geen.*
 
 Toevoegen attributen
 --------------------
 
-*n.v.t.*
+*Geen.*
 
 Toevoegen attribuutwaarden
 --------------------------

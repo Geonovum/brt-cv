@@ -22,11 +22,11 @@ Overzicht
 | bebouwdeKom     | ja                         |                 | 1-1           |
 |                 | nee                        |                 |               |
 | aantalIwoners   | «geheel getal»             |                 | 1-1           |
-| naam            | «tekst»                    |                 | 1..\*         |
-| naam: herkomst  | «taal»                     |                 | 1..\*         |
-| naam: officieel | ja                         |                 | 1..\*         |
+| naam            | «tekst»                    |                 | 1..n         |
+| naam: herkomst  | «taal»                     |                 | 1..n         |
+| naam: officieel | ja                         |                 | 1..n         |
 |                 | nee                        |                 |               |
-| naam: taal      | Nederlands                 |                 | 1..\*         |
+| naam: taal      | Nederlands                 |                 | 1..n         |
 |                 | Fries                      |                 |               |
 |                 | onbekend / VoidReason      |                 |               |
 
@@ -47,11 +47,11 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-n.v.t.
+Geen.
 
 Wijzigen attribuutwaarden
 -------------------------
@@ -70,11 +70,11 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
 Vervallen attributen
 --------------------

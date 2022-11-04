@@ -60,7 +60,7 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 

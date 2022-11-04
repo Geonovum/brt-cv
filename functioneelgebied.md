@@ -90,7 +90,7 @@ aangepast.
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
@@ -108,7 +108,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-*n.v.t.*
+*Geen.*
 
 ### Definitie
 
@@ -131,7 +131,7 @@ BRT.Next
 | *TOP10NL:waarde*          | *TOP10NL:definitie*                                                                | *BRT.Next:waarde*                    | *BRT.Next:definitie*                                                      |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|
 | helikopterlandingsterrein | ~~Terrein~~ dat als landings- en ~~vertrek~~plaats dient voor helikopters. | **helikopterlandingsplaats**         | Gebied dat **dient** als landings- en **opstijg**plaats voor helikopters. |
-|                           |                                                                                    |                                      |                                                                           |
+
 | kazerne, legerplaats      | Gebouw~~(-encomplex) bestemd tot huisvesting van soldaten.~~                   | kazerne, legerplaats, **vliegbasis** | **Terrein met militaire** gebouw**en en infrastructuur.**                 |
 
 Vervallen attributen
@@ -156,13 +156,14 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | typeFunctioneelGebied\|type       | ~~campus~~;~~caravanpark~~;~~kartingbaan~~;~~gebied met hoge objecten~~;~~gebouwencomplex~~;~~heemtuin~~;~~infiltratiegebied~~;~~landgoed~~;~~milieustraat~~;~~mosselbank~~;~~openluchttheater~~;~~plantsoen~~;~~productie-installatie~~;~~slipschool~~;~~tennispark~~;~~tuincentrum~~;~~viskwekerij~~;~~visvijvercomplex~~;~~werf~~;~~windturbinepark~~;~~zenderpark~~;~~zoutwinning~~ |
 
 <details class="note">
-typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
+ typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot ‘gaswinning,
 oliewinning’; ‘grindwinning’ en ‘zandwinning’ tot ‘grindwinning, zandwinning’.
 </details>
+
 Toevoegen attributen
 --------------------
 
-n.v.t.
+Geen.
 
 Toevoegen attribuutwaarden
 --------------------------

@@ -37,7 +37,7 @@ aangepast.
 
 | TOP10NL:attribuutnaam | BRT.Next:attribuutnaam |
 |-----------------------|------------------------|
-| type~~Hoogte~~    | type                   |
+| type\~\~Hoogte\~\~    | type                   |
 
 ### Definitie
 
@@ -78,8 +78,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                      |
 |-----------------------------------|---------------------------------------------------------------|
-| typeHoogte\|type                  | ~~peil~~;~~peil: zomerpeil~~;~~peil winterpeil:~~ |
-| referentievlak                    | ~~OLW~~                                                   |
+| typeHoogte\|type                  | \~\~peil\~\~;\~\~peil: zomerpeil\~\~;\~\~peil winterpeil:\~\~ |
+| referentievlak                    | \~\~OLW\~\~                                                   |
 
 Toevoegen attributen
 --------------------

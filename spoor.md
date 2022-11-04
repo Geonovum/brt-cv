@@ -93,11 +93,11 @@ definitie wordt niet aangepast.
 
 ### Definitie
 
-n.v.t.
+Geen.
 
 ### Naam+definitie
 
-| n.v.t. |   |   |   |
+| Geen. |   |   |   |
 |--------|---|---|---|
 
 
@@ -135,7 +135,7 @@ status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot status
 Toevoegen attributen
 --------------------
 
-n.v.t.
+Geen.
 
 Toevoegen attribuutwaarden
 --------------------------
