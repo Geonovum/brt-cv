@@ -5,8 +5,7 @@ Wegdeel
 -------
 
 -   Schrappen van type ‘hoofdweg’ is teruggedraaid, opgenomen als type ‘rijbaan
-    hoofdweg’, definitie is aangepast. Type ‘rijbaan autoweg’ geldt nu als
-    toevoeging met een eigen definitie gebaseerd op BGT.
+    hoofdweg’, definitie is aangepast.
 
 -   Type ‘spoorbaanlichaam’ is verplaatst naar type ‘spoorbaan’ van objecttype
     Spoor
@@ -86,12 +85,12 @@ Gebouw
 
 -   geometrietype ‘punt’ is toegevoegd aan type ‘bunker’
 
--   schrappen van type ‘tank’ is teruggedraaid, hernoemd naar ‘opslagtank’ met
-    BGT definitie.
+-   verplaatsen van type ‘tank’ naar Inrichtingselement is teruggedraaid,
+    hernoemd naar ‘opslagtank’ met BGT definitie.
 
--   schrappen type ‘parkeerdak, parkeerdek, parkeergarage’ is teruggedraaid,
-    type is hernoemd naar ‘parkeergarage’, definitie is aangepast, en
-    geometrietype ‘punt’ is toegevoegd voor dit type.
+-   wijzigen naam van type ‘parkeerdak, parkeerdek, parkeergarage’ is
+    teruggedraaid, type is hernoemd naar ‘parkeergarage’, definitie is
+    aangepast, en geometrietype ‘punt’ is toegevoegd voor dit type.
 
 -   schrappen type ‘synagoge’ is teruggedraaid
 
@@ -118,7 +117,10 @@ Inrichtingselement
 
 -   type ‘bassin’ is vervangen door type ‘dok’ en type ‘zwembad’
 
--   typen ‘opslagtank’, ‘windturbine’ en ‘botenhuis’ zijn verplaatst naar Gebouw
+-   typen ‘open loods, ‘overkapping’, ‘opslagtank’, ‘windturbine’ en ‘botenhuis’
+    zijn verplaatst naar Gebouw
+
+-   definitie van GNSS kernnetpunt is minimaal aangepast.
 
 Relief
 ------
@@ -136,9 +138,8 @@ Registratief gebied
 -   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
     naar ‘1 of meer’ (1..\*)
 
--   Schrappen van attibuut ‘naamOfficieel’ is teruggedraaid, hernoemd naar
-    ‘naam: officieel’ met kardinaliteit ‘1 of meer’ (1..\*), type aangepast naar
-    waardenlijst ja/nee.
+-   Attribuut ‘naam: officieel’ is toegevoegd met kardinaliteit ‘1 of meer’
+    (1..\*), type aangepast naar waardenlijst ja/nee.
 
 -   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
     aangepast.
@@ -163,9 +164,8 @@ Plaats
 -   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
     naar ‘1 of meer’ (1..\*)
 
--   Schrappen van attibuut ‘naamOfficieel’ is teruggedraaid, hernoemd naar
-    ‘naam: officieel’ met kardinaliteit ‘1 of meer’ (1..\*), type aangepast naar
-    waardenlijst ja/nee.
+-   Attribuut ‘naam: officieel’ is toegevoegd met kardinaliteit ‘1 of meer’
+    (1..\*), type aangepast naar waardenlijst ja/nee.
 
 -   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
     aangepast.
@@ -195,4 +195,4 @@ Functioneel gebied
 Plantopografie
 --------------
 
->   Geen
+Geen
