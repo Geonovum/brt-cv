@@ -49,8 +49,8 @@ veel mogelijk aansluiten bij de standaarden en bij TOP10NL.
 Deze tweede consultatie is een vervolg op de eerste consultatie, die gehouden is
 van 28 juni tot en met 22 augustus 2022. Als aftrap van deze tweede consultatie
 is een DiS-online sessie gehouden. De sheets en opnamen van deze sessie zijn
-terug te zien op de pagina van DiS-online:
-<https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2022/11/01/presentatie-dis-online>  
+terug te zien op [de pagina van DiS-online]
+(https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2022/11/01/presentatie-dis-online) 
 Opmerkingen uit de eerste consultatie zijn zo mogelijk verwerkt in deze
 consultatie. In de bijlage, onderaan deze webpagina, zijn deze wijzigingen ten
 opzichte van de eerste consultatie weergegeven.
@@ -63,7 +63,7 @@ Kadaster Zwolle
 - online vragenuurtje: donderdag 25 november 2022, 9:30 – 11:00, online via
 Teams  
 U kunt zich aanmelden voor deze interactiemomenten door een e-mail te sturen aan
-<brt@kadaster.nl>
+[brt@kadaster.nl](brt@kadaster.nl).
 
 Het informatiemodel kan tijdens het realiseren van het product nog licht
 aangepast worden doordat op dit moment het hele proces nog niet bekend is. Als
@@ -91,16 +91,16 @@ TOP10NL (WAS) naar de nieuwe BRT.Next (WORDT). Alle wijzigingen zijn
 voorstellen, en worden met dit wijzigingsvoorstel geconsulteerd onder het
 werkveld.
 
-U kunt uw reacties op dit wijzigingsvoorstel indienen via het
-reactieformulier: <https://fd10.formdesk.com/geonovum/brtnext>. U vindt een link
-naar het reactieformulier midden onderaan deze pagina (knop “Reactie indienen”).
+U kunt uw reacties op dit wijzigingsvoorstel indienen via [dit
+reactieformulier](https://fd10.formdesk.com/geonovum/brtnext). U vindt een link
+naar het reactieformulier ook midden onderaan deze pagina (knop “Reactie indienen”).
 
 Geef bij uw reactie uw feedback en verbetersuggestie inclusief motivatie op: Wat
 gebeurt er als het Kadaster dit voorstel doorvoert? Wat is het voordeel van uw
 verbetervoorstel?
 
 Al uw vragen of opmerkingen over de consultatie van BRT.Next stelt u per email
-aan <brt@kadaster.nl>.
+aan [brt@kadaster.nl](brt@kadaster.nl).
 
 Leeswijzer
 ----------
