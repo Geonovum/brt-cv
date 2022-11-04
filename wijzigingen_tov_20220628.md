@@ -1,6 +1,12 @@
 Bijlage: Wijzigingen t.o.v. consultatieversie 28 juni 2022
 ==========================================================
 
+Inleiding
+---------
+
+-   Aangepast aan de nieuwe consultatieperiode, inclusief
+    aankondiging/uitnodiging samenwerkbijeenkomst en vragenuur.
+
 Wegdeel
 -------
 
