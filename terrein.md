@@ -128,7 +128,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*     |
 |-------------------------|----------------------------------------------|
-| ~~voorkomen~~       | ~~met riet~~;~~dras, moerassig~~ |
+| ~~voorkomen~~       | ~~met riet~~; ~~dras, moerassig~~ |
 | ~~naam~~            | ~~«tekst»~~                              |
 
 <details class="note">voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar

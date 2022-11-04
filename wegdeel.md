@@ -157,7 +157,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*      | *TOP10NL:waarde of «type»*                                                                                                                                                           |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~hartGeometrie~~        | ~~«punt»~~;~~«lijn»~~                                                                                                                                                        |
+| ~~hartGeometrie~~        | ~~«punt»~~; ~~«lijn»~~                                                                                                                                                        |
 | ~~typeInfrastructuur~~   | ~~verbinding~~; ~~kruising~~; ~~overig verkeersgebied~~                                                                                                                  |
 | ~~hoofdverkeersgebruik~~ | ~~vliegverkeer~~; ~~snelverkeer~~; ~~gemengd verkeer~~; ~~busverkeer~~; ~~fietsers~~, ~~bromfietsers~~; ~~voetgangers~~; ~~ruiters~~; ~~overig~~ |
 | ~~gescheidenRijbaan~~    | ~~ja~~; ~~nee~~                                                                                                                                                              |

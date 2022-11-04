@@ -109,7 +109,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»*                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~;~~ kruising~~                                                           |
+| ~~typeInfrastructuur~~ | ~~verbinding~~; ~~ kruising~~                                                           |
 | ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~                                                        |
 | ~~vervoerfunctie~~     | ~~gemengd gebruik~~; ~~personenvervoer~~; ~~ goederenvervoer~~; ~~museumlijn~~ |
 | ~~baanvaknaam~~        | ~~«tekst»~~                                                                                |

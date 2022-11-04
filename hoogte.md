@@ -78,7 +78,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                      |
 |-----------------------------------|---------------------------------------------------------------|
-| typeHoogte\|type                  | ~~peil~~;~~peil: zomerpeil~~;~~peil winterpeil:~~ |
+| typeHoogte\|type                  | ~~peil~~; ~~peil: zomerpeil~~; ~~peil winterpeil:~~ |
 | referentievlak                    | ~~OLW~~                                                   |
 
 Toevoegen attributen
