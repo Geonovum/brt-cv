@@ -76,6 +76,7 @@ table
 {
   empty-cells: show;
   min-width: 90%;
+  max-width: 100% !important;
   border-color: grey;
   border-style: solid;
 }
