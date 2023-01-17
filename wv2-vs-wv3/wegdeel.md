@@ -2,14 +2,14 @@ Wegdeel
 =======
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Wegdeel in BRT.Next ten
-opzichte van het [vorige
+opzichte van de [vorige versie van het
 wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#wegdeel).
 
 Overzicht
 ---------
 
 Hieronder volgt een overzicht van de attributen en attribuutwaarden van het
-object Wegdeel, na doorvoeren van de wijzigingen t.o.v. het vorige
+object Wegdeel, na doorvoeren van de wijzigingen t.o.v. vorige versie
 wijzigingsvoorstel.
 
 *Overzicht attributen en waarden/type van object Wegdeel in BRT.Next*
@@ -64,11 +64,11 @@ wijzigingsvoorstel.
 | brugnaam                 | «tekst»                     |               | 0..1          |
 | tunnelnaam               | «tekst»                     |               | 0..1          |
 
-Wijzigingen t.o.v. 
--------------------
+Wijzigingen t.o.v. vorige versie wijzigingsvoorstel
+---------------------------------------------------
 
-De volgende wijzigingen zijn doorgevoerd ten opzichte van vorige
-wijzigingsvoorstel.
+De volgende wijzigingen zijn doorgevoerd in het object Wegdeel ten opzichte van
+vorige versie wijzigingsvoorstel.
 
 ### Attributen
 
