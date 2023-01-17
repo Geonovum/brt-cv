@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='nl'>
+
+  <head>
+        <meta charset='utf-8'>
+
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Wijzigingsvoorstel BRT.Next</title>    
+
+
+        <link rel="stylesheet" type="text/css" href="./media/style.css">
+		<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
+        <script class="remove" src="./config.js"></script>
+        <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
+			
+    </head>
+   
+    <body>
+	
+		
+		<div class="submitComment" onclick="window.open('https://fd10.formdesk.com/geonovum/brtnext', '_blank')";>
+			<button id="respec-pill" aria-controls="respec-menu" aria-expanded="false" aria-haspopup="true" aria-label="ReSpec Menu">Reactie indienen</button>
+		</div>		
+		
+        <section id='abstract' style="display: none">
+		Dit is de consultatieversie van het wijzigingsvoorstel voor de nieuwe BRT: BRT.Next. Dit document heeft als doel om de wijzigingen in de TOP10NL onder het werkveld te consulteren.
+Reacties op dit wijzigingsvoorstel kunt u tot en met 4 december 2022 indienen via het reactieformulier: <a href="https://fd10.formdesk.com/geonovum/brtnext" target="_blank">https://fd10.formdesk.com/geonovum/brtnext</a>.
+
+		</section>
+     
+        <section id='sotd'></section>
+
+        <!--div data-format="markdown" data-include="versiebeheer.md"></div-->
+        <section data-format="markdown" data-include="inleiding.md"></section>
+        <section data-format="markdown" data-include="wegdeel.md"></section>
+        <section data-format="markdown" data-include="spoor.md"></section>
+        <section data-format="markdown" data-include="waterdeel.md"></section>
+        <!--section data-format="markdown" data-include="terrein.md"></section-->
+        <!--section data-format="markdown" data-include="gebouw.md"></section-->
+        <!--section data-format="markdown" data-include="inrichtingselement.md"></section-->
+        <!--section data-format="markdown" data-include="relief.md"></section-->
+        <!--section data-format="markdown" data-include="hoogte.md"></section-->
+        <!--section data-format="markdown" data-include="registratiefgebied.md"></section-->
+        <!--section data-format="markdown" data-include="geografischgebied.md"></section-->
+        <!--section data-format="markdown" data-include="plaats.md"></section-->
+        <!--section data-format="markdown" data-include="functioneelgebied.md"></section-->
+        <!--section data-format="markdown" data-include="plantopografie.md"></section-->
+		<!--section data-format="markdown" data-include="wijzigingen_tov_20220628.md"></section-->      
+      <!-- genereer hier een afbeeldingen lijst- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!--<section id="tof"><h2>Lijst van afbeeldingen</h2></section> -->
+		<div class="trackChanges">
+		<label class="switch" onclick="toggleTrackChanges();">
+			  <input id="toggleTrackChanges" type="checkbox" checked="checked">
+			  <span class="slider round"></span>
+			</label>
+			<span class="textTrackChanges">WIJZIGINGEN AAN</span><br />
+			<span style="color: red;
+    text-decoration: line-through;">WAS</span> = vervallen tekst<br />
+			<span style="color: green; font-weight: bold">WORDT</span> = nieuwe tekst
+			</span>
+		</div>			
+		<script>			
+		var toggleTrackChanges = function() {
+
+			let marks = document.getElementsByTagName("strong");
+			let strikes = document.getElementsByTagName("del");
+				
+				if (document.getElementById('toggleTrackChanges').checked == false) {
+					
+					for (var i=1; i<marks.length; i++) {
+						console.log(marks[i]);
+						marks[i].style.fontWeight = "normal";
+						marks[i].style.color = "black";
+					}		
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.color = "black";
+						strikes[i].style.textDecoration = "none";
+					}		
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#cccccc";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN UIT";
+
+				}
+				else {
+					for (var i=1; i<marks.length; i++) {
+						marks[i].style.color = "green";
+						marks[i].style.fontWeight = "bold";						
+					}
+					for (var i=1; i<strikes.length; i++) {
+						strikes[i].style.color = "red";
+						strikes[i].style.textDecoration = "line-through";
+					}
+					document.getElementsByClassName("textTrackChanges")[0].style.color = "#0000ff";
+					document.getElementsByClassName("textTrackChanges")[0].innerHTML = "WIJZINGINGEN AAN";
+				}
+		}
+		</script>
+		
+    </body>
+</html>
