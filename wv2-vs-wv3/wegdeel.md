@@ -64,7 +64,7 @@ wijzigingsvoorstel.
 | brugnaam                 | «tekst»                     |               | 0..1          |
 | tunnelnaam               | «tekst»                     |               | 0..1          |
 
-Wijzigingen t.o.v. vorige versie 
+Wijzigingen t.o.v. vorige versie
 --------------------------------
 
 De volgende wijzigingen zijn doorgevoerd in het object Wegdeel ten opzichte van
@@ -72,29 +72,29 @@ vorige versie wijzigingsvoorstel.
 
 ### Attributen
 
-**Hernoemen**
+*Hernoemen*
 
-| Attribuutnaam                | wordt hernoemd naar          |
-|------------------------------|------------------------------|
-| type                         | type**Wegdeel**              |
+| Attribuutnaam | wordt hernoemd naar |
+|---------------|---------------------|
+| type          | type**Wegdeel**     |
 
 ### Attribuutwaarden
 
-**Hernoemen**
+*Hernoemen*
 
 | Attribuutwaarde               | wordt hernoemd naar |
 |-------------------------------|---------------------|
-| ~~rijbaan~~ autosnelweg       | autosnelweg         |
-| ~~rijbaan~~ autoweg           | autoweg             |
-| ~~rijbaan~~ hoofdweg          | hoofdweg            |
-| ~~rijbaan~~ regionale weg     | regionale weg       |
-| ~~rijbaan~~ lokale weg        | lokale weg          |
-| ~~rijbaan~~ straat            | straat              |
-| ~~rijbaan~~ overig            | overig              |
-| parkeer~~vlak~~               | parkeer**plaats**   |
-| veer~~dienst, pontveer~~      | veer**verbinding**  |
+| ~~rijbaan~~ autosnelweg   | autosnelweg         |
+| ~~rijbaan~~ autoweg       | autoweg             |
+| ~~rijbaan~~ hoofdweg      | hoofdweg            |
+| ~~rijbaan~~ regionale weg | regionale weg       |
+| ~~rijbaan~~ lokale weg    | lokale weg          |
+| ~~rijbaan~~ straat        | straat              |
+| ~~rijbaan~~ overig        | overig              |
+| parkeer~~vlak~~           | parkeer**plaats**   |
+| veer~~dienst, pontveer~~  | veer**verbinding**  |
 
-**Definities**
+*Definities*
 
 | Voor attribuutwaarde | wordt definitie                                                                                                                   | aangepast naar                                                                                                                           |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
