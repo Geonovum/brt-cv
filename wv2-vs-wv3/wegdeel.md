@@ -74,7 +74,7 @@ vorige versie wijzigingsvoorstel.
 
 **Hernoemen**
 
-| WAS vorige versie 04-11-2022 | WORDT deze versie 23-01-2023 |
+| Attribuutnaam                | wordt hernoemd naar          |
 |------------------------------|------------------------------|
 | type                         | type**Wegdeel**              |
 
@@ -84,15 +84,15 @@ vorige versie wijzigingsvoorstel.
 
 | Attribuutwaarde               | wordt hernoemd naar |
 |-------------------------------|---------------------|
-| ~~rijbaan~~ autosnelweg   | autosnelweg         |
-| ~~rijbaan~~ autoweg       | autoweg             |
-| ~~rijbaan~~ hoofdweg      | hoofdweg            |
-| ~~rijbaan~~ regionale weg | regionale weg       |
-| ~~rijbaan~~ lokale weg    | lokale weg          |
-| ~~rijbaan~~ straat        | straat              |
-| ~~rijbaan~~ overig        | overig              |
-| parkeer~~vlak~~           | parkeer**plaats**   |
-| veer~~dienst, pontveer~~  | veer**verbinding**  |
+| ~~rijbaan~~ autosnelweg       | autosnelweg         |
+| ~~rijbaan~~ autoweg           | autoweg             |
+| ~~rijbaan~~ hoofdweg          | hoofdweg            |
+| ~~rijbaan~~ regionale weg     | regionale weg       |
+| ~~rijbaan~~ lokale weg        | lokale weg          |
+| ~~rijbaan~~ straat            | straat              |
+| ~~rijbaan~~ overig            | overig              |
+| parkeer~~vlak~~               | parkeer**plaats**   |
+| veer~~dienst, pontveer~~      | veer**verbinding**  |
 
 **Definities**
 
