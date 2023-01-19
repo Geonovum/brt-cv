@@ -18,7 +18,7 @@ wijzigingsvoorstel.
 |------------------------|-----------------------------|---------------|---------------|
 | geometrie              | «lijn»                      |               | 1-1           |
 |                        | «vlak»                      |               |               |
-| type                   | trein                       | lijn          | 1-1           |
+| typeSpoor              | trein                       | lijn          | 1-1           |
 |                        | tram                        | lijn          |               |
 |                        | sneltram                    | lijn          |               |
 |                        | metro                       | lijn          |               |
@@ -47,4 +47,12 @@ vorige versie wijzigingsvoorstel.
 
 ### Attributen
 
+*Hernoemen*
+
+| Attribuut | wordt hernoemd naar |
+|-----------|---------------------|
+| type      | type**Spoor**       |
+
 ### Attribuutwaarden
+
+Geen
