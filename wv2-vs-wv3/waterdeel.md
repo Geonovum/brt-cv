@@ -2,7 +2,7 @@ Waterdeel
 =========
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Waterdeel in BRT.Next
-ten opzichte van het [vorige versie
+ten opzichte van de [vorige versie van het 
 wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#waterdeel).
 
 Overzicht

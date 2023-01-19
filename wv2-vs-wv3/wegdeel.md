@@ -2,7 +2,7 @@ Wegdeel
 =======
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Wegdeel in BRT.Next ten
-opzichte van de [vorige versie van het
+opzichte van de [vorige versie van het 
 wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#wegdeel).
 
 Overzicht
