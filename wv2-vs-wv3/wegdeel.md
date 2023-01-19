@@ -64,8 +64,8 @@ wijzigingsvoorstel.
 | brugnaam                 | «tekst»                     |               | 0..1          |
 | tunnelnaam               | «tekst»                     |               | 0..1          |
 
-Wijzigingen t.o.v. vorige versie wijzigingsvoorstel
----------------------------------------------------
+Wijzigingen t.o.v. vorige versie 
+--------------------------------
 
 De volgende wijzigingen zijn doorgevoerd in het object Wegdeel ten opzichte van
 vorige versie wijzigingsvoorstel.
@@ -81,9 +81,6 @@ vorige versie wijzigingsvoorstel.
 ### Attribuutwaarden
 
 **Hernoemen**
-
-Onderstaande attributen zijn hernoemd ten opzichte van de vorige versie van het
-wijzigingsvoorstel.
 
 | Attribuutwaarde               | wordt hernoemd naar |
 |-------------------------------|---------------------|
