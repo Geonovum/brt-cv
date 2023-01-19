@@ -14,7 +14,7 @@ wijzigingsvoorstel.
 
 *Overzicht attributen en waarden/type van object Waterdeel in BRT.Next*
 
-| Attribuutnaam          | Waarde of \<type\>     | Geometrietype | Kardinaliteit |
+| Attribuutnaam          | Waarde of «type»     | Geometrietype | Kardinaliteit |
 |------------------------|------------------------|---------------|---------------|
 | geometrie              | «vlak»                 |               | 1-1           |
 |                        | «lijn»                 |               |               |
