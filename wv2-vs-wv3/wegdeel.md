@@ -18,21 +18,21 @@ wijzigingsvoorstel.
 |--------------------------|-----------------------------|---------------|---------------|
 | geometrie                | «vlak»                      |               | 1 -1          |
 |                          | «lijn»                      |               |               |
-| type                     | rijbaan autosnelweg         | vlak          | 1..n          |
-|                          | rijbaan autoweg             | vlak          |               |
-|                          | rijbaan hoofdweg            | vlak          |               |
-|                          | rijbaan regionale weg       | vlak          |               |
-|                          | rijbaan lokale weg          | vlak          |               |
-|                          | rijbaan straat              | vlak          |               |
-|                          | rijbaan overig              | vlak          |               |
-|                          | parkeervlak                 | vlak          |               |
+| typeWegdeel              | autosnelweg                 | vlak          | 1..n          |
+|                          | autoweg                     | vlak          |               |
+|                          | hoofdweg                    | vlak          |               |
+|                          | regionale weg               | vlak          |               |
+|                          | lokale weg                  | vlak          |               |
+|                          | straat                      | vlak          |               |
+|                          | overig                      | vlak          |               |
+|                          | parkeerplaats               | vlak          |               |
 |                          | OV-baan                     | vlak          |               |
 |                          | fietspad                    | vlak, lijn    |               |
 |                          | voetpad                     | vlak, lijn    |               |
 |                          | voetgangersgebied           | vlak          |               |
 |                          | startbaan, landingsbaan     | vlak          |               |
 |                          | rolbaan, platform           | vlak          |               |
-|                          | veerdienst, pontveer        | lijn          |               |
+|                          | veerverbinding              | lijn          |               |
 |                          | fietsveer                   | lijn          |               |
 |                          | voetveer                    | lijn          |               |
 | ligging                  | op vast deel van brug       |               | 0..n          |
@@ -72,4 +72,35 @@ vorige versie wijzigingsvoorstel.
 
 ### Attributen
 
+**Hernoemen**
+
+| WAS vorige versie 04-11-2022 | WORDT deze versie 23-01-2023 |
+|------------------------------|------------------------------|
+| type                         | type**Wegdeel**              |
+
 ### Attribuutwaarden
+
+**Hernoemen**
+
+Onderstaande attributen zijn hernoemd ten opzichte van de vorige versie van het
+wijzigingsvoorstel.
+
+| Attribuutwaarde               | wordt hernoemd naar |
+|-------------------------------|---------------------|
+| ~~rijbaan~~ autosnelweg   | autosnelweg         |
+| ~~rijbaan~~ autoweg       | autoweg             |
+| ~~rijbaan~~ hoofdweg      | hoofdweg            |
+| ~~rijbaan~~ regionale weg | regionale weg       |
+| ~~rijbaan~~ lokale weg    | lokale weg          |
+| ~~rijbaan~~ straat        | straat              |
+| ~~rijbaan~~ overig        | overig              |
+| parkeer~~vlak~~           | parkeer**plaats**   |
+| veer~~dienst, pontveer~~  | veer**verbinding**  |
+
+**Definities**
+
+| Voor attribuutwaarde | wordt definitie                                                                                                                   | aangepast naar                                                                                                                           |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| straat               | Wegdeel dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen ~~bebouwd~~ gebied.                          | Wegdeel dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen gebied **met bebouwing**.                               |
+| parkeerplaats        | ~~Wegdeel bestemd~~ voor het parkeren van ~~motor~~voertuigen.                                                            | **Parkeergelegenheid** voor het parkeren van **meerdere** voertuigen **in de openlucht met een aparte toegang vanaf de doorgaande weg**. |
+| rolbaan, platform    | Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën ~~van vliegtuigen~~ of het parkeren van vliegtuigen. | Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën of het parkeren van vliegtuigen.                                |
