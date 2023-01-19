@@ -39,8 +39,8 @@ wijzigingsvoorstel.
 attribuut ‘aantalSporen’ en ‘elektrificatie’ is alleen verplicht voor objecten
 Spoor met lijngeometrie.
 
-Wijzigingen t.o.v. vorige versie wijzigingsvoorstel
----------------------------------------------------
+Wijzigingen t.o.v. vorige versie
+--------------------------------
 
 De volgende wijzigingen zijn doorgevoerd in het object Spoor ten opzichte van
 vorige versie wijzigingsvoorstel.
