@@ -19,7 +19,7 @@ wijzigingsvoorstel.
 | geometrie              | «vlak»                 |               | 1-1           |
 |                        | «lijn»                 |               |               |
 |                        | «punt»                 |               |               |
-| type                   | waterloop              | lijn, vlak    | 1-1           |
+| typeWaterdeel          | waterloop              | lijn, vlak    | 1-1           |
 |                        | watervlakte            | vlak          |               |
 |                        | greppel, droge sloot   | lijn          |               |
 |                        | zee                    | vlak          |               |
@@ -36,7 +36,6 @@ wijzigingsvoorstel.
 | ligging                | in sluis               | lijn, vlak    | 0..n          |
 |                        | op brug                | lijn, vlak    |               |
 | relatieveHoogteligging | «geheel getal [-9; 9]» |               | 1-1           |
-| status                 | bestaand               |               | 1-1           |
 | naam                   | «tekst»                |               | 0..n          |
 | naam: herkomst         | «tekst»                |               | 0..n          |
 | naam:officieel         | ja                     |               | 0..n          |
@@ -47,12 +46,26 @@ wijzigingsvoorstel.
 | sluisnaam              | «tekst»                |               | 0..1          |
 | brugnaam               | «tekst»                |               | 0..1          |
 
-Wijzigingen t.o.v. vorige versie wijzigingsvoorstel
----------------------------------------------------
+Wijzigingen t.o.v. vorige versie 
+--------------------------------
 
 De volgende wijzigingen zijn doorgevoerd in het object Waterdeel ten opzichte
 van vorige versie wijzigingsvoorstel.
 
 ### Attributen
 
+*Hernoemen*
+
+| Attribuut | wordt hernoemd naar |
+|-----------|---------------------|
+| type      | type**Waterdeel**     |
+
+*Vervallen*
+
+| Attribuut      | vervalt met attribuutwaarden |
+|----------------|------------------------------|
+| ~~status~~ | ~~bestaand~~                     |
+
 ### Attribuutwaarden
+
+Geen
