@@ -72,6 +72,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
+| typeWeg             | typeWeg**deel**              |
 | ~~fysiekVoorkomen~~ | **ligging**              |
 | ~~hoofdG~~eometrie  | **g**eometrie        |
 
