@@ -13,7 +13,7 @@ Overzicht
 |------------------------|-----------------------------|---------------|---------------|
 | geometrie              | «lijn»                      |               | 1-1           |
 |                        | «vlak»                      |               |               |
-| type                   | trein                       | lijn          | 1-1           |
+| typeSpoor              | trein                       | lijn          | 1-1           |
 |                        | tram                        | lijn          |               |
 |                        | sneltram                    | lijn          |               |
 |                        | metro                       | lijn          |               |
@@ -49,7 +49,6 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Spoorbaan~~   | type                     |
 | ~~fysiekVoorkomen~~ | **ligging**              |
 
 ### Definitie
