@@ -46,14 +46,14 @@ attributen voor de levensloop van een object en visualisatiecode, zijn nu nog
 niet opgenomen in deze consultatie. Voor deze attributen wil het Kadaster zo
 veel mogelijk aansluiten bij de standaarden en bij TOP10NL.
 
-Deze derde consultatie is een vervolg op de tweede consultatie, die gehouden is
-van 4 november tot en met 4 december 2022. Als aftrap van deze tweede
-consultatie is een DiS-online sessie gehouden. De sheets en opnamen van deze
-sessie zijn terug te zien op [de pagina van DiS-online]
-(https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2022/11/01/presentatie-dis-online).
-Opmerkingen uit de eerste en tweede consultatie zijn zo mogelijk verwerkt in
-deze consultatie. In de bijlage, onderaan deze webpagina, zijn deze wijzigingen
-ten opzichte van de eerste consultatie weergegeven.
+Deze derde consultatie is een vervolg op de eerste en tweede consultatie, die
+gehouden zijn van 28 juni tot en met 22 augustus 2022 en van 4 november tot en
+met 4 december 2022. In deze derde consultatie worden alleen de wijzigingen in
+het informatiemodel ten opzichte van de tweede consultatieversie voorgelegd.
+Als aftrap van deze derde consultatie is een informatiesessie gehouden waar we
+deze derde consultatie en de gemaakte keuzes toelichten. Deze sessie was op
+23 januari 2023 en de opname is hier terug te kijken:
+URLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURL
 
 Het informatiemodel kan tijdens het realiseren van het product nog licht
 aangepast worden doordat op dit moment het hele proces nog niet bekend is. Als
@@ -64,34 +64,31 @@ Kadaster u blijven informeren.
 Periode consultatie
 -------------------
 
-Reactie op deze consultatie kunnen gegeven worden van 23 januari tot en met 13
-februari 2023 (3 weken). Aansluitend zal het Kadaster samen met Geonovum de
-ontvangen reacties beoordelen en zo mogelijk verwerken in een nieuwe versie van
-het informatiemodel voor BRT.Next. In maart/April/mei 2023 wordt het
-wijzigingsvoorstel, als versie ter vaststelling, aangeboden aan de
-Gebruikersgroep BRT?
+Reactie op deze consultatie kunnen gegeven worden van 23 januari tot en met
+13 feburuari 2023 (3 weken). Aansluitend zal het Kadaster samen met Geonovum de
+ontvangen reacties beoordelen en zo mogelijk verwerken in de eindversie van
+het informatiemodel voor BRT.Next.
 
 Het Kadaster is benieuwd naar uw reacties en dankt u bij voorbaat voor uw input!
 
 Reacties indienen
 -----------------
 
-In dit wijzigingsvoorstel worden alleen de wijzigingen beschreven ten opzichte
-van de vorige versie van het wijzigingsvoorstel. Alle wijzigingen zijn
+In dit wijzigingsvoorstel worden alle wijzigingen beschreven van de huidige
+TOP10NL (WAS) naar de nieuwe BRT.Next (WORDT). Alle wijzigingen zijn
 voorstellen, en worden met dit wijzigingsvoorstel geconsulteerd onder het
 werkveld.
 
 U kunt uw reacties op dit wijzigingsvoorstel indienen via [dit
 reactieformulier](https://fd10.formdesk.com/geonovum/brtnext). U vindt een link
-naar het reactieformulier ook midden onderaan deze pagina (knop “Reactie
-indienen”).
+naar het reactieformulier ook midden onderaan deze pagina (knop “Reactie indienen”).
 
 Geef bij uw reactie uw feedback en verbetersuggestie inclusief motivatie op: Wat
 gebeurt er als het Kadaster dit voorstel doorvoert? Wat is het voordeel van uw
 verbetervoorstel?
 
 Al uw vragen of opmerkingen over de consultatie van BRT.Next stelt u per email
-aan <brt@kadaster.nl>.
+aan [brt@kadaster.nl](brt@kadaster.nl).
 
 Leeswijzer
 ----------
