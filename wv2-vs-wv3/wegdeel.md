@@ -74,7 +74,7 @@ vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-| Attribuutnaam | wordt hernoemd naar |
+| Attribuut     | wordt hernoemd naar |
 |---------------|---------------------|
 | type          | type**Wegdeel**     |
 
@@ -82,17 +82,17 @@ vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-| Attribuutwaarde               | wordt hernoemd naar |
-|-------------------------------|---------------------|
-| ~~rijbaan~~ autosnelweg   | autosnelweg         |
-| ~~rijbaan~~ autoweg       | autoweg             |
-| ~~rijbaan~~ hoofdweg      | hoofdweg            |
-| ~~rijbaan~~ regionale weg | regionale weg       |
-| ~~rijbaan~~ lokale weg    | lokale weg          |
-| ~~rijbaan~~ straat        | straat              |
-| ~~rijbaan~~ overig        | overig              |
-| parkeer~~vlak~~           | parkeer**plaats**   |
-| veer~~dienst, pontveer~~  | veer**verbinding**  |
+|Bij attribuut | wordt attribuutwaarde    | hernoemd naar |
+|--------------|--------------------------|---------------------|
+| typeWegdeel  |~~rijbaan~~ autosnelweg   | autosnelweg         |
+| typeWegdeel  |~~rijbaan~~ autoweg       | autoweg             |
+| typeWegdeel  |~~rijbaan~~ hoofdweg      | hoofdweg            |
+| typeWegdeel  |~~rijbaan~~ regionale weg | regionale weg       |
+| typeWegdeel  |~~rijbaan~~ lokale weg    | lokale weg          |
+| typeWegdeel  |~~rijbaan~~ straat        | straat              |
+| typeWegdeel  |~~rijbaan~~ overig        | overig              |
+| typeWegdeel  |parkeer~~vlak~~           | parkeer**plaats**   |
+| typeWegdeel  |veer~~dienst, pontveer~~  | veer**verbinding**  |
 
 *Definities*
 
