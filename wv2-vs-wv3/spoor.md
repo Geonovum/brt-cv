@@ -2,7 +2,7 @@ Spoor
 =====
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Spoor in BRT.Next ten
-opzichte van het [vorige versie
+opzichte van de [vorige versie van het 
 wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#spoor).
 
 Overzicht
