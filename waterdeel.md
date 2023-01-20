@@ -14,7 +14,7 @@ Overzicht
 | geometrie              | «vlak»                 |               | 1-1           |
 |                        | «lijn»                 |               |               |
 |                        | «punt»                 |               |               |
-| type                   | waterloop              | lijn, vlak    | 1-1           |
+| typeWaterdeel          | waterloop              | lijn, vlak    | 1-1           |
 |                        | watervlakte            | vlak          |               |
 |                        | greppel, droge sloot   | lijn          |               |
 |                        | zee                    | vlak          |               |
@@ -31,7 +31,6 @@ Overzicht
 | ligging                | in sluis               | lijn, vlak    | 0..n          |
 |                        | op brug                | lijn, vlak    |               |
 | relatieveHoogteligging | «geheel getal [-9; 9]» |               | 1-1           |
-| status                 | bestaand               |               | 1-1           |
 | naam                   | «tekst»                |               | 0..n          |
 | naam: herkomst         | «tekst»                |               | 0..n          |
 | naam:officieel         | ja                     |               | 0..n          |
@@ -55,7 +54,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Water~~       | **type**                 |
+| type~~Water~~       | typeWater**deel**                 |
 | ~~fysiekVoorkomen~~ | **ligging**              |
 
 ### Definitie
@@ -154,7 +153,6 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:Attribuutnaam* | *Definitie*                                                     | *Verplicht/optioneel*        | *Attribuutwaarde*                           |
 |--------------------------|-----------------------------------------------------------------|------------------------------|---------------------------------------------|
-| **status**               | **De status gekoppeld aan de levenscyclus van een geo-object.** | **Verplicht, 1**             | **bestaand**                                |
 | **naam**                 | **De naam van het waterdeel**                                   | **Optioneel, 0 of meer**     | **«tekst»**                                 |
 | **naam: taal**           | **De taal van de naam van het waterdeel.**                      | **Optioneel, 0 of meer** | **Nederlands; Fries; onbekend/ VoidReason** |
 | **naam: officieel**      | **Aanduiding of de naam een officiële naam betreft.**           | **Optioneel, 0 of meer**     | **ja / nee**                                |
