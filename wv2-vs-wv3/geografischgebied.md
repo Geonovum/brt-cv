@@ -37,7 +37,7 @@ Overzicht
 Wijzigingen t.o.v. vorige versie
 --------------------------------
 
-De volgende wijzigingen zijn doorgevoerd in het object GeografischGebied ten
+De volgende wijzigingen zijn doorgevoerd in het object Geografisch gebied ten
 opzichte van vorige versie wijzigingsvoorstel.
 
 ### Attributen
