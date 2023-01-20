@@ -103,7 +103,7 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 | Attribuut | vervalt met attribuutwaarden |
 |-----------|------------------------------|
-| status    | bestaand                     |
+| ~~status~~    | ~~bestaand~~                     |
 
 ### Attribuutwaarden
 
