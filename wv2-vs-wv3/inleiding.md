@@ -97,7 +97,7 @@ Leeswijzer
 ----------
 
 De voorgestelde wijzigingen in de BRT.Next t.o.v. TOP10NL zijn in dit document
-gemarkeerd:  komt te vervallen, **tekst met deze** opmaak wordt toegevoegd.
+gemarkeerd: ~~tekst met deze opmaak~~ komt te vervallen, **tekst met deze opmaak** wordt toegevoegd.
 
 In de desktopversie van het wijzigingsvoorstel wordt een schakelknop in het
 venster rechts onderin getoond, waarmee u de wijzigingen aan (zichtbaar) of uit
