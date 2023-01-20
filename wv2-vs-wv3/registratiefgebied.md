@@ -31,7 +31,7 @@ BRT.Next*
 Wijzigingen t.o.v. vorige versie
 --------------------------------
 
-De volgende wijzigingen zijn doorgevoerd in het object RegistratiefGebied ten
+De volgende wijzigingen zijn doorgevoerd in het object Registratief gebied ten
 opzichte van vorige versie wijzigingsvoorstel.
 
 ### Attributen
@@ -48,4 +48,4 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 | Bij attribuut          | wordt attribuutwaarde | hernoemd naar |
 |------------------------|-----------------------|---------------|
-| typeRegistratiefGebied | rijk                  | \~\~land\~\~  |
+| typeRegistratiefGebied | rijk                  | ~~land~~  |
