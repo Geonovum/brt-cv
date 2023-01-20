@@ -11,9 +11,9 @@ Overzicht
 
 | Attribuutnaam          | Waarde of «type»                                | Geometrietype | Kardinaliteit |
 |------------------------|-------------------------------------------------|---------------|---------------|
-| geometrie              | «Vlak»                                          |               | 1-1           |
-|                        | «Punt»                                          |               |               |
-| type                   | bunker                                          | vlak          | 1..n          |
+| geometrie              | «vlak»                                          |               | 1-1           |
+|                        | «punt»                                          |               |               |
+| typeGebouw             | bunker                                          | vlak, punt    | 1..n          |
 |                        | kapel                                           | vlak, punt    |               |
 |                        | kas                                             | vlak          |               |
 |                        | kasteel                                         | vlak          |               |
@@ -26,12 +26,12 @@ Overzicht
 |                        | moskee                                          | vlak          |               |
 |                        | opslagtank                                      | vlak          |               |
 |                        | overig religieus gebouw                         | vlak          |               |
-|                        | parkeergarage                                   | vlak          |               |
+|                        | parkeergarage                                   | vlak, punt    |               |
 |                        | radiotoren, televisietoren                      | vlak          |               |
 |                        | ruïne                                           | vlak          |               |
 |                        | schoorsteen                                     | vlak, punt    |               |
 |                        | silo                                            | vlak          |               |
-|                        | synagoge                                       | vlak          |               |
+|                        | synagoge                                        | vlak          |               |
 |                        | stadion                                         | vlak          |               |
 |                        | telecommunicatietoren                           | vlak          |               |
 |                        | toren                                           | vlak, punt    |               |
@@ -48,6 +48,7 @@ Overzicht
 |                        | overkapping                                     | vlak          |               |
 |                        | overig                                          | vlak          |               |
 | functie                | brandweerkazerne                                |               | 0..n          |
+|                        | bezoekerscentrum                                |               |               |
 |                        | crematorium                                     |               |               |
 |                        | elektriciteitscentrale                          |               |               |
 |                        | gemaal                                          |               |               |
@@ -60,7 +61,9 @@ Overzicht
 |                        | politiebureau                                   |               |               |
 |                        | psychiatrisch ziekenhuis, psychiatrisch centrum |               |               |
 |                        | radarstation                                    |               |               |
+|                        | reddingsstation                                 |               |               |
 |                        | religie                                         |               |               |
+|                        | remise                                          |               |               |
 |                        | schaapskooi                                     |               |               |
 |                        | school                                          |               |               |
 |                        | sporthal                                        |               |               |
@@ -100,6 +103,7 @@ aangepast.
 | *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                      | *BRT.Next:definitie*                                                |
 |-------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
 | status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~ | **De status gekoppeld aan de levenscyclus van een geo-**object**.** |
+| typeGebouw      | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                   | Het type gebouw **gebaseerd op de uiterlijke kenmerken van het gebouw.** |
 
 ### Naam+definitie
 
@@ -107,7 +111,6 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                                                          | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------|--------------------------------|--------------------------------------------------------------------------|
-| type~~Gebouw~~      | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                   | Het type gebouw **gebaseerd op de uiterlijke kenmerken van het gebouw.** |
 | ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object.                                              | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object.                  |
 
 <details class="note">
@@ -140,12 +143,13 @@ definitie wordt niet aangepast.
 | tank                                          | **opslag**tank    |
 | ~~parkeerdak, parkeerdek, ~~parkeergarage | parkeergarage     |
 
+
 ### Definitie
 
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
 niet aangepast.
 
-*Attribuut TOP10NL:typeGebouw \| BRT.Next:type*
+*Attribuut TOP10NL:typeGebouw \| BRT.Next:typeGebouw*
 
 | *TOP10NL:waarde* | *TOP10NL:definitie*                                                                                                                                                                                                                   | *BRT.Next:definitie*                                                                                                                                                       |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -157,11 +161,23 @@ niet aangepast.
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:status \| BRT.Next:status*
+*Attribuut TOP10NL\|BRT.Next:typeGebouw*
 
 | *TOP10NL:waarde*                  | *TOP10NL:definitie*                                                                                                                                                      | *BRT.Next:waarde* | *BRT.Next:definitie*                                      |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------|
 | ~~kerncentrale~~, kernreactor | ~~Centrale die met kernenergie elektriciteit opwekt (kerncentrale) /~~ Installatie voor het splijten of fuseren van atoomkernen, atoomreactor ~~(kernreactor)~~. | kernreactor       | Installatie voor het splijten of fuseren van atoomkernen. |
+
+## Geometrietype
+
+*Attribuut TOP10NL\|BRT.Next:typeGebouw*
+
+| *TOP10NL:waarde*                  | *TOP10NL:geometrietype*                                                                                                                                                      |  *BRT.Next:geometrietype*                                      |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| bunker        | vlak | vlak, **punt** |
+| parkeergarage | vlak | vlak, **punt** | 
+
+
+
 
 Vervallen attributen
 --------------------
@@ -182,9 +198,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeGebouw \| type                | *verplaatsen van type naar functie:* ~~brandweerkazerne~~; ~~crematorium~~; ~~elektriciteitscentrale~~; ~~gemaal~~; ~~gemeentehuis~~; ~~kerncentrale, kernreactor~~; ~~kunstijsbaan~~; ~~observatorium~~; ~~paleis~~; ~~politiebureau~~; ~~psychiatrisch ziekenhuis, psychiatrisch centrum~~; ~~radarpost~~; ~~schaapskooi~~; ~~school~~; ~~sporthal~~; ~~stadskantoor, hulpsecretarie~~; ~~universiteit~~; ~~ziekenhuis~~; ~~zwembad~~                                                                                                                                                                       |
-| typeGebouw \| type                | *verplaatsen van type naar ander objecttype:* ~~dok~~,~~ tankstation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| typeGebouw \| type                | ~~bezoekerscentrum~~; ~~boortoren~~\~,~~brandtoren~~;;~~fabriek~~; ~~fort~~; ~~gevangenis~~; ~~hotel~~; ~~huizenblok~~; ~~kliniek, inrichting, sanatorium~~; ~~lichttoren~~; ~~luchtwachttoren~~; ~~markant gebouw~~; ~~manege~~; ~~militair gebouw~~; ~~museum~~; ~~peilmeetstation~~; ~~pompstation~~;;~~postkantoor~~; ~~radartoren~~; ~~recreatiecentrum~~; ~~reddingboothuisje~~; ~~remise~~; ~~stationsgebouw~~; ~~tankstation~~; ~~tol~~; ~~transformatorstation~~; ~~veiling~~; ~~wegrestaurant~~; ~~werf~~; ~~windmolen: korenmolen~~; ~~windmolen: watermolen~~; ~~zendtoren~~; |
+| typeGebouw                   | *verplaatsen van type naar functie:* ~~brandweerkazerne~~; ~~crematorium~~; ~~elektriciteitscentrale~~; ~~gemaal~~; ~~gemeentehuis~~; ~~kerncentrale, kernreactor~~; ~~kunstijsbaan~~; ~~observatorium~~; ~~paleis~~; ~~politiebureau~~; ~~psychiatrisch ziekenhuis, psychiatrisch centrum~~; ~~radarpost~~; ~~schaapskooi~~; ~~school~~; ~~sporthal~~; ~~stadskantoor, hulpsecretarie~~; ~~universiteit~~; ~~ziekenhuis~~; ~~zwembad~~                                                                                                                                                                       |
+| typeGebouw                   | *verplaatsen van type naar ander objecttype:* ~~dok~~,~~ tankstation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| typeGebouw \| type                | ~~bezoekerscentrum~~; ~~boortoren~~\~,~~brandtoren~~;~~fabriek~~; ~~fort~~; ~~gevangenis~~; ~~hotel~~; ~~huizenblok~~; ~~kliniek, inrichting, sanatorium~~; ~~lichttoren~~; ~~luchtwachttoren~~; ~~markant gebouw~~; ~~manege~~; ~~militair gebouw~~; ~~museum~~; ~~peilmeetstation~~; ~~pompstation~~;~~postkantoor~~; ~~radartoren~~; ~~recreatiecentrum~~; ~~reddingboothuisje~~; ~~stationsgebouw~~; ~~tankstation~~; ~~tol~~; ~~transformatorstation~~; ~~veiling~~; ~~wegrestaurant~~; ~~werf~~; ~~windmolen: korenmolen~~; ~~windmolen: watermolen~~; ~~zendtoren~~; |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | status                            | ~~in gebruik~~; ~~buiten gebruik~~; ~~in uitvoering~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
@@ -217,7 +233,7 @@ Toevoegen attribuutwaarden
 
 Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
-*Attribuut BRT.Next:type*
+*Attribuut BRT.Next:typeGebouw*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                      |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -235,6 +251,7 @@ toegevoegd aan BRT.Next
 | *BRT.Next:waarde*                                   | *BRT.Next:definitie*                           |
 |-----------------------------------------------------|------------------------------------------------|
 | **brandweerkazerne**                                | *definitie TOP10NL 1.2*                        |
+| **bezoekerscentrum**								  | **n.t.b. **                                    |
 | **crematorium**                                     | *definitie TOP10NL 1.2*                        |
 | **elektriciteitscentrale**                          | *definitie TOP10NL 1.2*                        |
 | **gemaal**                                          | *definitie TOP10NL 1.2*                        |
@@ -249,6 +266,8 @@ toegevoegd aan BRT.Next
 | **psychiatrisch ziekenhuis, psychiatrisch centrum** | *definitie TOP10NL 1.2*                        |
 | **radarstation**                                    | *definitie TOP10NL 1.2*                        |
 | **religie**                                         | **Gebouw in gebruik voor geloofsuitoefening.** |
+| **reddingsstation**                                 | **n.t.b.**                                     |
+| **remise**                                          | **n.t.b.**                                     |
 | **schaapskooi**                                     | *definitie TOP10NL 1.2*                        |
 | **school**                                          | *definitie TOP10NL 1.2*                        |
 | **sporthal**                                        | *definitie TOP10NL 1.2*                        |
