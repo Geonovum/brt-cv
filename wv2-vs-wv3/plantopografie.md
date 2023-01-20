@@ -2,22 +2,15 @@ Plantopografie
 ==============
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Plantopografie in
-BRT.Next ten opzichte van de huidige versie TOP10NL.
+BRT.Next ten opzichte van [de vorige versie van het
+wijzigingsvoorstel](https://geonovum.github.io/brt-next-cv/#plantopografie).
 
 Overzicht
 ---------
 
 Geen, object Plantopografie vervalt in zijn geheel.
 
+Wijzigingen t.o.v. vorige versie
+--------------------------------
 
-Vervallen attributen
---------------------
-
-Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
-in BRT.Next.
-
-| *TOP10NL:attribuutnaam* | *TOP10NL:waarde of «type»*                                    |
-|-------------------------|---------------------------------------------------------------|
-| ~~typeObject~~      | ~~spoorbaan~~; ~~water~~; ~~weg~~; ~~overig~~ |
-| ~~naam~~            | ~~«tekst»~~                                               |
-| ~~geometrie~~       | ~~«punt»~~; ~~«lijn»~~; ~~«vlak»~~                |
+Geen
