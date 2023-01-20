@@ -12,11 +12,10 @@ Overzicht
 | Attribuutnaam          | Waarde of «type»             | Geometrietype | Kardinaliteit |
 |------------------------|------------------------------|---------------|---------------|
 | geometrie              | «vlak»                       |               | 1-1           |
-| type                   | akkerland                    | vlak          | 1-1           |
+| typeTerrein            | akkerland                    | vlak          | 1-1           |
 |                        | basaltblokken, steenglooiing | vlak          |               |
 |                        | boomgaard                    | vlak          |               |
 |                        | boomkwekerij                 | vlak          |               |
-|                        | braakliggend                 | vlak          |               |
 |                        | duin                         | vlak          |               |
 |                        | fruitteelt                   | vlak          |               |
 |                        | gemengd bos                  | vlak          |               |
@@ -52,9 +51,9 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Landgebruik~~ | **type**                 |
+| type~~Landgebruik~~ | type**Terrein**                 |
 | ~~fysiekVoorkomen~~ | **ligging**              |
-| ~~voorkomen~~       | **type**                 |
+
 
 ### Definitie
 
@@ -71,6 +70,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 <details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
 getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
+
 Wijzigen attribuutwaarden
 -------------------------
 
@@ -93,13 +93,12 @@ definitie wordt niet aangepast.
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
 niet aangepast.
 
-*Attribuut TOP10NL:typeLandgebruik \| BRT.Next:type*
+*Attribuut TOP10NL:typeLandgebruik \| BRT.Next:typeTerrein*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                                                          | *BRT.Next:definitie*                                                                                                                                |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | akkerland                  | Terrein ~~waar landbouwproducten worden verbouwd.~~                                                                                                                      | Terrein**deel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen.** |
 | boomgaard                  | Terrein met hoogstam~~mige ~~fruitbomen.                                                                                                                                 | Terrein **begroeid** met hoogstamfruitbomen.                                                                                                        |
-| braakliggend               | ~~Een stuk grond dat geen functie vervult of niet wordt onderhouden, met uitzondering van landbouwgrond.~~                                                               | **Terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is, niet zijnde zand. Braakliggend valt hier wel onder.**                   |
 | duin                       | ~~Terrein met grondsoort~~ zand ~~, langs de kust als natuurlijke kustverdediging, eventueel begroeid met helmgras of lage struiken.~~                               | **Verhoging of heuvel van** zand **of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water.**                      |
 | fruitkwekerij              | Terrein met laagstam~~mige ~~fruitbomen ~~en struiken waarvan de vruchten worden geoogst (zoals: rozenbottels,~~ bessen~~,~~ frambozen ~~, druiven, etc.)~~. | Terrein **begroeid** met laagstamfruitbomen, **druivenstokken of begroeid met heesters voor zachtfruit zoals** bessen **of** frambozen.             |
 | heide                      | Terrein, overwegend begroeid met heidevegetatie ~~en wilde grassoorten.~~                                                                                                | Terrein**deel** overwegend begroeid met heide **en heideachtige** vegetatie**s**.                                                                   |
@@ -110,7 +109,7 @@ niet aangepast.
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWeg \| BRT.Next:type*
+*Attribuut TOP10NL:typeLandgebruik \| BRT.Next:typeTerrein*
 
 | *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                                                                                   | *BRT.Next:waarde*      | *BRT.Next:definitie*                                                                                                                                                                                                              |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -143,7 +142,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL/BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                            |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeLandgebruik \| type          | ~~aanlegsteiger~~; ~~bebouwd gebied~~; ~~dodenakker~~; ~~dodenakker met bos~~; ~~populieren~~; ~~spoorbaanlichaam~~ |
+| typeLandgebruik \| typeTerrein   | ~~aanlegsteiger~~; ~~bebouwd gebied~~; ~~braakliggend~~; ~~dodenakker~~; ~~dodenakker met bos~~; ~~populieren~~; ~~spoorbaanlichaam~~ |
 | fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                             |
 
 <details class="note">type ‘aanlegsteiger’ verplaatst van object Terrein naar type ‘steiger’ van
@@ -168,7 +167,7 @@ Toevoegen attribuutwaarden
 
 Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
 
-*Attribuut BRT.Next:type*
+*Attribuut BRT.Next:typeTerrein*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                                                                                        |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
