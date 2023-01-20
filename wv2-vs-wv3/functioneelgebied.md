@@ -111,15 +111,15 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 | Bij attribuut         | wordt attribuutwaarde                   | hernoemd naar                           |
 |-----------------------|-----------------------------------------|-----------------------------------------|
-| typeFunctioneelGebied | gas\~\~winning\~\~, olie\~\~winning\~\~ | gas**voorziening**, olie**voorziening** |
-| typeFunctioneelGebied | psychiatrisch \~\~ziekenhuiscomplex\~\~ | psychiatrisch **centrum**               |
+| typeFunctioneelGebied | gas~~winning~~, olie~~winning~~ | gas**voorziening**, olie**voorziening** |
+| typeFunctioneelGebied | psychiatrisch ~~ziekenhuiscomplex~~ | psychiatrisch **centrum**               |
 
 *Vervallen*
 
 | Bij attribuut         | vervalt attribuutwaarde |
 |-----------------------|-------------------------|
-| typeFunctioneelGebied | \~\~boswachterij        |
-|                       | \~\~                    |
+| typeFunctioneelGebied | ~~boswachterij~~        |
+
 
 *Toevoegen*
 
@@ -138,5 +138,4 @@ opzichte van vorige versie wijzigingsvoorstel.
 | typeFunctioneelGebied | **electriciteitscentrale**       |
 | typeFunctioneelGebied | **geluidswering**                |
 
-*Definitie asielzoekerscentrum, drinkwatervoorziening, electriciteitscentrale,
-geluidswering nt.b.*
+*Definitie asielzoekerscentrum, drinkwatervoorziening, electriciteitscentrale, geluidswering n.t.b.*
