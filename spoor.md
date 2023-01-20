@@ -49,6 +49,7 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
+| typeSpoor~~baan~~   | typeSpoor                     |
 | ~~fysiekVoorkomen~~ | **ligging**              |
 
 ### Definitie
