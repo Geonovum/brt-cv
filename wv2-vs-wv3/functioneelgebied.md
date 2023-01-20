@@ -79,9 +79,9 @@ Overzicht
 |               | tankstation                         | vlak, multivlak |               |
 |               | vliedberg                           | vlak, multivlak |               |
 |               | asielzoekerscentrum                 | vlak, multivlak |               |
-|               | asielzoekerscentrum                 | vlak, multivlak |               |
-|               | asielzoekerscentrum                 | vlak, multivlak |               |
-|               | asielzoekerscentrum                 | vlak, multivlak |               |
+|               | drinkwatervoorziening               | vlak, multivlak |               |
+|               | electriciteitscentrale              | vlak, multivlak |               |
+|               | geluidswering                       | vlak, multivlak |               |
 | naam          | «tekst»                             |                 | 0..n          |
 | soortnaam     | «tekst»                             |                 | 0..n          |
 
