@@ -93,11 +93,6 @@ vorige versie wijzigingsvoorstel.
 |-----------|---------------------|
 | type      | type**Gebouw**      |
 
-*Vervallen*
-
-| Attribuut      | met attribuutwaarden vervalt |
-|----------------|------------------------------|
-| ~~status~~ | ~~bestaand~~             |
 
 ### Attribuutwaarden
 
