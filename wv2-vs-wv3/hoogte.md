@@ -2,7 +2,8 @@ Hoogte
 ======
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Hoogte in BRT.Next ten
-opzichte van de huidige versie TOP10NL.
+opzichte van de [vorige versie van het
+wijzigingsvoorstel](https://geonovum.github.io/brt-next-cv/#hoogte).
 
 Overzicht
 ---------
@@ -13,7 +14,7 @@ Overzicht
 |----------------|------------------|---------------|---------------|
 | geometrie      | «lijn»           |               | 1-1           |
 |                | «punt»           |               |               |
-| type           | dieptelijn       | lijn          | 1-1           |
+| typeHoogte     | dieptelijn       | lijn          | 1-1           |
 |                | dieptepunt       | punt          |               |
 |                | hoogtelijn       | lijn          |               |
 |                | hoogtepunt       | punt          |               |
@@ -24,69 +25,20 @@ Overzicht
 |                | LAT              |               |               |
 |                | GHW              |               |               |
 
-Wijzigen attributen
--------------------
+Wijzigingen t.o.v. vorige versie
+--------------------------------
 
-De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
-wijzigen van naam en definitie in BRT.Next.
+De volgende wijzigingen zijn doorgevoerd in het object Hoogte ten opzichte van
+vorige versie wijzigingsvoorstel.
 
-### Naam
+### Attributen
 
-Onderstaande attributen wijzigen van naam in BRT.Next. De definitie wordt niet
-aangepast.
+*Hernoemen*
 
-| TOP10NL:attribuutnaam | BRT.Next:attribuutnaam |
-|-----------------------|------------------------|
-| type~~Hoogte~~    | type                   |
+| Attribuutnaam | wordt hernoemd naar |
+|---------------|---------------------|
+| type          | type**Hoogte**      |
 
-### Definitie
+### Attribuutwaarden
 
-*Geen.*
-
-### Naam+definitie
-
-*Geen.*
-
-Wijzigen attribuutwaarden
--------------------------
-
-De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
-definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
-
-### Naam
-
-*Geen.*
-
-### Definitie
-
-*Geen.*
-
-### Naam+definitie
-
-*Geen.*
-
-Vervallen attributen
---------------------
-
-Geen.
-
-Vervallen attribuutwaarden
---------------------------
-
-Onderstaande attribuutwaarden of datatypen vervallen bij een attribuut in
-BRT.Next. Het attribuut blijft wel bestaan.
-
-| *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                      |
-|-----------------------------------|---------------------------------------------------------------|
-| typeHoogte\|type                  | ~~peil~~; ~~peil: zomerpeil~~; ~~peil winterpeil:~~ |
-| referentievlak                    | ~~OLW~~                                                   |
-
-Toevoegen attributen
---------------------
-
-*Geen.*
-
-Toevoegen attribuutwaarden
---------------------------
-
-*Geen.*
+Geen

@@ -43,4 +43,4 @@ vorige versie wijzigingsvoorstel.
 
 | Bij attribuut | vervalt attribuutwaarde |
 |---------------|-------------------------|
-| typeRelief    | ~~dijk~~            |
+| typeRelief    | \~\~dijk\~\~            |
