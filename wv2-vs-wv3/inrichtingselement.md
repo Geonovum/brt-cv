@@ -34,7 +34,7 @@ Overzicht
 |                         | kabelbaan              | lijn          |               |
 |                         | kabelbaanmast          | punt          |               |
 |                         | kilometerpaal weg      | punt          |               |
-|                         | kilometerpaal spoorweg | punt          |               |
+|                         | kilometerpaal spoor    | punt          |               |
 |                         | kilometerpaal water    | punt          |               |
 |                         | klokkenstoel           | punt          |               |
 |                         | kruis                  | punt          |               |
@@ -94,6 +94,12 @@ opzichte van vorige versie wijzigingsvoorstel.
 | ~~status~~ | ~~bestaand~~             |
 
 ### Attribuutwaarden
+
+*Hernoemen*
+
+|Bij attribuut            | wordt attribuutwaarde       | hernoemd naar       |
+|-------------------------|-----------------------------|---------------------|
+| typeInrichtingselement  |kilometerpaal spoor~~weg~~   | kilometerpaal spoor |
 
 *Vervallen*
 
