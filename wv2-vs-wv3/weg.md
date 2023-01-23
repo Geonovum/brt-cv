@@ -1,24 +1,24 @@
-Wegdeel
+Weg
 =======
 
-Dit hoofdstuk beschrijft de wijzigingen voor het object Wegdeel in BRT.Next ten
+Dit hoofdstuk beschrijft de wijzigingen voor het object Weg in BRT.Next ten
 opzichte van de [vorige versie van het 
-wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#wegdeel).
+wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#Wegdeel).
 
 Overzicht
 ---------
 
 Hieronder volgt een overzicht van de attributen en attribuutwaarden van het
-object Wegdeel, na doorvoeren van de wijzigingen t.o.v. vorige versie
+object Weg, na doorvoeren van de wijzigingen t.o.v. vorige versie
 wijzigingsvoorstel.
 
-*Overzicht attributen en waarden/type van object Wegdeel in BRT.Next*
+*Overzicht attributen en waarden/type van object Weg in BRT.Next*
 
 | Attribuutnaam            | Waarde of «type»            | Geometrietype | Kardinaliteit |
 |--------------------------|-----------------------------|---------------|---------------|
 | geometrie                | «vlak»                      |               | 1 -1          |
 |                          | «lijn»                      |               |               |
-| typeWegdeel              | autosnelweg                 | vlak          | 1..n          |
+| typeWeg                  | autosnelweg                 | vlak          | 1..n          |
 |                          | autoweg                     | vlak          |               |
 |                          | hoofdweg                    | vlak          |               |
 |                          | regionale weg               | vlak          |               |
@@ -67,8 +67,18 @@ wijzigingsvoorstel.
 Wijzigingen t.o.v. vorige versie
 --------------------------------
 
-De volgende wijzigingen zijn doorgevoerd in het object Wegdeel ten opzichte van
+De volgende wijzigingen zijn doorgevoerd in het object Weg ten opzichte van
 vorige versie wijzigingsvoorstel.
+
+### Object
+
+*Hernoemen*
+
+| Objecttype    | wordt hernoemd naar |
+|---------------|---------------------|
+| Weg~~deel~~   | Weg     |
+
+*N.B. in alle definities van attributen en attribuutwaarden is de naam van het object aldus eveneens gewijzigd.*
 
 ### Attributen
 
@@ -76,7 +86,7 @@ vorige versie wijzigingsvoorstel.
 
 | Attribuut     | wordt hernoemd naar |
 |---------------|---------------------|
-| type          | type**Wegdeel**     |
+| type          | type**Weg**     |
 
 ### Attribuutwaarden
 
@@ -84,20 +94,20 @@ vorige versie wijzigingsvoorstel.
 
 |Bij attribuut | wordt attribuutwaarde    | hernoemd naar |
 |--------------|--------------------------|---------------------|
-| typeWegdeel  |~~rijbaan~~ autosnelweg   | autosnelweg         |
-| typeWegdeel  |~~rijbaan~~ autoweg       | autoweg             |
-| typeWegdeel  |~~rijbaan~~ hoofdweg      | hoofdweg            |
-| typeWegdeel  |~~rijbaan~~ regionale weg | regionale weg       |
-| typeWegdeel  |~~rijbaan~~ lokale weg    | lokale weg          |
-| typeWegdeel  |~~rijbaan~~ straat        | straat              |
-| typeWegdeel  |~~rijbaan~~ overig        | overig              |
-| typeWegdeel  |parkeer~~vlak~~           | parkeer**plaats**   |
-| typeWegdeel  |veer~~dienst, pontveer~~  | veer**verbinding**  |
+| typeWeg  |~~rijbaan~~ autosnelweg   | autosnelweg         |
+| typeWeg  |~~rijbaan~~ autoweg       | autoweg             |
+| typeWeg  |~~rijbaan~~ hoofdweg      | hoofdweg            |
+| typeWeg  |~~rijbaan~~ regionale weg | regionale weg       |
+| typeWeg  |~~rijbaan~~ lokale weg    | lokale weg          |
+| typeWeg  |~~rijbaan~~ straat        | straat              |
+| typeWeg  |~~rijbaan~~ overig        | overig              |
+| typeWeg  |parkeer~~vlak~~           | parkeer**plaats**   |
+| typeWeg  |veer~~dienst, pontveer~~  | veer**verbinding**  |
 
 *Definities*
 
 | Voor attribuutwaarde | wordt definitie                                                                                                                   | aangepast naar                                                                                                                           |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| straat               | Wegdeel dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen ~~bebouwd~~ gebied.                          | Wegdeel dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen gebied **met bebouwing**.                               |
-| parkeerplaats        | ~~Wegdeel bestemd~~ voor het parkeren van ~~motor~~voertuigen.                                                            | **Parkeergelegenheid** voor het parkeren van **meerdere** voertuigen **in de openlucht met een aparte toegang vanaf de doorgaande weg**. |
-| rolbaan, platform    | Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën ~~van vliegtuigen~~ of het parkeren van vliegtuigen. | Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën of het parkeren van vliegtuigen.                                |
+| straat               | Weg dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen ~~bebouwd~~ gebied.                          | Weg dat onderdeel is van een weg van zeer plaatselijk belang, gelegen binnen gebied **met bebouwing**.                               |
+| parkeerplaats        | ~~Weg bestemd~~ voor het parkeren van ~~motor~~voertuigen.                                                            | **Parkeergelegenheid** voor het parkeren van **meerdere** voertuigen **in de openlucht met een aparte toegang vanaf de doorgaande weg**. |
+| rolbaan, platform    | Weg uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën ~~van vliegtuigen~~ of het parkeren van vliegtuigen. | Weg uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën of het parkeren van vliegtuigen.                                |
