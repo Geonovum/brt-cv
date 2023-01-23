@@ -50,8 +50,8 @@ Deze derde consultatie is een vervolg op de eerste en tweede consultatie, die
 gehouden zijn van 28 juni tot en met 22 augustus 2022 en van 4 november tot en
 met 4 december 2022. In deze derde consultatie worden alleen de wijzigingen in
 het informatiemodel ten opzichte van de tweede consultatieversie voorgelegd.
-Als aftrap van deze derde consultatie is een informatiesessie gehouden waar we
-deze derde consultatie en de gemaakte keuzes toelichten. Deze sessie was op
+Als aftrap van deze derde consultatie is een informatiesessie gehouden waarin
+deze derde consultatie en de gemaakte keuzes toegelicht zijn. Deze sessie was op
 23 januari 2023 en de opname is hier terug te kijken:
 URLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURLURL
 
@@ -65,7 +65,7 @@ Periode consultatie
 -------------------
 
 Reactie op deze consultatie kunnen gegeven worden van 23 januari tot en met
-13 feburuari 2023 (3 weken). Aansluitend zal het Kadaster samen met Geonovum de
+13 februari 2023 (3 weken). Aansluitend zal het Kadaster samen met Geonovum de
 ontvangen reacties beoordelen en zo mogelijk verwerken in de eindversie van
 het informatiemodel voor BRT.Next.
 
