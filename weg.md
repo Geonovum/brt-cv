@@ -1,5 +1,5 @@
-Wegdeel
-=======
+Weg
+===
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Wegdeel in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
