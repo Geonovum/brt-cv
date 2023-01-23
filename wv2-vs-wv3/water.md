@@ -1,25 +1,25 @@
 Waterdeel
 =========
 
-Dit hoofdstuk beschrijft de wijzigingen voor het object Waterdeel in BRT.Next
+Dit hoofdstuk beschrijft de wijzigingen voor het object Water in BRT.Next
 ten opzichte van de [vorige versie van het 
-wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#waterdeel).
+wijzigingsvoorstel](https://docs.geostandaarden.nl/brtnext/cv-im-brtnext-20221104/#Waterdeel).
 
 Overzicht
 ---------
 
 Hieronder volgt een overzicht van de attributen en attribuutwaarden van het
-object Waterdeel, na doorvoeren van de wijzigingen t.o.v. vorige versie
+object Water, na doorvoeren van de wijzigingen t.o.v. vorige versie
 wijzigingsvoorstel.
 
-*Overzicht attributen en waarden/type van object Waterdeel in BRT.Next*
+*Overzicht attributen en waarden/type van object Water in BRT.Next*
 
 | Attribuutnaam          | Waarde of «type»     | Geometrietype | Kardinaliteit |
 |------------------------|------------------------|---------------|---------------|
 | geometrie              | «vlak»                 |               | 1-1           |
 |                        | «lijn»                 |               |               |
 |                        | «punt»                 |               |               |
-| typeWaterdeel          | waterloop              | lijn, vlak    | 1-1           |
+| typeWater              | waterloop              | lijn, vlak    | 1-1           |
 |                        | watervlakte            | vlak          |               |
 |                        | greppel, droge sloot   | lijn          |               |
 |                        | zee                    | vlak          |               |
@@ -49,8 +49,19 @@ wijzigingsvoorstel.
 Wijzigingen t.o.v. vorige versie 
 --------------------------------
 
-De volgende wijzigingen zijn doorgevoerd in het object Waterdeel ten opzichte
+De volgende wijzigingen zijn doorgevoerd in het object Water ten opzichte
 van vorige versie wijzigingsvoorstel.
+
+### Object
+
+*Hernoemen*
+
+| Objecttype    | wordt hernoemd naar |
+|---------------|---------------------|
+| Water~~deel~~ | Water               |
+
+*N.B. in alle definities van attributen en attribuutwaarden is de naam van het object aldus eveneens gewijzigd.*
+
 
 ### Attributen
 
@@ -58,7 +69,7 @@ van vorige versie wijzigingsvoorstel.
 
 | Attribuut | wordt hernoemd naar |
 |-----------|---------------------|
-| type      | type**Waterdeel**     |
+| type      | type**Water**     |
 
 *Vervallen*
 
