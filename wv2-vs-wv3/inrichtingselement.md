@@ -89,7 +89,7 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 *Vervallen*
 
-| Attribuut      | vervalt met attribuutwaarden |
+| Attribuut      | vervalt met waarden |
 |----------------|------------------------------|
 | ~~status~~ | ~~bestaand~~             |
 
@@ -97,18 +97,18 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-|Bij attribuut            | wordt attribuutwaarde       | hernoemd naar       |
+|Bij attribuut            | wordt waarde       | hernoemd naar       |
 |-------------------------|-----------------------------|---------------------|
 | typeInrichtingselement  |kilometerpaal spoor~~weg~~   | kilometerpaal spoor |
 
 *Vervallen*
 
-| Bij attribuut          | vervalt attribuutwaarde |
+| Bij attribuut          | vervalt waarde |
 |------------------------|-------------------------|
 | typeInrichtingselement | ~~vliedberg~~       |
 
 *Toevoegen*
 
-| Aan attribuut          | wordt attribuutwaarde toegevoegd |
+| Aan attribuut          | wordt waarde     toegevoegd |
 |------------------------|----------------------------------|
 | typeInrichtingselement | **dukdalf**                      |

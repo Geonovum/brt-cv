@@ -92,7 +92,7 @@ vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-|Bij attribuut | wordt attribuutwaarde    | hernoemd naar |
+|Bij attribuut | wordt waarde    | hernoemd naar |
 |--------------|--------------------------|---------------------|
 | typeWeg  |~~rijbaan~~ autosnelweg   | autosnelweg         |
 | typeWeg  |~~rijbaan~~ autoweg       | autoweg             |

@@ -73,7 +73,7 @@ van vorige versie wijzigingsvoorstel.
 
 *Vervallen*
 
-| Attribuut      | vervalt met attribuutwaarden |
+| Attribuut      | vervalt met waarden |
 |----------------|------------------------------|
 | ~~status~~ | ~~bestaand~~                     |
 

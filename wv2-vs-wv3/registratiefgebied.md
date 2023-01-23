@@ -46,6 +46,6 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-| Bij attribuut          | wordt attribuutwaarde | hernoemd naar |
+| Bij attribuut          | wordt waarde | hernoemd naar |
 |------------------------|-----------------------|---------------|
-| typeRegistratiefGebied | rijk                  | ~~land~~  |
+| typeRegistratiefGebied | ~~rijk~~                  | **land**  |

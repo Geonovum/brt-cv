@@ -40,10 +40,10 @@ Overzicht
 |               | helikopterlandingsplaats            | vlak, multivlak |               |
 |               | jachthaven                          | vlak, multivlak |               |
 |               | kassengebied                        | vlak, multivlak |               |
+|               | kazerne, legerplaats, vliegbasis    | vlak, multivlak |               |
 |               | landgoed                            | vlak, multivlak |               |
 |               | mijn                                | vlak, multivlak |               |
 |               | militair oefengebied, schietterrein | vlak, multivlak |               |
-|               | kazerne, legerplaats, vliegbasis    | vlak, multivlak |               |
 |               | nationaal park                      | vlak, multivlak |               |
 |               | natuurgebied                        | vlak, multivlak |               |
 |               | openluchtmuseum                     | vlak, multivlak |               |
@@ -80,7 +80,7 @@ Overzicht
 |               | vliedberg                           | vlak, multivlak |               |
 |               | asielzoekerscentrum                 | vlak, multivlak |               |
 |               | drinkwatervoorziening               | vlak, multivlak |               |
-|               | electriciteitscentrale              | vlak, multivlak |               |
+|               | elektriciteitscentrale              | vlak, multivlak |               |
 |               | geluidswering                       | vlak, multivlak |               |
 | naam          | «tekst»                             |                 | 0..n          |
 | soortnaam     | «tekst»                             |                 | 0..n          |
@@ -101,7 +101,7 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 *Vervallen*
 
-| Attribuut | vervalt met attribuutwaarden |
+| Attribuut | vervalt met waarden |
 |-----------|------------------------------|
 | ~~status~~    | ~~bestaand~~                     |
 
@@ -109,21 +109,21 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 *Hernoemen*
 
-| Bij attribuut         | wordt attribuutwaarde                   | hernoemd naar                           |
+| Bij attribuut         | wordt waarde                   | hernoemd naar                           |
 |-----------------------|-----------------------------------------|-----------------------------------------|
 | typeFunctioneelGebied | gas~~winning~~, olie~~winning~~ | gas**voorziening**, olie**voorziening** |
 | typeFunctioneelGebied | psychiatrisch ~~ziekenhuiscomplex~~ | psychiatrisch **centrum**               |
 
 *Vervallen*
 
-| Bij attribuut         | vervalt attribuutwaarde |
+| Bij attribuut         | vervalt waarde |
 |-----------------------|-------------------------|
 | typeFunctioneelGebied | ~~boswachterij~~        |
 
 
 *Toevoegen*
 
-| Aan attribuut         | wordt attribuutwaarde toegevoegd |
+| Aan attribuut         | wordt waarde toegevoegd |
 |-----------------------|----------------------------------|
 | typeFunctioneelGebied | **caravanpark**                  |
 | typeFunctioneelGebied | **campus**                       |
@@ -135,7 +135,7 @@ opzichte van vorige versie wijzigingsvoorstel.
 | typeFunctioneelGebied | **zenderpark**                   |
 | typeFunctioneelGebied | **asielzoekerscentrum**          |
 | typeFunctioneelGebied | **drinkwatervoorziening**        |
-| typeFunctioneelGebied | **electriciteitscentrale**       |
+| typeFunctioneelGebied | **elektriciteitscentrale**       |
 | typeFunctioneelGebied | **geluidswering**                |
 
 *Definitie asielzoekerscentrum, drinkwatervoorziening, electriciteitscentrale, geluidswering n.t.b.*

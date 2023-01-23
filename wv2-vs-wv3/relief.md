@@ -12,8 +12,7 @@ Overzicht
 
 | Attribuutnaam          | Waarde of «type»       | Geometrietype      | Kardinaliteit |
 |------------------------|------------------------|--------------------|---------------|
-| geometrie              | «vlak»                 |                    | 1..1          |
-|                        | «lijn»                 |                    |               |
+| geometrie              | «lijn»                 |                    | 1..1          |
 |                        | «hoge en lage zijde»   |                    |               |
 | typeRelief             | wal                    | lijn               | 1..1          |
 |                        | steile rand, aardrand  | hoge en lage zijde |               |
@@ -41,6 +40,9 @@ vorige versie wijzigingsvoorstel.
 
 *Vervallen*
 
-| Bij attribuut | vervalt attribuutwaarde |
-|---------------|-------------------------|
-| typeRelief    | ~~dijk~~            |
+| Bij attribuut | vervalt waarde of «type» |
+|---------------|--------------------------|
+| geometrie     | ~~«vlak»~~               |
+| typeRelief    | ~~dijk~~                 |
+
+

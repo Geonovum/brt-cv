@@ -6,7 +6,7 @@ BRT.Next ten opzichte van de [vorige versie van het
 wijzigingsvoorstel](https://geonovum.github.io/brt-next-cv/#geografisch-gebied).
 
 Overzicht
----------
+---------  t
 
 *Overzicht attributen en waarden/type van object Geografisch gebied in BRT.Next*
 
@@ -14,14 +14,14 @@ Overzicht
 |-----------------------|-----------------------|-----------------|---------------|
 | geometrie             | «vlak»                |                 | 1-1           |
 |                       | «multivlak»           |                 |               |
-| typeGeografischGebied | bank, ondiepte, plaat | vlak, multivlak | 1-1           |
-|                       | bosgebied             | vlak, multivlak |               |
+| typeGeografischGebied | bosgebied             | vlak, multivlak | 1-1           |
 |                       | duingebied            | vlak, multivlak |               |
 |                       | eiland                | vlak, multivlak |               |
 |                       | geul, vaargeul        | vlak, multivlak |               |
 |                       | heidegebied           | vlak, multivlak |               |
 |                       | heuvel, berg          | vlak, multivlak |               |
 |                       | kaap, hoek            | vlak, multivlak |               |
+|                       | ondiepte, plaat       | vlak, multivlak |
 |                       | polder                | vlak, multivlak |               |
 |                       | streek, veld          | vlak, multivlak |               |
 |                       | terp, wierde          | vlak, multivlak |               |
@@ -50,4 +50,10 @@ opzichte van vorige versie wijzigingsvoorstel.
 
 ### Attribuutwaarden
 
-Geen
+*Hernoemen*
+
+| Bij attribuut         | wordt waarde                 | hernoemd naar   |
+|-----------------------|------------------------------|-----------------|
+| typeGeografischGebied | ~~bank, ~~ondiepte, plaat    | ondiepte, plaat |
+
+

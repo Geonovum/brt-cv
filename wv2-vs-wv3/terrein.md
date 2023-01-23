@@ -57,6 +57,6 @@ vorige versie wijzigingsvoorstel.
 
 *Vervallen*
 
-| Bij attribuut | vervalt attribuutwaarde |
+| Bij attribuut | vervalt waarde |
 |---------------|-------------------------|
 | typeTerrein   | ~~braakliggend~~    |
