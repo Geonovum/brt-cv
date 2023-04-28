@@ -49,7 +49,7 @@ BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| typeSpoor~~baan~~   | typeSpoor                |
+| typeSpoor~~baan~~ | typeSpoor                |
 | ~~fysiekVoorkomen~~ | **ligging**              |
 
 ### Definitie
@@ -66,7 +66,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~  | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
@@ -104,9 +104,9 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam*    | *TOP10NL:attribuutwaarden of «datatype»* |
 |----------------------------|------------------------------------------|
-| ~~typeInfrastructuur~~ | ~~verbinding~~; ~~ kruising~~    |
-| ~~spoorbreedte~~       | ~~normaalspoor~~; ~~smalspoor~~  |
-| ~~baanvaknaam~~        | ~~«tekst»~~                          |
+| ~~typeInfrastructuur~~ | ~~verbinding~~; ~~ kruising~~  |
+| ~~spoorbreedte~~     | ~~normaalspoor~~; ~~smalspoor~~|
+| ~~baanvaknaam~~      | ~~«tekst»~~                        |
 
 ## Vervallen attribuutwaarden
 
@@ -115,9 +115,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                          |
 |-----------------------------------|-------------------------------------------------------------------|
-| geometrie                         | ~~«punt»~~                                                    |
-| fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                |
-| aantalSporen                      | ~~dubbel~~                                                    |
+| geometrie                         | ~~«punt»~~                                                  |
+| fysiekVoorkomen \| ligging        | ~~overkluisd~~                                              |
+| aantalSporen                      | ~~dubbel~~                                                  |
 | status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~ |
 
 <details class="note"> status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot

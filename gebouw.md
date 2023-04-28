@@ -91,7 +91,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| ~~  fysiekVoorkomen~~   | **ligging**              |
+| ~~fysiekVoorkomen~~ | **ligging**              |
 
 .
 
@@ -102,8 +102,8 @@ aangepast.
 
 | *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                                                          | *BRT.Next:definitie*                                            |
 |-------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| status                              | ~~  De staat waarin het~~   object ~~  zich bevindt.~~                                       | **De status gekoppeld aan de levenscyclus van een geo-object.** |
-| typeGebouw                          | Het type gebouw, ~~  het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~   | **type**                                                        |
+| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~                                     | **De status gekoppeld aan de levenscyclus van een geo-object.** |
+| typeGebouw                          | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                                                        |
 
 ### Naam+definitie
 
@@ -111,7 +111,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~  hoogteniveau~~      | ~~  Het~~   hoogte~~  niveau~~  van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> typeGebouw wordt gesplitst in twee attributen: ‘type’ (uiterlijke
 verschijningsvorm) en ‘functie’(gebruik). De attribuutwaarden die verplaatsen
@@ -137,9 +137,9 @@ definitie wordt niet aangepast.
 
 | *TOP10NL:waarde*                              | *BRT.Next:waarde* |
 |-----------------------------------------------|-------------------|
-| kas~~  , warenhuis~~                          | kas               |
+| kas~~, warenhuis~~                        | kas               |
 | tank                                          | **opslag**tank    |
-| ~~  parkeerdak, parkeerdek, ~~  parkeergarage | parkeergarage     |
+| ~~parkeerdak, parkeerdek, ~~parkeergarage | parkeergarage     |
 
 ### 
 
@@ -152,8 +152,8 @@ niet aangepast.
 
 | *TOP10NL:waarde* | *TOP10NL:definitie*                                                                                                                                                                                                                   | *BRT.Next:definitie*                                                                                                                                                       |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| windmolen        | Bebouwing t.b.v. het verrichten van arbeid (m.u.v. het opwekken van elektrische energie~~  , het malen van granen en het opvijzelen van water~~  ), waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken. | Bebouwing t.b.v. het verrichten van arbeid (m.u.v. het opwekken van elektrische energie) waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken. |
-| windturbine      | ~~  Bebouwing t.b.v. het opwekken van elektrische~~   energie~~  , waarvoor de energie geleverd wordt door ~~  wind ~~  en opgenomen wordt door middel van wieken.~~                                                                  | **Turbine waarin** wind**druk omgezet wordt in mechanische** energie.                                                                                                      |
+| windmolen        | Bebouwing t.b.v. het verrichten van arbeid (m.u.v. het opwekken van elektrische energie~~, het malen van granen en het opvijzelen van water~~), waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken. | Bebouwing t.b.v. het verrichten van arbeid (m.u.v. het opwekken van elektrische energie) waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken. |
+| windturbine      | ~~Bebouwing t.b.v. het opwekken van elektrische~~ energie~~, waarvoor de energie geleverd wordt door ~~wind ~~en opgenomen wordt door middel van wieken.~~                                                                | **Turbine waarin** wind**druk omgezet wordt in mechanische** energie.                                                                                                      |
 
 ### Naam+definitie
 
@@ -164,7 +164,7 @@ BRT.Next
 
 | *TOP10NL:waarde*                  | *TOP10NL:definitie*                                                                                                                                                      | *BRT.Next:waarde* | *BRT.Next:definitie*                                      |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------|
-| ~~  kerncentrale~~  , kernreactor | ~~  Centrale die met kernenergie elektriciteit opwekt (kerncentrale) /~~   Installatie voor het splijten of fuseren van atoomkernen, atoomreactor ~~  (kernreactor)~~  . | kernreactor       | Installatie voor het splijten of fuseren van atoomkernen. |
+| ~~kerncentrale~~, kernreactor | ~~Centrale die met kernenergie elektriciteit opwekt (kerncentrale) /~~ Installatie voor het splijten of fuseren van atoomkernen, atoomreactor ~~(kernreactor)~~. | kernreactor       | Installatie voor het splijten of fuseren van atoomkernen. |
 
 ## Geometrietype
 
@@ -182,8 +182,8 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                             |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~  hoogteklasse~~      | ~~  laagbouw~~  ; ~~  hoogbouw~~                                                                                                                                                                                                                                                     |
-| ~~  gebruiksdoel~~      | ~~  bijeenkomstfunctie~~  ; ~~  celfunctie~~  ; ~~  gezondheidszorgfunctie~~  ; ~~  industriefunctie~~  ; ~~  kantoorfunctie~~  ; ~~  logiesfunctie~~  ; ~~  onderwijsfunctie~~  ; ~~  sportfunctie~~  ; ~~  winkelfunctie~~  ; ~~  woonfunctie~~  ; ~~  overige gebruiksfunctie~~   |
+| ~~hoogteklasse~~    | ~~laagbouw~~; ~~hoogbouw~~                                                                                                                                                                                                                                                   |
+| ~~gebruiksdoel~~    | ~~bijeenkomstfunctie~~; ~~celfunctie~~; ~~gezondheidszorgfunctie~~; ~~industriefunctie~~; ~~kantoorfunctie~~; ~~logiesfunctie~~; ~~onderwijsfunctie~~; ~~sportfunctie~~; ~~winkelfunctie~~; ~~woonfunctie~~; ~~overige gebruiksfunctie~~ |
 
 ## Vervallen attribuutwaarden
 
@@ -192,11 +192,11 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeGebouw                        | *verplaatsen van type naar functie:* ~~  brandweerkazerne~~  ; ~~  crematorium~~  ; ~~  elektriciteitscentrale~~  ; ~~  gemaal~~  ; ~~  gemeentehuis~~  ; ~~  kerncentrale, kernreactor~~  ; ~~  kunstijsbaan~~  ; ~~  observatorium~~  ; ~~  paleis~~  ; ~~  politiebureau~~  ; ~~  psychiatrisch ziekenhuis, psychiatrisch centrum~~  ; ~~  radarpost~~  ; ~~  schaapskooi~~  ; ~~  school~~  ; ~~  sporthal~~  ; ~~  stadskantoor, hulpsecretarie~~  ; ~~  universiteit~~  ; ~~  ziekenhuis~~  ; ~~  zwembad~~                                                                                                                                    |
-| typeGebouw                        | *verplaatsen van type naar ander objecttype:* ~~  dok~~  ,~~   tankstation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| typeGebouw                        | ~~  boortoren~~  \~,~~  brandtoren~~  ;~~  fabriek~~  ; ~~  fort~~  ; ~~  gevangenis~~  ; ~~  hotel~~  ; ~~  huizenblok~~  ; ~~  kliniek, inrichting, sanatorium~~  ; ~~  lichttoren~~  ; ~~  markant gebouw~~  ; ~~  manege~~  ; ~~  militair gebouw~~  ; ~~  museum~~  ; ~~  peilmeetstation~~  ; ~~  pompstation~~  ;~~  postkantoor~~  ; ~~  radartoren~~  ; ~~  recreatiecentrum~~  ; ~~  reddingboothuisje~~  ; ~~  stationsgebouw~~  ; ~~  tankstation~~  ; ~~  tol~~  ; ~~  transformatorstation~~  ; ~~  veiling~~  ; ~~  wegrestaurant~~  ; ~~  werf~~  ; ~~  windmolen: korenmolen~~  ; ~~  windmolen: watermolen~~  ; ~~  zendtoren~~  ; |
-| fysiekVoorkomen \| ligging        | ~~  overkluisd~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| status                            | ~~  in gebruik~~  ; ~~  buiten gebruik~~  ; ~~  in uitvoering~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| typeGebouw                        | *verplaatsen van type naar functie:* ~~brandweerkazerne~~; ~~crematorium~~; ~~elektriciteitscentrale~~; ~~gemaal~~; ~~gemeentehuis~~; ~~kerncentrale, kernreactor~~; ~~kunstijsbaan~~; ~~observatorium~~; ~~paleis~~; ~~politiebureau~~; ~~psychiatrisch ziekenhuis, psychiatrisch centrum~~; ~~radarpost~~; ~~schaapskooi~~; ~~school~~; ~~sporthal~~; ~~stadskantoor, hulpsecretarie~~; ~~universiteit~~; ~~ziekenhuis~~; ~~zwembad~~                                                                                                                                  |
+| typeGebouw                        | *verplaatsen van type naar ander objecttype:* ~~dok~~,~~ tankstation~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| typeGebouw                        | ~~boortoren~~\~,~~brandtoren~~;~~fabriek~~; ~~fort~~; ~~gevangenis~~; ~~hotel~~; ~~huizenblok~~; ~~kliniek, inrichting, sanatorium~~; ~~lichttoren~~; ~~markant gebouw~~; ~~manege~~; ~~militair gebouw~~; ~~museum~~; ~~peilmeetstation~~; ~~pompstation~~;~~postkantoor~~; ~~radartoren~~; ~~recreatiecentrum~~; ~~reddingboothuisje~~; ~~stationsgebouw~~; ~~tankstation~~; ~~tol~~; ~~transformatorstation~~; ~~veiling~~; ~~wegrestaurant~~; ~~werf~~; ~~windmolen: korenmolen~~; ~~windmolen: watermolen~~; ~~zendtoren~~; |
+| fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| status                            | ~~in gebruik~~; ~~buiten gebruik~~; ~~in uitvoering~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 <details class="note"> de attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …,
 ‘zwembad’ verplaatsen van attribuut typeGebouw\|type naar attribuut functie.

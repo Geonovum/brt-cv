@@ -50,7 +50,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                     | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                |
 |-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
-| naam~~  NL~~            | De ~~  Nederlandse~~   naam van het geografisch gebied. | naam                     | De naam van het geografisch gebied. |
+| naam~~NL~~          | De ~~Nederlandse~~ naam van het geografisch gebied. | naam                     | De naam van het geografisch gebied. |
 
 ## Wijzigen attribuutwaarden
 
@@ -66,7 +66,7 @@ definitie wordt niet aangepast.
 
 | *TOP10NL:waarde*              | *BRT.Next:waarde* |
 |-------------------------------|-------------------|
-| ~~  bank, ~~  ondiepte, plaat | ondiepte, plaat   |
+| ~~bank, ~~ondiepte, plaat | ondiepte, plaat   |
 
 ### Definitie
 
@@ -83,7 +83,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  naamFries~~         | ~~  «tekst»~~                            |
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
 ## Vervallen attribuutwaarden
 
@@ -92,8 +92,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-----------------------------------|------------------------------------------|
-| geometrie                         | ~~  «punt»~~                             |
-| typeGeografischGebied\|type       | ~~  overig~~                             |
+| geometrie                         | ~~«punt»~~                           |
+| typeGeografischGebied\|type       | ~~overig~~                           |
 
 ## Toevoegen attributen
 

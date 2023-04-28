@@ -64,7 +64,7 @@ BRT.Next
 
 | *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                               | *BRT.Next:waarde*  | *BRT.Next:definitie*                                                                                                  |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------|
-| ~~territoriale zee~~   | ~~  Een~~   zee~~  strook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt.~~   | **maritieme zone** | **Een bestuurlijk gebied op** zee\*\*, vastgesteld oor de Dienst der Hydrografie van het Ministerie van Defensie.\*\* |
+| ~~territoriale zee~~ | ~~Een~~ zee~~strook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt.~~ | **maritieme zone** | **Een bestuurlijk gebied op** zee\*\*, vastgesteld oor de Dienst der Hydrografie van het Ministerie van Defensie.\*\* |
 
 ## Vervallen attributen
 
@@ -73,9 +73,9 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  naamOfficieel~~     | ~~  «tekst»~~                            |
-| ~~  naamNL~~            | ~~  «tekst»~~                            |
-| ~~  naamFries~~         | ~~  «tekst»~~                            |
+| ~~naamOfficieel~~   | ~~«tekst»~~                          |
+| ~~naamNL~~          | ~~«tekst»~~                          |
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
 ## Vervallen attribuutwaarden
 
@@ -84,8 +84,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-----------------------------------|------------------------------------------|
-| geometrie                         | ~~  «punt»~~                             |
-| typeRegistratiefGebied            | ~~  waterschap~~                         |
+| geometrie                         | ~~«punt»~~                           |
+| typeRegistratiefGebied            | ~~waterschap~~                       |
 
 ## Toevoegen attributen
 

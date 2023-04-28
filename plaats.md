@@ -40,7 +40,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~  Gebied~~        | type**Plaats**           |
+| type~~Gebied~~      | type**Plaats**           |
 
 ### Definitie
 
@@ -62,7 +62,7 @@ definitie wordt niet aangepast.
 
 | *TOP10NL:waarde* | *BRT.Next:waarde*              |
 |------------------|--------------------------------|
-| ~~  deel~~  kern | **historische bebouwings**kern |
+| ~~deel~~kern | **historische bebouwings**kern |
 
 ### Definitie
 
@@ -79,10 +79,10 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  isBAGwoonplaats~~   | ~~  ja~~  ; ~~  nee~~                    |
-| ~~  naamOfficieel~~     | ~~  «tekst»~~                            |
-| ~~  naamNL~~            | ~~  «tekst»~~                            |
-| ~~  naamFries~~         | ~~  «tekst»~~                            |
+| ~~isBAGwoonplaats~~ | ~~ja~~; ~~nee~~                  |
+| ~~naamOfficieel~~   | ~~«tekst»~~                          |
+| ~~naamNL~~          | ~~«tekst»~~                          |
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
 ## Vervallen attribuutwaarden
 
@@ -91,8 +91,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*       |
 |-----------------------------------|------------------------------------------------|
-| geometrie                         | ~~  «punt»~~                                   |
-| typeGebied\|typePlaats            | ~~  stadsdeel~~  ; ~~  wijk~~  ; ~~  buurt~~   |
+| geometrie                         | ~~«punt»~~                                 |
+| typeGebied\|typePlaats            | ~~stadsdeel~~; ~~wijk~~; ~~buurt~~ |
 
 ## Toevoegen attributen
 

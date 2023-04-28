@@ -39,7 +39,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~        | ~~Het~~   hoogte~~  niveau~~  van het object.   | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~      | ~~Het~~ hoogte~~niveau~~van het object.   | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 ## --START NOTE--Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9. --END NOTE-- Wijzigen attribuutwaarden
 
@@ -65,7 +65,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  functie~~           | ~~  geluid weren~~                       |
+| ~~functie~~         | ~~geluid weren~~                     |
 
 ## Vervallen attribuutwaarden
 
@@ -73,8 +73,8 @@ Onderstaande attribuutwaarden of datatypen vervallen in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| typeRelief              | ~~  dijk~~                               |
-| geometrie               | ~~  vlak~~                               |
+| typeRelief              | ~~dijk~~                             |
+| geometrie               | ~~vlak~~                             |
 
 ## 
 

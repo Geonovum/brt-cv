@@ -107,7 +107,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                     | *BRT.Next:attribuutnaam* | *BRT.Next:definitie*                |
 |-------------------------|---------------------------------------------------------|--------------------------|-------------------------------------|
-| naam~~  NL~~            | De ~~  Nederlandse~~   naam van het functionele gebied. | naam                     | De naam van het functionele gebied. |
+| naam~~NL~~          | De ~~Nederlandse~~ naam van het functionele gebied. | naam                     | De naam van het functionele gebied. |
 
 ## Wijzigen attribuutwaarden
 
@@ -127,7 +127,7 @@ niet aangepast.
 
 | *TOP10NL\|BRT.Next:waarde*          | *TOP10NL:definitie*                                                                                                                                                                                                                       | *BRT.Next:definitie*                                                                                      |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| militair oefengebied, schietterrein | ~~  Militair kamp voor het houden van schietoefeningen met zware vuurwapens (artillerie schietkamp). / Terrein ingericht voor het schieten op doelen (schietkamp). /~~   Terrein waar militairen oefenen ~~  (militair oefenterrein).~~   | **Gebied** waar militairen oefenen, **gebied voor het houden van schietoefeningen** met zware vuurwapens. |
+| militair oefengebied, schietterrein | ~~Militair kamp voor het houden van schietoefeningen met zware vuurwapens (artillerie schietkamp). / Terrein ingericht voor het schieten op doelen (schietkamp). /~~ Terrein waar militairen oefenen ~~(militair oefenterrein).~~ | **Gebied** waar militairen oefenen, **gebied voor het houden van schietoefeningen** met zware vuurwapens. |
 
 ### Naam+definitie
 
@@ -139,8 +139,8 @@ BRT.Next
 
 | *TOP10NL:waarde*          | *TOP10NL:definitie*                                                                | *BRT.Next:waarde*                    | *BRT.Next:definitie*                                                      |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|
-| helikopterlandingsterrein | ~~  Terrein~~   dat als landings- en ~~  vertrek~~  plaats dient voor helikopters. | **helikopterlandingsplaats**         | Gebied dat **dient** als landings- en **opstijg**plaats voor helikopters. |
-| kazerne, legerplaats      | Gebouw~~  (-encomplex) bestemd tot huisvesting van soldaten.~~                     | kazerne, legerplaats, **vliegbasis** | **Terrein met militaire** gebouw**en en infrastructuur.**                 |
+| helikopterlandingsterrein | ~~Terrein~~ dat als landings- en ~~vertrek~~plaats dient voor helikopters. | **helikopterlandingsplaats**         | Gebied dat **dient** als landings- en **opstijg**plaats voor helikopters. |
+| kazerne, legerplaats      | Gebouw~~(-encomplex) bestemd tot huisvesting van soldaten.~~                   | kazerne, legerplaats, **vliegbasis** | **Terrein met militaire** gebouw**en en infrastructuur.**                 |
 
 ## 
 
@@ -151,7 +151,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  naamFries~~         | ~~  «tekst»~~                            |
+| ~~naamFries~~       | ~~«tekst»~~                          |
 
 ## Vervallen attribuutwaarden
 
@@ -160,8 +160,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                    |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeFunctioneelGebied             | ~~  gaswinning~~  ; ~~  oliewinning~~  ; ~~  grindwinning~~  ; ~~  zandwinning~~                                                                                                                                                                                                                            |
-| typeFunctioneelGebied             | ~~  kartingbaan~~  ; ~~  gebied met hoge objecten~~  ; ~~  gebouwencomplex~~  ; ~~  infiltratiegebied~~  ; ~~  milieustraat~~  ; ~~  mosselbank~~  ; ~~  plantsoen~~  ; ~~  productie-installatie~~  ; ~~  slipschool~~  ; ~~  tennispark~~  ; ~~  tuincentrum~~  ; ~~  werf~~  ; ~~  windturbinepark~~  ;  |
+| typeFunctioneelGebied             | ~~gaswinning~~; ~~oliewinning~~; ~~grindwinning~~; ~~zandwinning~~                                                                                                                                                                                                                          |
+| typeFunctioneelGebied             | ~~kartingbaan~~; ~~gebied met hoge objecten~~; ~~gebouwencomplex~~; ~~infiltratiegebied~~; ~~milieustraat~~; ~~mosselbank~~; ~~plantsoen~~; ~~productie-installatie~~; ~~slipschool~~; ~~tennispark~~; ~~tuincentrum~~; ~~werf~~; ~~windturbinepark~~;  |
 
 <details class="note"> typen ‘gaswinning’ en ‘oliewinning’ worden samengevoegd tot
 ‘gasvoorziening, olievoorziening’; ‘grindwinning’ en ‘zandwinning’ tot

@@ -52,8 +52,8 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Water~~           | typeWater**deel**        |
-| ~~fysiekVoorkomen~~     | **ligging**              |
+| type~~Water~~         | typeWater**deel**        |
+| ~~fysiekVoorkomen~~   | **ligging**              |
 
 ### Definitie
 
@@ -65,7 +65,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                                   | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~        | ~~Het~~ hoogte ~~niveau~~ van het object.~~           | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
+| ~~hoogteniveau~~      | ~~Het~~ hoogte ~~niveau~~ van het object.~~         | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
 
 <details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
@@ -90,9 +90,9 @@ Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                 | *BRT.Next:definitie*                                                                                                             |
 |----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| waterloop                  | ~~Langgerekt waterdeel in de vorm van een sloot,~~ rivier, kanaal, ~~enz.~~         | **Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals** rivier, kanaal, **beek, sloot, gracht).** |
-| greppel, droge sloot       | ~~Een in het algemeen niet watervoerende sloot.~~                                   | **Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is.**                                    |
-| zee                        | Uitgestrekt oppervlak zout water ~~dat het grootste deel van de aarde bedekt.~~     | Uitgestrekt oppervlak zout water.                                                                                                |
+| waterloop                  | ~~Langgerekt waterdeel in de vorm van een sloot,~~ rivier, kanaal, ~~enz.~~       | **Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals** rivier, kanaal, **beek, sloot, gracht).** |
+| greppel, droge sloot       | ~~Een in het algemeen niet watervoerende sloot.~~                                 | **Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is.**                                    |
+| zee                        | Uitgestrekt oppervlak zout water ~~dat het grootste deel van de aarde bedekt.~~   | Uitgestrekt oppervlak zout water.                                                                                                |
 
 
 ### Naam+definitie
@@ -104,7 +104,7 @@ BRT.Next
 
 | *TOP10NL:waarde*  | *TOP10NL:definitie*                                    | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                      |
 |-------------------|--------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------|
-| ~~meer,plas~~     | Water ~~(meestal) niet gelegen in een waterloop.~~     | **watervlakte**   | **Alle oppervlakken die vrij permanent met zoet** water **zijn bedekt. (zoals meer, plas, ven, vijver).** |
+| ~~meer,plas~~   | Water ~~(meestal) niet gelegen in een waterloop.~~   | **watervlakte**   | **Alle oppervlakken die vrij permanent met zoet** water **zijn bedekt. (zoals meer, plas, ven, vijver).** |
 
 ## Vervallen attributen
 
@@ -113,15 +113,15 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                       |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ~~voorkomen~~           | ~~met riet~~                                                                                                                                                                                   |
-| ~~functie~~             | ~~drinkwaterbekken~~; ~~haven~~; ~~natuurbad~~; ~~viskwekerij~~; ~~vistrap~~; ~~vloeiveld~~; ~~waterval~~; ~~waterzuivering~~; ~~zwembad~~; ~~overig~~                                         |
-| ~~getijdeInvloed~~      | ~~ja; nee~~                                                                                                                                                                                    |
-| ~~vaarwegklasse~~       | ~~I~~; ~~II~~; ~~III~~; ~~IV~~; ~~Va~~; ~~Vb~~; ~~VIa~~; ~~VIb~~; ~~VIc~~; ~~VII~~                                                                                                             |
-| ~~naamOfficieel~~       | ~~«tekst»~~                                                                                                                                                                                    |
-| ~~naamNL~~              | ~~«tekst»~~                                                                                                                                                                                    |
-| ~~naamFries~~           | ~~«tekst»~~                                                                                                                                                                                    |
-| ~~isBAGnaam~~           | ~~ja~~; ~~nee~~                                                                                                                                                                                |
-| ~~hoofdafwatering~~     | ~~ja~~; ~~nee~~                                                                                                                                                                                |
+| ~~voorkomen~~         | ~~met riet~~                                                                                                                                                                                 |
+| ~~functie~~           | ~~drinkwaterbekken~~; ~~haven~~; ~~natuurbad~~; ~~viskwekerij~~; ~~vistrap~~; ~~vloeiveld~~; ~~waterval~~; ~~waterzuivering~~; ~~zwembad~~; ~~overig~~                                       |
+| ~~getijdeInvloed~~    | ~~ja; nee~~                                                                                                                                                                                  |
+| ~~vaarwegklasse~~     | ~~I~~; ~~II~~; ~~III~~; ~~IV~~; ~~Va~~; ~~Vb~~; ~~VIa~~; ~~VIb~~; ~~VIc~~; ~~VII~~                                                                                                           |
+| ~~naamOfficieel~~     | ~~«tekst»~~                                                                                                                                                                                  |
+| ~~naamNL~~            | ~~«tekst»~~                                                                                                                                                                                  |
+| ~~naamFries~~         | ~~«tekst»~~                                                                                                                                                                                  |
+| ~~isBAGnaam~~         | ~~ja~~; ~~nee~~                                                                                                                                                                              |
+| ~~hoofdafwatering~~   | ~~ja~~; ~~nee~~                                                                                                                                                                              |
 
 <details class="note">voorkomen ‘met riet’ wordt opgenomen als type ‘water met riet’ in
 BRT.Next. </details>
@@ -136,8 +136,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                      |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------|
-| typeWater                         | ~~overig~~                                                                                                    |
-| fysiekVoorkomen \| ligging        | ~~in afsluitbare duiker~~; ~~in grondduiker~~; ~~in afsluitbare grondduiker~~; ~~overkluisd~~                 |
+| typeWater                         | ~~overig~~                                                                                                  |
+| fysiekVoorkomen \| ligging        | ~~in afsluitbare duiker~~; ~~in grondduiker~~; ~~in afsluitbare grondduiker~~; ~~overkluisd~~               |
 
 ## Toevoegen attributen
 
