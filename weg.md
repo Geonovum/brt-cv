@@ -107,14 +107,14 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-Geen
+Geen.
 
 ### Definitie
 
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
 niet aangepast.
 
-*Attribuut TOP10NL:typeWeg \|BRT.Next:type*
+*Attribuut TOP10NL\|BRT.Next:typeWeg*
 
 | *TOP10NL \| BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                               | *BRT.Next:definitie*                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -129,7 +129,7 @@ niet aangepast.
 
 ### Naam+definitie
 
-Geen
+Geen.
 
 ## Vervallen attributen
 
@@ -152,15 +152,15 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:waarde of «type»*                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                                       |
-| typeWeg                       | ~~spoorbaanlichaam~~; ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~ |
+| typeWeg                           | ~~spoorbaanlichaam~~; ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~ |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                                   |
 | status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~                    |
 
 <details class="note"> Type ‘spoorbaanlichaam’ verplaatst naar type ‘spoorbaan’ van
-objecttype Spoor. --END NOTE--
+objecttype Spoor. </details>
 
 <details class="note"> status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot
-status ‘bestaand’. --END NOTE--
+status ‘bestaand’. </details>
 
 ## Toevoegen attributen
 
@@ -174,7 +174,7 @@ Onderstaande attributen worden toegevoegd aan BRT.Next.
 
 Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
-*Attribuut BRT.Next:type*
+*Attribuut BRT.Next:typeWeg*
 
 | *BRT.Next:waarde*     | *BRT.Next:definitie*                                                                                                                                                                               |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -186,7 +186,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 | **fietsveer**         | **Vastgelegde route over water om fietsers en voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                      |
 | **voetveer**          | **Vastgelegde route over water om voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                                  |
 
-**Attribuut BRT.Next:ligging**
+*Attribuut BRT.Next:ligging*
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                         |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
