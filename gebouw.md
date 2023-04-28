@@ -209,7 +209,7 @@ wordt hernoemd naar ‘psychiatrisch centrum’.
 type ‘dok’ verplaatst naar objecttype Inrichtingselement </details>
 
 <details class="note"> status ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot
-status ‘bestaand’. --END NOTE—
+status ‘bestaand’. </details>
 
 ## Toevoegen attributen
 
