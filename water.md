@@ -52,8 +52,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Water~~         | typeWater**deel**        |
-| ~~fysiekVoorkomen~~   | **ligging**              |
+| ~~fysiekVoorkomen~~     | **ligging**              |
 
 ### Definitie
 
@@ -67,7 +66,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 |-------------------------|-------------------------------------------------------|----------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~      | ~~Het~~ hoogte ~~niveau~~ van het object.               | **relatieveHoogteligging** | **Aanduiding voor de relatieve hoogte van het object.** |
 
-<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
+<details class="note">Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details> 
 
@@ -75,7 +74,7 @@ een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 
 ### Naam
 
-*Attribuut TOP10NL:typeWater \| BRT.Next:type*
+*Attribuut TOP10NL\|BRT.Next:typeWater*
 
 | TOP10NL:waarde    | BRT.Next:waarde |
 |-------------------|-----------------|
@@ -86,7 +85,7 @@ een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam
 (waarde) wordt niet aangepast.
 
-*Attribuut TOP10NL:typeWater \| BRT.Next:type*
+*Attribuut TOP10NL\|BRT.Next:typeWater*
 
 | *TOP10NL\|BRT.Next:waarde* | *TOP10NL:definitie*                                                                 | *BRT.Next:definitie*                                                                                                             |
 |----------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -100,7 +99,7 @@ Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeWater / BRT.Next:type*
+*Attribuut TOP10NL\|BRT.Next:typeWater*
 
 | *TOP10NL:waarde*  | *TOP10NL:definitie*                                    | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                      |
 |-------------------|--------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------|
