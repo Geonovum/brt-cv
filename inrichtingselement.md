@@ -85,7 +85,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~ van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> 
 Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
@@ -103,7 +103,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:typeInrichtingselement \| BRT.Next:typeInrichtingselement*
+*Attribuut TOP10NL\|BRT.Next:typeInrichtingselement*
 
 | *TOP10NL:waarde*               | *BRT.Next:waarde*     |
 |--------------------------------|-----------------------|
@@ -124,7 +124,7 @@ BRT.Next </details>
 Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
-*Attribuut TOP10NL:typeInrichtingselement \| BRT.Next:typeInrichtingselement*
+*Attribuut TOP10NL:\|BRT.Next:typeInrichtingselement*
 
 | *TOP10NL:waarde*                   | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                                                                                                            | *BRT.Next:waarde*    | *BRT.Next:definitie*                                                                                                                                      |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -132,7 +132,7 @@ BRT.Next
 | ~~GPS~~ kernnetpunt            | Punt geschikt voor ~~GPS~~ metingen. (Kan een steen of bout zijn).                                                                                                                                                                                                                                                                                                                         | **GNSS** kernnetpunt | Punt geschikt voor **GNSS** metingen. (Kan een steen of bout zijn).                                                                                       |
 | hek~~werk~~                    | ~~Begrenzing van een terrein in de vorm van een afrastering.~~                                                                                                                                                                                                                                                                                                                             | hek                  | **Een hekwerk of schutting, typisch ten behoeve van erfafscheiding.**                                                                                     |
 | ~~aanleg~~steiger              | ~~In het water uitstekende brug of pier, smaller dan 2 meter, gebruikt om personen en goederen aan~~ wal ~~te brengen.~~                                                                                                                                                                                                                                                               | steiger              | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.** |
-| strekdam~~, krib, golfbreker~~ | ~~Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de~~ oever~~s of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam). Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib). Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).~~ | strekdam             | \*\*Constructie in het water ter verdediging van de kust/\*\*oever.                                                                                       |
+| strekdam~~, krib, golfbreker~~ | ~~Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de~~ oever~~s of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam). Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib). Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).~~ | strekdam             | **Constructie in het water ter verdediging van de kust**oever.                                                                                       |
 
 ## Vervallen attributen
 
@@ -152,13 +152,13 @@ BRT.Next. Het attribuut blijft wel bestaan.
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | typeInrichtingselement            | ~~busstation~~; ~~gaswinning~~; ~~golfmeetpaal~~; ~~havenhoofd~~; ~~helikopterlandingsplatform~~; ~~kilometerraaibord~~; ~~kilometerraaipaal~~; ~~koedam~~; ~~kogelvanger schietbaan~~; ~~kraan~~; ~~metrostation~~; ~~leiding~~; ~~oliepompinstallatie~~; ~~radiobaken~~; ~~RD punt~~; ~~schietbaan~~; ~~seinmast~~; ~~sneltramhalte~~; ~~treinstation~~; ~~tol~~; ~~verkeersgeleider~~; ~~vliedberg~~; ~~zichtbaar wrak~~ |
 
-\--START NOTE—typen ‘gaswinning’, ‘helikopterlandingsplatform’,
+<details class="note">typen ‘gaswinning’, ‘helikopterlandingsplatform’,
 ‘oliepompinstallatie’, ‘vliedberg’, ‘busstation’, ‘metrostation’,
 ‘sneltramhalte’, ‘treinstation’, ‘tol’ verplaatsen naar objecttype Functioneel
-gebied. --END NOTE—
+gebied. </details>
 
-\--START NOTE—typen ‘kilometerraaibord’ en ‘kilometerraaipaal’ worden hernoemd
-naar ‘kilometerpaal water’. --END NOTE—
+<details class="note">typen ‘kilometerraaibord’ en ‘kilometerraaipaal’ worden hernoemd
+naar ‘kilometerpaal water’. </details>
 
 ## Toevoegen attributen
 

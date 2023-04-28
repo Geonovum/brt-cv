@@ -66,7 +66,7 @@ definitie wordt niet aangepast.
 
 | *TOP10NL:waarde*              | *BRT.Next:waarde* |
 |-------------------------------|-------------------|
-| ~~bank, ~~ondiepte, plaat | ondiepte, plaat   |
+| ~~bank,~~ ondiepte, plaat | ondiepte, plaat   |
 
 ### Definitie
 

@@ -64,7 +64,7 @@ BRT.Next
 
 | *TOP10NL:waarde*         | *TOP10NL:definitie*                                                                                                               | *BRT.Next:waarde*  | *BRT.Next:definitie*                                                                                                  |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------|
-| ~~territoriale zee~~ | ~~Een~~ zee~~strook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt.~~ | **maritieme zone** | **Een bestuurlijk gebied op** zee\*\*, vastgesteld oor de Dienst der Hydrografie van het Ministerie van Defensie.\*\* |
+| ~~territoriale zee~~ | ~~Een~~ zee~~strook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt.~~ | **maritieme zone** | **Een bestuurlijk gebied op** zee**, vastgesteld oor de Dienst der Hydrografie van het Ministerie van Defensie.** |
 
 ## Vervallen attributen
 

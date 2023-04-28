@@ -1,204 +1,76 @@
-Bijlage: Wijzigingen t.o.v. consultatieversie 28 juni 2022
-==========================================================
+# Bijlage: Wijzigingen t.o.v. consultatieversie 23 januari 2022
 
-Inleiding
----------
+De volgende wijzigingen zijn doorgevoerd n.a.v. de 3e consultatieronde.
 
--   Aangepast aan de nieuwe consultatieperiode, inclusief
-    aankondiging/uitnodiging samenwerkbijeenkomst en vragenuur.
+## Inleiding
 
-Wegdeel
--------
+-   Aangepast naar de versie ter vaststelling.
 
--   Schrappen van type ‘hoofdweg’ is teruggedraaid, opgenomen als type ‘rijbaan
-    hoofdweg’, definitie is aangepast.
+## Weg
 
--   Type ‘spoorbaanlichaam’ is verplaatst naar type ‘spoorbaan’ van objecttype
-    Spoor
+-   Schrappen attribuut 'gescheidenRijbaan' teruggedraaid
 
--   Definitie van ligging ‘op overweg’ is gewijzigd.
+-   Definitie van status 'bestaand' aangepast
 
--   Schrappen van attribuut ‘verhardingsbreedteklasse’ is teruggedraaid.
+-   Status 'in aanbouw' toegevoegd.
 
--   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
-    naar vrij tekstveld.
+## Spoor
 
--   Onjuiste vervallen attribuutwaarde ‘overig parkeergebied’ is gecorrigeerd
-    naar ‘overig verkeersgebied’
+-   Schrappen vervoerfunctie is teruggedraaid; voetnoot van toepassing voor
+    lijngeometrie aangepast.
 
-Spoor
------
+-   Definitie van status 'bestaand' aangepast
 
--   Schrappen van type ‘metro’ is teruggedraaid.
+-   status 'in aanbouw' toegevoegd.
 
--   Type ‘spoorbaan’(lichaam) is verplaatst van objecttype Terrein naar Spoor.
+## Water
 
--   Geometrietype ‘vlak’ is toegevoegd voor type ‘spoorbaan’
+-   Schrappen ligging 'in duiker' teruggedraaidTerrein
 
--   Regel is toegevoegd dat attribuut aantalSporen alleen voorkomt bij
-    lijngeometrie.
-
--   Schrappen van attribuut ‘elektrificatie’ is teruggedraaid.
-
-Waterdeel
----------
-
--   Schrappen van geometrietype «punt» is teruggedraaid.
-
--   Schrappen van type ‘bron, wel’ is teruggedraaid, hernoemd naar ‘bron’.
-
--   geometrietype ‘vlak’ van type ‘water’ is gespecificeerd.
-
--   Schrappen van breedteklasse ‘6 - 12 meter’, ‘12 - 50 meter’, ‘50 - 125
-    meter’, ‘\> 125 meter’ is teruggedraaid.
-
--   ligging ‘in duiker’ is geschrapt.
-
--   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
-    naar vrij tekstveld.
-
--   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is
-    aangepast.
-
--   Regel toegevoegd dat naam: herkomst, naam:officieel en naam:taal verplicht
-    attributen zijn als naam gevuld is.
-
-Terrein
--------
-
--   Hernoemen van type ‘akkerland’ naar ‘bouwland’ (definitie wel aangepast naar
-    BGT), type ‘boomkwekerij’ naar ‘boomteelt’, type ‘fruitkwekerij’ naar
-    ‘fruitteelt’ (definitie wel minimaal aangepast) is teruggedraaid.
-
--   Schrappen van type ‘boomgaard’ is teruggedraaid, definitie is minimaal
-    aangepast.
-
--   geometrie ‘vlak’ van type ‘struiken’ is gespecificeerd.
-
--   zinsnede ‘dat niet nader wordt ingewonnen’ in definitie van type ‘erf’ is
-    geschrapt.
-
--   Optioneel attribuut ‘brugnaam’ is toegevoegd.
-
--   Voetnoot is aangepast: Spoorbaanlichaam verplaatst niet van objecttype
-    Terrein naar objecttype Wegdeel, maar van objecttype Terrein naar objecttype
-    Spoor.
-
-Gebouw
-------
-
--   type ‘boortoren’ is geschrapt (komt niet voor).
-
--   geometrietype ‘punt’ is toegevoegd aan type ‘bunker’
-
--   verplaatsen van type ‘tank’ naar Inrichtingselement is teruggedraaid,
-    hernoemd naar ‘opslagtank’ met BGT definitie.
-
--   wijzigen naam van type ‘parkeerdak, parkeerdek, parkeergarage’ is
-    teruggedraaid, type is hernoemd naar ‘parkeergarage’, definitie is
-    aangepast, en geometrietype ‘punt’ is toegevoegd voor dit type.
-
--   schrappen type ‘synagoge’ is teruggedraaid
-
--   definitie van type ‘windmolen’ is gewijzigd
-
--   schrappen van type ‘windturbine’ is teruggedraaid, definitie is aangepast
-    aan BGT.
-
--   typen ‘botenhuis’, ‘open loods’ en ‘overkapping’ zijn toegevoegd.
-
--   schrappen van typen ‘gevangenis’, ‘psychiatrisch ziekenhuis, psychiatrisch
-    centrum’, en ‘ziekenhuis’ is teruggedraaid, typen zijn opgenomen bij
-    attribuut ‘functie’
-
--   functie ‘parkeerdak, parkeerdek, parkeergarage’ is hernoemd naar ‘parkeren’,
-    ‘radarpost’ is hernoemd naar ‘radarstation’.
-
--   attribuut ‘fysiekVoorkomen’ is hernoemd naar ‘ligging’
-
-Inrichtingselement
-------------------
-
--   schrappen van type ‘metrostation’ is teruggedraaid.
-
--   type ‘bassin’ is vervangen door type ‘dok’ en type ‘zwembad’
-
--   typen ‘open loods, ‘overkapping’, ‘opslagtank’, ‘windturbine’ en ‘botenhuis’
-    zijn verplaatst naar Gebouw
-
--   definitie van GNSS kernnetpunt is minimaal aangepast.
-
-Relief
-------
-
--   definitie van nieuw type ‘dijk’ is aangepast.
-
-Hoogte
-------
+## Terrein
 
 Geen
 
-Registratief gebied
--------------------
+## Gebouw
 
--   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
-    naar ‘1 of meer’ (1..\*)
+-   Schrappen typeGebouw 'luchtwachttoren' teruggedraaid
 
--   Attribuut ‘naam: officieel’ is toegevoegd met kardinaliteit ‘1 of meer’
-    (1..\*), type aangepast naar waardenlijst ja/nee.
+-   Naam functie 'psychiatrisch ziekenhuis, psychiatrisch centrum' aangepast
+    naar 'psychiatrisch centrum'
 
--   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
-    aangepast.
+## Inrichtingselement
 
--   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
-    naar vrij tekstveld.
+-   Typen 'busstation', 'metrostation', 'sneltramhalte', 'treinstation', 'tol'
+    geschrapt bij Inrichtingselement en verplaatst naar FunctioneelGebied
 
-Geografisch gebied
-------------------
+-   Type 'kilometerraaipaal' en 'kilometerraaibord' hernoemd naar 'kilometerpaal
+    water'
 
--   Toevoegen attribuut ‘naamKartografisch’ is teruggedraaid.
+## Relief
 
--   Attribuut ‘naam: taal’ is toegevoegd
+-   definitie van nieuw type ‘dijk’ is aangepast.
 
-Plaats
-------
+## Hoogte
 
--   type ‘woonkern historisch’ is gewijzigd naar ‘historische bebouwingskern’.
+Geen
 
--   schrappen van attribuut ‘bebouwdeKom’ en ‘aantalInwoners’ is teruggedraaid.
+## Registratief gebied
 
--   Kardinaliteit van attribuut ‘naam:herkomst’ en ‘naam: taal’ is gewijzigd
-    naar ‘1 of meer’ (1..\*)
+Geen
 
--   Attribuut ‘naam: officieel’ is toegevoegd met kardinaliteit ‘1 of meer’
-    (1..\*), type aangepast naar waardenlijst ja/nee.
+## Geografisch gebied
 
--   naam:taal ‘overig’ is hernoemd naar ‘onbekend/ VoidReason’, definitie is mee
-    aangepast.
+Geen
 
--   Type van nieuw attribuut 'naam:herkomst' is gewijzigd van een waardenlijst
-    naar vrij tekstveld.
+## Plaats
 
-Functioneel gebied
-------------------
+Geen
 
--   Definitie van type ‘helikopterlandingsplaats’ is gewijzigd.
+## Functioneel gebied
 
--   Wijzigen naam van type ‘militair oefengebied, schietterrein’ is
-    teruggedraaid, definitie is aangepast.
+-   Typen 'busstation', 'metrostation', 'sneltramhalte', 'treinstation', 'tol'
+    toegevoegd bij FunctioneelGebied (verplaatst vanuit Inrichtingselement)
 
--   Hernoemen van type ‘kazerne, legerplaats’ naar ‘militair terrein’ is
-    teruggedraaid, ‘kazerne, legerplaats’ is hernoemd naar ‘kazerne,
-    legerplaats, vliegbasis’ met aangepast definitie.
-
--   type ‘gevangenis’ is hernoemd naar ‘gevangeniscomplex’.
-
--   Definitie van ‘psychiatrisch ziekenhuiscomplex’ en ‘tankstation’ is
-    aangepast.
-
--   Type ‘vliedberg’ is toegevoegd.
-
-Plantopografie
---------------
+## Plantopografie
 
 Geen

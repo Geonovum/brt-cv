@@ -123,7 +123,7 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
 niet aangepast.
 
-*Attribuut TOP10NL|BRT.Next:typeFunctioneelGebiedand*
+*Attribuut TOP10NL|BRT.Next:typeFunctioneelGebied*
 
 | *TOP10NL\|BRT.Next:waarde*          | *TOP10NL:definitie*                                                                                                                                                                                                                       | *BRT.Next:definitie*                                                                                      |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -135,14 +135,12 @@ Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in
 BRT.Next
 
 
-*Attribuut TOP10NL|BRT.Next:typeFunctioneelGebiedand*
+*Attribuut TOP10NL|BRT.Next:typeFunctioneelGebied*
 
 | *TOP10NL:waarde*          | *TOP10NL:definitie*                                                                | *BRT.Next:waarde*                    | *BRT.Next:definitie*                                                      |
 |---------------------------|------------------------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|
 | helikopterlandingsterrein | ~~Terrein~~ dat als landings- en ~~vertrek~~plaats dient voor helikopters. | **helikopterlandingsplaats**         | Gebied dat **dient** als landings- en **opstijg**plaats voor helikopters. |
 | kazerne, legerplaats      | Gebouw~~(-encomplex) bestemd tot huisvesting van soldaten.~~                   | kazerne, legerplaats, **vliegbasis** | **Terrein met militaire** gebouw**en en infrastructuur.**                 |
-
-## 
 
 ## Vervallen attributen
 
