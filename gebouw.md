@@ -206,7 +206,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 wordt hernoemd naar ‘psychiatrisch centrum’.
 
 <details class="note"> type ‘tankstation’ verplaatst naar objecttype FunctioneelGebied;
-type ‘dok’ verplaatst naar objecttype Inrichtingselement --END NOTE--
+type ‘dok’ verplaatst naar objecttype Inrichtingselement </details>
 
 <details class="note"> status ‘in gebruik’ en ‘buiten gebruik’ worden samengevoegd tot
 status ‘bestaand’. --END NOTE—
@@ -235,7 +235,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 </details>attribuutwaarden van BRT.Next:functie zijn overgenomen van
 TOP10NL:typeGebouw; m.u.v. waarde ‘religie’: deze classificatie is nieuw
-toegevoegd aan BRT.Next --END NOTE--
+toegevoegd aan BRT.Next </details>
 
 | *BRT.Next:waarde*                | *BRT.Next:definitie*                           |
 |----------------------------------|------------------------------------------------|

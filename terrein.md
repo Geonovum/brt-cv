@@ -125,7 +125,7 @@ in BRT.Next.
 | ~~naam~~            | ~~«tekst»~~                           |
 
 <details class="note">voorkomen ‘met riet’ en ‘dras, moerassig’ worden verplaatst naar
-respectievelijk typen ‘rietland’ en ‘moeras’. --END NOTE--
+respectievelijk typen ‘rietland’ en ‘moeras’. </details>
 
 ## Vervallen attribuutwaarden
 
@@ -138,10 +138,10 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | fysiekVoorkomen \| ligging       | ~~overkluisd~~, ~~op beweegbaar deel van brug~~                                                                                                           |
 
 <details class="note">type ‘aanlegsteiger’ verplaatst van object Terrein naar type
-‘steiger’ van object Inrichtingselement. --END NOTE--
+‘steiger’ van object Inrichtingselement. </details>
 
 <details class="note">type ‘spoorbaanlichaam’ verplaatst van Terrein naar type
-‘spoorbaan’ van object Spoor. --END NOTE--
+‘spoorbaan’ van object Spoor. </details>
 
 ## Toevoegen attributen
 

@@ -77,7 +77,7 @@ aangepast.
 | ~~hoofdG~~eometrie      | **g**eometrie            |
 
 <details class="note"> Aan geometrie wordt de volgende regel toegevoegd: *“Een smalle
-berm (\< 6m) is geen onderdeel van het wegvlak."* --END NOTE--
+berm (\< 6m) is geen onderdeel van het wegvlak."* </details>
 
 ### Definitie
 
