@@ -35,7 +35,7 @@ opzichte van de huidige versie TOP10NL.
 | tunnelnaam             | «tekst»                      |               | 0..1          |
 
 <details class="note"> attribuut ‘aantalSporen’, ‘elektrificatie’ en ‘vervoerfunctie’ is
-alleen verplicht voor objecten Spoor met lijngeometrie. --END NOTE--
+alleen verplicht voor objecten Spoor met lijngeometrie. </details>
 
 ## Wijzigen attributen
 
@@ -94,8 +94,8 @@ Geen.
 
 ### Naam+definitie
 
-| Geen. |   |   |   |
-|-------|---|---|---|
+Geen. 
+
 
 ## Vervallen attributen
 
@@ -121,7 +121,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~ |
 
 <details class="note"> status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot
-status ‘bestaand’. --END NOTE--
+status ‘bestaand’. </details>
 
 ## Toevoegen attributen
 
@@ -140,14 +140,16 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 <details class="note">regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’
 </details>
 
-*Attribuut BRT.Next:type*
+*Attribuut BRT.Next:typeSpoor*
 
 | *BRT.Next:status*            | *BRT.Next:definitie*                              |
 |------------------------------|---------------------------------------------------|
 | **spoorbaan**~~lichaam~~ | **Gebaand gedeelte voor het verkeer over rails.** |
 
 <details class="note">type ‘spoorbaan’ verplaatst van objecttype Terrein naar objecttype
-Spoor. --END NOTE-- *Attribuut BRT.Next:status*
+Spoor.</details> 
+
+*Attribuut BRT.Next:status*
 
 | *BRT.Next:status* | *BRT.Next:definitie*                                                                                               |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
