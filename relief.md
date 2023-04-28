@@ -1,11 +1,9 @@
-Relief
-======
+# Relief
 
 Dit hoofdstuk beschrijft de wijzigingen voor het object Relief in BRT.Next ten
 opzichte van de huidige versie TOP10NL.
 
-Overzicht
----------
+## Overzicht
 
 *Overzicht attributen en waarden/type van object Relief in BRT.Next*
 
@@ -14,8 +12,7 @@ Overzicht
 | geometrie              | «vlak»                 |                    | 1..1          |
 |                        | «lijn»                 |                    |               |
 |                        | «hoge en lage zijde»   |                    |               |
-| type                   | dijk                   | vlak, lijn         | 1..1          |
-|                        | wal                    | lijn               |               |
+| typeRelief             | wal                    | lijn               | 1..1          |
 |                        | steile rand, aardrand  | hoge en lage zijde |               |
 |                        | talud, hoogteverschil  | hoge en lage zijde |               |
 | hoogteklasse           | \< 1 meter             |                    | 1..1          |
@@ -23,87 +20,68 @@ Overzicht
 |                        | \> 2,5 meter           |                    |               |
 | relatieveHoogteligging | «geheel getal [-9; 9]» |                    | 1..1          |
 
-Wijzigen attributen
--------------------
+## Wijzigen attributen
 
 De attributen in deze paragraaf wijzigen van naam, wijzigen van definitie, of
 wijzigen van naam en definitie in BRT.Next.
 
 ### Naam
 
-Onderstaande attributen wijzigen van naam in BRT.Next. De definitie wordt niet
-aangepast.
-
-| *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
-|-------------------------|--------------------------|
-| type~~Relief~~      | type                     |
+*Geen.*
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
 Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
-| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*       | *BRT.Next:definitie*                                    |
-|-------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
+|-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
+| ~~hoogteniveau~~        | ~~Het~~   hoogte~~  niveau~~  van het object.   | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel
-getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
-</details>
-Wijzigen attribuutwaarden
--------------------------
+## --START NOTE--Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9. --END NOTE-- Wijzigen attribuutwaarden
 
 De attribuutwaarden in deze paragraaf wijzigen van naam (waarde), wijzigen van
 definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 
 ### Naam
 
-*n.v.t.*
+*Geen.*
 
 ### Definitie
 
-*n.v.t.*
+*Geen.*
 
 ### Naam+definitie
 
-*n.v.t.*
+*Geen.*
 
-Vervallen attributen
---------------------
+## Vervallen attributen
 
 Onderstaande attributen en bijbehorende attribuutwaarden of datatypen vervallen
 in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~functie~~         | ~~geluid weren~~                     |
+| ~~  functie~~           | ~~  geluid weren~~                       |
 
-Vervallen attribuutwaarden
---------------------------
+## Vervallen attribuutwaarden
 
-*n.v.t.*
+Onderstaande attribuutwaarden of datatypen vervallen in BRT.Next.
 
-Toevoegen attributen
---------------------
+| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
+|-------------------------|------------------------------------------|
+| typeRelief              | ~~  dijk~~                               |
+| geometrie               | ~~  vlak~~                               |
 
-*n.v.t.*
+## 
 
-Toevoegen attribuutwaarden
---------------------------
+## Toevoegen attributen
 
-Onderstaande attribuutwaarden (waarden) worden toegevoegd aan BRT.Next.
+*Geen.*
 
-*Attribuut BRT.Next:geometrie*
+## Toevoegen attribuutwaarden
 
-| *BRT.Next:waarde* | *BRT.Next:definitie* |
-|-------------------|----------------------|
-| **«vlak»**        | **Vlakgeometrie**    |
-
-*Attribuut BRT.Next:type*
-
-| *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                                                    |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| **dijk**          | **Aangelegde waterkering van grond, die het achterliggende land beschermt tegen overstromingen, met een hoogte groter dan 1,00 meter.** |
+*Geen.*
