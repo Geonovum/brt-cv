@@ -18,6 +18,6 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:waarde of «type»*                                    |
 |-------------------------|---------------------------------------------------------------|
-| ~~typeObject~~      | ~~spoorbaan~~; ~~water~~; ~~weg~~; ~~overig~~ |
-| ~~naam~~            | ~~«tekst»~~                                               |
-| ~~geometrie~~       | ~~«punt»~~; ~~«lijn»~~; ~~«vlak»~~                |
+| ~~  typeObject~~        | ~~  spoorbaan~~  ; ~~  water~~  ; ~~  weg~~  ; ~~  overig~~   |
+| ~~  naam~~              | ~~  «tekst»~~                                                 |
+| ~~  geometrie~~         | ~~  «punt»~~  ; ~~  «lijn»~~  ; ~~  «vlak»~~                  |
