@@ -85,7 +85,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~  hoogteniveau~~      | ~~  Het~~   hoogte~~  niveau~~  van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~      | ~~Het~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
@@ -105,10 +105,10 @@ definitie wordt niet aangepast.
 
 | *TOP10NL:waarde*               | *BRT.Next:waarde*     |
 |--------------------------------|-----------------------|
-| ~~  baak~~                     | **baken**             |
-| ~~  kaap~~                     | **baken**             |
+| ~~baak~~                   | **baken**             |
+| ~~kaap~~                   | **baken**             |
 | kilometerpaal                  | kilometerpaal **weg** |
-| kilometerpaal spoor~~  weg~~   | kilometerpaal spoor   |
+| kilometerpaal spoor~~weg~~ | kilometerpaal spoor   |
 
 <details class="note"> TOP10NL-typen ‘baak’ en ‘kaap’ worden samengevoegd tot ‘baken’ in
 BRT.Next --END NOTE--
@@ -126,11 +126,11 @@ BRT.Next
 
 | *TOP10NL:waarde*                   | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                                                                                                            | *BRT.Next:waarde*    | *BRT.Next:definitie*                                                                                                                                      |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| geluids~~  wering~~                | ~~  Constructie ten behoeve van het terugdringen van geluidsoverlast.~~                                                                                                                                                                                                                                                                                                                        | geluids**scherm**    | **Een scheiding bedoeld om geluidshinder in de buitenlucht te verminderen.**                                                                              |
-| ~~  GPS~~   kernnetpunt            | Punt geschikt voor ~~  GPS~~   metingen. (Kan een steen of bout zijn).                                                                                                                                                                                                                                                                                                                         | **GNSS** kernnetpunt | Punt geschikt voor **GNSS** metingen. (Kan een steen of bout zijn).                                                                                       |
-| hek~~  werk~~                      | ~~  Begrenzing van een terrein in de vorm van een afrastering.~~                                                                                                                                                                                                                                                                                                                               | hek                  | **Een hekwerk of schutting, typisch ten behoeve van erfafscheiding.**                                                                                     |
-| ~~  aanleg~~  steiger              | ~~  In het water uitstekende brug of pier, smaller dan 2 meter, gebruikt om personen en goederen aan~~   wal ~~  te brengen.~~                                                                                                                                                                                                                                                                 | steiger              | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.** |
-| strekdam~~  , krib, golfbreker~~   | ~~  Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de~~   oever~~  s of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam). Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib). Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).~~   | strekdam             | \*\*Constructie in het water ter verdediging van de kust/\*\*oever.                                                                                       |
+| geluids~~wering~~              | ~~Constructie ten behoeve van het terugdringen van geluidsoverlast.~~                                                                                                                                                                                                                                                                                                                      | geluids**scherm**    | **Een scheiding bedoeld om geluidshinder in de buitenlucht te verminderen.**                                                                              |
+| ~~GPS~~ kernnetpunt            | Punt geschikt voor ~~GPS~~ metingen. (Kan een steen of bout zijn).                                                                                                                                                                                                                                                                                                                         | **GNSS** kernnetpunt | Punt geschikt voor **GNSS** metingen. (Kan een steen of bout zijn).                                                                                       |
+| hek~~werk~~                    | ~~Begrenzing van een terrein in de vorm van een afrastering.~~                                                                                                                                                                                                                                                                                                                             | hek                  | **Een hekwerk of schutting, typisch ten behoeve van erfafscheiding.**                                                                                     |
+| ~~aanleg~~steiger              | ~~In het water uitstekende brug of pier, smaller dan 2 meter, gebruikt om personen en goederen aan~~ wal ~~te brengen.~~                                                                                                                                                                                                                                                               | steiger              | **Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de** wal **te laden en te lossen.** |
+| strekdam~~, krib, golfbreker~~ | ~~Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de~~ oever~~s of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam). Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib). Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).~~ | strekdam             | \*\*Constructie in het water ter verdediging van de kust/\*\*oever.                                                                                       |
 
 ## Vervallen attributen
 
@@ -139,7 +139,7 @@ in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
 |-------------------------|------------------------------------------|
-| ~~  breedte~~           | ~~  «decimaal getal»~~                   |
+| ~~breedte~~         | ~~«decimaal getal»~~                 |
 
 ## Vervallen attribuutwaarden
 
@@ -148,7 +148,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typeInrichtingselement            | ~~  busstation~~  ; ~~  gaswinning~~  ; ~~  golfmeetpaal~~  ; ~~  havenhoofd~~  ; ~~  helikopterlandingsplatform~~  ; ~~  kilometerraaibord~~  ; ~~  kilometerraaipaal~~  ; ~~  koedam~~  ; ~~  kogelvanger schietbaan~~  ; ~~  kraan~~  ; ~~  metrostation~~  ; ~~  leiding~~  ; ~~  oliepompinstallatie~~  ; ~~  radiobaken~~  ; ~~  RD punt~~  ; ~~  schietbaan~~  ; ~~  seinmast~~  ; ~~  sneltramhalte~~  ; ~~  treinstation~~  ; ~~  tol~~  ; ~~  verkeersgeleider~~  ; ~~  vliedberg~~  ; ~~  zichtbaar wrak~~   |
+| typeInrichtingselement            | ~~busstation~~; ~~gaswinning~~; ~~golfmeetpaal~~; ~~havenhoofd~~; ~~helikopterlandingsplatform~~; ~~kilometerraaibord~~; ~~kilometerraaipaal~~; ~~koedam~~; ~~kogelvanger schietbaan~~; ~~kraan~~; ~~metrostation~~; ~~leiding~~; ~~oliepompinstallatie~~; ~~radiobaken~~; ~~RD punt~~; ~~schietbaan~~; ~~seinmast~~; ~~sneltramhalte~~; ~~treinstation~~; ~~tol~~; ~~verkeersgeleider~~; ~~vliedberg~~; ~~zichtbaar wrak~~ |
 
 \--START NOTE—typen ‘gaswinning’, ‘helikopterlandingsplatform’,
 ‘oliepompinstallatie’, ‘vliedberg’, ‘busstation’, ‘metrostation’,
