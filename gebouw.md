@@ -91,9 +91,8 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| ~~fysiekVoorkomen~~ | **ligging**              |
+| ~~fysiekVoorkomen~~     | **ligging**              |
 
-.
 
 ### Definitie
 
@@ -102,8 +101,8 @@ aangepast.
 
 | *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                                                          | *BRT.Next:definitie*                                            |
 |-------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~                                     | **De status gekoppeld aan de levenscyclus van een geo-object.** |
-| typeGebouw                          | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~ | **type**                                                        |
+| status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~                                             | **De status gekoppeld aan de levenscyclus van een geo-object.**    |
+| typeGebouw                          | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~     | **type**                                                        |
 
 ### Naam+definitie
 
@@ -111,16 +110,15 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~        | ~~Het~~ hoogte~~niveau~~ van het object.        | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> typeGebouw wordt gesplitst in twee attributen: ‘type’ (uiterlijke
 verschijningsvorm) en ‘functie’(gebruik). De attribuutwaarden die verplaatsen
 van typeGebouw naar functie worden als vervallen bij typeGebouw opgenomen, en
-als toegevoegde attribuutwaarden bij het nieuwe attribuut ‘functie’. --END
-NOTE--
+als toegevoegde attribuutwaarden bij het nieuwe attribuut ‘functie’.</details>
 
 <details class="note">Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
-een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
+een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
 ## Wijzigen attribuutwaarden
@@ -133,13 +131,13 @@ definitie, of wijzigen van naam (waarde) en definitie in BRT.Next
 Onderstaande attribuutwaarden wijzigen van naam (waarde) in BRT.Next. De
 definitie wordt niet aangepast.
 
-*Attribuut TOP10NL:typeGebouw \| BRT.Next:type*
+*Attribuut TOP10NL:type\|BRT.Next:typeGebouw*
 
 | *TOP10NL:waarde*                              | *BRT.Next:waarde* |
 |-----------------------------------------------|-------------------|
-| kas~~, warenhuis~~                        | kas               |
+| kas~~, warenhuis~~                            | kas               |
 | tank                                          | **opslag**tank    |
-| ~~parkeerdak, parkeerdek, ~~parkeergarage | parkeergarage     |
+| ~~parkeerdak, parkeerdek, ~~parkeergarage     | parkeergarage     |
 
 ### 
 
@@ -148,7 +146,7 @@ definitie wordt niet aangepast.
 Onderstaande attribuutwaarden wijzigen van definitie in BRT.Next. De naam wordt
 niet aangepast.
 
-*Attribuut TOP10NL:typeGebouw \| BRT.Next:typeGebouw*
+*Attribuut TOP10NL:type\|BRT.Next:typeGebouw*
 
 | *TOP10NL:waarde* | *TOP10NL:definitie*                                                                                                                                                                                                                   | *BRT.Next:definitie*                                                                                                                                                       |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -202,8 +200,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 ‘zwembad’ verplaatsen van attribuut typeGebouw\|type naar attribuut functie.
 </details>
 
-\--START NOTE—attribuutwaarde ‘psychiatrisch ziekenhuis, psychiatrisch centrum’
-wordt hernoemd naar ‘psychiatrisch centrum’.
+<details class="note"> 
+attribuutwaarde ‘psychiatrisch ziekenhuis, psychiatrisch centrum’
+wordt hernoemd naar ‘psychiatrisch centrum’.</details>
 
 <details class="note"> type ‘tankstation’ verplaatst naar objecttype FunctioneelGebied;
 type ‘dok’ verplaatst naar objecttype Inrichtingselement </details>
@@ -240,7 +239,7 @@ toegevoegd aan BRT.Next </details>
 | *BRT.Next:waarde*                | *BRT.Next:definitie*                           |
 |----------------------------------|------------------------------------------------|
 | **brandweerkazerne**             | *definitie TOP10NL 1.2*                        |
-| **bezoekerscentrum**             | \*\*n.t.b. \*\*                                |
+| **bezoekerscentrum**             | **n.t.b. **                                    |
 | **crematorium**                  | *definitie TOP10NL 1.2*                        |
 | **elektriciteitscentrale**       | *definitie TOP10NL 1.2*                        |
 | **gemaal**                       | *definitie TOP10NL 1.2*                        |
