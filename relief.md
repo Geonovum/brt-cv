@@ -9,8 +9,7 @@ opzichte van de huidige versie TOP10NL.
 
 | Attribuutnaam          | Waarde of «type»       | Geometrietype      | Kardinaliteit |
 |------------------------|------------------------|--------------------|---------------|
-| geometrie              | «vlak»                 |                    | 1..1          |
-|                        | «lijn»                 |                    |               |
+| geometrie              | «lijn»                 |                    | 1..1          |
 |                        | «hoge en lage zijde»   |                    |               |
 | typeRelief             | wal                    | lijn               | 1..1          |
 |                        | steile rand, aardrand  | hoge en lage zijde |               |
@@ -71,12 +70,7 @@ in BRT.Next.
 
 ## Vervallen attribuutwaarden
 
-Onderstaande attribuutwaarden of datatypen vervallen in BRT.Next.
-
-| *TOP10NL:attribuutnaam* | *TOP10NL:attribuutwaarden of «datatype»* |
-|-------------------------|------------------------------------------|
-| typeRelief              | ~~dijk~~                             |
-| geometrie               | ~~vlak~~                             |
+Geen.
  
 
 ## Toevoegen attributen
