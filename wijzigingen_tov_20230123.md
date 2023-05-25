@@ -43,12 +43,10 @@ Geen
 -   Typen 'busstation', 'metrostation', 'sneltramhalte', 'treinstation', 'tol'
     geschrapt bij Inrichtingselement en verplaatst naar FunctioneelGebied
 
--   Type 'kilometerraaipaal' en 'kilometerraaibord' hernoemd naar 'kilometerpaal
-    water'
 
 ## Relief
 
--   definitie van nieuw type ‘dijk’ is aangepast.
+Geen
 
 ## Hoogte
 
@@ -70,6 +68,7 @@ Geen
 
 -   Typen 'busstation', 'metrostation', 'sneltramhalte', 'treinstation', 'tol'
     toegevoegd bij FunctioneelGebied (verplaatst vanuit Inrichtingselement)
+-   Geometrietype 'punt' toegevoegd.
 
 ## Plantopografie
 
