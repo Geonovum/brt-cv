@@ -19,7 +19,7 @@ opzichte van de huidige versie TOP10NL.
 |                 | historische bebouwingskern | vlak, multivlak |               |
 | bebouwdeKom     | ja                         |                 | 1-1           |
 |                 | nee                        |                 |               |
-| aantalIwoners   | «geheel getal»             |                 | 1-1           |
+| aantalIwoners   | «geheel getal»             |                 | 0..1          |
 | naam            | «tekst»                    |                 | 1..n          |
 | naam: herkomst  | «taal»                     |                 | 1..n          |
 | naam: officieel | ja                         |                 | 1..n          |
@@ -40,7 +40,7 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| type~~Gebied~~      | type**Plaats**           |
+| type~~Gebied~~          | type**Plaats**           |
 
 ### Definitie
 
