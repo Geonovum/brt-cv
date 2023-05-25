@@ -15,7 +15,7 @@ opzichte van de huidige versie TOP10NL.
 |                        | boomgaard                    | vlak          |               |
 |                        | boomkwekerij                 | vlak          |               |
 |                        | duin                         | vlak          |               |
-|                        | fruitteelt                   | vlak          |               |
+|                        | fruitkwekerij                | vlak          |               |
 |                        | gemengd bos                  | vlak          |               |
 |                        | grasland agrarisch           | vlak          |               |
 |                        | grasland overig              | vlak          |               |
