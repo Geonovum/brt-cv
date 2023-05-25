@@ -181,4 +181,3 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 | **dok**                 | **Constructie bedoeld om schepen uit het water te halen en vervolgens weer in het water te laten.**             |
 | **zwembad**             | **Constructie in de vorm van een bassin bedoeld om in te zwemmen**                                              |
 | **bezinkbak**           | **Een gesloten reservoir waarin het afvalwater tijdelijk wordt opgevangen met een slibreinigende voorziening.** |
-| **kilometerpaal water** | **Paal waarop de kilometrering van een water wordt aangegeven.**                                                |
