@@ -47,11 +47,11 @@ var respecConfig =
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                   // Norm
   //specType: "ST",                   // Standaard
-  specType: "IM",                   // Informatie Model
+  //specType: "IM",                   // Informatie Model
   //specType: "PR",                   // Praktijkrichtlijn
   //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
-  //specType: "BD",                   // Beheer Documentatie
+  specType: "BD",                   // Beheer Documentatie
   //-- format is verplicht! -----------------------------------------------------------
   format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
   //-- publishDate is verplicht -------------------------------------------------------
