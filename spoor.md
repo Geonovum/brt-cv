@@ -94,7 +94,13 @@ Geen.
 
 ### Naam+definitie
 
-Geen. 
+Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Next.
+
+*Attribuut TOP10NL\|BRT.Next:status*
+
+| *TOP10NL:waarde* | *TOP10NL:definitie*          |*BRT.Next:waarde*| *BRT.Next:definitie*                                                             |
+|------------------|------------------------------|-----------------|----------------------------------------------------------------------------------|
+| in ~~uitvoering~~| ~~Het~~ object ~~is in~~ aanleg. | in **aanbouw**  | Object **waarvan de feitelijke bouw, verbouw of** aanleg** is aangevangen**. |  
 
 
 ## Vervallen attributen
@@ -118,10 +124,8 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | geometrie                         | ~~«punt»~~                                                  |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                              |
 | aantalSporen                      | ~~dubbel~~                                                  |
-| status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~ |
+| status                            | ~~in gebruik~~; ~~buiten gebruik~~ |
 
-<details class="note"> status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot
-status ‘bestaand’. </details>
 
 ## Toevoegen attributen
 
@@ -135,7 +139,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:status* | *BRT.Next:definitie*                               |
 |-------------------|----------------------------------------------------|
-| **vlak**          | **De vlakgeometrie van een spoorbaandeel object.** |
+| **vlak**          | **De vlakgeometrie van een spoor object.** |
 
 <details class="note">regel: vlakgeometrie alleen bij Spoor van het type ‘spoorbaan’
 </details>
