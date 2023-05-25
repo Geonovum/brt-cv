@@ -102,7 +102,7 @@ aangepast.
 | *TOP10NL \| BRT.Next:attribuutnaam* | *TOP10NL:definitie*                                                                          | *BRT.Next:definitie*                                            |
 |-------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | status                              | ~~De staat waarin het~~ object ~~zich bevindt.~~                                             | **De status gekoppeld aan de levenscyclus van een geo-object.**    |
-| typeGebouw                          | Het type gebouw, ~~het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~     | **type**                                                        |
+| typeGebouw                          | Het type gebouw~~, het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd).~~     | Het type gebouw** gebaseerd op de uiterlijke kenmerken van het gebouw.**  |
 
 ### Naam+definitie
 
@@ -139,7 +139,6 @@ definitie wordt niet aangepast.
 | tank                                          | **opslag**tank    |
 | ~~parkeerdak, parkeerdek, ~~parkeergarage     | parkeergarage     |
 
-### 
 
 ### Definitie
 
@@ -239,7 +238,7 @@ toegevoegd aan BRT.Next </details>
 | *BRT.Next:waarde*                | *BRT.Next:definitie*                           |
 |----------------------------------|------------------------------------------------|
 | **brandweerkazerne**             | *definitie TOP10NL 1.2*                        |
-| **bezoekerscentrum**             | **n.t.b. **                                    |
+| **bezoekerscentrum**             | *definitie TOP10NL 1.2*                        |
 | **crematorium**                  | *definitie TOP10NL 1.2*                        |
 | **elektriciteitscentrale**       | *definitie TOP10NL 1.2*                        |
 | **gemaal**                       | *definitie TOP10NL 1.2*                        |
@@ -254,8 +253,8 @@ toegevoegd aan BRT.Next </details>
 | **psychiatrisch centrum**        | *definitie TOP10NL 1.2*                        |
 | **radarstation**                 | *definitie TOP10NL 1.2*                        |
 | **religie**                      | **Gebouw in gebruik voor geloofsuitoefening.** |
-| **reddingsstation**              | **n.t.b.**                                     |
-| **remise**                       | **n.t.b.**                                     |
+| **reddingsstation**              | **Gebouw met boothuis en bijbehorende faciliteiten voor reddingsoperaties te water en op het strand.**                                     |
+| **remise**                       | *definitie TOP10NL 1.2*                                     |
 | **schaapskooi**                  | *definitie TOP10NL 1.2*                        |
 | **school**                       | *definitie TOP10NL 1.2*                        |
 | **sporthal**                     | *definitie TOP10NL 1.2*                        |
