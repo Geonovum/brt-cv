@@ -35,7 +35,7 @@ opzichte van de huidige versie TOP10NL.
 |                          | op knooppuntverbinding      |               |               |
 |                          | op overweg                  |               |               |
 |                          | in tunnel                   |               |               |
-| verhardingsbreedteklasse | \> 7 meter                  |               |               |
+| verhardingsbreedteklasse | \> 7 meter                  |               | 1-1           |
 |                          | 4 – 7 meter                 |               |               |
 |                          | 2 – 4 meter                 |               |               |
 |                          | \< 2 meter                  |               |               |
@@ -72,7 +72,6 @@ aangepast.
 
 | *TOP10NL:attribuutnaam* | *BRT.Next:attribuutnaam* |
 |-------------------------|--------------------------|
-| typeWeg                 | typeWeg**deel**          |
 | ~~fysiekVoorkomen~~     | **ligging**              |
 | ~~hoofdG~~eometrie      | **g**eometrie            |
 
@@ -118,18 +117,24 @@ niet aangepast.
 
 | *TOP10NL \| BRT.Next:waarde* | *TOP10NL:definitie*                                                                                                                                                                                                                                                                                               | *BRT.Next:definitie*                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| autosnelweg                  | Weg dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer ~~en met gescheiden rijbanen en ongelijkvloerse kruisingen~~, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                   | Weg dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                                                                                                                    |
-| hoofdweg                     | ~~Verharde weg die~~ is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. | Weg, **niet zijnde een autosnelweg of autoweg,** dat is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. |
-| regionale weg                | ~~Verharde~~ weg die een verbinding vormt tussen bewoonde oorden of ~~grote stads~~wijken ~~en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer~~.                                                                                                          | **Weg dat onderdeel is van een** weg die een verbinding vormt tussen bewoonde oorden of tussen wijken **binnen een dorp of stad**.                                                                                                                                                                                                            |
-| lokale weg                   | Weg van lokaal belang ~~tussen bewegwijzerde routes~~.                                                                                                                                                                                                                                                        | **Weg dat onderdeel is van een** weg van lokaal belang.                                                                                                                                                                                                                                                                                       |
-| straat                       | Weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                                                                                                                                                                                                                                   | **Weg dat onderdeel is van een** weg van zeer plaatselijk belang, gelegen binnen ~~bebouwd~~ gebied **met bebouwing**.                                                                                                                                                                                                                    |
+| autosnelweg                  | Weg dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer ~~en met gescheiden rijbanen en ongelijkvloerse kruisingen~~, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                   | Weg**deel** dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.                                                                                                                                                                                                                    |
+| hoofdweg                     | ~~Verharde weg die~~ is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. | Weg**deel**, **niet zijnde een autosnelweg of autoweg,** dat is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren. |
+| regionale weg                | ~~Verharde~~ weg die een verbinding vormt tussen bewoonde oorden of ~~grote stads~~wijken ~~en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer~~.                                                                                                          | **Wegdeel dat onderdeel is van een** weg die een verbinding vormt tussen bewoonde oorden of tussen wijken **binnen een dorp of stad**.                                                                                                                                                                                                            |
+| lokale weg                   | Weg van lokaal belang ~~tussen bewegwijzerde routes~~.                                                                                                                                                                                                                                                        | **Wegdeel dat onderdeel is van een** weg van lokaal belang.                                                                                                                                                                                                                                                                                       |
+| straat                       | Weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied.                                                                                                                                                                                                                                                   | **Wegdeel dat onderdeel is van een** weg van zeer plaatselijk belang, gelegen binnen ~~bebouwd~~ gebied **met bebouwing**.                                                                                                                                                                                                                    |
 | parkeerplaats                | Parkeergelegenheid voor meerdere voertuigen in de openlucht.                                                                                                                                                                                                                                                      | Parkeergelegenheid voor **het parkeren van** meerdere voertuigen in de openlucht **met een aparte toegang vanaf de doorgaande weg.**                                                                                                                                                                                                              |
-| startbaan, landingsbaan      | ~~Strook grond waar~~ vlieg~~tuigen kunnen~~ opstijgen en/of landen.                                                                                                                                                                                                                                      | **Weg uitsluitend bedoeld voor** vlieg**verkeer ten behoeve van het** opstijgen en/of landen van **vliegtuigen**.                                                                                                                                                                                                                             |
-| rolbaan, platform            | ~~Afgebakende taxibaan op een vliegveld (rolbaan). / Terrein voor geparkeerd staande~~ vliegtuigen ~~(platform)~~.                                                                                                                                                                                        | **Weg uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën of het parkeren van** vliegtuigen.                                                                                                                                                                                                                                     |
+| startbaan, landingsbaan      | ~~Strook grond waar~~ vlieg~~tuigen kunnen~~ opstijgen en/of landen.                                                                                                                                                                                                                                      | **Wegdeel uitsluitend bedoeld voor** vlieg**verkeer ten behoeve van het** opstijgen en/of landen van **vliegtuigen**.                                                                                                                                                                                                                             |
+| rolbaan, platform            | ~~Afgebakende taxibaan op een vliegveld (rolbaan). / Terrein voor geparkeerd staande~~ vliegtuigen ~~(platform)~~.                                                                                                                                                                                        | **Wegdeel uitsluitend bedoeld voor vliegverkeer ten behoeve van het taxiën of het parkeren van** vliegtuigen.                                                                                                                                                                                                                                     |
 
 ### Naam+definitie
 
-Geen.
+Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Next.
+
+*Attribuut TOP10NL\|BRT.Next:status*
+
+| *TOP10NL:waarde* | *TOP10NL:definitie*          |*BRT.Next:waarde*| *BRT.Next:definitie*                                                             |
+|------------------|------------------------------|-----------------|----------------------------------------------------------------------------------|
+| in ~~uitvoering~~| ~~Het~~ object ~~is in~~ aanleg. | in **aanbouw**  | Object **waarvan de feitelijke bouw, verbouw of** aanleg** is aangevangen**. |  
 
 ## Vervallen attributen
 
@@ -152,15 +157,9 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | *TOP10NL\|BRT.Next:attribuutnaam* | *TOP10NL:waarde of «type»*                                                           |
 |-----------------------------------|--------------------------------------------------------------------------------------|
 | geometrie                         | ~~«punt»~~                                                                       |
-| typeWeg                           | ~~spoorbaanlichaam~~; ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~ |
+| typeWeg                           | ~~parkeerplaats: carpool~~; ~~parkeerplaats: P+R~~ |
 | fysiekVoorkomen \| ligging        | ~~overkluisd~~                                                                   |
-| status                            | ~~in uitvoering~~; ~~in gebruik~~; ~~buiten gebruik~~                    |
-
-<details class="note"> Type ‘spoorbaanlichaam’ verplaatst naar type ‘spoorbaan’ van
-objecttype Spoor. </details>
-
-<details class="note"> status ‘in uitvoering’ en ‘in gebruik’ worden samengevoegd tot
-status ‘bestaand’. </details>
+| status                            | ~~in gebruik~~; ~~buiten gebruik~~                    |
 
 ## Toevoegen attributen
 
@@ -178,11 +177,11 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde*     | *BRT.Next:definitie*                                                                                                                                                                               |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **autoweg**           | **Weg dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.**                                                                 |
-| **OV-baan**           | **Weg dat uitsluitend is bestemd en gemarkeerd voor openbaar vervoer en afgescheiden is van de andere wegdelen niet uitsluitend door markering.**                                              |
-| **fietspad**          | **Weg met name bestemd voor fietsers en, indien toegestaan, bromfietsers en dat afgescheiden is van de andere wegdelen niet uitsluitend door markering.**                                      |
-| **voetpad**           | **Weg waar voetgangers gebruik van moeten maken.**                                                                                                                                             |
-| **voetgangersgebied** | **Weg alleen voor het gebruik door voetgangers, waarbij het door voetgangers te gebruiken gebied de volle breedte van de weg beslaat en het gebied een nadrukkelijk openbaar karakter heeft.** |
+| **autoweg**           | **Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.**                                                                 |
+| **OV-baan**           | **Wegdeel dat uitsluitend is bestemd en gemarkeerd voor openbaar vervoer en afgescheiden is van de andere wegdelen niet uitsluitend door markering.**                                              |
+| **fietspad**          | **Wegdeel met name bestemd voor fietsers en, indien toegestaan, bromfietsers en dat afgescheiden is van de andere wegdelen niet uitsluitend door markering.**                                      |
+| **voetpad**           | **Wegdeel waar voetgangers gebruik van moeten maken.**                                                                                                                                             |
+| **voetgangersgebied** | **Wegdeel alleen voor het gebruik door voetgangers, waarbij het door voetgangers te gebruiken gebied de volle breedte van de weg beslaat en het gebied een nadrukkelijk openbaar karakter heeft.** |
 | **fietsveer**         | **Vastgelegde route over water om fietsers en voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                      |
 | **voetveer**          | **Vastgelegde route over water om voetgangers over te zetten al dan niet op basis van een vaste dienstregeling.**                                                                                  |
 
@@ -190,11 +189,11 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 | *BRT.Next:waarde* | *BRT.Next:definitie*                                                                                         |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
-| **op overweg**    | **Een gelijkvloerse kruising van een wegdeel en een wegdeel type ov-baan met spoor type trein of sneltram.** |
+| **op overweg**    | **Een gelijkvloerse kruising van een wegdeel en een spoorbaan.** |
 
 *Attribuut BRT.Next:status*
 
 | *BRT.Next:status* | *BRT.Next:definitie*                                                                                               |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
 | **bestaand**      | **Object dat in gebruik is genomen of als gebruiksgereed kan worden beschouwd, dan wel buiten gebruik is gesteld** |
-| **in aanbouw**    | **Object waarvan de feitelijke bouw, verbouw of aanleg is aangevangen.**                                           |
+
