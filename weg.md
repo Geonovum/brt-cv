@@ -93,7 +93,7 @@ Onderstaande attributen wijzigen van naam en definitie in BRT.Next.
 
 | *TOP10NL:attribuutnaam* | *TOP10NL:definitie*                             | *BRT.Next:attribuutnaam*   | *BRT.Next:definitie*                                    |
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
-| ~~hoogteniveau~~    | ~~Het ~~hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
+| ~~hoogteniveau~~    | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
 <details class="note"> Het bereik van hoogteniveau/relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9..
@@ -134,7 +134,7 @@ Onderstaande attribuutwaarden wijzigen van naam (waarde) en definitie in BRT.Nex
 
 | *TOP10NL:waarde* | *TOP10NL:definitie*          |*BRT.Next:waarde*| *BRT.Next:definitie*                                                             |
 |------------------|------------------------------|-----------------|----------------------------------------------------------------------------------|
-| in ~~uitvoering~~| ~~Het~~ object ~~is in~~ aanleg. | in **aanbouw**  | Object **waarvan de feitelijke bouw, verbouw of** aanleg** is aangevangen**. |  
+| in ~~uitvoering~~| ~~Het~~ object ~~is in~~ aanleg. | in **aanbouw**  | Object **waarvan de feitelijke bouw, verbouw of** aanleg **is aangevangen**. |  
 
 ## Vervallen attributen
 
