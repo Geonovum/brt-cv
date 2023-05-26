@@ -68,7 +68,7 @@ aangepast.
 |-------------------------|-------------------------------------------------|----------------------------|---------------------------------------------------------|
 | ~~hoogteniveau~~  | ~~Het~~ hoogte~~niveau~~van het object. | **relatieveHoogteligging** | **Aanduiding voor de relatieve** hoogte van het object. |
 
-<details class="note"> Het bereik van hoogteniveau\|relatieveHoogteligging wijzigt van
+<details class="note"> Het bereik van hoogteniveau|relatieveHoogteligging wijzigt van
 een geheel getal kleiner of gelijk aan 0 naar geheel getal van -9 tot en met 9.
 </details>
 
