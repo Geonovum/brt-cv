@@ -194,7 +194,7 @@ BRT.Next. Het attribuut blijft wel bestaan.
 | status                            | ~~in gebruik~~; ~~buiten gebruik~~; ~~in uitvoering~~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 <details class="note"> de attribuutwaarden ‘brandweerkazerne’, ‘crematorium’, …,
-‘zwembad’ verplaatsen van attribuut typeGebouw\|type naar attribuut functie.
+‘zwembad’ verplaatsen van attribuut typeGebouw|type naar attribuut functie.
 </details>
 
 <details class="note"> 
