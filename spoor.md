@@ -137,7 +137,7 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:geometrie*
 
-| *BRT.Next:status* | *BRT.Next:definitie*                               |
+| *BRT.Next:geometrie* | *BRT.Next:definitie*                               |
 |-------------------|----------------------------------------------------|
 | **vlak**          | **De vlakgeometrie van een spoor object.** |
 
