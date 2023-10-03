@@ -146,12 +146,12 @@ Onderstaande attribuutwaarden worden toegevoegd aan BRT.Next.
 
 *Attribuut BRT.Next:typeSpoor*
 
-| *BRT.Next:status*            | *BRT.Next:definitie*                              |
+| *BRT.Next:typeSpoor*            | *BRT.Next:definitie*                              |
 |------------------------------|---------------------------------------------------|
 | **spoorbaan**~~lichaam~~ | **Gebaand gedeelte voor het verkeer over rails.** |
 
-<details class="note">type ‘spoorbaan’ verplaatst van objecttype Terrein naar objecttype
-Spoor.</details> 
+<details class="note">type ‘spoorbaanlichaam’ verplaatst van objecttype Terrein naar type
+‘spoorbaan’ van object Spoor.</details> 
 
 *Attribuut BRT.Next:status*
 
